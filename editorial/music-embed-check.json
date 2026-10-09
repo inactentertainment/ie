@@ -1,0 +1,318 @@
+[
+  {
+    "genre": "Afrobeats",
+    "sources": [
+      {
+        "videoId": "_A0fWBHu9pM",
+        "title": "2Face - African Queen [Official Video]",
+        "publisher": "Official2Baba",
+        "embedReturned": true
+      },
+      {
+        "videoId": "713jhG0us1k",
+        "title": "African Queen",
+        "publisher": "2Baba - Topic",
+        "embedReturned": true
+      }
+    ]
+  },
+  {
+    "genre": "Ambient",
+    "sources": [
+      {
+        "videoId": "OlaTeXX3uH8",
+        "title": "Brian Eno - An Ending (Ascent) (Remastered 2019)",
+        "publisher": "BrianEnoVEVO",
+        "embedReturned": true
+      },
+      {
+        "videoId": "OnAS7efua64",
+        "title": "An Ending (Ascent) (Remastered 2005)",
+        "publisher": "Brian Eno - Topic",
+        "embedReturned": true
+      }
+    ]
+  },
+  {
+    "genre": "Blues",
+    "sources": [
+      {
+        "videoId": "SgXSomPE_FY",
+        "title": "B.B. King - The Thrill Is Gone [Crossroads 2010] (Official Live Video)",
+        "publisher": "RHINO",
+        "embedReturned": true
+      },
+      {
+        "videoId": "kpC69qIe02E",
+        "title": "The Thrill Is Gone",
+        "publisher": "B.B. King - Topic",
+        "embedReturned": true
+      }
+    ]
+  },
+  {
+    "genre": "Classical",
+    "sources": [
+      {
+        "videoId": "s71I_EWJk7I",
+        "title": "\"F\u00fcr Elise\" Performed by Lang Lang",
+        "publisher": "Steinway & Sons",
+        "embedReturned": true
+      },
+      {
+        "videoId": "FW_KCau2iTI",
+        "title": "Lang Lang \u2013 Beethoven: \"F\u00fcr Elise\" Bagatelle No. 25 in A Minor, WoO 59 (Live in Paris, 2019)",
+        "publisher": "Deutsche Grammophon - DG",
+        "embedReturned": true
+      }
+    ]
+  },
+  {
+    "genre": "Country",
+    "sources": [
+      {
+        "videoId": "UbxUSsFXYo4",
+        "title": "Dolly Parton - 9 To 5 (Official Video)",
+        "publisher": "DollyPartonVEVO",
+        "embedReturned": true
+      }
+    ]
+  },
+  {
+    "genre": "EDM",
+    "sources": [
+      {
+        "videoId": "IcrbM1l_BoI",
+        "title": "Avicii - Wake Me Up (Official Video)",
+        "publisher": "AviciiOfficialVEVO",
+        "embedReturned": true
+      },
+      {
+        "videoId": "5y_KJAg8bHI",
+        "title": "Avicii - Wake Me Up (Official Lyric Video)",
+        "publisher": "AviciiOfficialVEVO",
+        "embedReturned": true
+      }
+    ]
+  },
+  {
+    "genre": "Experimental",
+    "sources": [
+      {
+        "videoId": "GHhD4PD75zY",
+        "title": "Herbie Hancock - Rockit (Official Video)",
+        "publisher": "HerbieHancockVEVO",
+        "embedReturned": true
+      }
+    ]
+  },
+  {
+    "genre": "Funk",
+    "sources": [
+      {
+        "videoId": "Gs069dndIYk",
+        "title": "Earth, Wind & Fire - September (Official HD Video)",
+        "publisher": "EarthWindandFireVEVO",
+        "embedReturned": true
+      },
+      {
+        "videoId": "3cKtSlsYVEU",
+        "title": "September",
+        "publisher": "Earth, Wind & Fire - Topic",
+        "embedReturned": true
+      }
+    ]
+  },
+  {
+    "genre": "Gospel",
+    "sources": [
+      {
+        "videoId": "Z8SPwT3nQZ8",
+        "title": "Kirk Franklin - I Smile (Official Video)",
+        "publisher": "KirkFranklinVEVO",
+        "embedReturned": true
+      },
+      {
+        "videoId": "S174winqP2g",
+        "title": "I Smile",
+        "publisher": "Kirk Franklin - Topic",
+        "embedReturned": true
+      }
+    ]
+  },
+  {
+    "genre": "Hip-Hop",
+    "sources": [
+      {
+        "videoId": "3JcmQONgXJM",
+        "title": "Will Smith - Gettin' Jiggy Wit It",
+        "publisher": "WillSmithVEVO",
+        "embedReturned": true
+      },
+      {
+        "videoId": "5VPm2yckO3k",
+        "title": "Gettin' Jiggy Wit It",
+        "publisher": "Will Smith - Topic",
+        "embedReturned": true
+      }
+    ]
+  },
+  {
+    "genre": "House / Club",
+    "sources": [
+      {
+        "videoId": "FGBhQbmPwH8",
+        "title": "Daft Punk - One More Time (Official Video)",
+        "publisher": "Daft Punk",
+        "embedReturned": true
+      },
+      {
+        "videoId": "fa5IWHDbftI",
+        "title": "One More Time",
+        "publisher": "Daft Punk - Topic",
+        "embedReturned": true
+      }
+    ]
+  },
+  {
+    "genre": "Jazz",
+    "sources": [
+      {
+        "videoId": "rBrd_3VMC3c",
+        "title": "Louis Armstrong - What A Wonderful World (Official Video)",
+        "publisher": "LouisArmstrongVEVO",
+        "embedReturned": true
+      },
+      {
+        "videoId": "CaCSuzR4DwM",
+        "title": "Louis Armstrong - What A Wonderful World (At The BBC)",
+        "publisher": "LouisArmstrongVEVO",
+        "embedReturned": true
+      }
+    ]
+  },
+  {
+    "genre": "Latin",
+    "sources": [
+      {
+        "videoId": "x4oN50uhSII",
+        "title": "Celia Cruz - La Vida Es Un Carnaval (Visualizer/ Remasterizado 2025)",
+        "publisher": "CeliaCruzVEVO",
+        "embedReturned": true
+      },
+      {
+        "videoId": "t8pjh1URlXs",
+        "title": "La Vida Es Un Carnaval",
+        "publisher": "Celia Cruz - Topic",
+        "embedReturned": true
+      },
+      {
+        "videoId": "7Ho86ggAVrY",
+        "title": "Celia Cruz - La Vida Es Un Carnaval (Audio)",
+        "publisher": "CeliaCruzVEVO",
+        "embedReturned": true
+      }
+    ]
+  },
+  {
+    "genre": "Lo-Fi",
+    "sources": [
+      {
+        "videoId": "qYcoJpqCha4",
+        "title": "aruarian dance",
+        "publisher": "Nujabes - Topic",
+        "embedReturned": true
+      }
+    ]
+  },
+  {
+    "genre": "Pop",
+    "sources": [
+      {
+        "videoId": "eH3giaIzONA",
+        "title": "Whitney Houston - I Wanna Dance With Somebody (Who Loves Me) (Official 4K Video)",
+        "publisher": "whitneyhoustonVEVO",
+        "embedReturned": true
+      }
+    ]
+  },
+  {
+    "genre": "R&B",
+    "sources": [
+      {
+        "videoId": "bEeaS6fuUoA",
+        "title": "Bill Withers - Lovely Day (Official Audio)",
+        "publisher": "BillWithersVEVO",
+        "embedReturned": true
+      },
+      {
+        "videoId": "QCgeitX5xg0",
+        "title": "Lovely Day",
+        "publisher": "Bill Withers - Topic",
+        "embedReturned": true
+      }
+    ]
+  },
+  {
+    "genre": "Reggae",
+    "sources": [
+      {
+        "videoId": "HNBCVM4KbUM",
+        "title": "Bob Marley & The Wailers - Three Little Birds (Official Music Video)",
+        "publisher": "BobMarleyVEVO",
+        "embedReturned": true
+      },
+      {
+        "videoId": "VYhl-JTezwk",
+        "title": "Bob Marley & The Wailers - Three Little Birds - Official Video",
+        "publisher": "Jamaica Groove",
+        "embedReturned": true
+      }
+    ]
+  },
+  {
+    "genre": "Rock",
+    "sources": [
+      {
+        "videoId": "1k8craCGpgs",
+        "title": "Journey - Don't Stop Believin' (Official Audio)",
+        "publisher": "journeyVEVO",
+        "embedReturned": true
+      },
+      {
+        "videoId": "VcjzHMhBtf0",
+        "title": "Journey - Don't Stop Believin' (Escape Tour 1981: Live In Houston)",
+        "publisher": "journeyVEVO",
+        "embedReturned": true
+      },
+      {
+        "videoId": "mM3Vmn4pdog",
+        "title": "Don't Stop Believin' (2022 Remaster)",
+        "publisher": "Journey - Topic",
+        "embedReturned": true
+      }
+    ]
+  },
+  {
+    "genre": "Soul",
+    "sources": [
+      {
+        "videoId": "yG07WSu7Q9w",
+        "title": "Simply Red - Holding Back The Years (Official 4K Remaster)",
+        "publisher": "Simply Red",
+        "embedReturned": true
+      }
+    ]
+  },
+  {
+    "genre": "Soundtracks",
+    "sources": [
+      {
+        "videoId": "8a-HfNE3EIo",
+        "title": "Vangelis - Chariots Of Fire",
+        "publisher": "VangelisVEVO",
+        "embedReturned": true
+      }
+    ]
+  }
+]

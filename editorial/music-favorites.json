@@ -1,0 +1,190 @@
+[
+  {
+    "genre": "Afrobeats",
+    "artist": "2Baba",
+    "title": "African Queen",
+    "videoId": "_A0fWBHu9pM",
+    "alternates": [
+      "713jhG0us1k"
+    ],
+    "theme": "A warm Afropop classic celebrating connection."
+  },
+  {
+    "genre": "Ambient",
+    "artist": "Brian Eno",
+    "title": "An Ending (Ascent)",
+    "videoId": "OlaTeXX3uH8",
+    "alternates": [
+      "OnAS7efua64"
+    ],
+    "theme": "Instrumental space for reflection and focused work."
+  },
+  {
+    "genre": "Blues",
+    "artist": "B.B. King",
+    "title": "The Thrill Is Gone",
+    "videoId": "SgXSomPE_FY",
+    "alternates": [
+      "kpC69qIe02E"
+    ],
+    "theme": "A classic live performance with expressive musical craft."
+  },
+  {
+    "genre": "Classical",
+    "artist": "Lang Lang · Beethoven",
+    "title": "Für Elise",
+    "videoId": "s71I_EWJk7I",
+    "alternates": [
+      "FW_KCau2iTI"
+    ],
+    "theme": "A familiar piano piece for a quieter learning moment."
+  },
+  {
+    "genre": "Country",
+    "artist": "Dolly Parton",
+    "title": "9 to 5",
+    "videoId": "UbxUSsFXYo4",
+    "alternates": [],
+    "theme": "Work, ambition, and the everyday push to make something happen."
+  },
+  {
+    "genre": "EDM",
+    "artist": "Avicii",
+    "title": "Wake Me Up",
+    "videoId": "IcrbM1l_BoI",
+    "alternates": [
+      "5y_KJAg8bHI"
+    ],
+    "theme": "Discovery, growing, and finding your own direction."
+  },
+  {
+    "genre": "Experimental",
+    "artist": "Herbie Hancock",
+    "title": "Rockit",
+    "videoId": "GHhD4PD75zY",
+    "alternates": [],
+    "theme": "An instrumental crossover where technology meets musical invention."
+  },
+  {
+    "genre": "Funk",
+    "artist": "Earth, Wind & Fire",
+    "title": "September",
+    "videoId": "Gs069dndIYk",
+    "alternates": [
+      "3cKtSlsYVEU"
+    ],
+    "theme": "Shared joy, movement, and a timeless groove."
+  },
+  {
+    "genre": "Gospel",
+    "artist": "Kirk Franklin",
+    "title": "I Smile",
+    "videoId": "Z8SPwT3nQZ8",
+    "alternates": [
+      "S174winqP2g"
+    ],
+    "theme": "Encouragement and finding a little light in a difficult day."
+  },
+  {
+    "genre": "Hip-Hop",
+    "artist": "Will Smith",
+    "title": "Gettin' Jiggy Wit It",
+    "videoId": "3JcmQONgXJM",
+    "alternates": [
+      "5VPm2yckO3k"
+    ],
+    "theme": "A familiar, profanity-free party favorite."
+  },
+  {
+    "genre": "House / Club",
+    "artist": "Daft Punk",
+    "title": "One More Time",
+    "videoId": "FGBhQbmPwH8",
+    "alternates": [
+      "fa5IWHDbftI"
+    ],
+    "theme": "A classic celebration of rhythm and the joy of creating."
+  },
+  {
+    "genre": "Jazz",
+    "artist": "Louis Armstrong",
+    "title": "What a Wonderful World",
+    "videoId": "rBrd_3VMC3c",
+    "alternates": [
+      "CaCSuzR4DwM"
+    ],
+    "theme": "A familiar vocal standard about noticing the world around us."
+  },
+  {
+    "genre": "Latin",
+    "artist": "Celia Cruz",
+    "title": "La Vida Es Un Carnaval",
+    "videoId": "x4oN50uhSII",
+    "alternates": [
+      "t8pjh1URlXs",
+      "7Ho86ggAVrY"
+    ],
+    "theme": "An uplifting salsa classic about living through life's difficult moments."
+  },
+  {
+    "genre": "Lo-Fi",
+    "artist": "Nujabes",
+    "title": "Aruarian Dance",
+    "videoId": "qYcoJpqCha4",
+    "alternates": [],
+    "theme": "Instrumental jazz-hop for a calm creative flow."
+  },
+  {
+    "genre": "Pop",
+    "artist": "Whitney Houston",
+    "title": "I Wanna Dance with Somebody",
+    "videoId": "eH3giaIzONA",
+    "alternates": [],
+    "theme": "A recognizable pop favorite full of energy and connection."
+  },
+  {
+    "genre": "R&B",
+    "artist": "Bill Withers",
+    "title": "Lovely Day",
+    "videoId": "bEeaS6fuUoA",
+    "alternates": [
+      "QCgeitX5xg0"
+    ],
+    "theme": "A brighter mood for the next idea and the next useful step."
+  },
+  {
+    "genre": "Reggae",
+    "artist": "Bob Marley & The Wailers",
+    "title": "Three Little Birds",
+    "videoId": "HNBCVM4KbUM",
+    "alternates": [],
+    "theme": "A gentle reminder to breathe and keep moving."
+  },
+  {
+    "genre": "Rock",
+    "artist": "Journey",
+    "title": "Don't Stop Believin'",
+    "videoId": "1k8craCGpgs",
+    "alternates": [
+      "VcjzHMhBtf0",
+      "mM3Vmn4pdog"
+    ],
+    "theme": "A classic about keeping possibility in view."
+  },
+  {
+    "genre": "Soul",
+    "artist": "Simply Red",
+    "title": "Holding Back the Years",
+    "videoId": "yG07WSu7Q9w",
+    "alternates": [],
+    "theme": "Reflection, memory, and an unhurried soulful groove."
+  },
+  {
+    "genre": "Soundtracks",
+    "artist": "Vangelis",
+    "title": "Chariots of Fire",
+    "videoId": "8a-HfNE3EIo",
+    "alternates": [],
+    "theme": "An instrumental theme with a sense of purpose and forward motion."
+  }
+]
