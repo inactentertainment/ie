@@ -1,0 +1,1618 @@
+[
+  {
+    "term": "Accounts payable",
+    "category": "Finance",
+    "pronunciation": "uh-KOUNTS PAY-uh-bul",
+    "partOfSpeech": "noun phrase",
+    "definition": "Money a business owes its suppliers for goods or services already received.",
+    "example": "The studio records the unpaid printing invoice in accounts payable.",
+    "aliases": [
+      "AP",
+      "payables"
+    ],
+    "wordNotes": "Accounting phrase: accounts are records; payable means due to be paid.",
+    "related": "Accounts receivable",
+    "course": "business-funding",
+    "id": "accounts-payable"
+  },
+  {
+    "term": "Accounts receivable",
+    "category": "Finance",
+    "pronunciation": "uh-KOUNTS ri-SEE-vuh-bul",
+    "partOfSpeech": "noun phrase",
+    "definition": "Money customers owe a business for sales already made on credit.",
+    "example": "Our accounts receivable includes a client invoice due next month.",
+    "aliases": [
+      "AR",
+      "receivables"
+    ],
+    "wordNotes": "Accounting phrase: receivable describes money expected to be collected.",
+    "related": "Accounts payable",
+    "course": "business-funding",
+    "id": "accounts-receivable"
+  },
+  {
+    "term": "Accrual accounting",
+    "category": "Finance",
+    "pronunciation": "uh-KROO-uhl uh-KOUN-ting",
+    "partOfSpeech": "noun phrase",
+    "definition": "Recording revenue when earned and expenses when incurred, even when cash moves later.",
+    "example": "We earned the fee in June and recorded it in June, although payment arrived in July.",
+    "aliases": [
+      "accrual basis"
+    ],
+    "wordNotes": "Accrual is formed from accrue, meaning to accumulate.",
+    "related": "Cash accounting",
+    "course": "small-business",
+    "id": "accrual-accounting"
+  },
+  {
+    "term": "Asset",
+    "category": "Finance",
+    "pronunciation": "AS-et",
+    "partOfSpeech": "noun",
+    "definition": "A resource a business owns or controls that can provide economic benefit.",
+    "example": "A camera owned by the studio is an asset.",
+    "aliases": [
+      "assets"
+    ],
+    "wordNotes": "Business noun; the plural is assets.",
+    "related": "Liability",
+    "course": "business-funding",
+    "id": "asset"
+  },
+  {
+    "term": "Balance sheet",
+    "category": "Finance",
+    "pronunciation": "BAL-uhns sheet",
+    "partOfSpeech": "noun phrase",
+    "definition": "A statement showing assets, liabilities, and owners’ equity at a particular date.",
+    "example": "The balance sheet shows what the company owns and owes on December 31.",
+    "aliases": [
+      "statement of financial position"
+    ],
+    "wordNotes": "Compound phrase: a sheet displaying financial balances.",
+    "related": "Income statement",
+    "course": "small-business",
+    "id": "balance-sheet"
+  },
+  {
+    "term": "Bookkeeping",
+    "category": "Finance",
+    "pronunciation": "BOOK-kee-ping",
+    "partOfSpeech": "noun",
+    "definition": "Keeping organized records of financial transactions.",
+    "example": "Weekly bookkeeping helps us find missing receipts before month-end.",
+    "aliases": [
+      "bookkeeper",
+      "transaction records"
+    ],
+    "wordNotes": "Compound of book and keeping, referring to maintaining records.",
+    "related": "Accounting",
+    "course": "small-business",
+    "id": "bookkeeping"
+  },
+  {
+    "term": "Budget",
+    "category": "Finance",
+    "pronunciation": "BUJ-it",
+    "partOfSpeech": "noun; verb",
+    "definition": "A plan for expected income and spending over a period.",
+    "example": "Our launch budget sets aside money for hosting and promotion.",
+    "aliases": [
+      "budgeting",
+      "spending plan"
+    ],
+    "wordNotes": "Used as a noun for the plan and a verb for making it.",
+    "related": "Forecast",
+    "course": "small-business",
+    "id": "budget"
+  },
+  {
+    "term": "Capital",
+    "category": "Finance",
+    "pronunciation": "KAP-ih-tul",
+    "partOfSpeech": "noun",
+    "definition": "Money or other resources used to start, operate, or grow a business.",
+    "example": "The founders contributed capital to buy equipment.",
+    "aliases": [
+      "startup capital",
+      "capital investment"
+    ],
+    "wordNotes": "From Latin capitalis, related to caput, meaning head; modern business meanings developed later.",
+    "related": "Working capital",
+    "course": "business-funding",
+    "id": "capital",
+    "wordSource": "https://www.merriam-webster.com/dictionary/capital"
+  },
+  {
+    "term": "Cash accounting",
+    "category": "Finance",
+    "pronunciation": "kash uh-KOUN-ting",
+    "partOfSpeech": "noun phrase",
+    "definition": "Recording income when cash is received and expenses when cash is paid.",
+    "example": "Under cash accounting, we record the payment when it reaches the bank.",
+    "aliases": [
+      "cash basis"
+    ],
+    "wordNotes": "Accounting phrase describing timing based on cash movement.",
+    "related": "Accrual accounting",
+    "course": "small-business",
+    "id": "cash-accounting"
+  },
+  {
+    "term": "Cash flow",
+    "category": "Finance",
+    "pronunciation": "kash floh",
+    "partOfSpeech": "noun phrase",
+    "definition": "The movement of money into and out of a business over time.",
+    "example": "A profitable company can still struggle if its cash flow cannot cover bills today.",
+    "aliases": [
+      "cash inflow",
+      "cash outflow"
+    ],
+    "wordNotes": "Compound phrase: cash moves, or flows, through a business.",
+    "related": "Profit",
+    "course": "business-funding",
+    "id": "cash-flow"
+  },
+  {
+    "term": "Cost of goods sold",
+    "category": "Finance",
+    "pronunciation": "kost uhv goodz sohld",
+    "partOfSpeech": "noun phrase",
+    "definition": "The direct costs assigned to the goods sold in a period.",
+    "example": "The mug seller subtracts cost of goods sold to calculate gross profit.",
+    "aliases": [
+      "COGS",
+      "cost of sales"
+    ],
+    "wordNotes": "Descriptive accounting phrase; what counts depends on the business and accounting rules.",
+    "related": "Gross profit",
+    "course": "small-business",
+    "id": "cost-of-goods-sold"
+  },
+  {
+    "term": "Equity",
+    "category": "Finance",
+    "pronunciation": "EK-wih-tee",
+    "partOfSpeech": "noun",
+    "definition": "The owners’ financial interest in a business; on a balance sheet, assets minus liabilities.",
+    "example": "After subtracting liabilities from assets, the remaining amount is owners’ equity.",
+    "aliases": [
+      "owners equity",
+      "ownership"
+    ],
+    "wordNotes": "Historically related to fairness; this entry covers the accounting and ownership meaning.",
+    "related": "Debt",
+    "course": "business-funding",
+    "id": "equity"
+  },
+  {
+    "term": "Expense",
+    "category": "Finance",
+    "pronunciation": "ik-SPENS",
+    "partOfSpeech": "noun; verb",
+    "definition": "A cost recognized as part of operating a business or earning revenue.",
+    "example": "We record the monthly software subscription as an expense.",
+    "aliases": [
+      "expenses",
+      "operating cost"
+    ],
+    "wordNotes": "Business noun; to expense an item means to recognize a cost under applicable accounting rules.",
+    "related": "Revenue",
+    "course": "small-business",
+    "id": "expense"
+  },
+  {
+    "term": "Forecast",
+    "category": "Finance",
+    "pronunciation": "FOR-kast",
+    "partOfSpeech": "noun; verb",
+    "definition": "An estimate of future results based on assumptions and available information.",
+    "example": "Our sales forecast uses last year’s figures and this year’s planned launches.",
+    "aliases": [
+      "forecasting",
+      "projection"
+    ],
+    "wordNotes": "Compound of fore, meaning ahead, and cast; forecasts are estimates, not promises.",
+    "related": "Budget",
+    "course": "small-business",
+    "id": "forecast"
+  },
+  {
+    "term": "Gross profit",
+    "category": "Finance",
+    "pronunciation": "grohs PROF-it",
+    "partOfSpeech": "noun phrase",
+    "definition": "Revenue minus cost of goods sold, before other expenses are deducted.",
+    "example": "Selling a product for $40 with $15 in assigned goods costs produces $25 gross profit.",
+    "aliases": [
+      "gross earnings"
+    ],
+    "wordNotes": "Gross signals an amount before later deductions in this context.",
+    "related": "Net profit",
+    "course": "small-business",
+    "id": "gross-profit"
+  },
+  {
+    "term": "Income statement",
+    "category": "Finance",
+    "pronunciation": "IN-kum STAYT-muhnt",
+    "partOfSpeech": "noun phrase",
+    "definition": "A statement summarizing revenue, expenses, and profit or loss over a period.",
+    "example": "The income statement shows the quarter’s operating results.",
+    "aliases": [
+      "profit and loss statement",
+      "P&L"
+    ],
+    "wordNotes": "Descriptive phrase; unlike a balance sheet, it covers a span of time.",
+    "related": "Balance sheet",
+    "course": "small-business",
+    "id": "income-statement"
+  },
+  {
+    "term": "Invoice",
+    "category": "Finance",
+    "pronunciation": "IN-voys",
+    "partOfSpeech": "noun; verb",
+    "definition": "A document requesting payment and describing the goods or services supplied.",
+    "example": "We send an invoice after completing the agreed website milestone.",
+    "aliases": [
+      "billing",
+      "bill"
+    ],
+    "wordNotes": "Business noun; invoice can also be a verb meaning to bill a customer.",
+    "related": "Accounts receivable",
+    "course": "small-business",
+    "id": "invoice"
+  },
+  {
+    "term": "Liability",
+    "category": "Finance",
+    "pronunciation": "ly-uh-BIL-ih-tee",
+    "partOfSpeech": "noun",
+    "definition": "An obligation a business owes to another party.",
+    "example": "An unpaid equipment loan is a liability.",
+    "aliases": [
+      "liabilities",
+      "obligation"
+    ],
+    "wordNotes": "Formed from liable and the noun ending -ity.",
+    "related": "Asset",
+    "course": "business-funding",
+    "id": "liability"
+  },
+  {
+    "term": "Margin",
+    "category": "Finance",
+    "pronunciation": "MAR-jin",
+    "partOfSpeech": "noun",
+    "definition": "A profit amount expressed as a share of revenue; name the type of profit used.",
+    "example": "A $20 gross profit on $100 revenue is a 20 percent gross margin.",
+    "aliases": [
+      "profit margin",
+      "gross margin"
+    ],
+    "wordNotes": "This is the financial meaning; the same word can mean an edge or boundary.",
+    "related": "Markup",
+    "course": "small-business",
+    "id": "margin"
+  },
+  {
+    "term": "Net profit",
+    "category": "Finance",
+    "pronunciation": "net PROF-it",
+    "partOfSpeech": "noun phrase",
+    "definition": "The amount left after the relevant expenses are subtracted from revenue.",
+    "example": "The business earns net profit after deducting its costs and taxes as reported.",
+    "aliases": [
+      "net income",
+      "bottom line"
+    ],
+    "wordNotes": "Net describes an amount after deductions.",
+    "related": "Gross profit",
+    "course": "small-business",
+    "id": "net-profit"
+  },
+  {
+    "term": "Revenue",
+    "category": "Finance",
+    "pronunciation": "REV-uh-noo",
+    "partOfSpeech": "noun",
+    "definition": "Income from a business’s sales or other operating activities before expenses are subtracted.",
+    "example": "Selling ten $50 lessons generates $500 in sales revenue.",
+    "aliases": [
+      "sales revenue",
+      "turnover"
+    ],
+    "wordNotes": "Business noun; revenue is not the same as profit or cash received.",
+    "related": "Net profit",
+    "course": "small-business",
+    "id": "revenue"
+  },
+  {
+    "term": "Working capital",
+    "category": "Finance",
+    "pronunciation": "WER-king KAP-ih-tul",
+    "partOfSpeech": "noun phrase",
+    "definition": "Current assets minus current liabilities, a measure related to short-term financial capacity.",
+    "example": "We review working capital before taking on a large order.",
+    "aliases": [
+      "net working capital"
+    ],
+    "wordNotes": "Accounting compound: working points to day-to-day business activity.",
+    "related": "Cash flow",
+    "course": "business-funding",
+    "id": "working-capital"
+  },
+  {
+    "term": "Amortization",
+    "category": "Funding",
+    "pronunciation": "am-er-tih-ZAY-shun",
+    "partOfSpeech": "noun",
+    "definition": "For a loan, paying down principal through scheduled payments over time.",
+    "example": "The loan’s amortization schedule separates interest and principal in each payment.",
+    "aliases": [
+      "amortize",
+      "loan schedule"
+    ],
+    "wordNotes": "Noun formed from amortize; it also has a separate accounting meaning for certain assets.",
+    "related": "Principal",
+    "course": "business-funding",
+    "id": "amortization"
+  },
+  {
+    "term": "Annual percentage rate",
+    "category": "Funding",
+    "pronunciation": "AN-yoo-uhl per-SEN-tij rayt",
+    "partOfSpeech": "noun phrase",
+    "definition": "A yearly measure of borrowing cost that can include interest and certain fees under the applicable rules.",
+    "example": "We compare annual percentage rates and total repayment amounts before choosing a loan.",
+    "aliases": [
+      "APR"
+    ],
+    "wordNotes": "Descriptive phrase; the method and included costs depend on the credit product and rules.",
+    "related": "Interest rate",
+    "course": "business-funding",
+    "id": "annual-percentage-rate"
+  },
+  {
+    "term": "Collateral",
+    "category": "Funding",
+    "pronunciation": "kuh-LAT-er-uhl",
+    "partOfSpeech": "noun",
+    "definition": "An asset pledged to secure a borrowing obligation.",
+    "example": "The lender may take specified collateral if the borrower defaults under the agreement.",
+    "aliases": [
+      "security",
+      "secured loan"
+    ],
+    "wordNotes": "Business noun; collateral also has other meanings outside lending.",
+    "related": "Debt",
+    "course": "business-funding",
+    "id": "collateral"
+  },
+  {
+    "term": "Debt",
+    "category": "Funding",
+    "pronunciation": "det",
+    "partOfSpeech": "noun",
+    "definition": "Money or another obligation owed to someone else.",
+    "example": "The company uses a repayment plan to manage its debt.",
+    "aliases": [
+      "borrowing",
+      "debts"
+    ],
+    "wordNotes": "Business noun; the written b is silent.",
+    "related": "Equity",
+    "course": "business-funding",
+    "id": "debt"
+  },
+  {
+    "term": "Debt service",
+    "category": "Funding",
+    "pronunciation": "det SER-vis",
+    "partOfSpeech": "noun phrase",
+    "definition": "Payments required to cover a debt’s principal and interest over a period.",
+    "example": "We include monthly debt service in the cash forecast.",
+    "aliases": [
+      "loan payments"
+    ],
+    "wordNotes": "Compound phrase: servicing debt means making required payments.",
+    "related": "Cash flow",
+    "course": "business-funding",
+    "id": "debt-service"
+  },
+  {
+    "term": "Grant",
+    "category": "Funding",
+    "pronunciation": "grant",
+    "partOfSpeech": "noun; verb",
+    "definition": "Funding awarded for a specified purpose under eligibility and use conditions, usually without ordinary loan repayment.",
+    "example": "The applicant checks permitted expenses before applying for a grant.",
+    "aliases": [
+      "grants",
+      "grant funding"
+    ],
+    "wordNotes": "Used as a noun for the award and a verb for giving it.",
+    "related": "Loan",
+    "course": "business-funding",
+    "id": "grant"
+  },
+  {
+    "term": "Interest rate",
+    "category": "Funding",
+    "pronunciation": "IN-trist rayt",
+    "partOfSpeech": "noun phrase",
+    "definition": "The percentage charged for borrowing or earned on certain balances over a stated period.",
+    "example": "We ask whether the interest rate is fixed or variable.",
+    "aliases": [
+      "interest",
+      "rate"
+    ],
+    "wordNotes": "Descriptive finance phrase; it does not alone show every borrowing cost.",
+    "related": "Annual percentage rate",
+    "course": "business-funding",
+    "id": "interest-rate"
+  },
+  {
+    "term": "Line of credit",
+    "category": "Funding",
+    "pronunciation": "lyn uhv KRED-it",
+    "partOfSpeech": "noun phrase",
+    "definition": "An arrangement allowing borrowing up to an approved limit under agreed terms.",
+    "example": "The business draws on its line of credit when cash timing is uneven.",
+    "aliases": [
+      "LOC",
+      "credit line"
+    ],
+    "wordNotes": "Lending phrase; available credit depends on the agreement and outstanding balance.",
+    "related": "Working capital",
+    "course": "business-funding",
+    "id": "line-of-credit"
+  },
+  {
+    "term": "Loan",
+    "category": "Funding",
+    "pronunciation": "lohn",
+    "partOfSpeech": "noun; verb",
+    "definition": "Money borrowed with an agreement to repay it under specified terms.",
+    "example": "The owner compares the loan’s repayment schedule and fees.",
+    "aliases": [
+      "loans",
+      "borrowing"
+    ],
+    "wordNotes": "Business noun; loan is also used as a verb meaning to lend.",
+    "related": "Grant",
+    "course": "business-funding",
+    "id": "loan"
+  },
+  {
+    "term": "Principal",
+    "category": "Funding",
+    "pronunciation": "PRIN-sih-pul",
+    "partOfSpeech": "noun",
+    "definition": "The amount borrowed or still owed on a loan, separate from interest.",
+    "example": "Extra approved payments can reduce the remaining principal.",
+    "aliases": [
+      "loan principal"
+    ],
+    "wordNotes": "From Latin principalis, meaning first or chief; do not confuse principal with principle.",
+    "related": "Interest rate",
+    "course": "business-funding",
+    "id": "principal",
+    "wordSource": "https://www.merriam-webster.com/dictionary/principal"
+  },
+  {
+    "term": "Underwriting",
+    "category": "Funding",
+    "pronunciation": "UN-der-ry-ting",
+    "partOfSpeech": "noun",
+    "definition": "A provider’s process for assessing risk and deciding whether to offer financing or insurance and on what terms.",
+    "example": "The lender reviews records during underwriting before making a decision.",
+    "aliases": [
+      "underwrite",
+      "risk assessment"
+    ],
+    "wordNotes": "Formed from underwrite; the modern process is more than signing a document.",
+    "related": "Collateral",
+    "course": "business-funding",
+    "id": "underwriting"
+  },
+  {
+    "term": "Bootstrapping",
+    "category": "Business",
+    "pronunciation": "BOOT-strap-ing",
+    "partOfSpeech": "noun",
+    "definition": "Building a business mainly with the founders’ resources and operating income rather than outside investment.",
+    "example": "We begin bootstrapping with a small service offer and reinvest the earnings.",
+    "aliases": [
+      "self funding",
+      "bootstrap"
+    ],
+    "wordNotes": "A metaphor based on bootstraps; not a literal promise of growth without resources.",
+    "related": "Capital",
+    "course": "small-business",
+    "id": "bootstrapping"
+  },
+  {
+    "term": "Business model",
+    "category": "Business",
+    "pronunciation": "BIZ-nis MOD-ul",
+    "partOfSpeech": "noun phrase",
+    "definition": "A description of how a business creates value, delivers it, and earns enough to operate.",
+    "example": "Our business model combines client services and digital products.",
+    "aliases": [
+      "revenue model"
+    ],
+    "wordNotes": "Compound phrase; a revenue model covers only the earning portion.",
+    "related": "Value proposition",
+    "course": "small-business",
+    "id": "business-model"
+  },
+  {
+    "term": "Business plan",
+    "category": "Business",
+    "pronunciation": "BIZ-nis plan",
+    "partOfSpeech": "noun phrase",
+    "definition": "A written description of the business, market, operations, goals, and financial assumptions.",
+    "example": "We revise the business plan after learning what customers will pay for.",
+    "aliases": [
+      "startup plan"
+    ],
+    "wordNotes": "Descriptive compound; useful plans change as evidence improves.",
+    "related": "Business model",
+    "course": "small-business",
+    "id": "business-plan"
+  },
+  {
+    "term": "Competitive advantage",
+    "category": "Business",
+    "pronunciation": "kum-PET-ih-tiv ad-VAN-tij",
+    "partOfSpeech": "noun phrase",
+    "definition": "A meaningful strength that helps a business compete and serve customers better than alternatives.",
+    "example": "Clear instructional design is part of our competitive advantage.",
+    "aliases": [
+      "differentiation"
+    ],
+    "wordNotes": "Descriptive business phrase; the advantage must matter to the customer.",
+    "related": "Value proposition",
+    "course": "small-business",
+    "id": "competitive-advantage"
+  },
+  {
+    "term": "Customer discovery",
+    "category": "Business",
+    "pronunciation": "KUS-tuh-mer dih-SKUV-er-ee",
+    "partOfSpeech": "noun phrase",
+    "definition": "Learning about potential customers’ needs and behavior through direct investigation.",
+    "example": "Customer discovery interviews reveal which problem people already try to solve.",
+    "aliases": [
+      "customer research"
+    ],
+    "wordNotes": "Startup phrase describing learning, not merely collecting compliments.",
+    "related": "Target audience",
+    "course": "small-business",
+    "id": "customer-discovery"
+  },
+  {
+    "term": "Deliverable",
+    "category": "Business",
+    "pronunciation": "dih-LIV-er-uh-bul",
+    "partOfSpeech": "noun",
+    "definition": "A specific item or result a project must produce.",
+    "example": "A tested mobile homepage is one deliverable in the project agreement.",
+    "aliases": [
+      "deliverables",
+      "output"
+    ],
+    "wordNotes": "From deliver with -able; used as a noun for the thing to be delivered.",
+    "related": "Scope",
+    "course": "business-workflows",
+    "id": "deliverable"
+  },
+  {
+    "term": "Entrepreneur",
+    "category": "Business",
+    "pronunciation": "ahn-truh-pruh-NER",
+    "partOfSpeech": "noun",
+    "definition": "A person who organizes a venture and takes on its business risks.",
+    "example": "The entrepreneur tests a small offer before investing in a larger launch.",
+    "aliases": [
+      "founder",
+      "entrepreneurship"
+    ],
+    "wordNotes": "Borrowed from French entrepreneur, associated with undertaking an enterprise.",
+    "related": "Business model",
+    "course": "small-business",
+    "id": "entrepreneur",
+    "wordSource": "https://www.merriam-webster.com/dictionary/entrepreneur"
+  },
+  {
+    "term": "Key performance indicator",
+    "category": "Business",
+    "pronunciation": "kee per-FOR-muhns IN-dih-kay-ter",
+    "partOfSpeech": "noun phrase",
+    "definition": "A measure chosen to track progress toward an important objective.",
+    "example": "Qualified inquiry count is a key performance indicator for this campaign.",
+    "aliases": [
+      "KPI",
+      "KPIs"
+    ],
+    "wordNotes": "An expanded acronym; not every available metric is a key indicator.",
+    "related": "Metric",
+    "course": "business-workflows",
+    "id": "key-performance-indicator"
+  },
+  {
+    "term": "Milestone",
+    "category": "Business",
+    "pronunciation": "MYL-stohn",
+    "partOfSpeech": "noun",
+    "definition": "A significant point or completed stage in a project.",
+    "example": "Approval of the first prototype is our next milestone.",
+    "aliases": [
+      "project milestone"
+    ],
+    "wordNotes": "A metaphor from markers showing distance along a road.",
+    "related": "Deliverable",
+    "course": "business-workflows",
+    "id": "milestone"
+  },
+  {
+    "term": "Minimum viable product",
+    "category": "Business",
+    "pronunciation": "MIN-ih-mum VY-uh-bul PROD-ukt",
+    "partOfSpeech": "noun phrase",
+    "definition": "A deliberately limited version used to test a key assumption with real users.",
+    "example": "Our minimum viable product tests one useful workflow before adding more features.",
+    "aliases": [
+      "MVP"
+    ],
+    "wordNotes": "Expanded acronym; viable does not mean careless, unsafe, or unfinished in essential ways.",
+    "related": "Prototype",
+    "course": "small-business",
+    "id": "minimum-viable-product"
+  },
+  {
+    "term": "Mission",
+    "category": "Business",
+    "pronunciation": "MISH-un",
+    "partOfSpeech": "noun",
+    "definition": "A statement of an organization’s present purpose and who it serves.",
+    "example": "Our mission explains why the learning studio exists.",
+    "aliases": [
+      "mission statement"
+    ],
+    "wordNotes": "Organization noun; mission concerns purpose, while vision concerns a desired future.",
+    "related": "Vision",
+    "course": "purpose-momentum",
+    "id": "mission"
+  },
+  {
+    "term": "Pivot",
+    "category": "Business",
+    "pronunciation": "PIV-ut",
+    "partOfSpeech": "noun; verb",
+    "definition": "A substantial change in business direction based on what has been learned.",
+    "example": "We pivot from a broad app to one focused scheduling tool.",
+    "aliases": [
+      "pivoting"
+    ],
+    "wordNotes": "A movement word used as a business metaphor for changing direction.",
+    "related": "Customer discovery",
+    "course": "small-business",
+    "id": "pivot"
+  },
+  {
+    "term": "Scope",
+    "category": "Business",
+    "pronunciation": "skohp",
+    "partOfSpeech": "noun",
+    "definition": "The agreed boundaries of work, including what is included and excluded.",
+    "example": "The project scope includes five pages and one contact form.",
+    "aliases": [
+      "project scope"
+    ],
+    "wordNotes": "Business use of a word meaning extent or range.",
+    "related": "Scope creep",
+    "course": "business-workflows",
+    "id": "scope"
+  },
+  {
+    "term": "Stakeholder",
+    "category": "Business",
+    "pronunciation": "STAYK-hohl-der",
+    "partOfSpeech": "noun",
+    "definition": "A person or group affected by a project or able to influence it.",
+    "example": "Learners and the training manager are stakeholders in the course redesign.",
+    "aliases": [
+      "stakeholders"
+    ],
+    "wordNotes": "Compound of stake, meaning an interest, and holder.",
+    "related": "Deliverable",
+    "course": "business-workflows",
+    "id": "stakeholder"
+  },
+  {
+    "term": "Value proposition",
+    "category": "Business",
+    "pronunciation": "VAL-yoo prop-uh-ZIH-shun",
+    "partOfSpeech": "noun phrase",
+    "definition": "A clear explanation of the useful benefit an offer provides to a specific customer.",
+    "example": "Our value proposition promises easier team organization, then shows how.",
+    "aliases": [
+      "customer value"
+    ],
+    "wordNotes": "Business phrase; a claim needs supporting evidence.",
+    "related": "Target audience",
+    "course": "small-business",
+    "id": "value-proposition"
+  },
+  {
+    "term": "Vision",
+    "category": "Business",
+    "pronunciation": "VIZH-un",
+    "partOfSpeech": "noun",
+    "definition": "A description of the future an organization wants to help create.",
+    "example": "The team’s vision gives long-term direction without replacing a practical plan.",
+    "aliases": [
+      "vision statement"
+    ],
+    "wordNotes": "Organization use of a word also associated with seeing.",
+    "related": "Mission",
+    "course": "purpose-momentum",
+    "id": "vision"
+  },
+  {
+    "term": "A/B test",
+    "category": "Marketing",
+    "pronunciation": "ay bee test",
+    "partOfSpeech": "noun",
+    "definition": "A comparison of two versions to learn which performs better on a defined measure.",
+    "example": "We run an A/B test on two headlines with comparable audiences.",
+    "aliases": [
+      "split test",
+      "AB testing"
+    ],
+    "wordNotes": "Letter-based label: A and B name the two versions.",
+    "related": "Conversion rate",
+    "course": "digital-marketing",
+    "id": "a-b-test"
+  },
+  {
+    "term": "Brand",
+    "category": "Marketing",
+    "pronunciation": "brand",
+    "partOfSpeech": "noun; verb",
+    "definition": "The identity, associations, and expectations people connect with a business or offer.",
+    "example": "Consistent design and reliable service strengthen the brand.",
+    "aliases": [
+      "branding",
+      "brand identity"
+    ],
+    "wordNotes": "Business noun and verb; a logo is one part of a brand.",
+    "related": "Value proposition",
+    "course": "digital-marketing",
+    "id": "brand"
+  },
+  {
+    "term": "Call to action",
+    "category": "Marketing",
+    "pronunciation": "kawl too AK-shun",
+    "partOfSpeech": "noun phrase",
+    "definition": "A clear invitation telling someone what useful step to take next.",
+    "example": "The call to action invites visitors to request a project discussion.",
+    "aliases": [
+      "CTA"
+    ],
+    "wordNotes": "Expanded acronym; effective actions match the reader’s need.",
+    "related": "Conversion",
+    "course": "digital-marketing",
+    "id": "call-to-action"
+  },
+  {
+    "term": "Click-through rate",
+    "category": "Marketing",
+    "pronunciation": "klik throo rayt",
+    "partOfSpeech": "noun phrase",
+    "definition": "Clicks divided by impressions, usually expressed as a percentage.",
+    "example": "Ten clicks from one thousand impressions produce a one percent click-through rate.",
+    "aliases": [
+      "CTR"
+    ],
+    "wordNotes": "Compound phrase naming a ratio; it does not measure sales by itself.",
+    "related": "Conversion rate",
+    "course": "digital-marketing",
+    "id": "click-through-rate"
+  },
+  {
+    "term": "Content marketing",
+    "category": "Marketing",
+    "pronunciation": "KON-tent MAR-kuh-ting",
+    "partOfSpeech": "noun phrase",
+    "definition": "Creating and sharing useful material to attract and support a relevant audience.",
+    "example": "Our content marketing answers common questions before presenting a service.",
+    "aliases": [
+      "content strategy"
+    ],
+    "wordNotes": "Marketing compound; useful content still needs a clear audience and purpose.",
+    "related": "Target audience",
+    "course": "digital-marketing",
+    "id": "content-marketing"
+  },
+  {
+    "term": "Conversion",
+    "category": "Marketing",
+    "pronunciation": "kun-VER-zhun",
+    "partOfSpeech": "noun",
+    "definition": "A desired action completed by a visitor or customer, such as a signup or purchase.",
+    "example": "Submitting a qualified inquiry counts as a conversion for this page.",
+    "aliases": [
+      "conversions"
+    ],
+    "wordNotes": "Business use of convert; define the action before measuring it.",
+    "related": "Conversion rate",
+    "course": "digital-marketing",
+    "id": "conversion"
+  },
+  {
+    "term": "Conversion rate",
+    "category": "Marketing",
+    "pronunciation": "kun-VER-zhun rayt",
+    "partOfSpeech": "noun phrase",
+    "definition": "Conversions divided by the relevant visits, users, or opportunities, expressed as a percentage.",
+    "example": "Five inquiries from one hundred visits give a five percent visit-based conversion rate.",
+    "aliases": [
+      "CVR"
+    ],
+    "wordNotes": "Descriptive ratio; always state which denominator you used.",
+    "related": "Click-through rate",
+    "course": "digital-marketing",
+    "id": "conversion-rate"
+  },
+  {
+    "term": "Customer acquisition cost",
+    "category": "Marketing",
+    "pronunciation": "KUS-tuh-mer ak-wih-ZIH-shun kost",
+    "partOfSpeech": "noun phrase",
+    "definition": "Relevant acquisition spending divided by new customers acquired in a defined period.",
+    "example": "We compare customer acquisition cost with what each customer contributes.",
+    "aliases": [
+      "CAC"
+    ],
+    "wordNotes": "Expanded acronym; included costs and time period should be clearly stated.",
+    "related": "Lifetime value",
+    "course": "digital-marketing",
+    "id": "customer-acquisition-cost"
+  },
+  {
+    "term": "Customer relationship management",
+    "category": "Marketing",
+    "pronunciation": "KUS-tuh-mer rih-LAY-shun-ship MAN-ij-muhnt",
+    "partOfSpeech": "noun phrase",
+    "definition": "The practices and systems used to organize customer information and interactions.",
+    "example": "Customer relationship management keeps follow-up notes in one shared system.",
+    "aliases": [
+      "CRM"
+    ],
+    "wordNotes": "Expanded acronym; CRM can mean the approach or the software supporting it.",
+    "related": "Lead",
+    "course": "business-workflows",
+    "id": "customer-relationship-management"
+  },
+  {
+    "term": "Engagement",
+    "category": "Marketing",
+    "pronunciation": "en-GAYJ-muhnt",
+    "partOfSpeech": "noun",
+    "definition": "Observable interactions with content or an experience, such as comments, saves, or meaningful use.",
+    "example": "We track engagement but also check whether visitors achieve their goals.",
+    "aliases": [
+      "engagement rate"
+    ],
+    "wordNotes": "From engage with the noun ending -ment; platforms define measurements differently.",
+    "related": "Metric",
+    "course": "digital-marketing",
+    "id": "engagement"
+  },
+  {
+    "term": "Impression",
+    "category": "Marketing",
+    "pronunciation": "im-PRESH-un",
+    "partOfSpeech": "noun",
+    "definition": "A recorded display of content or an advertisement under a platform’s counting rules.",
+    "example": "One person may generate several impressions by seeing an ad repeatedly.",
+    "aliases": [
+      "impressions"
+    ],
+    "wordNotes": "Marketing noun; impressions are not the same as unique people reached.",
+    "related": "Reach",
+    "course": "digital-marketing",
+    "id": "impression"
+  },
+  {
+    "term": "Lead",
+    "category": "Marketing",
+    "pronunciation": "leed",
+    "partOfSpeech": "noun",
+    "definition": "A potential customer who has shown some relevant interest or meets a defined prospecting criterion.",
+    "example": "The project inquiry becomes a lead for the studio.",
+    "aliases": [
+      "sales lead",
+      "prospect"
+    ],
+    "wordNotes": "In this business meaning, lead rhymes with seed, not the metal lead.",
+    "related": "Sales funnel",
+    "course": "digital-marketing",
+    "id": "lead"
+  },
+  {
+    "term": "Lifetime value",
+    "category": "Marketing",
+    "pronunciation": "LYF-tym VAL-yoo",
+    "partOfSpeech": "noun phrase",
+    "definition": "An estimate of the value a customer relationship contributes over its duration.",
+    "example": "We calculate lifetime value using stated assumptions about retention and margin.",
+    "aliases": [
+      "LTV",
+      "CLV",
+      "customer lifetime value"
+    ],
+    "wordNotes": "Business phrase; revenue-based and profit-based calculations differ.",
+    "related": "Customer acquisition cost",
+    "course": "digital-marketing",
+    "id": "lifetime-value"
+  },
+  {
+    "term": "Organic reach",
+    "category": "Marketing",
+    "pronunciation": "or-GAN-ik reech",
+    "partOfSpeech": "noun phrase",
+    "definition": "The unique audience reached without paying to promote that particular content.",
+    "example": "Helpful posts can build organic reach, although visibility is not guaranteed.",
+    "aliases": [
+      "organic distribution"
+    ],
+    "wordNotes": "Marketing meaning of organic; it does not mean chemical-free content.",
+    "related": "Reach",
+    "course": "digital-marketing",
+    "id": "organic-reach"
+  },
+  {
+    "term": "Reach",
+    "category": "Marketing",
+    "pronunciation": "reech",
+    "partOfSpeech": "noun; verb",
+    "definition": "The number of distinct people or accounts exposed to content under a platform’s measurement method.",
+    "example": "The campaign reached fewer people than its total impression count.",
+    "aliases": [
+      "audience reach"
+    ],
+    "wordNotes": "Common word used as a measurement; platforms may estimate it differently.",
+    "related": "Impression",
+    "course": "digital-marketing",
+    "id": "reach"
+  },
+  {
+    "term": "Sales funnel",
+    "category": "Marketing",
+    "pronunciation": "saylz FUN-ul",
+    "partOfSpeech": "noun phrase",
+    "definition": "A model of stages people may pass through from awareness to a purchase.",
+    "example": "Our sales funnel connects useful teaching with a relevant service inquiry.",
+    "aliases": [
+      "funnel",
+      "customer journey"
+    ],
+    "wordNotes": "Metaphor based on a funnel; real journeys are not always linear.",
+    "related": "Lead",
+    "course": "digital-marketing",
+    "id": "sales-funnel"
+  },
+  {
+    "term": "Search engine optimization",
+    "category": "Marketing",
+    "pronunciation": "serch EN-jin op-tih-mih-ZAY-shun",
+    "partOfSpeech": "noun phrase",
+    "definition": "Improving a site so search systems can understand it and people can find useful, relevant content.",
+    "example": "Our search engine optimization includes clear titles and accessible pages.",
+    "aliases": [
+      "SEO"
+    ],
+    "wordNotes": "Expanded acronym; SEO does not guarantee rankings.",
+    "related": "Content marketing",
+    "course": "digital-marketing",
+    "id": "search-engine-optimization"
+  },
+  {
+    "term": "Target audience",
+    "category": "Marketing",
+    "pronunciation": "TAR-git AW-dee-uns",
+    "partOfSpeech": "noun phrase",
+    "definition": "The specific people an offer or message is designed to serve.",
+    "example": "Our target audience includes small teams needing practical AI workflows.",
+    "aliases": [
+      "ideal customer"
+    ],
+    "wordNotes": "Descriptive phrase; useful audience definitions include needs, not just age.",
+    "related": "Value proposition",
+    "course": "digital-marketing",
+    "id": "target-audience"
+  },
+  {
+    "term": "Artificial intelligence",
+    "category": "AI & Technology",
+    "pronunciation": "ar-tih-FISH-ul in-TEL-ih-juhns",
+    "partOfSpeech": "noun phrase",
+    "definition": "Computing methods used for tasks such as prediction, language generation, and pattern recognition.",
+    "example": "We use artificial intelligence to draft options, then review the result.",
+    "aliases": [
+      "AI"
+    ],
+    "wordNotes": "Expanded acronym; capabilities depend on the particular system and task.",
+    "related": "Generative AI",
+    "course": "ai-foundations",
+    "id": "artificial-intelligence"
+  },
+  {
+    "term": "API",
+    "category": "AI & Technology",
+    "pronunciation": "ay pee eye",
+    "partOfSpeech": "noun; initialism",
+    "definition": "An application programming interface: a defined way for software components to interact.",
+    "example": "The app uses an API to request approved information from another system.",
+    "aliases": [
+      "application programming interface"
+    ],
+    "wordNotes": "Initialism spoken letter by letter.",
+    "related": "Integration",
+    "course": "web-design",
+    "id": "api"
+  },
+  {
+    "term": "Automation",
+    "category": "AI & Technology",
+    "pronunciation": "aw-tuh-MAY-shun",
+    "partOfSpeech": "noun",
+    "definition": "Using systems to carry out steps with less repeated manual work.",
+    "example": "Automation sends a reminder when an approved task reaches its deadline.",
+    "aliases": [
+      "automate",
+      "automated"
+    ],
+    "wordNotes": "Noun formed from automate; automated work can still require human oversight.",
+    "related": "Workflow",
+    "course": "business-workflows",
+    "id": "automation"
+  },
+  {
+    "term": "Dataset",
+    "category": "AI & Technology",
+    "pronunciation": "DAY-tuh-set",
+    "partOfSpeech": "noun",
+    "definition": "A collection of information organized for analysis or another defined purpose.",
+    "example": "The dataset contains only the fields needed for the approved task.",
+    "aliases": [
+      "data set"
+    ],
+    "wordNotes": "Compound of data and set.",
+    "related": "Machine learning",
+    "course": "ai-foundations",
+    "id": "dataset"
+  },
+  {
+    "term": "Generative AI",
+    "category": "AI & Technology",
+    "pronunciation": "JEN-er-uh-tiv ay eye",
+    "partOfSpeech": "noun phrase",
+    "definition": "AI systems that produce outputs such as text, images, audio, or code from learned patterns and inputs.",
+    "example": "Generative AI drafts a lesson outline that a teacher revises.",
+    "aliases": [
+      "gen AI",
+      "genAI"
+    ],
+    "wordNotes": "Generative means producing; AI abbreviates artificial intelligence.",
+    "related": "Hallucination",
+    "course": "ai-foundations",
+    "id": "generative-ai"
+  },
+  {
+    "term": "Hallucination",
+    "category": "AI & Technology",
+    "pronunciation": "huh-loo-sih-NAY-shun",
+    "partOfSpeech": "noun",
+    "definition": "In AI discussions, a plausible-sounding output that is inaccurate, invented, or unsupported.",
+    "example": "The assistant’s invented source is an AI hallucination.",
+    "aliases": [
+      "AI hallucination"
+    ],
+    "wordNotes": "A metaphor borrowed from a different clinical meaning; it is not a diagnosis of software.",
+    "related": "Verification",
+    "course": "ai-foundations",
+    "id": "hallucination"
+  },
+  {
+    "term": "Human in the loop",
+    "category": "AI & Technology",
+    "pronunciation": "HYOO-mun in thuh loop",
+    "partOfSpeech": "noun phrase",
+    "definition": "A process that includes human judgment or action at defined points.",
+    "example": "We keep a human in the loop before sending AI-written customer messages.",
+    "aliases": [
+      "HITL",
+      "human review"
+    ],
+    "wordNotes": "Process metaphor: the loop is the sequence of system activity.",
+    "related": "Automation",
+    "course": "business-workflows",
+    "id": "human-in-the-loop"
+  },
+  {
+    "term": "Integration",
+    "category": "AI & Technology",
+    "pronunciation": "in-tuh-GRAY-shun",
+    "partOfSpeech": "noun",
+    "definition": "Connecting systems so information or actions can work together.",
+    "example": "The integration connects approved form responses with a customer record.",
+    "aliases": [
+      "integrate",
+      "system connection"
+    ],
+    "wordNotes": "From integrate with the noun ending -ion.",
+    "related": "API",
+    "course": "business-workflows",
+    "id": "integration"
+  },
+  {
+    "term": "Large language model",
+    "category": "AI & Technology",
+    "pronunciation": "larj LANG-gwij MOD-ul",
+    "partOfSpeech": "noun phrase",
+    "definition": "A model trained on large amounts of language-related data to produce or analyze language.",
+    "example": "A large language model drafts possible replies but does not guarantee their truth.",
+    "aliases": [
+      "LLM"
+    ],
+    "wordNotes": "Expanded acronym; language fluency and factual accuracy are different qualities.",
+    "related": "Generative AI",
+    "course": "ai-foundations",
+    "id": "large-language-model"
+  },
+  {
+    "term": "Machine learning",
+    "category": "AI & Technology",
+    "pronunciation": "muh-SHEEN LER-ning",
+    "partOfSpeech": "noun phrase",
+    "definition": "Methods that learn patterns from data to support predictions or other tasks.",
+    "example": "Machine learning helps classify support requests using past examples.",
+    "aliases": [
+      "ML"
+    ],
+    "wordNotes": "Expanded acronym; learning here describes a computational training process.",
+    "related": "Dataset",
+    "course": "ai-foundations",
+    "id": "machine-learning"
+  },
+  {
+    "term": "Prompt",
+    "category": "AI & Technology",
+    "pronunciation": "prompt",
+    "partOfSpeech": "noun; verb",
+    "definition": "The instructions, questions, and context supplied to an AI system for a task.",
+    "example": "Our prompt states the audience, goal, constraints, and review criteria.",
+    "aliases": [
+      "prompting",
+      "AI prompt"
+    ],
+    "wordNotes": "Computing use of a word meaning to cue or encourage a response.",
+    "related": "Generative AI",
+    "course": "ai-foundations",
+    "id": "prompt"
+  },
+  {
+    "term": "Prototype",
+    "category": "AI & Technology",
+    "pronunciation": "PROH-tuh-typ",
+    "partOfSpeech": "noun; verb",
+    "definition": "An early model used to explore, explain, or test a design.",
+    "example": "The clickable prototype tests navigation before the full build.",
+    "aliases": [
+      "prototyping",
+      "mockup"
+    ],
+    "wordNotes": "From Greek elements associated with first and model; prototypes can vary in fidelity.",
+    "related": "Minimum viable product",
+    "course": "web-design",
+    "id": "prototype",
+    "wordSource": "https://www.merriam-webster.com/dictionary/prototype"
+  },
+  {
+    "term": "Verification",
+    "category": "AI & Technology",
+    "pronunciation": "ver-ih-fih-KAY-shun",
+    "partOfSpeech": "noun",
+    "definition": "Checking a claim or result against suitable evidence or requirements.",
+    "example": "Verification catches the draft’s incorrect dates before publication.",
+    "aliases": [
+      "verify",
+      "fact checking"
+    ],
+    "wordNotes": "Noun formed from verify; the check must suit the consequence of an error.",
+    "related": "Hallucination",
+    "course": "ai-foundations",
+    "id": "verification"
+  },
+  {
+    "term": "Workflow",
+    "category": "Workflows",
+    "pronunciation": "WERK-floh",
+    "partOfSpeech": "noun",
+    "definition": "An ordered set of steps, responsibilities, inputs, and outputs used to complete work.",
+    "example": "Our workflow shows who reviews a draft before it is published.",
+    "aliases": [
+      "process",
+      "work flow"
+    ],
+    "wordNotes": "Compound of work and flow.",
+    "related": "Automation",
+    "course": "business-workflows",
+    "id": "workflow"
+  },
+  {
+    "term": "Bottleneck",
+    "category": "Workflows",
+    "pronunciation": "BOT-ul-nek",
+    "partOfSpeech": "noun",
+    "definition": "A step or constraint that limits how much work a process can complete.",
+    "example": "The approval queue is the bottleneck, not the writing speed.",
+    "aliases": [
+      "constraint"
+    ],
+    "wordNotes": "Metaphor from a bottle’s narrow neck.",
+    "related": "Workflow",
+    "course": "business-workflows",
+    "id": "bottleneck"
+  },
+  {
+    "term": "Dependency",
+    "category": "Workflows",
+    "pronunciation": "dih-PEN-duhn-see",
+    "partOfSpeech": "noun",
+    "definition": "A condition or task that another task relies on.",
+    "example": "Final editing has a dependency on receiving the approved script.",
+    "aliases": [
+      "dependencies"
+    ],
+    "wordNotes": "From depend with the noun ending -ency.",
+    "related": "Milestone",
+    "course": "business-workflows",
+    "id": "dependency"
+  },
+  {
+    "term": "Feedback loop",
+    "category": "Workflows",
+    "pronunciation": "FEED-bak loop",
+    "partOfSpeech": "noun phrase",
+    "definition": "A cycle in which results inform changes to the next action or version.",
+    "example": "Learner responses create a feedback loop for improving the course.",
+    "aliases": [
+      "iteration cycle"
+    ],
+    "wordNotes": "Compound phrase describing information returning to guide a process.",
+    "related": "Iteration",
+    "course": "business-workflows",
+    "id": "feedback-loop"
+  },
+  {
+    "term": "Iteration",
+    "category": "Workflows",
+    "pronunciation": "it-er-AY-shun",
+    "partOfSpeech": "noun",
+    "definition": "A repeated cycle of making, testing, and improving something.",
+    "example": "Each iteration uses evidence from the previous test.",
+    "aliases": [
+      "iterate",
+      "iterative"
+    ],
+    "wordNotes": "From iterate, meaning to repeat.",
+    "related": "Prototype",
+    "course": "web-design",
+    "id": "iteration"
+  },
+  {
+    "term": "Metric",
+    "category": "Workflows",
+    "pronunciation": "MET-rik",
+    "partOfSpeech": "noun",
+    "definition": "A defined measurement used to describe or monitor something.",
+    "example": "Completion time is one metric, but accuracy matters too.",
+    "aliases": [
+      "metrics",
+      "measure"
+    ],
+    "wordNotes": "Measurement noun; a metric becomes a KPI only when tied to an important objective.",
+    "related": "Key performance indicator",
+    "course": "business-workflows",
+    "id": "metric"
+  },
+  {
+    "term": "Standard operating procedure",
+    "category": "Workflows",
+    "pronunciation": "STAN-derd OP-er-ay-ting pruh-SEE-jer",
+    "partOfSpeech": "noun phrase",
+    "definition": "Documented instructions for performing a recurring task consistently.",
+    "example": "The standard operating procedure includes the reviewer and exception route.",
+    "aliases": [
+      "SOP"
+    ],
+    "wordNotes": "Expanded acronym; a useful procedure describes what to do when normal steps fail.",
+    "related": "Workflow",
+    "course": "business-workflows",
+    "id": "standard-operating-procedure"
+  },
+  {
+    "term": "Accessibility",
+    "category": "Design & Learning",
+    "pronunciation": "ak-ses-uh-BIL-ih-tee",
+    "partOfSpeech": "noun",
+    "definition": "Designing so people with different abilities can perceive, understand, and use an experience.",
+    "example": "Keyboard access and readable contrast improve accessibility.",
+    "aliases": [
+      "accessible",
+      "inclusive access"
+    ],
+    "wordNotes": "From accessible with -ity; accessibility is more than visual appearance.",
+    "related": "Usability",
+    "course": "web-design",
+    "id": "accessibility"
+  },
+  {
+    "term": "Assessment",
+    "category": "Design & Learning",
+    "pronunciation": "uh-SES-muhnt",
+    "partOfSpeech": "noun",
+    "definition": "A way of gathering evidence about learning or performance.",
+    "example": "The assessment asks learners to apply the skill in a realistic scenario.",
+    "aliases": [
+      "assess",
+      "knowledge check"
+    ],
+    "wordNotes": "From assess with -ment; an assessment should match the intended skill.",
+    "related": "Learning objective",
+    "course": "learning-products",
+    "id": "assessment"
+  },
+  {
+    "term": "Instructional design",
+    "category": "Design & Learning",
+    "pronunciation": "in-STRUK-shuh-nul dih-ZYN",
+    "partOfSpeech": "noun phrase",
+    "definition": "Planning learning experiences around learner needs, goals, practice, and evidence of progress.",
+    "example": "Instructional design connects the course objective with the activity and assessment.",
+    "aliases": [
+      "ID",
+      "learning design"
+    ],
+    "wordNotes": "Compound phrase; it covers learning decisions as well as presentation.",
+    "related": "Learning objective",
+    "course": "learning-products",
+    "id": "instructional-design"
+  },
+  {
+    "term": "Learning objective",
+    "category": "Design & Learning",
+    "pronunciation": "LER-ning ub-JEK-tiv",
+    "partOfSpeech": "noun phrase",
+    "definition": "A clear statement of what a learner should be able to do after learning.",
+    "example": "The learning objective asks learners to compare two options using evidence.",
+    "aliases": [
+      "learning outcome"
+    ],
+    "wordNotes": "Education phrase; observable actions make the intended result clearer.",
+    "related": "Assessment",
+    "course": "learning-products",
+    "id": "learning-objective"
+  },
+  {
+    "term": "Responsive design",
+    "category": "Design & Learning",
+    "pronunciation": "ri-SPON-siv dih-ZYN",
+    "partOfSpeech": "noun phrase",
+    "definition": "A design approach that adapts layout to different screens and conditions.",
+    "example": "Responsive design keeps the form usable on a narrow phone screen.",
+    "aliases": [
+      "responsive website"
+    ],
+    "wordNotes": "Web design phrase; adaptation should preserve usability, not just shrink text.",
+    "related": "Accessibility",
+    "course": "web-design",
+    "id": "responsive-design"
+  },
+  {
+    "term": "Usability",
+    "category": "Design & Learning",
+    "pronunciation": "yoo-zuh-BIL-ih-tee",
+    "partOfSpeech": "noun",
+    "definition": "How effectively, efficiently, and satisfactorily intended users can complete tasks in context.",
+    "example": "We test usability by watching someone complete a real task.",
+    "aliases": [
+      "usable",
+      "user experience"
+    ],
+    "wordNotes": "From usable with -ity; attractive appearance alone does not establish usability.",
+    "related": "Accessibility",
+    "course": "web-design",
+    "id": "usability"
+  },
+  {
+    "term": "Burn rate",
+    "category": "Business Lingo",
+    "pronunciation": "bern rayt",
+    "partOfSpeech": "noun phrase",
+    "definition": "The speed at which a business uses cash; specify whether you mean gross spending or net cash loss.",
+    "example": "We track net burn rate to understand how long our current cash can last.",
+    "aliases": [
+      "cash burn"
+    ],
+    "wordNotes": "Business metaphor: burn refers to using cash, not literal fire.",
+    "related": "Runway",
+    "course": "small-business",
+    "id": "burn-rate"
+  },
+  {
+    "term": "Low-hanging fruit",
+    "category": "Business Lingo",
+    "pronunciation": "loh HANG-ing froot",
+    "partOfSpeech": "noun phrase",
+    "definition": "An informal way to describe an opportunity that seems easier to achieve than alternatives.",
+    "example": "Fixing a broken signup link is low-hanging fruit compared with a full redesign.",
+    "aliases": [
+      "quick win"
+    ],
+    "wordNotes": "Metaphor from fruit that is easy to reach; easy still needs to be worthwhile.",
+    "related": "Scope",
+    "course": "business-workflows",
+    "id": "low-hanging-fruit"
+  },
+  {
+    "term": "Move the needle",
+    "category": "Business Lingo",
+    "pronunciation": "moov thuh NEE-dul",
+    "partOfSpeech": "verb phrase",
+    "definition": "To make a noticeable change in an important result.",
+    "example": "We ask whether the new feature will move the needle on customer success.",
+    "aliases": [
+      "meaningful impact"
+    ],
+    "wordNotes": "Informal metaphor from a gauge’s moving indicator.",
+    "related": "Key performance indicator",
+    "course": "digital-marketing",
+    "id": "move-the-needle"
+  },
+  {
+    "term": "North star metric",
+    "category": "Business Lingo",
+    "pronunciation": "north star MET-rik",
+    "partOfSpeech": "noun phrase",
+    "definition": "A central measure chosen to reflect the value a product delivers and guide decisions.",
+    "example": "The team chooses a north star metric and checks supporting measures too.",
+    "aliases": [
+      "north star"
+    ],
+    "wordNotes": "Metaphor based on a guiding star; no single measure captures everything.",
+    "related": "Metric",
+    "course": "business-workflows",
+    "id": "north-star-metric"
+  },
+  {
+    "term": "Runway",
+    "category": "Business Lingo",
+    "pronunciation": "RUN-way",
+    "partOfSpeech": "noun",
+    "definition": "An estimate of how long available cash can support operations at an assumed net burn rate.",
+    "example": "If cash is $20,000 and monthly net burn stays $2,000, estimated runway is ten months.",
+    "aliases": [
+      "cash runway"
+    ],
+    "wordNotes": "Business metaphor from the distance available before takeoff; assumptions can change.",
+    "related": "Burn rate",
+    "course": "small-business",
+    "id": "runway"
+  },
+  {
+    "term": "Scope creep",
+    "category": "Business Lingo",
+    "pronunciation": "skohp kreep",
+    "partOfSpeech": "noun phrase",
+    "definition": "Uncontrolled growth in project work without appropriate changes to time, cost, or agreement.",
+    "example": "Extra features become scope creep when nobody updates the agreed plan.",
+    "aliases": [
+      "feature creep"
+    ],
+    "wordNotes": "Project metaphor: creep describes gradual, sometimes unnoticed expansion.",
+    "related": "Scope",
+    "course": "business-workflows",
+    "id": "scope-creep"
+  },
+  {
+    "term": "Skin in the game",
+    "category": "Business Lingo",
+    "pronunciation": "skin in thuh gaym",
+    "partOfSpeech": "noun phrase",
+    "definition": "Having a personal stake in a decision’s outcome.",
+    "example": "The partner has skin in the game because their own resources are at risk.",
+    "aliases": [
+      "personal stake"
+    ],
+    "wordNotes": "Informal idiom; use clearer wording when the audience may not know it.",
+    "related": "Stakeholder",
+    "course": "small-business",
+    "id": "skin-in-the-game"
+  },
+  {
+    "term": "Synergy",
+    "category": "Business Lingo",
+    "pronunciation": "SIN-er-jee",
+    "partOfSpeech": "noun",
+    "definition": "A combined effect that is better than the parts working separately, when evidence supports the claim.",
+    "example": "Shared research creates synergy if both teams can use it effectively.",
+    "aliases": [
+      "collaboration benefit"
+    ],
+    "wordNotes": "From Greek synergos, meaning working together; it is often used vaguely in business.",
+    "related": "Integration",
+    "course": "business-workflows",
+    "id": "synergy",
+    "wordSource": "https://www.merriam-webster.com/dictionary/synergy"
+  },
+  {
+    "term": "Accounting",
+    "id": "accounting",
+    "category": "Finance",
+    "pronunciation": "uh-KOUN-ting",
+    "partOfSpeech": "noun",
+    "definition": "Organizing, interpreting, and reporting financial information about a business.",
+    "example": "Accounting turns transaction records into statements that support decisions.",
+    "aliases": [
+      "accountant",
+      "financial reporting"
+    ],
+    "wordNotes": "Formed from account and -ing; bookkeeping is one part of accounting.",
+    "related": "Bookkeeping",
+    "course": "small-business"
+  },
+  {
+    "term": "Profit",
+    "id": "profit",
+    "category": "Finance",
+    "pronunciation": "PROF-it",
+    "partOfSpeech": "noun",
+    "definition": "The amount by which revenue exceeds the costs included in a stated calculation.",
+    "example": "We specify gross or net profit so everyone knows which costs were deducted.",
+    "aliases": [
+      "profits",
+      "earnings"
+    ],
+    "wordNotes": "Business noun; profit can also be a verb meaning to gain a benefit.",
+    "related": "Revenue",
+    "course": "small-business"
+  },
+  {
+    "term": "Markup",
+    "id": "markup",
+    "category": "Finance",
+    "pronunciation": "MARK-up",
+    "partOfSpeech": "noun",
+    "definition": "The amount added to cost to set a selling price, often expressed as a percentage of cost.",
+    "example": "A $10 cost with a 50 percent markup gives a $15 selling price, before any other charges.",
+    "aliases": [
+      "mark up",
+      "price markup"
+    ],
+    "wordNotes": "Compound of mark and up; markup uses cost as its base, while margin uses revenue.",
+    "related": "Margin",
+    "course": "small-business"
+  }
+]
