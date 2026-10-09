@@ -1,0 +1,125 @@
+{
+  "why": {
+    "id": "u4ZoJKF_VuA",
+    "title": "Start with why: How great leaders inspire action",
+    "speaker": "Simon Sinek",
+    "publisher": "TEDx Talks",
+    "start": 0,
+    "focus": "Start at 00:00. Listen for the difference between why, how, and what. Pause after that explanation and write your own three sentences.",
+    "source": "https://www.youtube.com/watch?v=u4ZoJKF_VuA",
+    "type": "Leadership framework",
+    "status": "proposed-licensing-review"
+  },
+  "habits": {
+    "id": "rtufWBLOXgw",
+    "title": "James Clear on habits and systems",
+    "speaker": "James Clear with Steven Bartlett",
+    "publisher": "The Diary Of A CEO",
+    "start": 167,
+    "focus": "Start at 02:47 for the published chapter on human behavior. At 05:01, consider one way to stick to a habit. Return to 00:00 for the full conversation.",
+    "source": "https://www.youtube.com/watch?v=rtufWBLOXgw",
+    "type": "Interview and practical reflection"
+  },
+  "mindset": {
+    "id": "_X0mgOOSpLU",
+    "title": "The power of believing that you can improve",
+    "speaker": "Carol Dweck",
+    "publisher": "TED",
+    "start": 0,
+    "focus": "Start at 00:00. Notice how she explains a challenge that you cannot solve yet. Name one skill you can practice rather than calling yourself bad at it.",
+    "source": "https://www.youtube.com/watch?v=_X0mgOOSpLU",
+    "type": "Research-informed talk",
+    "status": "proposed-licensing-review"
+  },
+  "ai": {
+    "id": "5p248yoa3oE",
+    "title": "Opportunities in AI, 2023",
+    "speaker": "Andrew Ng",
+    "publisher": "Stanford Online",
+    "start": 0,
+    "focus": "Start at 00:00. Use the talk as a foundation. Write down one task, one possible use of AI, and one result you would need to check. Product examples are from 2023.",
+    "source": "https://www.youtube.com/watch?v=5p248yoa3oE",
+    "type": "Technical overview"
+  },
+  "work": {
+    "id": "hgWrmnFTnMs",
+    "title": "Generative AI & the Disruption of Work",
+    "speaker": "Ethan Mollick",
+    "publisher": "The Wharton School",
+    "start": 0,
+    "focus": "Start at 00:00. Separate demonstrations from claims about every workplace. Sketch a small task where you could compare your work with an AI-assisted draft. This talk is from 2023.",
+    "source": "https://www.youtube.com/watch?v=hgWrmnFTnMs",
+    "type": "Research and workplace examples"
+  },
+  "ideas": {
+    "id": "vDXkpJw16os",
+    "title": "How to Get and Test Startup Ideas",
+    "speaker": "Michael Seibel",
+    "publisher": "Y Combinator",
+    "start": 0,
+    "focus": "Start at 00:00. Identify the customer and the problem before choosing software. This is a startup perspective; adapt the exercise to a small local or online business.",
+    "source": "https://www.youtube.com/watch?v=vDXkpJw16os",
+    "type": "Founder education"
+  },
+  "mvp": {
+    "id": "QRZ_l7cVzzU",
+    "title": "How to Build An MVP",
+    "speaker": "Michael Seibel",
+    "publisher": "Y Combinator",
+    "start": 0,
+    "focus": "Start at 00:00. MVP means the smallest useful version you can test. Write what your first version must do and what can wait.",
+    "source": "https://www.youtube.com/watch?v=QRZ_l7cVzzU",
+    "type": "Product-building lesson"
+  },
+  "seo": {
+    "id": "wvJIOQndzow",
+    "title": "Introducing SEO Made Easy!",
+    "speaker": "Martin Splitt",
+    "publisher": "Google Search Central",
+    "start": 0,
+    "focus": "Start at 00:00. This short introduction points into the official series. Use it to begin a list of website questions, then check the current written guidance.",
+    "source": "https://www.youtube.com/watch?v=wvJIOQndzow",
+    "type": "Official series introduction"
+  },
+  "html": {
+    "id": "LGQuIIv2RVA",
+    "title": "HTML and CSS for Beginners Part 1: Introduction to HTML",
+    "speaker": "Kevin Powell",
+    "publisher": "Kevin Powell",
+    "start": 0,
+    "focus": "Start at 00:00. Look for the job of an HTML element. Build one heading and one paragraph before worrying about visual design.",
+    "source": "https://www.youtube.com/watch?v=LGQuIIv2RVA",
+    "type": "Hands-on tutorial"
+  },
+  "music": {
+    "id": "y7gKlzvg8xk",
+    "title": "Jacob Collier x Gen Music | Google Lab Sessions",
+    "speaker": "Jacob Collier",
+    "publisher": "Google",
+    "start": 0,
+    "focus": "Start at 00:00. Notice the human choices while sound changes. This is an experimental tool demonstration, not a release-rights guide.",
+    "source": "https://www.youtube.com/watch?v=y7gKlzvg8xk",
+    "type": "Creative demonstration"
+  },
+  "album": {
+    "id": "8VNCDorJjWk",
+    "title": "Has Spotify Killed The Album?",
+    "speaker": "Rick Beato",
+    "publisher": "Rick Beato",
+    "start": 0,
+    "focus": "Start at 00:00. Listen for his argument about albums and audience connection. Treat it as an industry opinion to evaluate, not a rule for every artist.",
+    "source": "https://www.youtube.com/watch?v=8VNCDorJjWk",
+    "type": "Industry commentary"
+  },
+  "teach": {
+    "id": "hJP5GqnTrNo",
+    "title": "How AI Could Save (Not Destroy) Education",
+    "speaker": "Sal Khan",
+    "publisher": "TED",
+    "start": 0,
+    "focus": "Start at 00:00. Identify one teaching use, one benefit claimed, and one question you would test. The talk presents a vision and demonstrations from 2023.",
+    "source": "https://www.youtube.com/watch?v=hJP5GqnTrNo",
+    "type": "Education demonstration and vision",
+    "status": "proposed-licensing-review"
+  }
+}

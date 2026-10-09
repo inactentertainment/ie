@@ -1,0 +1,689 @@
+[
+  {
+    "id": "purpose-momentum",
+    "order": 1,
+    "title": "Purpose & Momentum",
+    "deck": "Build a reason to begin and a routine that helps you keep going.",
+    "outcome": "Write your purpose statement and a realistic seven-day learning plan.",
+    "stage": "Foundation",
+    "videos": [
+      "habits"
+    ],
+    "modules": [
+      {
+        "title": "Start with purpose",
+        "lessons": [
+          "What matters to you and whom you want to help",
+          "Your why, how, and what in plain words"
+        ]
+      },
+      {
+        "title": "Learn without feeling lost",
+        "lessons": [
+          "How to learn a new skill as an adult",
+          "Turn a large goal into one small practice"
+        ]
+      },
+      {
+        "title": "Build useful habits",
+        "lessons": [
+          "Make practice easier to begin",
+          "Create a routine and review it weekly"
+        ]
+      },
+      {
+        "title": "Confidence through action",
+        "lessons": [
+          "Use feedback without giving up",
+          "Separate a setback from your identity"
+        ]
+      },
+      {
+        "title": "Communication and leadership",
+        "lessons": [
+          "Explain your idea so people understand it",
+          "Listen, ask better questions, and lead with a clear purpose"
+        ]
+      },
+      {
+        "title": "Your first learning project",
+        "lessons": [
+          "Choose a meaningful problem",
+          "Build a seven-day plan and reflect on what changed"
+        ]
+      }
+    ],
+    "url": "courses/purpose-momentum.html",
+    "published": [],
+    "resources": [
+      [
+        "James Clear on habits",
+        "https://jamesclear.com/"
+      ],
+      [
+        "The Diary Of A CEO",
+        "https://www.youtube.com/TheDiaryOfACEO"
+      ]
+    ]
+  },
+  {
+    "id": "ai-foundations",
+    "order": 2,
+    "title": "AI Foundations",
+    "deck": "Understand what AI does before asking it to do important work.",
+    "outcome": "Create and check a useful AI-assisted draft.",
+    "stage": "Foundation",
+    "videos": [
+      "ai",
+      "work"
+    ],
+    "modules": [
+      {
+        "title": "What AI actually means",
+        "lessons": [
+          "AI, machine learning, and generative AI",
+          "How a model differs from an app or a search engine"
+        ]
+      },
+      {
+        "title": "Your first useful prompt",
+        "lessons": [
+          "Give a task, context, and a clear result",
+          "Improve a draft through a conversation"
+        ]
+      },
+      {
+        "title": "Check the answer",
+        "lessons": [
+          "Find and read the original source",
+          "Spot guesses, invented details, and missing context"
+        ]
+      },
+      {
+        "title": "Use your judgment",
+        "lessons": [
+          "What you should review yourself",
+          "Privacy, consent, and information you should keep out"
+        ]
+      },
+      {
+        "title": "Choose tools by the task",
+        "lessons": [
+          "Compare tools without chasing every release",
+          "Understand free plans, paid features, and changing limits"
+        ]
+      },
+      {
+        "title": "Your first AI project",
+        "lessons": [
+          "Create a simple brief or planning aid",
+          "Test it, revise it, and explain what helped"
+        ]
+      }
+    ],
+    "url": "courses/ai-foundations.html",
+    "published": [],
+    "resources": [
+      [
+        "Wharton AI teaching and work resources",
+        "https://mackinstitute.wharton.upenn.edu/2023/watch-chatgpt-for-work-training-and-education/"
+      ]
+    ]
+  },
+  {
+    "id": "everyday-ai",
+    "order": 3,
+    "title": "Everyday Life with AI",
+    "deck": "Use technology to handle time, information, work, and daily decisions.",
+    "outcome": "Build a personal routine with clear human review points.",
+    "stage": "Daily life",
+    "videos": [
+      "habits",
+      "ai"
+    ],
+    "modules": [
+      {
+        "title": "Time and attention",
+        "lessons": [
+          "Plan a week that fits your real commitments",
+          "Turn a long task list into useful next steps"
+        ]
+      },
+      {
+        "title": "Learn and research",
+        "lessons": [
+          "Ask questions at the right level",
+          "Compare sources and keep useful notes"
+        ]
+      },
+      {
+        "title": "Money organization",
+        "lessons": [
+          "Organize a household budget with verified numbers",
+          "Use AI to prepare questions rather than make financial decisions"
+        ]
+      },
+      {
+        "title": "Work and career",
+        "lessons": [
+          "Describe your skills and explore roles",
+          "Draft a resume and practice an interview honestly"
+        ]
+      },
+      {
+        "title": "Clear communication",
+        "lessons": [
+          "Write emails, prepare meetings, and resolve confusion",
+          "Use translation and accessibility tools thoughtfully"
+        ]
+      },
+      {
+        "title": "Your personal life flow",
+        "lessons": [
+          "Build reminders and checklists",
+          "Review what to automate and what to decide yourself"
+        ]
+      }
+    ],
+    "url": "courses/everyday-ai.html",
+    "published": [],
+    "resources": [
+      [
+        "CFPB consumer tools",
+        "https://www.consumerfinance.gov/consumer-tools/"
+      ]
+    ]
+  },
+  {
+    "id": "small-business",
+    "order": 4,
+    "title": "Start & Grow a Small Business",
+    "deck": "Go from an idea to an offer, customers, and a business you can operate.",
+    "outcome": "Draft a one-page business plan and a first-customer experiment.",
+    "stage": "Business foundation",
+    "videos": [
+      "ideas",
+      "mvp"
+    ],
+    "modules": [
+      {
+        "title": "Understand the business",
+        "lessons": [
+          "What problem you solve and who has it",
+          "Business models, customers, and value"
+        ]
+      },
+      {
+        "title": "Test before spending",
+        "lessons": [
+          "Talk to potential customers",
+          "Build the smallest useful offer"
+        ]
+      },
+      {
+        "title": "Plan the basics",
+        "lessons": [
+          "Costs, pricing, revenue, profit, and cash flow",
+          "Find official registration, licensing, and tax information"
+        ]
+      },
+      {
+        "title": "Find your first customers",
+        "lessons": [
+          "Explain the offer and make buying clear",
+          "Practice customer service and follow-up"
+        ]
+      },
+      {
+        "title": "Run and improve",
+        "lessons": [
+          "Keep records and measure useful progress",
+          "Choose when to expand and when to simplify"
+        ]
+      },
+      {
+        "title": "Your business launch plan",
+        "lessons": [
+          "Use AI to organize research without inventing facts",
+          "Present an offer, budget, and a 30-day test"
+        ]
+      }
+    ],
+    "url": "courses/small-business.html",
+    "published": [],
+    "resources": [
+      [
+        "SBA business planning",
+        "https://www.sba.gov/counseling/plan-your-business/"
+      ],
+      [
+        "SCORE mentoring and workshops",
+        "https://www.score.org/"
+      ]
+    ]
+  },
+  {
+    "id": "business-funding",
+    "order": 5,
+    "title": "Funding Your Business",
+    "deck": "Learn the options, costs, documents, and questions behind business funding.",
+    "outcome": "Prepare a funding-readiness checklist and compare options using verified terms.",
+    "stage": "Business money",
+    "videos": [],
+    "modules": [
+      {
+        "title": "Understand the need",
+        "lessons": [
+          "Why the business needs money and when",
+          "Separate startup costs, working capital, and equipment"
+        ]
+      },
+      {
+        "title": "Know the options",
+        "lessons": [
+          "Self-funding, loans, credit lines, and equity",
+          "SBA programs, community lenders, and grant limitations"
+        ]
+      },
+      {
+        "title": "Read the terms",
+        "lessons": [
+          "Interest, fees, repayment, collateral, and guarantees",
+          "Compare total cost and the effect on cash flow"
+        ]
+      },
+      {
+        "title": "Prepare the evidence",
+        "lessons": [
+          "Business plans, financial statements, and projections",
+          "Organize records and explain assumptions"
+        ]
+      },
+      {
+        "title": "Use AI for preparation",
+        "lessons": [
+          "Create a document checklist and draft questions",
+          "Verify providers, protect sensitive data, and review every claim"
+        ]
+      },
+      {
+        "title": "Your funding-readiness brief",
+        "lessons": [
+          "Compare two options with verified figures",
+          "Prepare for a lender or adviser conversation"
+        ]
+      }
+    ],
+    "url": "courses/business-funding.html",
+    "published": [],
+    "resources": [
+      [
+        "SBA loan programs",
+        "https://www.sba.gov/funding-programs/loans"
+      ],
+      [
+        "SCORE financial readiness and mentoring",
+        "https://www.score.org/"
+      ],
+      [
+        "Official SBA video channel",
+        "https://www.youtube.com/sba"
+      ]
+    ]
+  },
+  {
+    "id": "business-workflows",
+    "order": 6,
+    "title": "AI Workflows for Business",
+    "deck": "Connect tasks, people, tools, and review so work moves forward.",
+    "outcome": "Design and test one small business workflow.",
+    "stage": "Business systems",
+    "videos": [
+      "work",
+      "ai"
+    ],
+    "modules": [
+      {
+        "title": "See the process",
+        "lessons": [
+          "Map the steps from request to result",
+          "Find delays, repeated work, and missing information"
+        ]
+      },
+      {
+        "title": "Make a repeatable workflow",
+        "lessons": [
+          "Rules, checklists, and standard procedures",
+          "Choose where AI can draft, sort, or summarize"
+        ]
+      },
+      {
+        "title": "Use good information",
+        "lessons": [
+          "Keep business knowledge organized",
+          "Connect answers to approved source material"
+        ]
+      },
+      {
+        "title": "Understand automation and agents",
+        "lessons": [
+          "When a fixed rule is enough",
+          "What an agent can do and who authorizes actions"
+        ]
+      },
+      {
+        "title": "Test the real cases",
+        "lessons": [
+          "Use incomplete, mixed, and unusual requests",
+          "Count review time, errors, and exceptions"
+        ]
+      },
+      {
+        "title": "Your workflow pilot",
+        "lessons": [
+          "Write an intake and review process",
+          "Test the pilot before expanding its permissions"
+        ]
+      }
+    ],
+    "url": "courses/business-workflows.html",
+    "published": [
+      {
+        "module": 3,
+        "slug": "business-agents"
+      }
+    ],
+    "resources": [
+      [
+        "Wharton workplace learning",
+        "https://knowledge.wharton.upenn.edu/faculty/ethan-mollick/"
+      ]
+    ]
+  },
+  {
+    "id": "digital-marketing",
+    "order": 7,
+    "title": "Digital Marketing & Social Media",
+    "deck": "Help the right people find, understand, and choose your work.",
+    "outcome": "Build an audience plan and a measurable content experiment.",
+    "stage": "Reach and growth",
+    "videos": [
+      "seo",
+      "ideas"
+    ],
+    "modules": [
+      {
+        "title": "Marketing before posting",
+        "lessons": [
+          "Audience, offer, positioning, and trust",
+          "Customer journeys and useful next steps"
+        ]
+      },
+      {
+        "title": "Social media foundations",
+        "lessons": [
+          "Choose platforms by people and purpose",
+          "Build a profile, content pillars, and a posting rhythm"
+        ]
+      },
+      {
+        "title": "Create useful content",
+        "lessons": [
+          "Tell a clear story with text, images, and video",
+          "Use AI for drafts while checking claims and tone"
+        ]
+      },
+      {
+        "title": "Search and discovery",
+        "lessons": [
+          "SEO basics and useful website content",
+          "What changes in AI search and what still matters"
+        ]
+      },
+      {
+        "title": "Measure and improve",
+        "lessons": [
+          "Reach, engagement, inquiries, and actual outcomes",
+          "Test an idea without making unsupported promises"
+        ]
+      },
+      {
+        "title": "Your campaign experiment",
+        "lessons": [
+          "Build a simple content calendar",
+          "Review results and choose the next adjustment"
+        ]
+      }
+    ],
+    "url": "courses/digital-marketing.html",
+    "published": [
+      {
+        "module": 3,
+        "slug": "ai-search-marketing"
+      }
+    ],
+    "resources": [
+      [
+        "HubSpot social media course",
+        "https://academy.hubspot.com/courses/social-media"
+      ],
+      [
+        "Google Search Central",
+        "https://developers.google.com/search/docs/fundamentals/creating-helpful-content"
+      ]
+    ]
+  },
+  {
+    "id": "web-design",
+    "order": 8,
+    "title": "Web Design & Interactive Apps",
+    "deck": "Learn how pages become useful experiences people can actually use.",
+    "outcome": "Build a responsive, accessible business page or small interactive tool.",
+    "stage": "Build and create",
+    "videos": [
+      "html",
+      "mvp"
+    ],
+    "modules": [
+      {
+        "title": "How the web works",
+        "lessons": [
+          "Domains, hosting, browsers, and files",
+          "HTML for structure, CSS for style, JavaScript for behavior"
+        ]
+      },
+      {
+        "title": "Plan the experience",
+        "lessons": [
+          "What a visitor needs to understand and do",
+          "Page structure, navigation, and clear calls to action"
+        ]
+      },
+      {
+        "title": "Build for real devices",
+        "lessons": [
+          "Layouts that adapt to phones and computers",
+          "Readable type, contrast, keyboard access, and motion choices"
+        ]
+      },
+      {
+        "title": "Add useful interaction",
+        "lessons": [
+          "Forms, calculators, and local browser saving",
+          "Understand what needs a server or an account"
+        ]
+      },
+      {
+        "title": "Build with AI and review",
+        "lessons": [
+          "Ask for code you can explain",
+          "Test links, inputs, errors, and loading behavior"
+        ]
+      },
+      {
+        "title": "Your first published project",
+        "lessons": [
+          "Use GitHub and static hosting",
+          "Document the project and make the next revision"
+        ]
+      }
+    ],
+    "url": "courses/web-design.html",
+    "published": [],
+    "resources": [
+      [
+        "Kevin Powell beginner learning",
+        "https://thecascade.dev/courses/html-css-beginners/"
+      ],
+      [
+        "freeCodeCamp curriculum",
+        "https://www.freecodecamp.org/learn/"
+      ]
+    ]
+  },
+  {
+    "id": "music-ai",
+    "order": 9,
+    "title": "The Music Industry & AI",
+    "deck": "Understand the industry first, then learn to direct an AI music experiment.",
+    "outcome": "Plan a small release with clear roles, records, and listening goals.",
+    "stage": "Creative industry",
+    "videos": [
+      "music",
+      "album"
+    ],
+    "modules": [
+      {
+        "title": "How the industry took shape",
+        "lessons": [
+          "From sheet music and records to radio and streaming",
+          "How technology changed listening and discovery"
+        ]
+      },
+      {
+        "title": "Who does what",
+        "lessons": [
+          "Artists, writers, producers, managers, labels, and publishers",
+          "Songs and recordings are different things"
+        ]
+      },
+      {
+        "title": "How music reaches listeners",
+        "lessons": [
+          "Distribution, platforms, playlists, live shows, and audience building",
+          "Revenue sources, credits, and royalty concepts"
+        ]
+      },
+      {
+        "title": "Create with intention",
+        "lessons": [
+          "Musical basics, listening, lyrics, and a creative brief",
+          "Compare drafts, arrange a song, and review the result"
+        ]
+      },
+      {
+        "title": "Add AI thoughtfully",
+        "lessons": [
+          "Generated music, stems, MIDI, and human direction",
+          "Real-time music and experimental artist identities"
+        ]
+      },
+      {
+        "title": "Prepare a release",
+        "lessons": [
+          "Review permissions, terms, credits, and delivery requirements",
+          "Build a release plan and measure useful listener response"
+        ]
+      }
+    ],
+    "url": "courses/music-ai.html",
+    "published": [
+      {
+        "module": 3,
+        "slug": "ai-music-production"
+      },
+      {
+        "module": 4,
+        "slug": "realtime-music"
+      },
+      {
+        "module": 4,
+        "slug": "ai-artist-identities"
+      }
+    ],
+    "resources": [
+      [
+        "Google music research and tools",
+        "https://deepmind.google/models/lyria/"
+      ],
+      [
+        "U.S. Copyright Office AI resources",
+        "https://www.copyright.gov/ai/"
+      ]
+    ]
+  },
+  {
+    "id": "learning-products",
+    "order": 10,
+    "title": "Teach, Create & Sell Digital Products",
+    "deck": "Turn something useful you know into a lesson, tool, or digital resource.",
+    "outcome": "Design one useful learning product and a small feedback test.",
+    "stage": "Build and teach",
+    "videos": [
+      "work",
+      "mvp"
+    ],
+    "modules": [
+      {
+        "title": "Start with the learner",
+        "lessons": [
+          "Identify the problem and the starting skill",
+          "Write an outcome someone can demonstrate"
+        ]
+      },
+      {
+        "title": "Teach in small steps",
+        "lessons": [
+          "Explain, model, practice, and give feedback",
+          "Use questions throughout rather than only at the end"
+        ]
+      },
+      {
+        "title": "Choose the product",
+        "lessons": [
+          "Lessons, templates, journals, apps, and toolkits",
+          "Make the product usable and accessible"
+        ]
+      },
+      {
+        "title": "Use AI in the build",
+        "lessons": [
+          "Create drafts, examples, and practice activities",
+          "Check accuracy, rights, and the learning experience"
+        ]
+      },
+      {
+        "title": "Package and present",
+        "lessons": [
+          "Describe what the customer gets",
+          "Price, deliver, support, and collect useful feedback"
+        ]
+      },
+      {
+        "title": "Your first learning product",
+        "lessons": [
+          "Prototype a short lesson or tool",
+          "Test it with a learner and improve the design"
+        ]
+      }
+    ],
+    "url": "courses/learning-products.html",
+    "published": [],
+    "resources": [
+      [
+        "Khan Academy learning resources",
+        "https://www.khanacademy.org/"
+      ]
+    ]
+  }
+]

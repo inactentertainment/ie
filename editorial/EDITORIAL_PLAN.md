@@ -1,8 +1,8 @@
-# InAct Articles & Insights — 50-feature editorial plan
+# InAct Courses: deeper-lesson assignment archive
 
 Target: 50 original features, each 3,000–4,000 words.
 Completed long-form features: 5. Remaining full-length features: 45.
-Existing quick reads remain available separately while the full-length collection is written.
+The quick reads are retired. The course-first curriculum in COURSE_BLUEPRINT.md now governs sequencing; the titles below remain deeper-lesson assignments to map into relevant modules.
 
 Editorial standard: primary references, dated developments, explicit distinctions between reported facts and original analysis, labeled hypothetical examples, practical exercises, and no unsupported viral rankings.
 

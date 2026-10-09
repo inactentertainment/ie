@@ -199,7 +199,17 @@
         "answer": 1,
         "why": "A defined comparison creates information you can apply."
       }
-    ]
+    ],
+    "legacyIndex": 20,
+    "watch": [
+      "music",
+      "album"
+    ],
+    "primer": {
+      "title": "Before you begin",
+      "text": "A song is the musical work: words and melody. A recording is one captured version of that work. A writer develops the song. A producer helps shape the recording. Distribution gets a release to listening services. AI can help create material, but people still need to choose what to keep, explain the project, and check the rules for release. Start with a short goal: what should the listener hear or feel?",
+      "terms": "Creative brief: a short plan for the sound you want.\nArrangement: how the parts of a song are organized.\nStem: an audio file containing a separated part or group of parts.\nMIDI: note and control information, rather than a finished audio recording."
+    }
   },
   {
     "slug": "ai-search-marketing",
@@ -401,7 +411,17 @@
         "answer": 1,
         "why": "An increase is an observation, not an established causal explanation."
       }
-    ]
+    ],
+    "legacyIndex": 21,
+    "watch": [
+      "seo",
+      "ideas"
+    ],
+    "primer": {
+      "title": "Before you begin",
+      "text": "Marketing helps people understand an offer. Search helps them find information. SEO means making a website easier for search systems and people to understand. AI search can produce an answer using information from different places. Your first job is still simple: answer a real customer question clearly, support your claims, and make the next step easy to find.",
+      "terms": "Audience: the people you want to help.\nOffer: what someone gets and under what terms.\nQualified inquiry: a request that fits the business’s defined needs.\nConversion: a chosen action, such as an inquiry, not always a sale."
+    }
   },
   {
     "slug": "business-agents",
@@ -614,7 +634,17 @@
         "answer": 1,
         "why": "A pilot needs operational evidence and clear boundaries."
       }
-    ]
+    ],
+    "legacyIndex": 22,
+    "watch": [
+      "work",
+      "ai"
+    ],
+    "primer": {
+      "title": "Before you begin",
+      "text": "A workflow is a series of steps that turns a request into a result. A rule follows a set instruction. An AI model can help draft or sort information. An agent can choose and use tools within the limits it is given. None of these things gets to decide its own business authority. Begin by mapping one task and choosing who reviews the result.",
+      "terms": "Input: information that starts the task.\nOutput: the result the task should produce.\nApproval gate: a point where a person must review or allow an action.\nMCP: a connection standard for tools and context; it does not grant permission by itself."
+    }
   },
   {
     "slug": "realtime-music",
@@ -816,7 +846,17 @@
       "Number of sliders"
     ],
     "answer": 0,
-    "why": "Measures should connect to the intended visitor experience."
+    "why": "Measures should connect to the intended visitor experience.",
+    "legacyIndex": 23,
+    "watch": [
+      "music",
+      "ai"
+    ],
+    "primer": {
+      "title": "Before you begin",
+      "text": "An ordinary player plays a recording that already exists. A real-time music tool can create new sound while you use its controls. You might ask for more rhythm or a different texture, then listen to what happens. The important question is whether the change matches what you meant. This lesson studies the interaction, not just how impressive the music sounds.",
+      "terms": "Generative: creating new material from learned patterns.\nTexture: how the sounds combine and feel together.\nDensity: how much musical activity is present.\nFeedback loop: act, notice the result, and decide what to do next."
+    }
   },
   {
     "slug": "ai-artist-identities",
@@ -1018,6 +1058,16 @@
       "Only the finished image"
     ],
     "answer": 0,
-    "why": "A useful record supports specific questions about the release."
+    "why": "A useful record supports specific questions about the release.",
+    "legacyIndex": 24,
+    "watch": [
+      "album",
+      "music"
+    ],
+    "primer": {
+      "title": "Before you begin",
+      "text": "A music project can use a fictional character without pretending the character is a real singer. A persona is the identity presented to listeners. A performer is a person who performs. A human artist can use AI without becoming a fictional persona. Explain the project, the identity, and the responsible people separately. Then listeners can choose to explore it with a clear understanding.",
+      "terms": "Persona: a presented identity or character.\nProduction credit: information about who or what contributed to a recording.\nAudience promise: the experience a project aims to offer.\nRelease record: notes about materials, decisions, reviews, and permissions checked."
+    }
   }
 ]
