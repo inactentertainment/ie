@@ -17,7 +17,8 @@
     "alternates": [
       "OnAS7efua64"
     ],
-    "theme": "Instrumental space for reflection and focused work."
+    "theme": "Instrumental space for reflection and focused work.",
+    "instrumental": true
   },
   {
     "genre": "Blues",
@@ -37,7 +38,8 @@
     "alternates": [
       "FW_KCau2iTI"
     ],
-    "theme": "A familiar piano piece for a quieter learning moment."
+    "theme": "A familiar piano piece for a quieter learning moment.",
+    "instrumental": true
   },
   {
     "genre": "Country",
@@ -63,7 +65,8 @@
     "title": "Rockit",
     "videoId": "GHhD4PD75zY",
     "alternates": [],
-    "theme": "An instrumental crossover where technology meets musical invention."
+    "theme": "An instrumental crossover where technology meets musical invention.",
+    "instrumental": true
   },
   {
     "genre": "Funk",
@@ -87,13 +90,12 @@
   },
   {
     "genre": "Hip-Hop",
-    "artist": "Will Smith",
-    "title": "Gettin' Jiggy Wit It",
-    "videoId": "3JcmQONgXJM",
-    "alternates": [
-      "5VPm2yckO3k"
-    ],
-    "theme": "A familiar, profanity-free party favorite."
+    "artist": "Nas",
+    "title": "I Can",
+    "videoId": "RvVfgvHucRY",
+    "alternates": [],
+    "theme": "Encouragement to learn, work, and believe in your potential. Includes mature cautionary storytelling.",
+    "lyricsUrl": "https://music.apple.com/us/song/685699857"
   },
   {
     "genre": "House / Club",
@@ -132,7 +134,8 @@
     "title": "Aruarian Dance",
     "videoId": "qYcoJpqCha4",
     "alternates": [],
-    "theme": "Instrumental jazz-hop for a calm creative flow."
+    "theme": "Instrumental jazz-hop for a calm creative flow.",
+    "instrumental": true
   },
   {
     "genre": "Pop",
@@ -185,6 +188,36 @@
     "title": "Chariots of Fire",
     "videoId": "8a-HfNE3EIo",
     "alternates": [],
-    "theme": "An instrumental theme with a sense of purpose and forward motion."
+    "theme": "An instrumental theme with a sense of purpose and forward motion.",
+    "instrumental": true
+  },
+  {
+    "genre": "Soul",
+    "artist": "James Brown & Luciano Pavarotti",
+    "title": "It's a Man's Man's Man's World · Live",
+    "videoId": "GaB9F3R9cIY",
+    "alternates": [],
+    "theme": "A powerful historic duet about achievement and the importance of partnership.",
+    "lyricsUrl": "https://music.apple.com/us/song/1743396597"
+  },
+  {
+    "genre": "Jazz",
+    "artist": "John Coltrane",
+    "title": "My Favorite Things",
+    "videoId": "rqpriUFsMQQ",
+    "alternates": [
+      "ej6gfL4yF4E"
+    ],
+    "theme": "An instrumental jazz exploration for listening, reflection, and creative work.",
+    "instrumental": true
+  },
+  {
+    "genre": "Jazz",
+    "artist": "Miles Davis",
+    "title": "So What · Official live video",
+    "videoId": "zqNTltOGh5c",
+    "alternates": [],
+    "theme": "Instrumental musical craft, conversation, and space to think.",
+    "instrumental": true
   }
 ]
