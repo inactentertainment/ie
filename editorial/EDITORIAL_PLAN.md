@@ -1,7 +1,7 @@
 # InAct Articles & Insights — 50-feature editorial plan
 
 Target: 50 original features, each 3,000–4,000 words.
-Completed long-form features: 3. Remaining full-length features: 47.
+Completed long-form features: 5. Remaining full-length features: 45.
 Existing quick reads remain available separately while the full-length collection is written.
 
 Editorial standard: primary references, dated developments, explicit distinctions between reported facts and original analysis, labeled hypothetical examples, practical exercises, and no unsupported viral rankings.
@@ -10,8 +10,8 @@ The remaining titles are planned editorial assignments, not published or complet
 
 ## AI Music
 1. AI music grows up: from instant song to intentional production — COMPLETE · 3228 words
-2. Real-time music models: when the listener becomes part of the instrument — PLANNED · draft, source verification, and review required
-3. AI artist identities: the difference between a persona and a performer — PLANNED · draft, source verification, and review required
+2. Real-time music models: when the listener becomes part of the instrument — COMPLETE · 3248 words
+3. AI artist identities: the difference between a persona and a performer — COMPLETE · 3331 words
 4. Licensed AI covers and remixes: the new platform experiment — PLANNED · draft, source verification, and review required
 5. The human creative brief behind an experimental AI artist — PLANNED · draft, source verification, and review required
 6. AI music rights: commercial permission, authorship, and distribution — PLANNED · draft, source verification, and review required
