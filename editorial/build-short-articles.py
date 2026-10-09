@@ -12,13 +12,13 @@ def banner(a):
  else:
   shapes='<path d="M80 92 H390" stroke="white" stroke-width="2" opacity=".4"/>'+''.join(f'<circle class="visual-dot" style="animation-delay:{i*.7}s" cx="{90+i*140}" cy="92" r="24"/><text x="{90+i*140}" y="150" text-anchor="middle" fill="white" font-size="15">{label}</text>' for i,label in enumerate(['Brief','Draft','Review']))
  return f'<svg class="article-visual" viewBox="0 0 470 190" role="img" aria-label="Animated illustration for {E(a["topic"])}"><rect width="470" height="190" rx="20" fill="{a["tint"]}"/><g fill="#d6deea">{shapes}</g></svg>'
-cards=''.join(f'<a class="article-library-card" href="articles/{a["slug"]}.html" style="--article-tint:{a["tint"]}">{banner(a)}<span class="eyebrow">{E(a["topic"])}</span><h3>{E(a["title"])}</h3><p>{E(a["deck"])}</p><span class="article-card-cta">Read the article →</span></a>' for a in articles)
-section='<section class="section" id="articles" aria-labelledby="articles-title"><div class="section-head"><div><span class="eyebrow">InAct Articles · We like to learn</span><h2 id="articles-title">A little curiosity.<br>A useful next step.</h2></div><p>Conversational reads that teach one useful idea. Explore at your pace, with an optional three-question check at the end.</p></div><div class="article-library-grid">'+cards+'</div></section>'
+cards=''.join(f'<a class="article-library-card" href="articles/{a["slug"]}.html" style="--article-tint:{a["tint"]}"'+(' hidden data-more-article' if articles.index(a)>2 else '')+f'>{banner(a)}<span class="eyebrow">{E(a["topic"])}</span><h3>{E(a["title"])}</h3><p>{E(a["deck"])}</p><span class="article-card-cta">Read the article →</span></a>' for a in articles)
+section='<section class="section" id="articles" aria-labelledby="articles-title"><div class="section-head"><div><span class="eyebrow">InAct Articles · We like to learn</span><h2 id="articles-title">A little curiosity.<br>A useful next step.</h2></div><p>Conversational reads that teach one useful idea. Explore at your pace, with an optional three-question check at the end.</p></div><div class="article-library-grid">'+cards+'</div><div class="article-library-actions"><button class="platinum" type="button" id="view-all-articles" aria-expanded="false">View all '+str(len(articles))+' articles →</button></div></section>'
 if '--home' in sys.argv:
  path=P/'prototype-template.html'; template=path.read_text();template=re.sub(r'<section class="section" id="articles".*?</section>','',template,flags=re.S)
- marker=re.search(r'<section[^>]*id="resources"[^>]*>',template)
- if not marker: raise RuntimeError('Dictionary section not found')
- template=template[:marker.start()]+section+template[marker.start():];path.write_text(template);print('Inserted three Articles cards');sys.exit()
+ marker=re.search(r'<section[^>]*id="contact"[^>]*>',template)
+ if not marker: raise RuntimeError('Contact section not found')
+ template=template[:marker.start()]+section+template[marker.start():];template=template.replace('</body>','<script src="assets/article-library.js"></script></body>') if 'assets/article-library.js' not in template else template;path.write_text(template);print('Inserted '+str(len(articles))+' Articles cards');sys.exit()
 home=(P/'index.html').read_text();header=re.search(r'<header>.*?</header>',home,re.S)[0]
 for anchor in ['top','our-world','courses','articles','resources','contact']:header=header.replace('href="#'+anchor+'"','href="../index.html'+('' if anchor=='top' else '#'+anchor)+'"')
 header=header.replace('href="music.html"','href="../music.html"');header=header.replace('href="services.html"','href="../services.html"').replace('src="assets/','src="../assets/').replace('data-logo="ie"','src="../assets/ie-logo.svg"')

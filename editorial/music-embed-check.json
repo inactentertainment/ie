@@ -1,18 +1,23 @@
 [
   {
+    "genre": "Hip-Hop",
+    "sources": [
+      {
+        "videoId": "JCOURZ-yx4E",
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+      }
+    ]
+  },
+  {
     "genre": "Afrobeats",
     "sources": [
       {
         "videoId": "_A0fWBHu9pM",
-        "title": "2Face - African Queen [Official Video]",
-        "publisher": "Official2Baba",
-        "embedReturned": true
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
       },
       {
         "videoId": "713jhG0us1k",
-        "title": "African Queen",
-        "publisher": "2Baba - Topic",
-        "embedReturned": true
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
       }
     ]
   },
@@ -21,15 +26,11 @@
     "sources": [
       {
         "videoId": "OlaTeXX3uH8",
-        "title": "Brian Eno - An Ending (Ascent) (Remastered 2019)",
-        "publisher": "BrianEnoVEVO",
-        "embedReturned": true
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
       },
       {
         "videoId": "OnAS7efua64",
-        "title": "An Ending (Ascent) (Remastered 2005)",
-        "publisher": "Brian Eno - Topic",
-        "embedReturned": true
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
       }
     ]
   },
@@ -38,15 +39,11 @@
     "sources": [
       {
         "videoId": "SgXSomPE_FY",
-        "title": "B.B. King - The Thrill Is Gone [Crossroads 2010] (Official Live Video)",
-        "publisher": "RHINO",
-        "embedReturned": true
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
       },
       {
         "videoId": "kpC69qIe02E",
-        "title": "The Thrill Is Gone",
-        "publisher": "B.B. King - Topic",
-        "embedReturned": true
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
       }
     ]
   },
@@ -55,15 +52,11 @@
     "sources": [
       {
         "videoId": "s71I_EWJk7I",
-        "title": "\"F\u00fcr Elise\" Performed by Lang Lang",
-        "publisher": "Steinway & Sons",
-        "embedReturned": true
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
       },
       {
         "videoId": "FW_KCau2iTI",
-        "title": "Lang Lang \u2013 Beethoven: \"F\u00fcr Elise\" Bagatelle No. 25 in A Minor, WoO 59 (Live in Paris, 2019)",
-        "publisher": "Deutsche Grammophon - DG",
-        "embedReturned": true
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
       }
     ]
   },
@@ -72,9 +65,7 @@
     "sources": [
       {
         "videoId": "UbxUSsFXYo4",
-        "title": "Dolly Parton - 9 To 5 (Official Video)",
-        "publisher": "DollyPartonVEVO",
-        "embedReturned": true
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
       }
     ]
   },
@@ -83,15 +74,11 @@
     "sources": [
       {
         "videoId": "IcrbM1l_BoI",
-        "title": "Avicii - Wake Me Up (Official Video)",
-        "publisher": "AviciiOfficialVEVO",
-        "embedReturned": true
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
       },
       {
         "videoId": "5y_KJAg8bHI",
-        "title": "Avicii - Wake Me Up (Official Lyric Video)",
-        "publisher": "AviciiOfficialVEVO",
-        "embedReturned": true
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
       }
     ]
   },
@@ -100,9 +87,7 @@
     "sources": [
       {
         "videoId": "GHhD4PD75zY",
-        "title": "Herbie Hancock - Rockit (Official Video)",
-        "publisher": "HerbieHancockVEVO",
-        "embedReturned": true
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
       }
     ]
   },
@@ -111,15 +96,11 @@
     "sources": [
       {
         "videoId": "Gs069dndIYk",
-        "title": "Earth, Wind & Fire - September (Official HD Video)",
-        "publisher": "EarthWindandFireVEVO",
-        "embedReturned": true
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
       },
       {
         "videoId": "3cKtSlsYVEU",
-        "title": "September",
-        "publisher": "Earth, Wind & Fire - Topic",
-        "embedReturned": true
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
       }
     ]
   },
@@ -128,32 +109,11 @@
     "sources": [
       {
         "videoId": "Z8SPwT3nQZ8",
-        "title": "Kirk Franklin - I Smile (Official Video)",
-        "publisher": "KirkFranklinVEVO",
-        "embedReturned": true
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
       },
       {
         "videoId": "S174winqP2g",
-        "title": "I Smile",
-        "publisher": "Kirk Franklin - Topic",
-        "embedReturned": true
-      }
-    ]
-  },
-  {
-    "genre": "Hip-Hop",
-    "sources": [
-      {
-        "videoId": "3JcmQONgXJM",
-        "title": "Will Smith - Gettin' Jiggy Wit It",
-        "publisher": "WillSmithVEVO",
-        "embedReturned": true
-      },
-      {
-        "videoId": "5VPm2yckO3k",
-        "title": "Gettin' Jiggy Wit It",
-        "publisher": "Will Smith - Topic",
-        "embedReturned": true
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
       }
     ]
   },
@@ -162,15 +122,11 @@
     "sources": [
       {
         "videoId": "FGBhQbmPwH8",
-        "title": "Daft Punk - One More Time (Official Video)",
-        "publisher": "Daft Punk",
-        "embedReturned": true
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
       },
       {
         "videoId": "fa5IWHDbftI",
-        "title": "One More Time",
-        "publisher": "Daft Punk - Topic",
-        "embedReturned": true
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
       }
     ]
   },
@@ -179,15 +135,11 @@
     "sources": [
       {
         "videoId": "rBrd_3VMC3c",
-        "title": "Louis Armstrong - What A Wonderful World (Official Video)",
-        "publisher": "LouisArmstrongVEVO",
-        "embedReturned": true
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
       },
       {
         "videoId": "CaCSuzR4DwM",
-        "title": "Louis Armstrong - What A Wonderful World (At The BBC)",
-        "publisher": "LouisArmstrongVEVO",
-        "embedReturned": true
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
       }
     ]
   },
@@ -196,21 +148,15 @@
     "sources": [
       {
         "videoId": "x4oN50uhSII",
-        "title": "Celia Cruz - La Vida Es Un Carnaval (Visualizer/ Remasterizado 2025)",
-        "publisher": "CeliaCruzVEVO",
-        "embedReturned": true
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
       },
       {
         "videoId": "t8pjh1URlXs",
-        "title": "La Vida Es Un Carnaval",
-        "publisher": "Celia Cruz - Topic",
-        "embedReturned": true
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
       },
       {
         "videoId": "7Ho86ggAVrY",
-        "title": "Celia Cruz - La Vida Es Un Carnaval (Audio)",
-        "publisher": "CeliaCruzVEVO",
-        "embedReturned": true
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
       }
     ]
   },
@@ -219,9 +165,7 @@
     "sources": [
       {
         "videoId": "qYcoJpqCha4",
-        "title": "aruarian dance",
-        "publisher": "Nujabes - Topic",
-        "embedReturned": true
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
       }
     ]
   },
@@ -230,9 +174,7 @@
     "sources": [
       {
         "videoId": "eH3giaIzONA",
-        "title": "Whitney Houston - I Wanna Dance With Somebody (Who Loves Me) (Official 4K Video)",
-        "publisher": "whitneyhoustonVEVO",
-        "embedReturned": true
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
       }
     ]
   },
@@ -241,15 +183,11 @@
     "sources": [
       {
         "videoId": "bEeaS6fuUoA",
-        "title": "Bill Withers - Lovely Day (Official Audio)",
-        "publisher": "BillWithersVEVO",
-        "embedReturned": true
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
       },
       {
         "videoId": "QCgeitX5xg0",
-        "title": "Lovely Day",
-        "publisher": "Bill Withers - Topic",
-        "embedReturned": true
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
       }
     ]
   },
@@ -258,15 +196,7 @@
     "sources": [
       {
         "videoId": "HNBCVM4KbUM",
-        "title": "Bob Marley & The Wailers - Three Little Birds (Official Music Video)",
-        "publisher": "BobMarleyVEVO",
-        "embedReturned": true
-      },
-      {
-        "videoId": "VYhl-JTezwk",
-        "title": "Bob Marley & The Wailers - Three Little Birds - Official Video",
-        "publisher": "Jamaica Groove",
-        "embedReturned": true
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
       }
     ]
   },
@@ -275,21 +205,15 @@
     "sources": [
       {
         "videoId": "1k8craCGpgs",
-        "title": "Journey - Don't Stop Believin' (Official Audio)",
-        "publisher": "journeyVEVO",
-        "embedReturned": true
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
       },
       {
         "videoId": "VcjzHMhBtf0",
-        "title": "Journey - Don't Stop Believin' (Escape Tour 1981: Live In Houston)",
-        "publisher": "journeyVEVO",
-        "embedReturned": true
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
       },
       {
         "videoId": "mM3Vmn4pdog",
-        "title": "Don't Stop Believin' (2022 Remaster)",
-        "publisher": "Journey - Topic",
-        "embedReturned": true
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
       }
     ]
   },
@@ -298,9 +222,7 @@
     "sources": [
       {
         "videoId": "yG07WSu7Q9w",
-        "title": "Simply Red - Holding Back The Years (Official 4K Remaster)",
-        "publisher": "Simply Red",
-        "embedReturned": true
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
       }
     ]
   },
@@ -309,9 +231,168 @@
     "sources": [
       {
         "videoId": "8a-HfNE3EIo",
-        "title": "Vangelis - Chariots Of Fire",
-        "publisher": "VangelisVEVO",
-        "embedReturned": true
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+      }
+    ]
+  },
+  {
+    "genre": "Soul",
+    "sources": [
+      {
+        "videoId": "GaB9F3R9cIY",
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+      }
+    ]
+  },
+  {
+    "genre": "Jazz",
+    "sources": [
+      {
+        "videoId": "rqpriUFsMQQ",
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+      },
+      {
+        "videoId": "ej6gfL4yF4E",
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+      }
+    ]
+  },
+  {
+    "genre": "Jazz",
+    "sources": [
+      {
+        "videoId": "zqNTltOGh5c",
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+      }
+    ]
+  },
+  {
+    "genre": "Hip-Hop",
+    "sources": [
+      {
+        "videoId": "SHVzWMFMH6Y",
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+      }
+    ]
+  },
+  {
+    "genre": "Hip-Hop",
+    "sources": [
+      {
+        "videoId": "_JZom_gVfuw",
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+      }
+    ]
+  },
+  {
+    "genre": "Hip-Hop",
+    "sources": [
+      {
+        "videoId": "PU0El0sLWbg",
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+      },
+      {
+        "videoId": "dKvgphSdG84",
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+      }
+    ]
+  },
+  {
+    "genre": "Jazz",
+    "sources": [
+      {
+        "videoId": "nTwp1sgUJrM",
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+      }
+    ]
+  },
+  {
+    "genre": "Jazz",
+    "sources": [
+      {
+        "videoId": "bPAC6zt_1ZM",
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+      }
+    ]
+  },
+  {
+    "genre": "Soul",
+    "sources": [
+      {
+        "videoId": "D7ks03zsg1o",
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+      }
+    ]
+  },
+  {
+    "genre": "R&B",
+    "sources": [
+      {
+        "videoId": "qiSmeCIi3Lo",
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+      }
+    ]
+  },
+  {
+    "genre": "R&B",
+    "sources": [
+      {
+        "videoId": "4TYv2PhG89A",
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+      }
+    ]
+  },
+  {
+    "genre": "R&B",
+    "sources": [
+      {
+        "videoId": "_WcWHZc8s2I",
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+      }
+    ]
+  },
+  {
+    "genre": "R&B",
+    "sources": [
+      {
+        "videoId": "C8QJmI_V3j4",
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+      }
+    ]
+  },
+  {
+    "genre": "R&B",
+    "sources": [
+      {
+        "videoId": "Np21rH7Ldto",
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+      }
+    ]
+  },
+  {
+    "genre": "R&B",
+    "sources": [
+      {
+        "videoId": "OqN0jsSeqPo",
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+      }
+    ]
+  },
+  {
+    "genre": "R&B",
+    "sources": [
+      {
+        "videoId": "-CPCs7vVz6s",
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+      }
+    ]
+  },
+  {
+    "genre": "Hip-Hop / R&B",
+    "sources": [
+      {
+        "videoId": "dNk3R23Twgw",
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
       }
     ]
   }

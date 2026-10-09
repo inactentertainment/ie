@@ -1,5 +1,13 @@
 [
   {
+    "genre": "Hip-Hop",
+    "artist": "Nas",
+    "title": "One Mic",
+    "videoId": "JCOURZ-yx4E",
+    "theme": "A focused voice, conviction, and storytelling.",
+    "alternates": []
+  },
+  {
     "genre": "Afrobeats",
     "artist": "2Baba",
     "title": "African Queen",
@@ -32,8 +40,8 @@
   },
   {
     "genre": "Classical",
-    "artist": "Lang Lang · Beethoven",
-    "title": "Für Elise",
+    "artist": "Lang Lang \u00b7 Beethoven",
+    "title": "F\u00fcr Elise",
     "videoId": "s71I_EWJk7I",
     "alternates": [
       "FW_KCau2iTI"
@@ -87,15 +95,6 @@
       "S174winqP2g"
     ],
     "theme": "Encouragement and finding a little light in a difficult day."
-  },
-  {
-    "genre": "Hip-Hop",
-    "artist": "Nas",
-    "title": "I Can",
-    "videoId": "RvVfgvHucRY",
-    "alternates": [],
-    "theme": "Encouragement to learn, work, and believe in your potential. Includes mature cautionary storytelling.",
-    "lyricsUrl": "https://music.apple.com/us/song/685699857"
   },
   {
     "genre": "House / Club",
@@ -194,7 +193,7 @@
   {
     "genre": "Soul",
     "artist": "James Brown & Luciano Pavarotti",
-    "title": "It's a Man's Man's Man's World · Live",
+    "title": "It's a Man's Man's Man's World \u00b7 Live",
     "videoId": "GaB9F3R9cIY",
     "alternates": [],
     "theme": "A powerful historic duet about achievement and the importance of partnership.",
@@ -214,10 +213,127 @@
   {
     "genre": "Jazz",
     "artist": "Miles Davis",
-    "title": "So What · Official live video",
+    "title": "So What \u00b7 Official live video",
     "videoId": "zqNTltOGh5c",
     "alternates": [],
     "theme": "Instrumental musical craft, conversation, and space to think.",
     "instrumental": true
+  },
+  {
+    "genre": "Hip-Hop",
+    "artist": "2Pac",
+    "title": "Keep Ya Head Up",
+    "videoId": "SHVzWMFMH6Y",
+    "theme": "Resilience, dignity, and community support.",
+    "alternates": []
+  },
+  {
+    "genre": "Hip-Hop",
+    "artist": "The Notorious B.I.G.",
+    "title": "Juicy",
+    "videoId": "_JZom_gVfuw",
+    "theme": "Ambition and a story of changed circumstances.",
+    "alternates": []
+  },
+  {
+    "genre": "Hip-Hop",
+    "artist": "JAY-Z",
+    "title": "Blueprint (Momma Loves Me)",
+    "videoId": "PU0El0sLWbg",
+    "theme": "Family, formative experiences, and personal history. Official lyric video; explicit language.",
+    "alternates": [
+      "dKvgphSdG84"
+    ],
+    "contentNote": "Explicit language \u00b7 official lyric video"
+  },
+  {
+    "genre": "Jazz",
+    "artist": "Miles Davis",
+    "title": "Flamenco Sketches",
+    "videoId": "nTwp1sgUJrM",
+    "theme": "Space, patient listening, and reflective focus.",
+    "alternates": [],
+    "instrumental": true
+  },
+  {
+    "genre": "Jazz",
+    "artist": "John Coltrane",
+    "title": "Naima",
+    "videoId": "bPAC6zt_1ZM",
+    "theme": "A lyrical instrumental for calm concentration.",
+    "alternates": [],
+    "instrumental": true
+  },
+  {
+    "genre": "Soul",
+    "artist": "James Brown",
+    "title": "The Payback",
+    "videoId": "D7ks03zsg1o",
+    "theme": "An enduring funk groove; the story concerns betrayal and revenge.",
+    "alternates": []
+  },
+  {
+    "genre": "R&B",
+    "artist": "Bill Withers",
+    "title": "Can We Pretend",
+    "videoId": "qiSmeCIi3Lo",
+    "theme": "Reflection and the wish to begin again.",
+    "alternates": []
+  },
+  {
+    "genre": "R&B",
+    "artist": "Sade",
+    "title": "Smooth Operator",
+    "videoId": "4TYv2PhG89A",
+    "theme": "An elegant groove and a cautionary portrait.",
+    "alternates": []
+  },
+  {
+    "genre": "R&B",
+    "artist": "Sade",
+    "title": "No Ordinary Love",
+    "videoId": "_WcWHZc8s2I",
+    "theme": "Atmosphere, devotion, and emotional depth.",
+    "alternates": []
+  },
+  {
+    "genre": "R&B",
+    "artist": "Sade",
+    "title": "By Your Side",
+    "videoId": "C8QJmI_V3j4",
+    "theme": "Support, steadiness, and care.",
+    "alternates": []
+  },
+  {
+    "genre": "R&B",
+    "artist": "Erykah Badu",
+    "title": "Didn't Cha Know",
+    "videoId": "Np21rH7Ldto",
+    "theme": "Finding direction and learning through uncertainty.",
+    "alternates": []
+  },
+  {
+    "genre": "R&B",
+    "artist": "Erykah Badu",
+    "title": "Bag Lady",
+    "videoId": "OqN0jsSeqPo",
+    "theme": "Letting go of burdens and making room to move forward.",
+    "alternates": []
+  },
+  {
+    "genre": "R&B",
+    "artist": "Erykah Badu",
+    "title": "On & On (Remix Edit)",
+    "videoId": "-CPCs7vVz6s",
+    "theme": "A reflective groove with an independent point of view.",
+    "alternates": []
+  },
+  {
+    "genre": "Hip-Hop / R&B",
+    "artist": "Erykah Badu feat. Common",
+    "title": "Love of My Life (An Ode to Hip Hop)",
+    "videoId": "dNk3R23Twgw",
+    "theme": "A creative conversation between hip-hop and soul.",
+    "alternates": []
   }
 ]

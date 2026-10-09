@@ -1,41 +1,2026 @@
 [
-{
-"slug":"a-better-ai-brief","title":"Before the prompt, make a better brief.","deck":"A simple way to give AI a useful job and keep your own judgment in the work.","topic":"AI & Creative Work","tint":"#152740","course":"ai-foundations",
-"sections":[
-{"title":"Start with the result you need.","paragraphs":["A blank prompt box can make a simple task feel strangely difficult. You know you want help, but you may not know how much detail to provide. Start outside the box. Write the result you need in one sentence. Who will use it? What should they understand or do afterward? Those questions turn a broad topic into a task. ‘Help with marketing’ leaves almost every decision open. ‘Draft a short explanation of our beginner workshop for people who have never used AI’ gives the tool a more useful job.","A brief is a small set of instructions that guides the work. It does not need to sound technical. Name the audience, the purpose, the facts you already know, and the format you want. Add any important limits, such as length or what the draft must not promise. You can write those details in ordinary language. Clear context is more valuable than collecting impressive phrases from a viral prompt template."]},
-{"title":"Separate facts from suggestions.","paragraphs":["Imagine that the workshop will last one hour and includes a guided practice. Those are known facts if they have been confirmed. The tool may suggest a welcoming opening or a clearer order for the explanation. Those are writing choices. A claim that everyone will double their productivity is something else: it needs evidence, and you have not supplied it. Treating all three as equally reliable is how a polished draft becomes misleading.","Tell the tool to use the supplied facts and identify missing details. Ask it to label suggestions where that helps. Then read the draft as an editor. Compare dates, names, prices, and promises with the actual source. A citation is useful only if it exists and supports the claim. An elegant sentence still needs a factual check. Keep a short record of what you verified, especially when the material will be published."]},
-{"title":"Review in two passes.","paragraphs":["The first pass checks meaning. Does the draft answer the audience's question? Are the important facts right? Does it leave out a limit that the reader needs? Is any sentence more confident than the evidence permits? This pass may require opening a source or asking another person. Do it before polishing the style, because a strong rhythm can make an unsupported claim harder to notice.","The second pass checks expression. Shorten a long sentence, replace unnecessary jargon, and make the next step visible. Read the draft aloud if that helps. Keep the voice suited to the audience. You are not trying to make every paragraph sound like a brochure. You are helping someone understand. For a public explanation, ask a person unfamiliar with the offer to say what they think it means. Their interpretation is useful evidence."]},
-{"title":"See the difference in a small example.","paragraphs":["Suppose a studio needs an email for a free introductory session. A weak request says, ‘Write an exciting email about AI.’ A better brief names the session, audience, verified date, one-hour length, practice activity, and signup destination. It asks for a subject line and three short paragraphs. It also says that the email must not promise expertise after one session or invent a discount. These details reduce guesswork without removing creative choices.","The first draft may still contain a mistake. Perhaps it adds a certificate nobody approved. The reviewer removes that claim, checks the details, and asks for a simpler opening. The result is useful because a person directed and checked it. The tool's contribution is real, but it did not become the authority on the event. That distinction matters whenever generated writing represents a business, course, or creative project."]},
-{"title":"Make a brief you can reuse.","paragraphs":["Create five headings: audience, purpose, verified facts, format, and review. Save a blank version where you already work. Under review, list the checks that matter for your task. An appointment message needs verified dates. A lesson needs accurate explanations and usable practice. A product page needs honest scope and delivery information. Keep private information out of an unfamiliar tool, and use fictional details when learning the process.","Try the brief on one small task. Compare the first draft with the version you actually use. Notice which instruction helped and which detail was missing. Revise the template using that evidence. You do not need a perfect prompt that works forever. You need a repeatable way to describe a need, review a result, and make a better decision. That skill will remain useful as apps and models change."]}
-],
-"takeaway":"A useful brief gives the tool a job. A useful review keeps a person responsible for the result.",
-"questions":[{"question":"Which three details belong in a useful brief?","options":["The intended audience","The result you need","Verified facts and constraints","A promise that every answer will be correct","Private records you have no permission to share"],"correct":[0,1,2],"feedback":"Name the audience, goal, and verified context. More private data and stronger promises do not make a brief better."},{"question":"Which three actions help you review meaning?","options":["Check names and dates","Compare important claims with their sources","Check whether the draft answers the reader's question","Accept a confident tone as proof","Polish unsupported claims until they sound convincing"],"correct":[0,1,2],"feedback":"Check the facts, evidence, and fit before editing style."},{"question":"Which three practices keep the process useful?","options":["Record what needs human review","Test the brief on a small task","Revise it after seeing the actual result","Assume one prompt works forever","Let a draft invent missing event details"],"correct":[0,1,2],"feedback":"Clear review points, small tests, and revision help you learn from the work."}],
-"sources":[["National Institute of Standards and Technology. (n.d.). AI Risk Management Framework.","https://www.nist.gov/itl/ai-risk-management-framework"]]
-},
-{
-"slug":"test-an-offer-before-a-store","title":"Test the offer before building the whole store.","deck":"Learn what a customer needs before spending weeks on a beautiful business idea.","topic":"Small Business","tint":"#173025","course":"small-business",
-"sections":[
-{"title":"A business idea needs a customer.","paragraphs":["It is easy to picture a logo, a shop, and a long product list. Those pieces make an idea feel real. But they do not yet tell you whether someone needs the offer. Begin with a person and a problem. What are they trying to do? What makes it difficult? What do they use now? A business earns its place by helping with something that matters enough for a customer to choose it.","Choose a customer group narrow enough to understand. ‘Everyone who wants to be organized’ is hard to interview or reach. ‘Independent tutors who need to explain their first session’ is more specific. That does not mean you must serve only that group forever. A clear starting audience helps you ask better questions and build a test that produces useful evidence. You can expand after learning what actually works."]},
-{"title":"Ask about recent behavior.","paragraphs":["When you describe an idea, people may say it sounds good because they want to be encouraging. A better question asks about something that happened. When did they last face the problem? What did they do? How much time did it take? What was frustrating? Listen before showing your solution. You want to learn the situation, not guide the person toward agreeing with your preferred answer.","AI can help prepare neutral questions or organize notes you are allowed to use. It cannot replace the interview by inventing customer reactions. A generated description of a market is a research starting point, not proof of demand. Keep direct observations separate from assumptions. Write down what remains uncertain. That makes it easier to choose the next test instead of treating every attractive idea as established fact."]},
-{"title":"Build the smallest honest offer.","paragraphs":["A small offer should still be clear about what the customer receives. State the result, scope, price when applicable, delivery method, and limits. If it is a sample or pilot, say so. Do not imply that a finished product exists when you have only a sketch. A short page, a demonstration, or a useful sample may be enough to help someone judge the idea. The purpose is to learn about fit and delivery without building every possible feature.","Your first test needs a boundary. Choose a limited budget, a manageable number of customers, and a review date. Decide what evidence would make you continue, revise, or stop. Depending on the situation, that might include relevant inquiries, completed purchases, successful delivery, or repeat use. A large view count does not answer every business question. Match the measure to the decision you are trying to make."]},
-{"title":"Check one sale's economics.","paragraphs":["A sale brings in revenue, but it also creates costs and work. List the materials or production, fees, delivery, support, and time required. Mark estimates and replace them with real figures when possible. Profit and cash flow are different: an offer can look profitable while the business lacks cash for a bill due before the customer pays. A simple cost sheet makes those questions visible before the launch becomes larger.","Consider an illustrative $30 product with $18 in production and delivery costs and $3 in fees. That leaves $9 before advertising, taxes, your time, and other expenses. It is not a $30 gain. If promotion costs another $10 per sale, the estimate deserves another look. These numbers are a teaching example, not a platform quote. The lesson is to check the relevant costs rather than letting the selling price stand in for earnings."]},
-{"title":"Let the test change the idea.","paragraphs":["A tutor-guide creator interviews several tutors and builds one sample using fictional details. The pilot reveals that tutors need editable explanations, not a large collection of decorative pages. The creator reduces the file, adds clear instructions, and reviews the time needed for customer support. The improved offer comes from what people tried and asked, not simply from a larger amount of generated content.","Write a one-page test plan for your own idea. Name the customer, problem, offer, costs, budget, and review rule. Check the official requirements that apply before trading. Then try a small, truthful version. You may find a useful business, a different product, or a reason to stop spending on the idea. All three outcomes can save time. The goal is learning enough to make the next decision with better evidence."]}
-],
-"takeaway":"A small customer test can teach more than a large store built around untested assumptions.",
-"questions":[{"question":"Which three questions help you understand a real customer need?","options":["When did the problem last happen?","What did you do about it?","What was difficult about that approach?","Would you compliment my logo?","Can I assume everybody has the same need?"],"correct":[0,1,2],"feedback":"Recent behavior reveals the situation more clearly than compliments or broad assumptions."},{"question":"Which three things belong in an honest pilot offer?","options":["What the buyer receives","The scope and delivery conditions","A clear statement that it is a pilot when relevant","A claim that the finished product exists when it does not","A guaranteed result without evidence"],"correct":[0,1,2],"feedback":"The customer needs an accurate promise and clear limits."},{"question":"Which three actions make a small test useful?","options":["Set a manageable budget","Count relevant costs","Decide what evidence will guide the next choice","Treat all revenue as profit","Ignore actual customer questions"],"correct":[0,1,2],"feedback":"Bounded effort, realistic economics, and a review rule turn activity into learning."}],
-"sources":[["U.S. Small Business Administration. (n.d.). Manage your business.","https://www.sba.gov/counseling/manage-your-business/"],["U.S. Small Business Administration. (n.d.). Grow your business.","https://www.sba.gov/counseling/grow-your-business/"]]
-},
-{
-"slug":"give-your-music-an-intention","title":"Give your music an intention before generating another track.","deck":"Use a listening brief to turn endless musical drafts into a project you can explain.","topic":"Music & AI","tint":"#301b37","course":"music-ai",
-"sections":[
-{"title":"Begin with the listening moment.","paragraphs":["What should someone experience when they hear the music? A calm evening walk, a lively game entrance, and a focused study session ask for different choices. Begin by naming the listening moment. You do not need advanced production language to describe it. Use ordinary words for pace, mood, energy, texture, and space. ‘Warm and steady, with room to breathe’ gives you a direction. ‘Make something amazing’ gives you very little to compare.","A listening brief is a short description of the experience you want to build. Name the audience or setting, the feeling, the structure, and the elements that matter. You might want an instrumental opening, a simple rhythm, or a voice that remains easy to hear. Separate your own creative intention from a request to imitate an identifiable person. An original direction can draw on musical qualities without claiming someone else's identity or permission."]},
-{"title":"Listen for choices you can describe.","paragraphs":["When you compare drafts, say what you actually hear. One may have a stronger opening. Another may leave more space around the vocal. A third may become crowded when several layers arrive together. You do not have to know every instrument's name to notice those differences. A useful comparison connects an audible detail with the intended listening experience. That is more helpful than declaring a draft good because it is the newest one.","Try comparing two examples rather than twenty at once. Listen to the opening, a middle section, and the ending. Keep the playback level comfortable and similar where practical. Write one strength, one weakness, and one possible revision for each. Your notes make the creative process visible. They also help you notice when a track needs an edit instead of another full generation. More output is not the same as more direction."]},
-{"title":"Treat AI as part of the production.","paragraphs":["Generative tools may help you explore lyrics, sounds, or arrangements. They do not replace the decisions about what the project means or what should be released. A person can guide the brief, select material, edit, arrange, review, and explain the work. Different projects use tools differently. Describe the actual contribution rather than inventing a human performer or pretending the system made every decision by itself.","Keep a record of tools, inputs, edits, and people involved. If you use samples, reference material, or another person's work, check the relevant permissions. A tool's commercial-use terms are one part of the review, not a complete answer to every copyright or identity question. Requirements can change, so check the current terms of the tools and distributor before release. Where a synthetic artist is part of the experiment, make the project's nature clear to listeners."]},
-{"title":"Separate the song from the release.","paragraphs":["The music you create and the process of releasing it are connected but different jobs. A song is the composition; a recording is a particular captured or produced version. A release also needs accurate credits, delivery information, artwork, and a plan for discovery. A distributor helps deliver material under its terms. It does not automatically establish that every input or identity choice is permitted. Keeping the jobs separate makes the checklist easier to understand.","An experimental artist can be a creative identity with a clear story and visual style. The responsible people still need to be visible where relevant. You can explain that the project explores human-directed AI music without inventing a biography that makes a fictional performer appear to be a real person. Clear presentation does not remove imagination. It gives the audience a fair way to understand and participate in the experiment."]},
-{"title":"Build one explainable experiment.","paragraphs":["Imagine a track for a garden video at sunset. The brief asks for a steady gentle pulse, warm sounds, no lyrics, and an ending that settles rather than cuts off. Two drafts fit the mood, but one has a sudden energetic section. The creator keeps the calmer version, revises the ending, and records the reason. They then review the inputs, terms, credits, and video use. The project has a purpose and a traceable set of choices.","Write your own listening brief in five sentences. Compare two examples against it. Choose one revision and explain the audible reason. Make a separate release checklist, marking every question that still needs an answer. You can use the fuller Music & AI course when you want to explore industry roles and production in more depth. For now, build the habit of listening deliberately. One directed experiment can teach more than a folder full of tracks you cannot distinguish."]}
-],
-"takeaway":"The next useful step may be a clearer intention or a better edit, rather than another generation.",
-"questions":[{"question":"Which three details help a listening brief?","options":["The listening setting","The intended mood and energy","The musical qualities you want to compare","A promise to imitate a real person's identity without permission","Only the word amazing"],"correct":[0,1,2],"feedback":"Setting, mood, and describable qualities make the intention usable."},{"question":"Which three notes help you compare drafts?","options":["An audible strength","A weakness relative to the brief","A revision you can explain","The newest draft must be best","A claim about an instrument you did not hear"],"correct":[0,1,2],"feedback":"Use what you hear and connect it with the listening goal."},{"question":"Which three checks belong before release?","options":["Relevant input permissions and tool terms","Accurate credits and distributor requirements","Clear presentation of an experimental artist's identity","Assume a generator settles every rights issue","Invent a real performer's biography"],"correct":[0,1,2],"feedback":"The responsible people need to review rights, release details, and honest presentation."}],
-"sources":[["U.S. Copyright Office. (n.d.). Copyright and artificial intelligence.","https://www.copyright.gov/ai/"]]
-}
+  {
+    "slug": "a-better-ai-brief",
+    "title": "Before the prompt, make a better brief.",
+    "deck": "A simple way to give AI a useful job and keep your own judgment in the work.",
+    "topic": "AI & Creative Work",
+    "tint": "#152740",
+    "course": "ai-foundations",
+    "sections": [
+      {
+        "title": "Start with the result you need.",
+        "paragraphs": [
+          "A blank prompt box can make a simple task feel strangely difficult. You know you want help, but you may not know how much detail to provide. Start outside the box. Write the result you need in one sentence. Who will use it? What should they understand or do afterward? Those questions turn a broad topic into a task. ‘Help with marketing’ leaves almost every decision open. ‘Draft a short explanation of our beginner workshop for people who have never used AI’ gives the tool a more useful job.",
+          "A brief is a small set of instructions that guides the work. It does not need to sound technical. Name the audience, the purpose, the facts you already know, and the format you want. Add any important limits, such as length or what the draft must not promise. You can write those details in ordinary language. Clear context is more valuable than collecting impressive phrases from a viral prompt template."
+        ]
+      },
+      {
+        "title": "Separate facts from suggestions.",
+        "paragraphs": [
+          "Imagine that the workshop will last one hour and includes a guided practice. Those are known facts if they have been confirmed. The tool may suggest a welcoming opening or a clearer order for the explanation. Those are writing choices. A claim that everyone will double their productivity is something else: it needs evidence, and you have not supplied it. Treating all three as equally reliable is how a polished draft becomes misleading.",
+          "Tell the tool to use the supplied facts and identify missing details. Ask it to label suggestions where that helps. Then read the draft as an editor. Compare dates, names, prices, and promises with the actual source. A citation is useful only if it exists and supports the claim. An elegant sentence still needs a factual check. Keep a short record of what you verified, especially when the material will be published."
+        ]
+      },
+      {
+        "title": "Review in two passes.",
+        "paragraphs": [
+          "The first pass checks meaning. Does the draft answer the audience's question? Are the important facts right? Does it leave out a limit that the reader needs? Is any sentence more confident than the evidence permits? This pass may require opening a source or asking another person. Do it before polishing the style, because a strong rhythm can make an unsupported claim harder to notice.",
+          "The second pass checks expression. Shorten a long sentence, replace unnecessary jargon, and make the next step visible. Read the draft aloud if that helps. Keep the voice suited to the audience. You are not trying to make every paragraph sound like a brochure. You are helping someone understand. For a public explanation, ask a person unfamiliar with the offer to say what they think it means. Their interpretation is useful evidence."
+        ]
+      },
+      {
+        "title": "See the difference in a small example.",
+        "paragraphs": [
+          "Suppose a studio needs an email for a free introductory session. A weak request says, ‘Write an exciting email about AI.’ A better brief names the session, audience, verified date, one-hour length, practice activity, and signup destination. It asks for a subject line and three short paragraphs. It also says that the email must not promise expertise after one session or invent a discount. These details reduce guesswork without removing creative choices.",
+          "The first draft may still contain a mistake. Perhaps it adds a certificate nobody approved. The reviewer removes that claim, checks the details, and asks for a simpler opening. The result is useful because a person directed and checked it. The tool's contribution is real, but it did not become the authority on the event. That distinction matters whenever generated writing represents a business, course, or creative project."
+        ]
+      },
+      {
+        "title": "Make a brief you can reuse.",
+        "paragraphs": [
+          "Create five headings: audience, purpose, verified facts, format, and review. Save a blank version where you already work. Under review, list the checks that matter for your task. An appointment message needs verified dates. A lesson needs accurate explanations and usable practice. A product page needs honest scope and delivery information. Keep private information out of an unfamiliar tool, and use fictional details when learning the process.",
+          "Try the brief on one small task. Compare the first draft with the version you actually use. Notice which instruction helped and which detail was missing. Revise the template using that evidence. You do not need a perfect prompt that works forever. You need a repeatable way to describe a need, review a result, and make a better decision. That skill will remain useful as apps and models change."
+        ]
+      }
+    ],
+    "takeaway": "A useful brief gives the tool a job. A useful review keeps a person responsible for the result.",
+    "questions": [
+      {
+        "question": "Which three details belong in a useful brief?",
+        "options": [
+          "The intended audience",
+          "The result you need",
+          "Verified facts and constraints",
+          "A promise that every answer will be correct",
+          "Private records you have no permission to share"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "Name the audience, goal, and verified context. More private data and stronger promises do not make a brief better."
+      },
+      {
+        "question": "Which three actions help you review meaning?",
+        "options": [
+          "Check names and dates",
+          "Compare important claims with their sources",
+          "Check whether the draft answers the reader's question",
+          "Accept a confident tone as proof",
+          "Polish unsupported claims until they sound convincing"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "Check the facts, evidence, and fit before editing style."
+      },
+      {
+        "question": "Which three practices keep the process useful?",
+        "options": [
+          "Record what needs human review",
+          "Test the brief on a small task",
+          "Revise it after seeing the actual result",
+          "Assume one prompt works forever",
+          "Let a draft invent missing event details"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "Clear review points, small tests, and revision help you learn from the work."
+      }
+    ],
+    "sources": [
+      [
+        "National Institute of Standards and Technology. (n.d.). AI Risk Management Framework.",
+        "https://www.nist.gov/itl/ai-risk-management-framework"
+      ]
+    ]
+  },
+  {
+    "slug": "test-an-offer-before-a-store",
+    "title": "Test the offer before building the whole store.",
+    "deck": "Learn what a customer needs before spending weeks on a beautiful business idea.",
+    "topic": "Small Business",
+    "tint": "#173025",
+    "course": "small-business",
+    "sections": [
+      {
+        "title": "A business idea needs a customer.",
+        "paragraphs": [
+          "It is easy to picture a logo, a shop, and a long product list. Those pieces make an idea feel real. But they do not yet tell you whether someone needs the offer. Begin with a person and a problem. What are they trying to do? What makes it difficult? What do they use now? A business earns its place by helping with something that matters enough for a customer to choose it.",
+          "Choose a customer group narrow enough to understand. ‘Everyone who wants to be organized’ is hard to interview or reach. ‘Independent tutors who need to explain their first session’ is more specific. That does not mean you must serve only that group forever. A clear starting audience helps you ask better questions and build a test that produces useful evidence. You can expand after learning what actually works."
+        ]
+      },
+      {
+        "title": "Ask about recent behavior.",
+        "paragraphs": [
+          "When you describe an idea, people may say it sounds good because they want to be encouraging. A better question asks about something that happened. When did they last face the problem? What did they do? How much time did it take? What was frustrating? Listen before showing your solution. You want to learn the situation, not guide the person toward agreeing with your preferred answer.",
+          "AI can help prepare neutral questions or organize notes you are allowed to use. It cannot replace the interview by inventing customer reactions. A generated description of a market is a research starting point, not proof of demand. Keep direct observations separate from assumptions. Write down what remains uncertain. That makes it easier to choose the next test instead of treating every attractive idea as established fact."
+        ]
+      },
+      {
+        "title": "Build the smallest honest offer.",
+        "paragraphs": [
+          "A small offer should still be clear about what the customer receives. State the result, scope, price when applicable, delivery method, and limits. If it is a sample or pilot, say so. Do not imply that a finished product exists when you have only a sketch. A short page, a demonstration, or a useful sample may be enough to help someone judge the idea. The purpose is to learn about fit and delivery without building every possible feature.",
+          "Your first test needs a boundary. Choose a limited budget, a manageable number of customers, and a review date. Decide what evidence would make you continue, revise, or stop. Depending on the situation, that might include relevant inquiries, completed purchases, successful delivery, or repeat use. A large view count does not answer every business question. Match the measure to the decision you are trying to make."
+        ]
+      },
+      {
+        "title": "Check one sale's economics.",
+        "paragraphs": [
+          "A sale brings in revenue, but it also creates costs and work. List the materials or production, fees, delivery, support, and time required. Mark estimates and replace them with real figures when possible. Profit and cash flow are different: an offer can look profitable while the business lacks cash for a bill due before the customer pays. A simple cost sheet makes those questions visible before the launch becomes larger.",
+          "Consider an illustrative $30 product with $18 in production and delivery costs and $3 in fees. That leaves $9 before advertising, taxes, your time, and other expenses. It is not a $30 gain. If promotion costs another $10 per sale, the estimate deserves another look. These numbers are a teaching example, not a platform quote. The lesson is to check the relevant costs rather than letting the selling price stand in for earnings."
+        ]
+      },
+      {
+        "title": "Let the test change the idea.",
+        "paragraphs": [
+          "A tutor-guide creator interviews several tutors and builds one sample using fictional details. The pilot reveals that tutors need editable explanations, not a large collection of decorative pages. The creator reduces the file, adds clear instructions, and reviews the time needed for customer support. The improved offer comes from what people tried and asked, not simply from a larger amount of generated content.",
+          "Write a one-page test plan for your own idea. Name the customer, problem, offer, costs, budget, and review rule. Check the official requirements that apply before trading. Then try a small, truthful version. You may find a useful business, a different product, or a reason to stop spending on the idea. All three outcomes can save time. The goal is learning enough to make the next decision with better evidence."
+        ]
+      }
+    ],
+    "takeaway": "A small customer test can teach more than a large store built around untested assumptions.",
+    "questions": [
+      {
+        "question": "Which three questions help you understand a real customer need?",
+        "options": [
+          "When did the problem last happen?",
+          "What did you do about it?",
+          "What was difficult about that approach?",
+          "Would you compliment my logo?",
+          "Can I assume everybody has the same need?"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "Recent behavior reveals the situation more clearly than compliments or broad assumptions."
+      },
+      {
+        "question": "Which three things belong in an honest pilot offer?",
+        "options": [
+          "What the buyer receives",
+          "The scope and delivery conditions",
+          "A clear statement that it is a pilot when relevant",
+          "A claim that the finished product exists when it does not",
+          "A guaranteed result without evidence"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "The customer needs an accurate promise and clear limits."
+      },
+      {
+        "question": "Which three actions make a small test useful?",
+        "options": [
+          "Set a manageable budget",
+          "Count relevant costs",
+          "Decide what evidence will guide the next choice",
+          "Treat all revenue as profit",
+          "Ignore actual customer questions"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "Bounded effort, realistic economics, and a review rule turn activity into learning."
+      }
+    ],
+    "sources": [
+      [
+        "U.S. Small Business Administration. (n.d.). Manage your business.",
+        "https://www.sba.gov/counseling/manage-your-business/"
+      ],
+      [
+        "U.S. Small Business Administration. (n.d.). Grow your business.",
+        "https://www.sba.gov/counseling/grow-your-business/"
+      ]
+    ]
+  },
+  {
+    "slug": "give-your-music-an-intention",
+    "title": "Give your music an intention before generating another track.",
+    "deck": "Use a listening brief to turn endless musical drafts into a project you can explain.",
+    "topic": "Music & AI",
+    "tint": "#301b37",
+    "course": "music-ai",
+    "sections": [
+      {
+        "title": "Begin with the listening moment.",
+        "paragraphs": [
+          "What should someone experience when they hear the music? A calm evening walk, a lively game entrance, and a focused study session ask for different choices. Begin by naming the listening moment. You do not need advanced production language to describe it. Use ordinary words for pace, mood, energy, texture, and space. ‘Warm and steady, with room to breathe’ gives you a direction. ‘Make something amazing’ gives you very little to compare.",
+          "A listening brief is a short description of the experience you want to build. Name the audience or setting, the feeling, the structure, and the elements that matter. You might want an instrumental opening, a simple rhythm, or a voice that remains easy to hear. Separate your own creative intention from a request to imitate an identifiable person. An original direction can draw on musical qualities without claiming someone else's identity or permission."
+        ]
+      },
+      {
+        "title": "Listen for choices you can describe.",
+        "paragraphs": [
+          "When you compare drafts, say what you actually hear. One may have a stronger opening. Another may leave more space around the vocal. A third may become crowded when several layers arrive together. You do not have to know every instrument's name to notice those differences. A useful comparison connects an audible detail with the intended listening experience. That is more helpful than declaring a draft good because it is the newest one.",
+          "Try comparing two examples rather than twenty at once. Listen to the opening, a middle section, and the ending. Keep the playback level comfortable and similar where practical. Write one strength, one weakness, and one possible revision for each. Your notes make the creative process visible. They also help you notice when a track needs an edit instead of another full generation. More output is not the same as more direction."
+        ]
+      },
+      {
+        "title": "Treat AI as part of the production.",
+        "paragraphs": [
+          "Generative tools may help you explore lyrics, sounds, or arrangements. They do not replace the decisions about what the project means or what should be released. A person can guide the brief, select material, edit, arrange, review, and explain the work. Different projects use tools differently. Describe the actual contribution rather than inventing a human performer or pretending the system made every decision by itself.",
+          "Keep a record of tools, inputs, edits, and people involved. If you use samples, reference material, or another person's work, check the relevant permissions. A tool's commercial-use terms are one part of the review, not a complete answer to every copyright or identity question. Requirements can change, so check the current terms of the tools and distributor before release. Where a synthetic artist is part of the experiment, make the project's nature clear to listeners."
+        ]
+      },
+      {
+        "title": "Separate the song from the release.",
+        "paragraphs": [
+          "The music you create and the process of releasing it are connected but different jobs. A song is the composition; a recording is a particular captured or produced version. A release also needs accurate credits, delivery information, artwork, and a plan for discovery. A distributor helps deliver material under its terms. It does not automatically establish that every input or identity choice is permitted. Keeping the jobs separate makes the checklist easier to understand.",
+          "An experimental artist can be a creative identity with a clear story and visual style. The responsible people still need to be visible where relevant. You can explain that the project explores human-directed AI music without inventing a biography that makes a fictional performer appear to be a real person. Clear presentation does not remove imagination. It gives the audience a fair way to understand and participate in the experiment."
+        ]
+      },
+      {
+        "title": "Build one explainable experiment.",
+        "paragraphs": [
+          "Imagine a track for a garden video at sunset. The brief asks for a steady gentle pulse, warm sounds, no lyrics, and an ending that settles rather than cuts off. Two drafts fit the mood, but one has a sudden energetic section. The creator keeps the calmer version, revises the ending, and records the reason. They then review the inputs, terms, credits, and video use. The project has a purpose and a traceable set of choices.",
+          "Write your own listening brief in five sentences. Compare two examples against it. Choose one revision and explain the audible reason. Make a separate release checklist, marking every question that still needs an answer. You can use the fuller Music & AI course when you want to explore industry roles and production in more depth. For now, build the habit of listening deliberately. One directed experiment can teach more than a folder full of tracks you cannot distinguish."
+        ]
+      }
+    ],
+    "takeaway": "The next useful step may be a clearer intention or a better edit, rather than another generation.",
+    "questions": [
+      {
+        "question": "Which three details help a listening brief?",
+        "options": [
+          "The listening setting",
+          "The intended mood and energy",
+          "The musical qualities you want to compare",
+          "A promise to imitate a real person's identity without permission",
+          "Only the word amazing"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "Setting, mood, and describable qualities make the intention usable."
+      },
+      {
+        "question": "Which three notes help you compare drafts?",
+        "options": [
+          "An audible strength",
+          "A weakness relative to the brief",
+          "A revision you can explain",
+          "The newest draft must be best",
+          "A claim about an instrument you did not hear"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "Use what you hear and connect it with the listening goal."
+      },
+      {
+        "question": "Which three checks belong before release?",
+        "options": [
+          "Relevant input permissions and tool terms",
+          "Accurate credits and distributor requirements",
+          "Clear presentation of an experimental artist's identity",
+          "Assume a generator settles every rights issue",
+          "Invent a real performer's biography"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "The responsible people need to review rights, release details, and honest presentation."
+      }
+    ],
+    "sources": [
+      [
+        "U.S. Copyright Office. (n.d.). Copyright and artificial intelligence.",
+        "https://www.copyright.gov/ai/"
+      ]
+    ]
+  },
+  {
+    "slug": "a-purpose-you-can-practice",
+    "title": "Turn a purpose into something you can practice.",
+    "deck": "A big reason becomes useful when it guides a small action.",
+    "topic": "Purpose & Momentum",
+    "course": "purpose-momentum",
+    "tint": "#301921",
+    "sections": [
+      {
+        "title": "Begin with a person and a problem.",
+        "paragraphs": [
+          "A purpose statement can sound wonderful and still leave you unsure what to do on Monday. Try beginning with a person you want to help and a problem you understand. A teacher might want new employees to feel capable during their first week. A gardener might want neighbors to grow one reliable crop. These are concrete enough to guide a project without pretending that one project will solve everything.",
+          "Write a sentence that connects the person, the difficulty, and the change you hope to support. For example: We help first-time team leaders prepare clear conversations so employees know what to do next. This sentence does not need to be your final brand slogan. It is a working direction. If you cannot name the change, interview someone who faces the problem before choosing a product or tool."
+        ]
+      },
+      {
+        "title": "Choose a behavior you can observe.",
+        "paragraphs": [
+          "Now ask what the person would actually do differently. Feeling inspired is valuable, but it is hard to inspect. Preparing a meeting agenda, asking a clearer question, or completing a first practice task gives you something you can see. You can still care about confidence while designing an activity that produces evidence. A useful purpose connects an emotional reason with an observable action.",
+          "Imagine you are building a short course for new supervisors. The purpose is to reduce confusion. The practice could be writing a two-sentence task request with a result and a deadline. The learner can compare that request with a sample. You have turned a broad intention into an activity that can be improved, tested, and explained to a client."
+        ]
+      },
+      {
+        "title": "Make the first step smaller.",
+        "paragraphs": [
+          "A large purpose often encourages an oversized first project. Before building a whole library, create one helpful example and ask a few intended users to try it. Give them a clear task and watch where they hesitate. Their reaction can tell you whether the purpose is reaching the person you meant to help. Praise alone is less useful than seeing someone use the work.",
+          "Set a short review date and a reasonable effort limit. You might spend two evenings creating the example and one evening reviewing feedback. The point is not to rush important work. It is to prevent an inspiring idea from becoming an endless preparation cycle. Keep a note of what worked, what confused people, and what you will change next."
+        ]
+      },
+      {
+        "title": "Use your purpose to make a choice.",
+        "paragraphs": [
+          "When two ideas compete for your time, return to the sentence. Does the new feature help the intended person make the intended change? A decorative animation might improve attention. It might also distract from the task. Judge it by its role, rather than treating every attractive feature as necessary. You can save good ideas for later without losing the direction.",
+          "For practice, write your purpose, one observable behavior, one small test, and a review date. Ask someone else to explain the plan back to you. If their explanation is different from yours, revise the wording. A purpose becomes stronger through use. It should help you decide what belongs, what can wait, and what evidence would show that your work is helping."
+        ]
+      }
+    ],
+    "takeaway": "A purpose should help you choose what to do next, not just sound impressive.",
+    "questions": [
+      {
+        "question": "Which three details make a purpose usable?",
+        "options": [
+          "An intended person",
+          "A real difficulty",
+          "A change you can support",
+          "Only an impressive slogan",
+          "A promise to solve every problem"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "Look for an intended person, a real difficulty, a change you can support. These choices support the method explained in this article."
+      },
+      {
+        "question": "Which three activities provide useful evidence?",
+        "options": [
+          "Watch someone try the task",
+          "Compare the result with an example",
+          "Ask where the person hesitated",
+          "Count compliments only",
+          "Avoid feedback until everything is built"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "Look for watch someone try the task, compare the result with an example, ask where the person hesitated. These choices support the method explained in this article."
+      },
+      {
+        "question": "Which three details belong in a first test?",
+        "options": [
+          "One small example",
+          "An effort limit",
+          "A review date",
+          "An unlimited feature list",
+          "No intended user"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "Look for one small example, an effort limit, a review date. These choices support the method explained in this article."
+      }
+    ],
+    "sources": [
+      [
+        "U.S. Small Business Administration. (n.d.). Plan your business.",
+        "https://www.sba.gov/counseling/plan-your-business/"
+      ]
+    ]
+  },
+  {
+    "slug": "lead-a-clear-conversation",
+    "title": "Lead a conversation people can act on.",
+    "deck": "A practical structure for a meeting, a request, or a difficult handoff.",
+    "topic": "Leadership",
+    "course": "leadership",
+    "tint": "#302719",
+    "sections": [
+      {
+        "title": "Name the result before the discussion.",
+        "paragraphs": [
+          "A meeting can have plenty of conversation without producing a decision. Before inviting people, write what should be different when the discussion ends. Are you choosing a delivery date, assigning responsibility, or understanding a problem? These are different purposes. A meeting that mixes them without saying so can leave people defending ideas when you only needed information.",
+          "Use a short opening: We are here to choose the first task and identify who will complete it. Then explain the information people need. You are giving the conversation a boundary, not demanding that everyone agree with you. A clear result makes it easier for someone to raise a relevant concern or explain why a decision is not ready."
+        ]
+      },
+      {
+        "title": "Ask before you assume.",
+        "paragraphs": [
+          "Suppose a teammate has missed a deadline. You could begin with an accusation, or you could describe the observed situation and ask what blocked progress. The second approach gives you information you can use. Perhaps the task was unclear, a dependency was missing, or the person made a mistake. You still need to address the missed commitment, but you now have a better basis for doing it.",
+          "Separate facts from interpretations in your notes. The file was not ready at noon is a fact you can check. They do not care is an interpretation. Ask questions that can reveal the difference. What part was ready? What information was missing? What would make the next deadline realistic? Specific questions are more useful than a general demand to communicate better."
+        ]
+      },
+      {
+        "title": "Close the loop.",
+        "paragraphs": [
+          "At the end, summarize the decision, the owner, the next action, and the check-in time. Invite corrections before everyone leaves. An owner means someone is responsible for coordinating the result; it does not mean they must complete every piece alone. If several people share a task, say how their pieces connect and who will notice if a handoff fails.",
+          "Send a brief written recap that uses the same terms as the conversation. An AI tool can help turn your approved notes into a draft, but review every assignment and deadline before sending. Do not turn an uncertain idea into a settled decision simply because a summary sounds confident. The recap should reflect what people actually agreed to."
+        ]
+      },
+      {
+        "title": "Practice a low-stakes handoff.",
+        "paragraphs": [
+          "Choose a routine task, such as preparing an event sign or reviewing a webpage. Write a request that names the result, the boundaries, and the review date. Ask the receiving person to describe what they will deliver. Listen for a mismatch. This rehearsal makes unclear language visible before it causes a costly problem.",
+          "Leadership is not limited to speaking first or sounding certain. Sometimes it means admitting a missing fact, slowing a rushed choice, or making space for an overlooked perspective. Evaluate your next conversation by what people can do afterward. If they can explain the next step and their part in it, you have created a useful starting point."
+        ]
+      }
+    ],
+    "takeaway": "Clarity is a leadership behavior you can practice before you have a leadership title.",
+    "questions": [
+      {
+        "question": "Which three details help open a meeting?",
+        "options": [
+          "The intended result",
+          "The relevant information",
+          "The scope of the discussion",
+          "A hidden purpose",
+          "A demand for instant agreement"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "Look for the intended result, the relevant information, the scope of the discussion. These choices support the method explained in this article."
+      },
+      {
+        "question": "Which three questions clarify a missed handoff?",
+        "options": [
+          "What was ready?",
+          "What blocked progress?",
+          "What next step is realistic?",
+          "Why do you never care?",
+          "Can we skip every detail?"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "Look for what was ready?, what blocked progress?, what next step is realistic?. These choices support the method explained in this article."
+      },
+      {
+        "question": "Which three items help close the loop?",
+        "options": [
+          "A named owner",
+          "An agreed next action",
+          "A check-in time",
+          "A guessed deadline",
+          "An unreviewed AI assignment"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "Look for a named owner, an agreed next action, a check-in time. These choices support the method explained in this article."
+      }
+    ],
+    "sources": [
+      [
+        "U.S. Small Business Administration. (n.d.). Plan your business.",
+        "https://www.sba.gov/counseling/plan-your-business/"
+      ]
+    ]
+  },
+  {
+    "slug": "check-an-ai-answer",
+    "title": "Check an AI answer before you build on it.",
+    "deck": "A confident sentence is a starting point for review, not proof.",
+    "topic": "AI Foundations",
+    "course": "ai-foundations",
+    "tint": "#152136",
+    "sections": [
+      {
+        "title": "Find the claims inside the answer.",
+        "paragraphs": [
+          "An AI answer may mix useful reasoning, ordinary suggestions, and factual claims in the same paragraph. Begin by separating them. If the answer recommends a color scheme, you can judge whether it fits your project. If it says a platform supports a feature, you need evidence from that platform. If it calculates a total, you need to inspect the inputs and arithmetic.",
+          "Underline the statements that would change your decision if they were wrong. These deserve the most attention. You do not need the same review effort for a brainstorming title and a customer invoice. The review should match the consequences. This is one way to apply the broader risk-management approach described by NIST to an ordinary work task."
+        ]
+      },
+      {
+        "title": "Go to the source, not just the link.",
+        "paragraphs": [
+          "A citation can look official while failing to support the sentence beside it. Open the source and find the relevant section. Check whether it describes the same product, location, time, and situation. A page about a personal account may not explain business-account features. A historical price does not establish the current price. The title of a page is not enough.",
+          "If you cannot find support, mark the claim as unverified rather than polishing it into your report. Ask the tool to identify its assumptions, but do not treat the tool's second answer as independent confirmation. You can use AI to organize the checking work while keeping the actual evidence separate. Record the source URL and the detail you checked."
+        ]
+      },
+      {
+        "title": "Test the parts you can test.",
+        "paragraphs": [
+          "For a calculation, write down the formula and recompute it with a calculator or spreadsheet. For instructions, try them in a safe test environment. For a generated email, compare names, dates, attachments, and promises with your actual notes. A test does not answer every question, but it can reveal a practical mismatch that a smooth explanation hides.",
+          "Suppose the tool proposes a three-step website setup. You discover that the second button has a different label. This may be a minor interface change rather than a completely wrong method. Record what you observed and revise the instruction. Useful review does not mean rejecting everything. It means keeping what works and correcting what the evidence does not support."
+        ]
+      },
+      {
+        "title": "Keep a review trail.",
+        "paragraphs": [
+          "Make a small table with the claim, the source or test, the result, and the remaining uncertainty. Use simple labels such as checked, needs clarification, and not supported. The table makes it easier to explain a decision later. It also prevents the same uncertain detail from returning as an established fact in a future draft.",
+          "Practice with a low-stakes answer containing three factual claims. Check each one and rewrite the answer so its level of certainty matches the evidence. Remove unsupported promises. Keep useful suggestions labeled as suggestions. The goal is to use the speed of AI without handing over your judgment. A shorter, checked answer can be more useful than a polished answer built on guesses."
+        ]
+      }
+    ],
+    "takeaway": "Verification starts with identifying which claims matter to the decision.",
+    "questions": [
+      {
+        "question": "Which three parts deserve direct checking?",
+        "options": [
+          "A factual feature claim",
+          "A calculation",
+          "A deadline or price used in a decision",
+          "Every suggested color must be proven",
+          "A confident tone proves accuracy"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "Look for a factual feature claim, a calculation, a deadline or price used in a decision. These choices support the method explained in this article."
+      },
+      {
+        "question": "Which three checks help evaluate a source?",
+        "options": [
+          "It supports the exact claim",
+          "It matches the situation",
+          "Its timing is relevant",
+          "The page title sounds official",
+          "The tool repeated itself"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "Look for it supports the exact claim, it matches the situation, its timing is relevant. These choices support the method explained in this article."
+      },
+      {
+        "question": "Which three fields help a review trail?",
+        "options": [
+          "The claim",
+          "The checking result",
+          "The remaining uncertainty",
+          "A hidden guess",
+          "Only the final polished paragraph"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "Look for the claim, the checking result, the remaining uncertainty. These choices support the method explained in this article."
+      }
+    ],
+    "sources": [
+      [
+        "National Institute of Standards and Technology. (n.d.). AI Risk Management Framework.",
+        "https://www.nist.gov/itl/ai-risk-management-framework"
+      ]
+    ]
+  },
+  {
+    "slug": "protect-data-in-your-prompt",
+    "title": "Share enough context without sharing everything.",
+    "deck": "Build a useful AI prompt while keeping private details out of the draft.",
+    "topic": "AI & Privacy",
+    "course": "ai-foundations",
+    "tint": "#241b30",
+    "sections": [
+      {
+        "title": "Start with the task.",
+        "paragraphs": [
+          "You want help writing a customer reply. The tool needs to understand the issue, the approved response, and the tone. It usually does not need a bank account number, a private address, or a complete customer history. Write the task first, then decide which details make that task possible. This habit reduces unnecessary exposure and often makes the prompt easier to understand.",
+          "Replace identifying details with placeholders when they are not needed. Customer A, Order 17, and delivery on Tuesday can preserve the structure of a problem without copying a full record. Keep the real information in your authorized system. When the draft is ready, add the approved details yourself. This is a practical work method, not a guarantee that a tool is appropriate for every sensitive task."
+        ]
+      },
+      {
+        "title": "Check the service and the rules.",
+        "paragraphs": [
+          "Different tools and account plans may handle inputs differently. Before using business records, read the current service terms and your organization's policy. Ask who can access the information, what settings are available, and whether the task belongs in that service at all. Do not assume that a free account and an approved business workspace provide identical controls.",
+          "If the information belongs to someone else, being able to copy it does not establish permission to share it. A client file may include details that were supplied for a narrow purpose. Keep the question practical: What information is necessary, what use was authorized, and which tool is approved? If those answers are unclear, use a fictional example while you obtain clarification."
+        ]
+      },
+      {
+        "title": "Build a reusable sanitized example.",
+        "paragraphs": [
+          "Imagine a refund request for a damaged item. Your prompt might say: A customer reports that the product arrived damaged. Our policy allows a replacement after we review photos. Draft a calm reply that asks for the required photos without promising approval. The tool can help with wording without receiving the customer's name or private payment details.",
+          "Save this sanitized structure as a template. Include a reminder to insert only verified policy information. A reusable prompt should not preserve old customer data by accident. Review examples before adding them to shared documents or training materials. Screenshots can expose details in corners, browser tabs, or notifications that were not part of the main task."
+        ]
+      },
+      {
+        "title": "Review before sending.",
+        "paragraphs": [
+          "The final reply still needs human review. Confirm that it follows the actual policy, asks only for necessary information, and makes no invented promises. Replace placeholders carefully. Check that the message is addressed to the right person and that attachments belong with this request. Protecting inputs does not remove the need to inspect outputs.",
+          "For practice, take a fictional customer problem and write two versions of the prompt. One includes unnecessary identifying details; the other retains only task-relevant context. Compare how well each supports the work. You will often find that the shorter, cleaner prompt is easier to reuse. Good information habits can improve both privacy and clarity."
+        ]
+      }
+    ],
+    "takeaway": "A good prompt uses the information needed for the task, rather than every detail you possess.",
+    "questions": [
+      {
+        "question": "Which three details could help draft a reply?",
+        "options": [
+          "The issue",
+          "The approved policy",
+          "The intended tone",
+          "A full bank account number",
+          "An unrelated private history"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "Look for the issue, the approved policy, the intended tone. These choices support the method explained in this article."
+      },
+      {
+        "question": "Which three actions help reduce unnecessary sharing?",
+        "options": [
+          "Use placeholders",
+          "Check approved tools and policies",
+          "Remove unrelated personal details",
+          "Copy every customer record",
+          "Assume every account has the same controls"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "Look for use placeholders, check approved tools and policies, remove unrelated personal details. These choices support the method explained in this article."
+      },
+      {
+        "question": "Which three checks belong before sending?",
+        "options": [
+          "Verify the policy",
+          "Replace placeholders correctly",
+          "Check the recipient and attachments",
+          "Trust any invented promise",
+          "Send without reading"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "Look for verify the policy, replace placeholders correctly, check the recipient and attachments. These choices support the method explained in this article."
+      }
+    ],
+    "sources": [
+      [
+        "National Institute of Standards and Technology. (n.d.). AI Risk Management Framework.",
+        "https://www.nist.gov/itl/ai-risk-management-framework"
+      ]
+    ]
+  },
+  {
+    "slug": "map-before-you-automate",
+    "title": "Map the work before you automate it.",
+    "deck": "See the handoffs, choices, and exceptions before connecting tools.",
+    "topic": "Business Workflows",
+    "course": "business-workflows",
+    "tint": "#14281f",
+    "sections": [
+      {
+        "title": "Draw the ordinary path.",
+        "paragraphs": [
+          "Pick one repeated job, such as turning a new inquiry into a scheduled conversation. Write what begins the job, what information arrives, who uses it, and what should happen at the end. Use ordinary words before software names. An inquiry arrives, someone checks whether it fits, and the customer receives a reply. This sketch lets you discuss the process without getting lost in integrations.",
+          "Next, add the handoffs. Where does a person copy information? Where does the work wait? Where is a decision made? A box for send email hides several questions: Which email, to whom, and under what conditions? Expand the steps that affect the result. A useful map is detailed enough to reveal a problem while still small enough to explain."
+        ]
+      },
+      {
+        "title": "Mark the decisions.",
+        "paragraphs": [
+          "Some steps are predictable. Others require judgment. Copying a form response into an approved record is different from deciding whether to accept a complex project. Mark each decision and name the person responsible for it. If AI helps categorize an inquiry, decide how a person will review uncertain cases and correct mistakes.",
+          "Imagine a message that mentions both a website and a funding need. A simple keyword rule might send it to the wrong place. Your map should show what happens when more than one category applies. The exception is part of the work, not an inconvenience you can ignore. A process with an explicit review step is easier to trust than one that silently guesses."
+        ]
+      },
+      {
+        "title": "Test a narrow improvement.",
+        "paragraphs": [
+          "Choose one low-risk step for the first automation. You might create a draft acknowledgment instead of sending messages automatically. Compare several test cases with the result you expected. Include a normal inquiry, a missing field, a duplicate submission, and an unclear request. Record what the system did, not just whether the tool reported success.",
+          "Keep a way to pause the automation and complete the job manually. Assign an owner who can inspect failures. Decide what information will be logged and where it belongs. A small improvement that saves a few reliable minutes is worth more than a large connection that creates cleanup work every day."
+        ]
+      },
+      {
+        "title": "Measure the whole job.",
+        "paragraphs": [
+          "Time saved in one step may become time spent correcting another. Compare the full process before and after the change. How long does it take to produce a useful reply? How many cases need correction? Does the customer receive clearer information? These questions keep the focus on the job instead of the number of connected apps.",
+          "For practice, map one routine task on a single page. Circle one repeatable step, label one decision that stays with a person, and write two exception cases. Build the smallest test that can check your idea. You now have a plan for automation that begins with the work you actually need done."
+        ]
+      }
+    ],
+    "takeaway": "Automation works better when the underlying job has a clear beginning, owner, and result.",
+    "questions": [
+      {
+        "question": "Which three items belong in a process map?",
+        "options": [
+          "The trigger",
+          "The handoffs",
+          "The desired result",
+          "Only app logos",
+          "No decisions"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "Look for the trigger, the handoffs, the desired result. These choices support the method explained in this article."
+      },
+      {
+        "question": "Which three cases help test an inquiry workflow?",
+        "options": [
+          "A normal inquiry",
+          "Missing information",
+          "A duplicate or ambiguous request",
+          "Only the easiest case",
+          "No human review"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "Look for a normal inquiry, missing information, a duplicate or ambiguous request. These choices support the method explained in this article."
+      },
+      {
+        "question": "Which three measures help judge improvement?",
+        "options": [
+          "Total completion time",
+          "Correction effort",
+          "Usefulness of the result",
+          "Number of apps alone",
+          "The length of the automation"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "Look for total completion time, correction effort, usefulness of the result. These choices support the method explained in this article."
+      }
+    ],
+    "sources": [
+      [
+        "National Institute of Standards and Technology. (n.d.). AI Risk Management Framework.",
+        "https://www.nist.gov/itl/ai-risk-management-framework"
+      ]
+    ]
+  },
+  {
+    "slug": "a-weekly-reset-that-works",
+    "title": "Build a weekly reset you will actually use.",
+    "deck": "A short review can keep tasks, files, and commitments from becoming one pile.",
+    "topic": "Organization",
+    "course": "organization",
+    "tint": "#301921",
+    "sections": [
+      {
+        "title": "Give the review a clear boundary.",
+        "paragraphs": [
+          "A weekly reset can become another overwhelming project if it means fixing your entire life. Begin with a smaller promise: review open commitments, choose the next few actions, and put important information where you can find it. Set a reasonable time limit. The purpose is to regain a clear view, not to create a perfect system in one sitting.",
+          "Choose a predictable place to record the result. A page, a calendar, or a simple task list can work. If you use several systems, give each a job. The calendar holds time commitments. The task list holds actions. Your files hold supporting material. A reminder should tell you what to do or where to look, rather than duplicating a whole document."
+        ]
+      },
+      {
+        "title": "Collect before you sort.",
+        "paragraphs": [
+          "Gather notes from the places where work actually lands: email flags, paper slips, messages, and unfinished drafts. Do not reorganize every item as soon as you see it. First make a short collection, then decide what each item requires. Some need action, some belong in reference files, and some can be removed. Separating collection from decision can reduce repeated switching.",
+          "For each actionable item, write the next physical step. Work on website is broad. Check the contact button on a phone is specific. You do not need to solve the entire project to name its next step. If the action depends on someone else, note what you are waiting for and when you will follow up."
+        ]
+      },
+      {
+        "title": "Use AI for organization, not hidden decisions.",
+        "paragraphs": [
+          "An AI assistant can help group a sanitized list by project or rewrite vague tasks into clearer drafts. Review the grouping yourself. The tool does not know every promise, family need, or deadline behind the list. Do not let an attractive ranking become a decision you never considered. Keep private details out when they are not needed for the sorting task.",
+          "Try asking for three possible groupings rather than one final priority order. A list grouped by deadline may reveal something different from a list grouped by effort. Compare the options with your real situation. Choose a small number of actions that fit the time available. A useful plan leaves room for interruption instead of pretending every hour will be predictable."
+        ]
+      },
+      {
+        "title": "End with a short landing page.",
+        "paragraphs": [
+          "Finish the review with three things: the next important actions, the commitments you must honor, and the information you are waiting for. Keep that summary easy to find during the week. You should not have to repeat the entire review every morning. The summary is a working view, and it can change when circumstances change.",
+          "Practice the reset once with a single project. Notice which steps help and which create unnecessary work. Remove fields you never use. Add a reminder only when it solves a real problem. The best routine is one you can repeat during an ordinary busy week, not one that only works when you have hours to organize."
+        ]
+      }
+    ],
+    "takeaway": "The reset is a place to make decisions, not a second storage bin for unfinished thoughts.",
+    "questions": [
+      {
+        "question": "Which three jobs belong in a weekly reset?",
+        "options": [
+          "Review commitments",
+          "Choose next actions",
+          "Locate important information",
+          "Perfect every file",
+          "Rebuild every project"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "Look for review commitments, choose next actions, locate important information. These choices support the method explained in this article."
+      },
+      {
+        "question": "Which three task descriptions are useful?",
+        "options": [
+          "Check the contact button on a phone",
+          "Request the missing project file",
+          "Review the draft by Friday",
+          "Do everything",
+          "Be more organized"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "Look for check the contact button on a phone, request the missing project file, review the draft by friday. These choices support the method explained in this article."
+      },
+      {
+        "question": "Which three details help the final summary?",
+        "options": [
+          "Next important actions",
+          "Time commitments",
+          "Items you are waiting for",
+          "Every old note",
+          "A ranking you never reviewed"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "Look for next important actions, time commitments, items you are waiting for. These choices support the method explained in this article."
+      }
+    ],
+    "sources": [
+      [
+        "U.S. Small Business Administration. (n.d.). Plan your business.",
+        "https://www.sba.gov/counseling/plan-your-business/"
+      ]
+    ]
+  },
+  {
+    "slug": "a-homepage-with-one-job",
+    "title": "Give your homepage one clear job.",
+    "deck": "Help a visitor understand the offer and find the next useful action.",
+    "topic": "Web Design",
+    "course": "web-design",
+    "tint": "#302719",
+    "sections": [
+      {
+        "title": "Describe the visitor’s first question.",
+        "paragraphs": [
+          "A visitor arrives with limited context. They may have a business card, a message, or a search result. Before adding sections, ask what they need to understand first. For a portfolio, it could be what you create and where to explore it. For a store, it could be what is available and whom it serves. The answer helps you choose the first sentence and the first action.",
+          "Write a plain explanation before a slogan. A striking headline can attract attention, but visitors still need meaning. Pair the headline with a short line that names the work. Then choose one main route. You can offer other routes lower on the page without making every link compete for the first click."
+        ]
+      },
+      {
+        "title": "Make the action describe the destination.",
+        "paragraphs": [
+          "Open portfolio tells a person more than click here. Read the lesson is different from buy the worksheet. A useful label describes what happens next and avoids suggesting an action that the link does not perform. If a button opens an introduction, the introduction should have a clear path onward. If it opens another website, the label and context should prepare the visitor.",
+          "Use the same label for the same action in different parts of the site. Consistency reduces guesswork. W3C writing guidance supports meaningful link text and clear instructions. You can still use compact icons, but give them accessible names and visible labels on focus or hover. On a phone, important meaning should not depend entirely on hovering."
+        ]
+      },
+      {
+        "title": "Use movement with a purpose.",
+        "paragraphs": [
+          "Animation can make a portfolio memorable. It can also hide a target or distract from reading. Let movement support the experience while keeping controls dependable. A rotating destination wheel, for example, needs clickable targets, readable labels, and a stable state when a visitor opens a card. A beautiful action that feels delayed can weaken trust.",
+          "Test the page with reduced-motion settings and a keyboard. Check whether important content remains available without the animation. These checks do not remove your visual identity. They help more people use it. Look for effects that add delight without becoming the only way to understand the page."
+        ]
+      },
+      {
+        "title": "Test the first visit.",
+        "paragraphs": [
+          "Ask someone who has not seen the page to describe what you do after a short look. Then give them a task: find a course, contact the studio, or locate a particular website. Watch the route they choose. Avoid explaining the interface while they work. Their hesitation shows where the design needs clearer meaning.",
+          "For practice, sketch a homepage with a headline, a plain description, one primary route, and three supporting destinations. Write the button labels before styling them. Check the sketch at phone size. If someone can understand the work and choose a next step, you have a strong foundation for richer visuals and interaction."
+        ]
+      }
+    ],
+    "takeaway": "A homepage can show variety while still giving visitors a clear starting point.",
+    "questions": [
+      {
+        "question": "Which three things help a first-time visitor?",
+        "options": [
+          "A plain explanation",
+          "A clear starting route",
+          "Relevant supporting destinations",
+          "Only a slogan",
+          "Every link equally emphasized"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "Look for a plain explanation, a clear starting route, relevant supporting destinations. These choices support the method explained in this article."
+      },
+      {
+        "question": "Which three labels explain an action?",
+        "options": [
+          "Read the lesson",
+          "Explore the portfolio",
+          "Prepare an inquiry",
+          "Click here",
+          "Do something"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "Look for read the lesson, explore the portfolio, prepare an inquiry. These choices support the method explained in this article."
+      },
+      {
+        "question": "Which three checks support reliable movement?",
+        "options": [
+          "Keyboard access",
+          "Reduced-motion behavior",
+          "Responsive clickable targets",
+          "Moving text that cannot be read",
+          "Delayed controls"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "Look for keyboard access, reduced-motion behavior, responsive clickable targets. These choices support the method explained in this article."
+      }
+    ],
+    "sources": [
+      [
+        "World Wide Web Consortium. (n.d.). Writing for web accessibility.",
+        "https://www.w3.org/WAI/tips/writing/"
+      ]
+    ]
+  },
+  {
+    "slug": "make-a-form-feel-human",
+    "title": "Make a form feel like a clear conversation.",
+    "deck": "Ask useful questions, explain the next step, and remove unnecessary friction.",
+    "topic": "Interactive Apps",
+    "course": "web-design",
+    "tint": "#152136",
+    "sections": [
+      {
+        "title": "Ask what changes the next step.",
+        "paragraphs": [
+          "Every field asks a visitor to spend effort or share information. Begin with the information you actually need to respond. A project inquiry may need a goal, a service direction, and a reply address. It may not need a full mailing address. When a question does not change your response or process, consider leaving it out of the first conversation.",
+          "Use a label that names the information plainly. Tell us your goal is clearer than strategic outcome parameters. Examples can help, but they should not replace the label. A visitor should still know what the field means after entering text. If a question is optional, say so. If a choice changes later fields, make that relationship easy to notice."
+        ]
+      },
+      {
+        "title": "Break a long form into meaningful steps.",
+        "paragraphs": [
+          "A multistep form can feel manageable when each step has a clear purpose. Your direction, the project details, and how to connect form a natural sequence. Keep the back button visible and preserve the person's answers when they return. A step indicator should describe progress without pretending that an unfinished field has been completed.",
+          "Avoid revealing a large set of irrelevant questions. If someone chooses instructional design, ask about the audience and learning goal. If they choose a website, ask about the purpose and current site. Conditional questions should simplify the conversation rather than hide essential requirements. Test each route, including changing an earlier selection."
+        ]
+      },
+      {
+        "title": "Make correction useful.",
+        "paragraphs": [
+          "When information is missing, explain which field needs attention and how to fix it. A red border alone does not tell everyone what happened. Keep the message near the field and use text as well as color. Preserve the answers already entered. A visitor should not have to reconstruct their whole request because one email address was incomplete.",
+          "For example, Please enter an email address so we can reply explains both the request and the reason. An error message should avoid blame. The purpose is to help someone finish, not to grade their typing. Check whether the message can be reached with a keyboard and understood at phone size."
+        ]
+      },
+      {
+        "title": "Explain what submission does.",
+        "paragraphs": [
+          "A button that prepares an email is different from a form that sends a message to a server. Say what happens. If the visitor must finish sending in an email app, explain that step and offer a copyable summary. If you store submissions, describe the relevant handling accurately. A polished interface should not imply that a message was delivered when it was only drafted.",
+          "Practice by designing a five-question inquiry for a fictional service. Remove one unnecessary question, write one helpful error message, and describe the final action in a sentence. Ask a person to complete it without your help. A form succeeds when the visitor can tell you what they need and understand what happens next."
+        ]
+      }
+    ],
+    "takeaway": "A form should help people express a need without forcing them to understand your internal process.",
+    "questions": [
+      {
+        "question": "Which three questions may support an initial inquiry?",
+        "options": [
+          "The goal",
+          "The relevant service",
+          "How to reply",
+          "Unnecessary bank details",
+          "Every internal department code"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "Look for the goal, the relevant service, how to reply. These choices support the method explained in this article."
+      },
+      {
+        "question": "Which three features help a multistep form?",
+        "options": [
+          "Preserved answers",
+          "A clear back button",
+          "Meaningful step labels",
+          "Resetting all fields",
+          "Hidden required questions"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "Look for preserved answers, a clear back button, meaningful step labels. These choices support the method explained in this article."
+      },
+      {
+        "question": "Which three details make submission clearer?",
+        "options": [
+          "The actual button action",
+          "What the visitor does next",
+          "An accurate status message",
+          "A false delivered claim",
+          "No explanation"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "Look for the actual button action, what the visitor does next, an accurate status message. These choices support the method explained in this article."
+      }
+    ],
+    "sources": [
+      [
+        "World Wide Web Consortium. (n.d.). Writing for web accessibility.",
+        "https://www.w3.org/WAI/tips/writing/"
+      ]
+    ]
+  },
+  {
+    "slug": "content-that-answers-a-question",
+    "title": "Create content around a real question.",
+    "deck": "Give each post a useful job before choosing its format.",
+    "topic": "Digital Marketing",
+    "course": "digital-marketing",
+    "tint": "#241b30",
+    "sections": [
+      {
+        "title": "Listen for repeated questions.",
+        "paragraphs": [
+          "A content idea does not have to begin with a trend. It can begin with a question customers, learners, or colleagues ask repeatedly. How do I choose the right tool? What happens after I submit the form? Why does this file not open? These questions reveal information that people need before taking action. Write the question in the language they actually use.",
+          "Choose one question for one piece of content. A post that tries to explain everything about AI, marketing, and business may leave the reader with no clear takeaway. A focused answer can be useful on its own and connect to a larger course. Google Search guidance emphasizes content made to help people; your editorial work still needs its own examples and judgment."
+        ]
+      },
+      {
+        "title": "Choose the smallest useful explanation.",
+        "paragraphs": [
+          "Some questions need a sentence and a screenshot. Others need a worked example or a full lesson. Match the format to the difficulty, not to a fixed posting habit. If the task has several decisions, a short video might show the sequence while written steps provide a reference. If the answer is a simple policy detail, a long dramatic introduction may waste the reader's time.",
+          "Begin with the answer, then explain the reason and show an example. Use headings that help a reader scan. Define the unfamiliar word near its first use. Keep the original question visible while drafting. If a paragraph does not support the answer, decide whether it belongs in another piece."
+        ]
+      },
+      {
+        "title": "Use AI to draft alternatives.",
+        "paragraphs": [
+          "An AI assistant can suggest outlines, examples, or ways to phrase a heading. Give it the actual audience, question, and confirmed facts. Review its draft for invented details and empty claims. Ask for alternatives when the first version sounds broad or exaggerated. You remain responsible for deciding which explanation is accurate and useful.",
+          "Suppose your audience asks how to prepare for a first client call. A helpful post could show a three-part note: the client's goal, questions you need answered, and the next step you can agree on. That example teaches a method. A post saying preparation is everything may be memorable but leaves the reader without a usable action."
+        ]
+      },
+      {
+        "title": "Evaluate understanding, not only attention.",
+        "paragraphs": [
+          "Views tell you that content was displayed or watched under a platform's measurement rules. They do not tell the whole story of understanding. Look for relevant questions, completed tasks, and whether people can describe the next step. A small audience that uses the advice can provide valuable feedback. Keep your measures connected to the content's job.",
+          "For practice, choose a repeated question and write an answer in four parts: the direct answer, a short reason, a concrete example, and a useful next action. Ask someone from the intended audience where they became confused. Revise that point before creating more versions. You are building a body of helpful work, one clear question at a time."
+        ]
+      }
+    ],
+    "takeaway": "A content plan becomes easier when every piece helps someone understand or do something.",
+    "questions": [
+      {
+        "question": "Which three inputs help choose a topic?",
+        "options": [
+          "Repeated audience questions",
+          "A specific information gap",
+          "The words people actually use",
+          "Only a trend label",
+          "Every topic in one post"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "Look for repeated audience questions, a specific information gap, the words people actually use. These choices support the method explained in this article."
+      },
+      {
+        "question": "Which three parts make an explanation usable?",
+        "options": [
+          "A direct answer",
+          "A concrete example",
+          "A relevant next action",
+          "An unsupported promise",
+          "A long unrelated opening"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "Look for a direct answer, a concrete example, a relevant next action. These choices support the method explained in this article."
+      },
+      {
+        "question": "Which three signals can inform improvement?",
+        "options": [
+          "Relevant follow-up questions",
+          "Evidence of task completion",
+          "Where readers become confused",
+          "Views prove understanding",
+          "No feedback needed"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "Look for relevant follow-up questions, evidence of task completion, where readers become confused. These choices support the method explained in this article."
+      }
+    ],
+    "sources": [
+      [
+        "Google. (n.d.). Creating helpful, reliable, people-first content.",
+        "https://developers.google.com/search/docs/fundamentals/creating-helpful-content"
+      ]
+    ]
+  },
+  {
+    "slug": "reuse-a-message-without-repeating-it",
+    "title": "Reuse an idea without copying the same post everywhere.",
+    "deck": "Keep the message consistent while adapting it to the place people see it.",
+    "topic": "Content Systems",
+    "course": "digital-marketing",
+    "tint": "#14281f",
+    "sections": [
+      {
+        "title": "Keep a source version.",
+        "paragraphs": [
+          "Choose one piece of original work as the source: a lesson, a demonstration, an interview summary, or a detailed answer. Save the facts, examples, and approved wording in a place you can find. This source version helps you avoid changing the meaning each time you create a shorter post. It also makes later corrections easier to track.",
+          "Identify the central idea in one sentence. Then list the supporting example and the action you want the reader to take. If you cannot do this, the source may contain several separate ideas. Split them before adapting the work. Repurposing should make a useful idea easier to encounter, not create a stack of disconnected slogans."
+        ]
+      },
+      {
+        "title": "Adapt the entry point.",
+        "paragraphs": [
+          "A person viewing a short video has different context from someone reading a course page. The video may need a visible demonstration immediately. A written post may begin with a question. A newsletter can connect the idea with a previous lesson. Use the same underlying explanation while choosing an entry point that makes sense in that setting.",
+          "For example, a lesson about clear task requests could become a short before-and-after demonstration, a checklist, and a story about a confusing handoff. Each version teaches the same principle from a different angle. Avoid stretching a short post with filler or shrinking a complex example until the important conditions disappear."
+        ]
+      },
+      {
+        "title": "Keep a correction path.",
+        "paragraphs": [
+          "Write down where each version was published and which source it came from. If a fact changes or an example needs correction, this record shows which pieces require review. A simple table with source title, version, location, and date is enough to begin. You do not need a complicated platform to keep the relationship visible.",
+          "AI can help draft alternative formats, but check that it preserves the original meaning. A cautious statement can become an exaggerated promise during rewriting. A conditional example can become a universal rule. Review names, numbers, and scope before publishing. Faster adaptation is useful only when the new version remains accurate."
+        ]
+      },
+      {
+        "title": "Build a small content family.",
+        "paragraphs": [
+          "Practice with one explanation you already understand. Create a brief post, a visual checklist, and a short demonstration script. Give each a clear route to the fuller explanation when more context is needed. Compare them side by side. Can a reader recognize the same idea? Does each version offer enough information to be useful in its own format?",
+          "Use audience feedback to improve the source as well as the shorter versions. If several people ask the same follow-up question, your original lesson may need a clearer example. A content family should grow through learning, not just multiplication. Start with one strong idea and let each adaptation serve a specific situation."
+        ]
+      }
+    ],
+    "takeaway": "Repurposing works when the original idea stays clear and the new format fits the audience.",
+    "questions": [
+      {
+        "question": "Which three items help define the source idea?",
+        "options": [
+          "The central statement",
+          "A supporting example",
+          "A useful action",
+          "Only a catchy phrase",
+          "Unrelated topics mixed together"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "Look for the central statement, a supporting example, a useful action. These choices support the method explained in this article."
+      },
+      {
+        "question": "Which three versions could teach a task-request principle?",
+        "options": [
+          "A before-and-after demo",
+          "A checklist",
+          "A handoff story",
+          "An invented guarantee",
+          "A meaningless slogan"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "Look for a before-and-after demo, a checklist, a handoff story. These choices support the method explained in this article."
+      },
+      {
+        "question": "Which three records support corrections?",
+        "options": [
+          "The source title",
+          "Where the version was published",
+          "The version date",
+          "No source record",
+          "A hidden rewrite"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "Look for the source title, where the version was published, the version date. These choices support the method explained in this article."
+      }
+    ],
+    "sources": [
+      [
+        "Google. (n.d.). Creating helpful, reliable, people-first content.",
+        "https://developers.google.com/search/docs/fundamentals/creating-helpful-content"
+      ]
+    ]
+  },
+  {
+    "slug": "understand-cost-before-price",
+    "title": "Understand the work behind your price.",
+    "deck": "Map costs and effort before deciding what an offer should earn.",
+    "topic": "Small Business",
+    "course": "small-business",
+    "tint": "#301921",
+    "sections": [
+      {
+        "title": "List the pieces of delivery.",
+        "paragraphs": [
+          "A product price can look simple while the work behind it is not. List what must happen to deliver the offer. A digital worksheet needs research, editing, testing, a usable file, and customer instructions. A service may also need meetings, revisions, and follow-up. Include the parts that are easy to overlook because they happen after the sale.",
+          "Separate a one-time setup from work repeated for each customer. Creating a template is different from customizing it for every order. This distinction helps you see whether the offer becomes easier to deliver with experience. Use actual observations when available and label estimates clearly. A guess can help you start a plan, but it should not quietly become a recorded fact."
+        ]
+      },
+      {
+        "title": "Build a simple example.",
+        "paragraphs": [
+          "Suppose a fictional service sells for $120. Direct delivery costs are $20 and delivery takes three hours. The remaining $100 must still contribute to the owner's time and other business expenses. It is not automatically profit. A simplified example can help you inspect the structure without claiming that one formula describes every business.",
+          "Now imagine the customer requests two extra rounds of work. The price stayed the same while the effort increased. This is why scope matters. Write what is included, what counts as an additional request, and how you will discuss changes. Clear scope can prevent confusion for both parties and make your delivery estimate more realistic."
+        ]
+      },
+      {
+        "title": "Compare the offer with the customer need.",
+        "paragraphs": [
+          "Costs matter, but they are not the only input. Ask what problem the customer is trying to solve, what alternatives exist, and what result your offer can realistically support. Research can reveal that a beautifully designed product answers a problem people do not prioritize. It can also reveal that customers value clear instructions more than another decorative feature.",
+          "AI can help organize cost categories or draft interview questions. Do not use an invented competitor price as evidence. Check real listings and note the date and included scope. Compare like with like. A low price for a basic file and a higher price for a customized service may describe different offers rather than a disagreement about value."
+        ]
+      },
+      {
+        "title": "Test and revise.",
+        "paragraphs": [
+          "Track the time and expenses from a small real or simulated delivery. Compare them with your estimate. Notice where revisions, questions, or technical problems added effort. Improve the process before assuming that the only answer is a price change. Sometimes a clearer product description or better instruction saves more work than a new tool.",
+          "For practice, outline one offer with setup work, per-customer effort, direct costs, and included scope. Use a clearly labeled fictional price to inspect the structure. Write down what you still need to learn from customers or actual delivery. This is a planning exercise. Specific tax, accounting, or financing decisions need guidance appropriate to your situation."
+        ]
+      }
+    ],
+    "takeaway": "A price is easier to explain when you understand what delivery actually requires.",
+    "questions": [
+      {
+        "question": "Which three items affect delivery effort?",
+        "options": [
+          "Preparation",
+          "Included revisions",
+          "Customer follow-up",
+          "Only the sale button",
+          "Only the product title"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "Look for preparation, included revisions, customer follow-up. These choices support the method explained in this article."
+      },
+      {
+        "question": "Which three details clarify scope?",
+        "options": [
+          "What is included",
+          "What counts as extra work",
+          "How changes will be discussed",
+          "Unlimited hidden revisions",
+          "No delivery boundary"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "Look for what is included, what counts as extra work, how changes will be discussed. These choices support the method explained in this article."
+      },
+      {
+        "question": "Which three records improve an estimate?",
+        "options": [
+          "Actual time",
+          "Actual direct costs",
+          "Differences from the original plan",
+          "Invented competitor prices",
+          "Unlabeled guesses"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "Look for actual time, actual direct costs, differences from the original plan. These choices support the method explained in this article."
+      }
+    ],
+    "sources": [
+      [
+        "U.S. Small Business Administration. (n.d.). Plan your business.",
+        "https://www.sba.gov/counseling/plan-your-business/"
+      ]
+    ]
+  },
+  {
+    "slug": "prepare-a-funding-conversation",
+    "title": "Prepare a clearer business funding conversation.",
+    "deck": "Organize the purpose, records, and questions before comparing options.",
+    "topic": "Business Funding",
+    "course": "business-funding",
+    "tint": "#302719",
+    "sections": [
+      {
+        "title": "Name what the money would do.",
+        "paragraphs": [
+          "Funding is a broad word. Begin with the business purpose: equipment, a planned expansion, a working-capital gap, or another specific need. Write the amount you believe is required and how you estimated it. A general request for money is harder to evaluate than a description of the work it would support. Keep an estimate separate from a final cost or approved quote.",
+          "Explain the timing as well. A need next week is different from a project planned for next year. Identify whether the expense is one-time or recurring. These details help you prepare a conversation with a qualified provider. They do not establish which product you should choose or whether your business qualifies."
+        ]
+      },
+      {
+        "title": "Organize the business record.",
+        "paragraphs": [
+          "Make a list of the records a provider requests through its official process. Requirements vary by product and institution. Keep sensitive documents in an appropriate secure location rather than putting them into a public inquiry or ordinary AI prompt. For an initial conversation, you can usually describe the business activity and the purpose without sending every private record.",
+          "Check that the figures you discuss use clear time periods. Monthly revenue, yearly revenue, profit, and cash on hand are different measures. If you do not know a figure, say so and identify where you will verify it. A well-organized record helps you avoid giving inconsistent answers in different conversations."
+        ]
+      },
+      {
+        "title": "Ask about the full obligation.",
+        "paragraphs": [
+          "When a provider explains an option, ask how repayment works, which costs apply, what security or guarantee is required, and what happens if payment is late. Request the actual terms in writing and take time to understand them. A headline rate or fast-approval claim does not explain every obligation. Compare terms on the same basis rather than relying on the most attractive phrase.",
+          "Use AI to turn your approved notes into a question list, not to manufacture qualification or complete sensitive applications without review. A tool can help you notice a missing topic. It cannot establish that a provider's offer is suitable or legitimate. Verify the provider and consult appropriate professional support when the decision requires it."
+        ]
+      },
+      {
+        "title": "Prepare a one-page brief.",
+        "paragraphs": [
+          "Create a short brief with the business purpose, estimated amount, timing, relevant verified figures, and questions still open. Leave account numbers and personal identifiers out of this first summary. The brief should help you begin a discussion, not replace a provider's official application. Keep track of whom you spoke with and which terms they supplied.",
+          "For practice, use a fictional business planning a small equipment purchase. Explain why the equipment is needed, where the estimate came from, and three questions about the obligation. Then mark every assumption. You are learning how to prepare an informed conversation. Funding availability, qualification, and approval remain subject to the provider's current process."
+        ]
+      }
+    ],
+    "takeaway": "Preparation helps you ask better questions; it does not guarantee approval.",
+    "questions": [
+      {
+        "question": "Which three details explain a funding purpose?",
+        "options": [
+          "The business use",
+          "An estimated amount",
+          "The timing",
+          "A guarantee of approval",
+          "An unexplained request"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "Look for the business use, an estimated amount, the timing. These choices support the method explained in this article."
+      },
+      {
+        "question": "Which three questions help understand an obligation?",
+        "options": [
+          "How repayment works",
+          "Which costs apply",
+          "What security or guarantee is required",
+          "Only how fast it arrives",
+          "Only a headline claim"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "Look for how repayment works, which costs apply, what security or guarantee is required. These choices support the method explained in this article."
+      },
+      {
+        "question": "Which three details belong in an initial brief?",
+        "options": [
+          "Verified business figures",
+          "The intended purpose",
+          "Questions still open",
+          "Public bank account details",
+          "Invented qualification"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "Look for verified business figures, the intended purpose, questions still open. These choices support the method explained in this article."
+      }
+    ],
+    "sources": [
+      [
+        "U.S. Small Business Administration. (n.d.). Plan your business.",
+        "https://www.sba.gov/counseling/plan-your-business/"
+      ]
+    ]
+  },
+  {
+    "slug": "test-a-print-on-demand-idea",
+    "title": "Test a print-on-demand idea before creating a catalog.",
+    "deck": "Start with an audience, one design direction, and a delivery check.",
+    "topic": "Print on Demand",
+    "course": "print-on-demand",
+    "tint": "#152136",
+    "sections": [
+      {
+        "title": "Choose a specific use.",
+        "paragraphs": [
+          "A print-on-demand idea becomes clearer when you can describe who would use the item and why. A mug for a history teacher's desk is different from a shirt for a family reunion. Start with the occasion or need before creating dozens of designs. You are looking for a connection between the product, the audience, and the reason someone might choose it.",
+          "Write a small hypothesis: This audience may want this type of item for this purpose. Treat it as a question to test. A social-media compliment is encouraging, but it does not automatically establish purchase intent. Ask people what they currently use, what they dislike, and how they would choose between alternatives."
+        ]
+      },
+      {
+        "title": "Review the product, not just the image.",
+        "paragraphs": [
+          "A mockup shows an idea, but the customer receives a physical object. Inspect the print area, available sizes, materials, delivery process, and customer instructions from the actual provider. If possible, review a sample before selling broadly. Note where the image may differ from the delivered result. Your product description should reflect what you can reasonably verify.",
+          "Use original artwork or material you have permission to use. AI-generated imagery still needs review for recognizable protected elements, mistaken text, and unclear rights. Check the current tool and marketplace rules before publishing. A generated design is not automatically ready for every commercial use simply because it looks finished."
+        ]
+      },
+      {
+        "title": "Inspect the delivery economics.",
+        "paragraphs": [
+          "Write down production cost, any platform or transaction costs that apply, shipping treatment, and the work involved in support. The exact numbers depend on your provider and current account terms. Keep them dated so you can update the estimate. A sale price minus one production figure may overlook expenses or extra work.",
+          "Consider what happens when an order has the wrong address, a damaged item, or a size concern. Learn the provider's current process and decide how you will communicate with the customer. Clear descriptions and reliable support belong in the product plan. They are part of the business, even when production happens elsewhere."
+        ]
+      },
+      {
+        "title": "Run a small product experiment.",
+        "paragraphs": [
+          "Choose one product and a few coherent design variations. Write accurate descriptions and compare the response from the intended audience. Record the questions people ask. If they cannot tell whom the product is for, revise the presentation before adding more designs. If the product itself disappoints, more promotion will not solve that problem.",
+          "For practice, create a one-page plan with the audience, use, design direction, sample check, cost assumptions, and support process. Define what evidence would make you continue, revise, or stop. Print on demand can reduce the need to hold inventory, but it still requires product judgment and dependable delivery. Begin with a small offer you can explain and improve."
+        ]
+      }
+    ],
+    "takeaway": "A large catalog cannot replace evidence that a particular customer wants the product.",
+    "questions": [
+      {
+        "question": "Which three details sharpen a product idea?",
+        "options": [
+          "The audience",
+          "The use or occasion",
+          "A testable hypothesis",
+          "Only a huge catalog",
+          "Only a mockup"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "Look for the audience, the use or occasion, a testable hypothesis. These choices support the method explained in this article."
+      },
+      {
+        "question": "Which three checks concern the delivered item?",
+        "options": [
+          "Materials and sizes",
+          "Print area",
+          "Delivery and support process",
+          "Only the digital preview",
+          "A made-up shipping promise"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "Look for materials and sizes, print area, delivery and support process. These choices support the method explained in this article."
+      },
+      {
+        "question": "Which three actions support a small test?",
+        "options": [
+          "Choose one product",
+          "Record audience questions",
+          "Define continue or revise evidence",
+          "Ignore sample quality",
+          "Upload every generated design"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "Look for choose one product, record audience questions, define continue or revise evidence. These choices support the method explained in this article."
+      }
+    ],
+    "sources": [
+      [
+        "U.S. Small Business Administration. (n.d.). Plan your business.",
+        "https://www.sba.gov/counseling/plan-your-business/"
+      ]
+    ]
+  },
+  {
+    "slug": "build-a-digital-product-people-can-use",
+    "title": "Build a digital product people can use.",
+    "deck": "Make the instructions, file, and real task work together.",
+    "topic": "Digital Products",
+    "course": "learning-products",
+    "tint": "#241b30",
+    "sections": [
+      {
+        "title": "Choose the task the product supports.",
+        "paragraphs": [
+          "A digital product might be a worksheet, a template, a guide, or an interactive tool. Begin with the task it helps someone complete. A planning worksheet should support a planning decision. A lesson template should help someone prepare a lesson. If the task is unclear, the file may look attractive while leaving the buyer unsure how to begin.",
+          "Describe what the person should produce after using it. A completed weekly plan, a structured project brief, or a first practice activity gives you a result to test. Avoid promising an outcome the file cannot guarantee. You can say what it helps organize without claiming that everyone will achieve the same business or learning result."
+        ]
+      },
+      {
+        "title": "Give the first step enough support.",
+        "paragraphs": [
+          "Open the product as if you had never seen it. Is there a clear starting point? Are unfamiliar terms explained? Is there an example that shows what a finished entry might look like? A blank box can be flexible, but it can also be confusing. A short example helps users understand the expected level of detail.",
+          "Separate instructions from fields people complete. Use clear headings and labels. Do not rely only on a color to indicate what should happen. If the product is intended for printing, check a printed version. If it is intended for digital completion, test the actual file or tool in the supported environment."
+        ]
+      },
+      {
+        "title": "Test with the intended user.",
+        "paragraphs": [
+          "Give someone a realistic task and the product, then watch where they pause. Do not explain the file before they use it unless that explanation is part of the actual product. Their questions can reveal missing instructions, awkward field names, or an example that is too advanced. Write the observations before defending the design.",
+          "AI can help create alternate explanations or review a draft checklist. It cannot replace a person trying the actual experience. Test links, downloads, and any interactive fields directly. Confirm that the product description matches the delivered file. A buyer should not have to discover important requirements only after purchasing."
+        ]
+      },
+      {
+        "title": "Improve the full package.",
+        "paragraphs": [
+          "Revise the file and its surrounding instructions together. Include supported formats, what is provided, and where to start. If a template requires another application, explain that requirement. If a download is a PDF rather than an editable document, say so. Clear expectations reduce preventable confusion.",
+          "For practice, build a one-page planning tool with a brief instruction, a worked example, and three fields. Ask a person to use it for a fictional project. Revise one confusing point and test again. This small cycle teaches a product-development habit you can use for larger offers: define the task, create the support, observe use, and improve the experience."
+        ]
+      }
+    ],
+    "takeaway": "The product is the whole usable experience, not just the downloadable file.",
+    "questions": [
+      {
+        "question": "Which three details define a usable product?",
+        "options": [
+          "The supported task",
+          "The expected output",
+          "The required environment",
+          "Only a pretty cover",
+          "An unsupported outcome promise"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "Look for the supported task, the expected output, the required environment. These choices support the method explained in this article."
+      },
+      {
+        "question": "Which three features help someone begin?",
+        "options": [
+          "A clear starting point",
+          "Plain labels",
+          "A worked example",
+          "Unexplained empty boxes",
+          "Color as the only instruction"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "Look for a clear starting point, plain labels, a worked example. These choices support the method explained in this article."
+      },
+      {
+        "question": "Which three checks help before release?",
+        "options": [
+          "Test the actual file",
+          "Watch an intended user",
+          "Match the description to delivery",
+          "Assume all links work",
+          "Hide format requirements"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "Look for test the actual file, watch an intended user, match the description to delivery. These choices support the method explained in this article."
+      }
+    ],
+    "sources": [
+      [
+        "World Wide Web Consortium. (n.d.). Writing for web accessibility.",
+        "https://www.w3.org/WAI/tips/writing/"
+      ]
+    ]
+  },
+  {
+    "slug": "composition-and-recording",
+    "title": "Understand the song and the recording.",
+    "deck": "Separate two parts of a music project before organizing the release.",
+    "topic": "Music & AI",
+    "course": "music-ai",
+    "tint": "#14281f",
+    "sections": [
+      {
+        "title": "Separate the musical work from its captured version.",
+        "paragraphs": [
+          "In music conversations, people often use song to mean everything. A useful starting distinction is the musical composition and a particular sound recording. The composition concerns the music and lyrics; the recording captures a performance or produced version. The U.S. Copyright Office explains these as distinct types of work. The distinction helps you ask clearer questions, even before dealing with a release.",
+          "Imagine two performers recording the same composition. You can hear the same underlying song in different recordings. Now imagine one artist releasing a studio version and a live version. These are different captured versions of the work. The example is simple, but it shows why a project record should identify more than a title."
+        ]
+      },
+      {
+        "title": "Write down who did what.",
+        "paragraphs": [
+          "Keep notes about the people and tools involved. Who wrote or revised lyrics? Who arranged material? Who performed, edited, or produced the recording? Describe actual contributions rather than assuming a role from the person's job title. In an AI-assisted project, record how the tool was used and what people selected or changed.",
+          "These notes support a later review of credits, agreements, and rights questions. They do not settle those questions by themselves. Different inputs and agreements can create different situations. Keep uncertainty visible and obtain appropriate advice when needed. A tidy spreadsheet is a record, not a legal conclusion."
+        ]
+      },
+      {
+        "title": "Avoid mixing creative and release decisions.",
+        "paragraphs": [
+          "Choosing a better ending is a creative decision. Confirming delivery requirements is a release task. Both matter, but they need different information. A track may sound complete while the project record is incomplete. Conversely, a perfectly organized file can still need musical revision. Keep the checklists separate so neither job disappears behind the other.",
+          "An experimental AI artist also needs clear presentation. You can create a fictional identity and a visual world while explaining the nature of the project. Avoid giving listeners a fabricated biography that presents an invented performer as a real person. Creative storytelling and honest description can coexist."
+        ]
+      },
+      {
+        "title": "Make a simple project record.",
+        "paragraphs": [
+          "For practice, use a fictional track. Record the working title, the composition information you know, the recording version, contributions, tools, and unanswered questions. Add a note about how the project will be described to listeners. Keep personal and sensitive records in an appropriate location.",
+          "Before an actual release, review the current requirements of the tools, services, and distributor you use. Do not assume that permission from one source answers every question about the project. This article is a vocabulary and organization exercise. Its purpose is to help you understand the parts of the work so you can have more informed creative and professional conversations."
+        ]
+      }
+    ],
+    "takeaway": "Clear names for the parts of a project make credits and release questions easier to organize.",
+    "questions": [
+      {
+        "question": "Which three details distinguish a project version?",
+        "options": [
+          "The composition",
+          "The particular recording",
+          "The version description",
+          "Only a file name",
+          "An invented credit"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "Look for the composition, the particular recording, the version description. These choices support the method explained in this article."
+      },
+      {
+        "question": "Which three notes support contribution records?",
+        "options": [
+          "Who revised lyrics",
+          "Who edited the recording",
+          "How the tool was used",
+          "A guessed role",
+          "A legal conclusion without review"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "Look for who revised lyrics, who edited the recording, how the tool was used. These choices support the method explained in this article."
+      },
+      {
+        "question": "Which three items belong in a project record?",
+        "options": [
+          "Known contributions",
+          "Unanswered questions",
+          "Honest listener presentation",
+          "A fabricated real biography",
+          "No version information"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "Look for known contributions, unanswered questions, honest listener presentation. These choices support the method explained in this article."
+      }
+    ],
+    "sources": [
+      [
+        "U.S. Copyright Office. (n.d.). Performing arts.",
+        "https://www.copyright.gov/registration/performing-arts/"
+      ],
+      [
+        "U.S. Copyright Office. (n.d.). Copyright and artificial intelligence.",
+        "https://www.copyright.gov/ai/"
+      ]
+    ]
+  },
+  {
+    "slug": "listen-like-a-producer",
+    "title": "Listen for one decision at a time.",
+    "deck": "Turn a vague reaction into a useful production note.",
+    "topic": "Music Practice",
+    "course": "music-ai",
+    "tint": "#301921",
+    "sections": [
+      {
+        "title": "Choose a listening question.",
+        "paragraphs": [
+          "It is easy to say that a track sounds good or needs something. It is harder to turn that reaction into an edit. Before listening, choose one question. Is the opening inviting? Does the energy change where the story changes? Is the ending abrupt? A focused question makes the listening pass more useful without requiring advanced technical vocabulary.",
+          "Listen once for the whole feeling, then again for the chosen detail. Use ordinary words and time markers. The sound becomes crowded near the first chorus is more actionable than make it better. You can learn technical terms over time while already making clear observations."
+        ]
+      },
+      {
+        "title": "Compare versions fairly.",
+        "paragraphs": [
+          "If you have two drafts, compare them against the same brief. Use similar listening conditions and avoid assuming that the louder version is automatically stronger. Write one strength and one weakness for each. A draft can be exciting and still fail the purpose of a calm background track. Your judgment should connect the sound with the intended use.",
+          "Try changing one major element at a time when possible. If you alter the tempo, arrangement, and ending together, it can be difficult to know which change helped. Some creative work needs broad experimentation, but a focused comparison can teach you more about a specific decision."
+        ]
+      },
+      {
+        "title": "Turn a note into a request.",
+        "paragraphs": [
+          "Translate the observation into a bounded revision. Instead of more emotion, try a quieter opening that leaves room before the first vocal phrase. Instead of better ending, ask for the final phrase to settle over a few additional beats. These requests describe a direction you can evaluate after the revision.",
+          "With generative music tools, save the brief and the version notes. The system may not respond exactly as expected. Review the new output rather than assuming the requested change occurred. When you keep records, you can tell the difference between a useful improvement and a different track that simply caught your attention."
+        ]
+      },
+      {
+        "title": "Create a listening notebook.",
+        "paragraphs": [
+          "Make a small table with the time, observation, purpose, and possible revision. Use it for your own draft or an authorized practice recording. Do not copy another artist's lyrics or imitate a person's identity as a shortcut to direction. Focus on qualities such as space, pace, texture, and contrast that you can describe in your own words.",
+          "For practice, make three notes about one piece: an opening note, a middle note, and an ending note. Choose only one revision to pursue first. Explain what improvement you expect to hear. Your ear develops through attention and comparison. The notebook makes that attention visible and gives the next creative step a clear purpose."
+        ]
+      }
+    ],
+    "takeaway": "A production note becomes useful when it names what you hear and what you would change.",
+    "questions": [
+      {
+        "question": "Which three notes are actionable?",
+        "options": [
+          "The opening feels crowded",
+          "The energy rises at the chorus",
+          "The ending cuts off abruptly",
+          "Make it amazing",
+          "Just add something"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "Look for the opening feels crowded, the energy rises at the chorus, the ending cuts off abruptly. These choices support the method explained in this article."
+      },
+      {
+        "question": "Which three habits help compare drafts?",
+        "options": [
+          "Use the same brief",
+          "Keep listening conditions similar",
+          "Record strengths and weaknesses",
+          "Newest is always best",
+          "Louder always wins"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "Look for use the same brief, keep listening conditions similar, record strengths and weaknesses. These choices support the method explained in this article."
+      },
+      {
+        "question": "Which three fields help a listening notebook?",
+        "options": [
+          "A time marker",
+          "An observation",
+          "A possible revision",
+          "Only a rating",
+          "No listening goal"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "Look for a time marker, an observation, a possible revision. These choices support the method explained in this article."
+      }
+    ],
+    "sources": [
+      [
+        "U.S. Copyright Office. (n.d.). Copyright and artificial intelligence.",
+        "https://www.copyright.gov/ai/"
+      ]
+    ]
+  },
+  {
+    "slug": "teach-one-useful-skill",
+    "title": "Design a lesson around one useful skill.",
+    "deck": "Align the goal, example, practice, and feedback.",
+    "topic": "Instructional Design",
+    "course": "learning-products",
+    "tint": "#302719",
+    "sections": [
+      {
+        "title": "Write a goal you can see.",
+        "paragraphs": [
+          "A lesson goal such as understand leadership can point toward a large topic without naming what the learner will do. Try a smaller observable goal: write a task request with an outcome, an owner, and a deadline. This goal gives you a result to inspect. It also helps the learner know what the lesson is preparing them to do.",
+          "Choose a skill appropriate to the audience's starting point. A beginner may need vocabulary and a worked example before making a complex judgment. An experienced learner may need a difficult scenario and a reasoned choice. Simple language does not require simple thinking. You can explain a demanding idea clearly and build its difficulty in steps."
+        ]
+      },
+      {
+        "title": "Show the thinking behind an example.",
+        "paragraphs": [
+          "Present a sample and explain why it works. If the goal is a clear task request, show a vague version and a revised version. Point out how the revision names the result and removes ambiguity. The explanation should make the decision process visible rather than only displaying a polished answer.",
+          "A diagram, short animation, or table can help when it clarifies the relationship. Use a visual for a job, not just decoration. Provide text that carries the important meaning as well. A learner should be able to understand the lesson if an optional video does not load or an animation is reduced."
+        ]
+      },
+      {
+        "title": "Let the learner try the actual skill.",
+        "paragraphs": [
+          "If the goal is writing a request, a quiz asking for the definition of a deadline is not enough on its own. Give the learner a situation and ask them to draft the request. Then provide criteria and an example they can compare with their work. A short knowledge check can prepare the activity, but it should not replace the performance you want to teach.",
+          "Feedback should name what worked and what needs improvement. Your outcome is clear; add who will coordinate the task is more useful than incorrect. Allow a revision. The second attempt can show whether the learner used the feedback, which is part of the learning process rather than a failure to finish the first time."
+        ]
+      },
+      {
+        "title": "Check the alignment.",
+        "paragraphs": [
+          "Write the goal, example, practice, and feedback criteria side by side. Do they describe the same skill? If the lesson teaches planning but the assessment rewards memorizing unrelated terms, revise the mismatch. Keep optional enrichment clearly separate from what the learner needs to complete the core task.",
+          "For practice, design a ten-minute lesson for a familiar skill. Include one clear goal, a worked example, a short try-it task, and three review criteria. Test it with someone at the intended starting level. Ask what they can do now that they could not do before. The answer provides a better direction for revision than simply asking whether the page looked attractive."
+        ]
+      }
+    ],
+    "takeaway": "The activity should let a learner practice the same skill your goal describes.",
+    "questions": [
+      {
+        "question": "Which three items make a goal observable?",
+        "options": [
+          "A clear action",
+          "A concrete output",
+          "A review criterion",
+          "Only understand everything",
+          "An unrelated topic"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "Look for a clear action, a concrete output, a review criterion. These choices support the method explained in this article."
+      },
+      {
+        "question": "Which three parts help a worked example?",
+        "options": [
+          "A sample result",
+          "The reasoning behind it",
+          "A contrast with a weaker version",
+          "Only a polished answer",
+          "No explanation"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "Look for a sample result, the reasoning behind it, a contrast with a weaker version. These choices support the method explained in this article."
+      },
+      {
+        "question": "Which three checks support alignment?",
+        "options": [
+          "Practice matches the skill",
+          "Feedback matches the criteria",
+          "The example prepares the task",
+          "An unrelated test",
+          "Video is the only explanation"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "Look for practice matches the skill, feedback matches the criteria, the example prepares the task. These choices support the method explained in this article."
+      }
+    ],
+    "sources": [
+      [
+        "World Wide Web Consortium. (n.d.). Writing for web accessibility.",
+        "https://www.w3.org/WAI/tips/writing/"
+      ]
+    ]
+  },
+  {
+    "slug": "read-tech-news-with-a-clear-head",
+    "title": "Read technology news without chasing every headline.",
+    "deck": "Separate the announcement, the evidence, and what it means for your work.",
+    "topic": "Technology & Change",
+    "course": "ai-foundations",
+    "tint": "#152136",
+    "sections": [
+      {
+        "title": "Identify what actually happened.",
+        "paragraphs": [
+          "A technology headline may describe a released feature, an early test, a research result, or a prediction. These are different events. Start by finding the original announcement or paper and naming the event in plain language. A demo does not establish that a feature is available in your account. A prediction does not establish that a change has already happened.",
+          "Record the date and the scope. Which users, regions, or plans are included? Is the claim about one task or broad capability? If the article skips these details, look for them before changing your workflow. You can remain curious while keeping the claim the right size."
+        ]
+      },
+      {
+        "title": "Look for evidence and limits.",
+        "paragraphs": [
+          "Ask what was measured or demonstrated and under which conditions. A result in a selected benchmark may be interesting without describing your own work. A polished promotional video can show a possibility without revealing how often the system succeeds. Look for limitations, failure cases, and the exact task used in the demonstration.",
+          "Do not dismiss a useful development because it is imperfect. Instead, describe what the evidence supports. This helps you avoid two extremes: treating every launch as a revolution or treating every limitation as proof that nothing matters. Careful language makes room for learning and revision."
+        ]
+      },
+      {
+        "title": "Connect it to your own task.",
+        "paragraphs": [
+          "Choose a task you understand and ask whether the development could change a step in that work. If a new tool can produce a draft faster, you still need to inspect accuracy, editing effort, and the final result. Speed at one stage may not reduce the full job. Try a small test before replacing a dependable process.",
+          "Write down the reason to test and what success would look like. If the development has no current connection to your work, save a short reference rather than opening another account immediately. Curiosity can have a reading shelf. Not every interesting announcement needs to become a project."
+        ]
+      },
+      {
+        "title": "Keep a change note.",
+        "paragraphs": [
+          "Make a brief note with the event, source, date, known limits, and possible use. Label your own interpretation as an interpretation. Return to the note when the feature becomes relevant or the evidence changes. A simple record is more useful than trying to remember which headline promised what.",
+          "For practice, choose one technology announcement and write a five-sentence summary. State what happened, whom it applies to, what evidence is available, what remains unclear, and one possible task to test. You are building a reading habit that supports action without letting the news cycle choose your priorities."
+        ]
+      }
+    ],
+    "takeaway": "An announcement becomes useful when you can explain its relevance to a real task.",
+    "questions": [
+      {
+        "question": "Which three details identify an event?",
+        "options": [
+          "Release or test status",
+          "The date",
+          "The included users or scope",
+          "Only the headline",
+          "A prediction treated as fact"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "Look for release or test status, the date, the included users or scope. These choices support the method explained in this article."
+      },
+      {
+        "question": "Which three questions inspect evidence?",
+        "options": [
+          "What was measured?",
+          "Under what conditions?",
+          "What limits were reported?",
+          "Was the demo polished?",
+          "Does the slogan sound bold?"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "Look for what was measured?, under what conditions?, what limits were reported?. These choices support the method explained in this article."
+      },
+      {
+        "question": "Which three fields help a change note?",
+        "options": [
+          "The original source",
+          "Known limits",
+          "A possible task to test",
+          "A hidden interpretation",
+          "An automatic purchase"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "feedback": "Look for the original source, known limits, a possible task to test. These choices support the method explained in this article."
+      }
+    ],
+    "sources": [
+      [
+        "National Institute of Standards and Technology. (n.d.). AI Risk Management Framework.",
+        "https://www.nist.gov/itl/ai-risk-management-framework"
+      ]
+    ]
+  }
 ]
