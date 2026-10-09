@@ -368,3 +368,9 @@ Technology news belongs beside the courses as Extended Learning. Each future upd
 ## Release status
 
 Available: ten introductory course pages, expandable six-module outlines, search, five linked deeper lessons with beginner primers and guided videos, personal learning plans, and download tools. Existing lesson notes, quizzes, animations, light mode, and music remain available. Planned: the 120 full lesson topics, additional vetted videos, capstone grading interactions, and the plain-language rewrite of the five deeper lessons. The five deeper lessons total more than 16,000 words; they are not described as ten finished courses.
+
+## Portfolio refinement, October 9, 2026
+
+Course and lesson introductions now include three observable objectives, a topic-specific illustrative decision with revealable reasoning, and an animated explain/apply/check/build SVG. Course plans include a clarity/evidence/usefulness self-review saved with the plan and included in its download. These are self-reviews, not graded credentials. The How We Teach page documents ADDIE, Bloom’s revised categories, alignment, accessibility choices, current implementation status, and future workplace portfolio directions. Suggested samples include onboarding, customer/software education, AI literacy, and process/compliance decisions; no unsupported employer-demand ranking is claimed.
+
+Sources: University of Washington Bothell, https://www.uwb.edu/it/addie ; Carnegie Mellon, https://www.cmu.edu/teaching/assessment/basics/alignment.html ; Vanderbilt’s revised-taxonomy graphic, https://www.flickr.com/photos/vandycft/29428436431 .
