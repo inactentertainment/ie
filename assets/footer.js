@@ -1,0 +1,11 @@
+(()=>{
+ const footer=document.querySelector('.site-footer');if(!footer)return;
+ const dialog=document.createElement('dialog');dialog.className='footer-info-dialog';dialog.setAttribute('aria-labelledby','footer-info-title');dialog.innerHTML='<div class="footer-info-bar"><h2 id="footer-info-title">InAct Information</h2><button class="footer-info-close" type="button" aria-label="Close information">×</button></div><div class="footer-info-body"></div>';document.body.append(dialog);
+ const body=dialog.querySelector('.footer-info-body');let trigger,controller,sequence=0;
+ dialog.querySelector('button').onclick=()=>dialog.close();dialog.addEventListener('close',()=>{sequence++;controller?.abort();trigger?.focus()});dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close()}});
+ footer.addEventListener('click',async e=>{
+  if(e.target.closest('[data-footer-listen]')){document.querySelector('#music-toggle')?.click();window.scrollTo({top:0,behavior:'smooth'});return}
+  const link=e.target.closest('a[data-info-page]');if(!link||e.button!==0||e.ctrlKey||e.metaKey||e.shiftKey||e.altKey)return;e.preventDefault();trigger=link;controller?.abort();controller=new AbortController();const token=++sequence;body.textContent='Loading information…';document.querySelector('#footer-info-title').textContent=link.textContent;if(!dialog.open)dialog.showModal();body.scrollTop=0;
+  try{const response=await fetch(link.href,{signal:controller.signal});if(!response.ok)throw Error('Unavailable');const doc=new DOMParser().parseFromString(await response.text(),'text/html'),main=doc.querySelector('main');if(!main)throw Error('Missing content');main.querySelectorAll('script').forEach(n=>n.remove());main.querySelectorAll('[href],[src]').forEach(n=>{for(const attr of ['href','src'])if(n.hasAttribute(attr))n.setAttribute(attr,new URL(n.getAttribute(attr),response.url||link.href).href)});if(token!==sequence)return;body.replaceChildren(...main.childNodes)}catch(error){if(error.name==='AbortError'||token!==sequence)return;body.textContent='Open the information page directly: ';const fallback=document.createElement('a');fallback.href=link.href;fallback.textContent=link.textContent;body.append(fallback)}
+ });
+})();
