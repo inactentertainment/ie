@@ -43,7 +43,7 @@
  const service=document.querySelector('#inquiry-service');const route=document.querySelector('#department-route');
  if(service&&route){const departments={'Website & interactive app':'Digital Experiences','AI & business workflow':'AI & Business Systems','Instructional design & learning':'Learning & Instructional Design','Digital marketing & branding':'Branding & Marketing','Music & creative media':'Music & Creative Studio','Commercial funding':'Strategic Funding','Partnership or general inquiry':'Partnerships & Visitor Support'};const render=()=>{route.textContent=[...service.selectedOptions].some(o=>o.value)?'Recommended departments: '+[...service.selectedOptions].filter(o=>o.value).map(o=>departments[o.value]).join(', ')+'. Your selections and project brief travel together.':'Your department recommendation will appear here.'};service.addEventListener('change',render);render();const selected=new URLSearchParams(location.search).get('service');if(selected&&[...service.options].some(x=>x.value===selected)){service.value=selected;service.dispatchEvent(new Event('change'))}}
 
- document.querySelectorAll('#inquiry-form select').forEach(select=>{
+ document.querySelectorAll('#inquiry-form:not([data-guided]) select').forEach(select=>{
   const multi=select.id==='inquiry-service';if(multi)select.multiple=true;
   const label=document.querySelector('label[for="'+select.id+'"]');
   const picker=document.createElement('button');picker.type='button';picker.id=select.id+'-picker';picker.className='contact-picker';picker.setAttribute('aria-haspopup','dialog');picker.setAttribute('aria-controls',select.id+'-dialog');select.hidden=true;select.insertAdjacentElement('afterend',picker);if(label)label.htmlFor=picker.id;

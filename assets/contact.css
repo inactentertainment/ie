@@ -1,0 +1,38 @@
+/* The contact journey is deliberately calmer than other silver site buttons. */
+body #contact .inquiry-shell.guided-contact,body #contact .inquiry-shell.guided-contact:hover{background:#000!important;background-image:none!important;border:1px solid #fff!important;border-radius:20px!important;box-shadow:0 0 16px #ffffff32,inset 0 0 7px #ffffff0d!important;animation:none!important;color:#eee!important;padding:clamp(20px,4vw,36px)!important}
+#contact .inquiry-heading h3{margin:10px 0;font:28px/1.3 Georgia,serif}#contact .inquiry-heading p{margin:0 0 24px;color:#c8c8c8}
+#contact .inquiry-steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;padding:0;margin:0 0 16px;list-style:none}
+#contact .inquiry-steps li{font:12px/1.5 Georgia,serif;padding:8px 0;border-bottom:1px solid #555;color:#a9a9a9!important}
+#contact .inquiry-steps li.active{border-color:#fff!important;color:#fff!important}#contact .inquiry-steps li.complete{border-color:#aaa!important;color:#ddd!important}
+#contact .contact-progress{appearance:none;width:100%;height:3px;display:block;border:0;background:#222;margin:0 0 32px;border-radius:3px}#contact .contact-progress::-webkit-progress-bar{background:#222}#contact .contact-progress::-webkit-progress-value{background:linear-gradient(90deg,#aaa,#fff)}#contact .contact-progress::-moz-progress-bar{background:#ddd}
+#contact .contact-question-field{border:0!important;margin:0!important;padding:0!important;min-width:0;width:100%}
+#contact .contact-question-field legend{font:clamp(22px,3vw,30px)/1.35 Georgia,serif;color:#fff;width:100%;padding:0;margin-bottom:14px}
+#contact .contact-question-hint{font:14px/1.75 Georgia,serif;color:#c8c8c8!important;margin:0 0 20px}
+#contact .contact-choices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;padding:3px 0}
+/* Silver before selection; black with white letters after selection, with no lift or wiggle. */
+body #contact .guided-contact button:not(#inquiry-send),body #contact .guided-contact button:not(#inquiry-send):not(:disabled):is(:hover,:focus-visible,:active){background:linear-gradient(110deg,#909090,#eee 32%,#fff 49%,#b8b8b8 76%,#ddd)!important;color:#111!important;border:1px solid #eee!important;animation:none!important;transform:none!important;text-shadow:none!important;box-shadow:inset 0 1px 0 #fff,0 3px 10px #0005!important;transition:background-color .2s,color .2s,border-color .2s!important}
+body #contact .guided-contact button:not(#inquiry-send)::after{content:none!important;animation:none!important}
+body #contact .guided-contact button.contact-choice[aria-pressed=true],body #contact .guided-contact button.contact-choice[aria-pressed=true]:not(:disabled):is(:hover,:focus-visible,:active){background:#000!important;background-image:none!important;color:#fff!important;border-color:#fff!important;box-shadow:0 0 10px #ffffff25!important;outline:0!important}
+#contact .contact-choice{width:100%;padding:13px 16px!important;border-radius:12px!important;font:14px/1.5 Georgia,serif!important;text-align:left}
+body #contact .guided-contact button:not(#inquiry-send):focus-visible,body #contact .guided-contact button.contact-choice[aria-pressed=true]:not(:disabled):focus-visible{outline:2px solid #fff!important;outline-offset:4px!important}
+body #contact .guided-contact .form-control{display:block;width:100%;background:#dedede!important;color:#111!important;border:1px solid #eee!important;border-radius:10px!important;padding:13px 14px!important;font:16px/1.6 Georgia,serif!important;min-width:0;color-scheme:light;box-shadow:none!important}
+#contact .contact-input-label,#contact .contact-schedule label{display:block;font:13px/1.5 Georgia,serif;color:#ddd;margin:0 0 8px}
+#contact textarea.form-control{resize:vertical;min-height:130px}#contact .form-control::placeholder{color:#555;opacity:1}
+#contact .contact-character-count{font:12px Georgia,serif;text-align:right;margin:8px 0 0;color:#bbb}
+#contact .contact-status{font:13px/1.65 Georgia,serif;color:#eee!important;min-height:24px;margin:20px 0 8px}
+#contact .inquiry-actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin:12px 0 0;padding:10px 0 4px;border-top:1px solid #ffffff30}
+#contact #contact-question-count{margin-left:auto;font:12px Georgia,serif;color:#c0c0c0}#contact .inquiry-actions button{padding:11px 20px;font:13px Georgia,serif}
+#contact .contact-review-title{font:30px/1.3 Georgia,serif;margin:0 0 14px;color:#fff}
+#contact .contact-review-group{padding:0;margin:26px 0;border:0!important;background:#000!important}
+#contact .contact-review-group h4{font:20px/1.4 Georgia,serif;margin:0 0 10px;color:#fff}
+#contact .contact-review-list{margin:0}#contact .contact-review-row{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid #ffffff30}
+#contact .contact-review-row>div{min-width:0;flex:1}#contact .contact-review-row dt{font:12px/1.5 Georgia,serif;color:#bcbcbc;margin:0 0 5px}#contact .contact-review-row dd{font:16px/1.7 Georgia,serif;color:#fff;margin:0;white-space:pre-wrap;overflow-wrap:anywhere}
+#contact .contact-edit,#contact .contact-calendar{border-radius:20px!important;padding:7px 14px!important;font:12px/1.5 Georgia,serif!important;flex-shrink:0}
+#contact .contact-consent{display:flex;align-items:flex-start;gap:12px;margin:26px 0 16px;font:14px/1.7 Georgia,serif;color:#eee}#contact .contact-consent input{width:19px;height:19px;flex:0 0 19px;margin:3px 0;accent-color:#ddd}
+#contact .contact-review-tools{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+#contact .contact-schedule{margin-top:24px;padding-top:20px;border-top:1px solid #ffffff40}#contact .contact-schedule select{margin-bottom:20px}
+#contact .contact-date-row{display:flex;align-items:center;gap:10px}#contact .contact-date-row input{flex:1}#contact .contact-time-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:18px 0}
+#contact .contact-slots{padding:0;list-style:none;margin:18px 0 0}#contact .contact-slots li{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 0;border-top:1px solid #ffffff30;font:14px/1.7 Georgia,serif}#contact .contact-slot-empty{color:#aaa}
+#contact .question-arrive{animation:contact-question-fade .25s ease-out both}@keyframes contact-question-fade{from{opacity:0}to{opacity:1}}
+@media(max-width:600px){#contact .contact-choices{grid-template-columns:1fr}#contact .inquiry-steps{gap:6px}#contact .inquiry-steps li{font-size:10px}#contact .contact-date-row{flex-wrap:wrap}#contact .contact-date-row input{flex-basis:100%}#contact .contact-review-row{gap:10px}#contact .contact-review-row dd{font-size:15px}#contact .inquiry-actions{gap:10px}#contact #contact-question-count{flex:1;text-align:center;font-size:11px}}
+@media(prefers-reduced-motion:reduce){#contact .question-arrive{animation:none!important}body #contact .guided-contact button{transition:none!important}}
