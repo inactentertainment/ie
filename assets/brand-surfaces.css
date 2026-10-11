@@ -122,5 +122,10 @@ body .site-footer .footer-word-links button.share-button:hover{color:#fff!import
 body.home-page #contact{padding-bottom:24px!important;margin-bottom:0!important}
 body.home-page main{padding-bottom:0!important}
 body .site-footer{position:relative;background:#000!important;margin-top:0!important}
-body .site-footer::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:#fff9;box-shadow:0 0 8px #ffffff80,0 4px 20px #ffffff40;pointer-events:none}
+
 body .site-footer .footer-word-links button.share-button:not(:disabled):hover,body .site-footer .footer-word-links button.share-button:not(:disabled):focus-visible{background:none!important;border:0!important;color:#fff!important;box-shadow:none!important;text-shadow:none!important;animation:none!important;transform:none!important}
+
+/* Only the footer's upper edge has a divider, with a soft upward white glow. */
+body footer.site-footer{border:0!important;border-top:1px solid #ffffff65!important;box-shadow:0 -6px 16px -6px #ffffff55!important}
+body footer.site-footer :is(.footer-word-links,.footer-bottom,.footer-identity,.footer-inner,.footer-top-row,.footer-social){border:0!important;box-shadow:none!important}
+body footer.site-footer::after{content:none!important}
