@@ -160,3 +160,6 @@ body footer.site-footer.footer-reveal.footer-visible .footer-inner{opacity:1;tra
 /* Fade the anchored reading bar in without moving its footer boundary. */
 body #page-tools{animation:shared-header-fade .55s ease-out both}
 @media(prefers-reduced-motion:reduce){body #page-tools{animation:none!important}}
+
+/* Keep the opening music box limited to themes, local playlist, and the music destination. */
+body #music-panel[data-browse=root]:not(.in-music-box)>.music-track-info{display:none!important}

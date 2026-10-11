@@ -8,7 +8,7 @@
  const themes=document.createElement('div');themes.className='music-themes';themes.setAttribute('aria-label','Listen by theme');
  const back=document.getElementById('music-back');back.insertAdjacentElement('beforebegin',themes);
  let stage='root';
- function browse(next){stage=next;panel.dataset.browse=stage;const directions=panel.querySelector('.music-directions');if(directions)directions.textContent=stage==='root'?'Choose a theme.':stage==='genres'?'Music':'Pick a song. Use Back to explore.';back.textContent='‹ Back';back.hidden=stage==='root'&&!panel.classList.contains('in-music-box')}
+ function browse(next){stage=next;panel.dataset.browse=stage;back.textContent='‹ Back';back.hidden=stage==='root'&&!panel.classList.contains('in-music-box')}
  function choose(value){select.dataset.collection='';select.value=value;select.dispatchEvent(new Event('change',{bubbles:true}));browse('list')}
  function choice(parent,label,action){const b=document.createElement('button');b.type='button';b.className='music-theme-choice';b.textContent=label;b.onclick=()=>{b.classList.remove('choice-click');void b.offsetWidth;b.classList.add('choice-click');action()};parent.append(b)}
  ['Motivation','Music','Meditation'].forEach(label=>choice(themes,label,()=>{if(label==='Music'){browse('genres');picker.click()}else choose(label)}));
