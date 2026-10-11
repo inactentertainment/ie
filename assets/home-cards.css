@@ -5,4 +5,4 @@
 
 .home-page .intro{display:block!important;padding-top:28px}
 
-.home-page .intro h1 em{color:#c7c7c7!important}
+.home-page .intro h1 em{display:block;margin-top:8px;color:#b0b0b0!important}
