@@ -1,5 +1,7 @@
 (()=>{
  const select=document.getElementById('listen-genre'),panel=document.getElementById('music-panel');if(!select||!panel)return;
+ const transport=panel.querySelector('.music-transport'),oldRow=panel.querySelector('.music-console>.player-row');
+ if(transport){transport.setAttribute('role','group');transport.setAttribute('aria-label','Music playback controls');['prev','master-play','music-stop','shuffle','repeat','next'].forEach(id=>{const button=document.getElementById(id);if(button)transport.append(button)});if(oldRow&&!oldRow.children.length)oldRow.remove()}
  const picker=document.createElement('button');picker.type='button';picker.id='genre-picker';picker.setAttribute('aria-haspopup','dialog');picker.setAttribute('aria-controls','genre-dialog');select.insertAdjacentElement('afterend',picker);
  const dialog=document.createElement('dialog');dialog.id='genre-dialog';dialog.className='genre-dialog';dialog.setAttribute('aria-labelledby','genre-title');dialog.innerHTML='<div class="genre-heading"><h2 id="genre-title">Choose a genre</h2><button type="button" aria-label="Close genres">close</button></div><div class="genre-options"></div>';panel.append(dialog);
  function paint(){picker.replaceChildren();const text=document.createElement('span');text.textContent=select.value||'Choose a genre';const arrow=document.createElement('span');arrow.textContent='⌄';arrow.setAttribute('aria-hidden','true');picker.append(text,arrow);picker.setAttribute('aria-label','Choose genre: '+select.value)}

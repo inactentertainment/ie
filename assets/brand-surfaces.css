@@ -49,3 +49,11 @@ body button.choice-click::after{animation:brand-button-sweep .35s ease-out!impor
 body .music-panel button:not(.genre-dialog button){background:#000!important;background-image:none!important;color:#fff!important;border-color:#555!important;text-shadow:none!important;box-shadow:none!important}
 body .music-panel button:not(.genre-dialog button)::after{content:none!important}
 body .music-panel button:not(.genre-dialog button):hover,body .music-panel button:not(.genre-dialog button):focus-visible{animation:none!important;transform:none!important;box-shadow:0 0 8px #ffffff20!important}
+
+/* One balanced row of music controls; keep sliders below. */
+body .music-panel .music-console>.music-transport{display:grid!important;grid-template-columns:repeat(6,minmax(0,1fr));gap:4px!important;width:100%;align-items:stretch!important}
+body .music-panel .music-console .music-transport :is(#prev,#master-play,#music-stop,#shuffle,#repeat,#next){width:100%!important;min-width:0!important;min-height:36px;padding:7px 2px!important;margin:0!important;border-radius:9px;font:10px/1.2 Georgia,serif!important;gap:3px!important;display:flex;align-items:center;justify-content:center;white-space:nowrap;flex:none!important}
+body .music-panel .music-transport .compact-toggle:before{width:5px;height:5px;flex:0 0 5px;margin:0;border-color:#ddd!important}
+body .music-panel .music-transport .compact-toggle[aria-pressed=true]:before{background:#fff!important}
+body .music-panel .music-transport .pause-symbol{width:7px!important;height:10px!important;flex:0 0 7px}
+@media(max-width:360px){body .music-panel .music-console>.music-transport{gap:3px!important}body .music-panel .music-console .music-transport :is(#prev,#master-play,#music-stop,#shuffle,#repeat,#next){font-size:9px!important}}
