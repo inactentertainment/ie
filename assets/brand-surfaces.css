@@ -141,17 +141,22 @@ body #music-panel .music-themes button.music-theme-choice:hover,body #music-pane
 body #music-panel .music-themes button.music-theme-choice.choice-click{animation:brand-button-bounce .35s ease-out!important}
 @media(prefers-reduced-motion:reduce){body #music-panel .music-themes button.music-theme-choice{animation:none!important;transform:none!important}}
 
-/* Contact choices clearly distinguish selected services without wiggle. */
+/* Popup and inline contact choices share the same calm selection behavior. */
+body #inquiry-form .need-choices{gap:12px!important}
 body dialog.contact-choice-dialog .contact-choice-options{gap:12px;padding:5px 3px}
-body dialog.contact-choice-dialog .contact-choice-options button,body dialog.contact-choice-dialog .contact-choice-options button:not(:disabled):hover,body dialog.contact-choice-dialog .contact-choice-options button:not(:disabled):focus-visible{background:#000!important;background-image:none!important;color:#fff!important;border:1px solid #fff!important;text-shadow:none!important;box-shadow:none!important;animation:none!important;transform:none!important;transition:background .2s,color .2s,transform .2s,box-shadow .2s!important}
-body dialog.contact-choice-dialog .contact-choice-options button[aria-pressed=true],body dialog.contact-choice-dialog .contact-choice-options button[aria-pressed=true]:not(:disabled):hover,body dialog.contact-choice-dialog .contact-choice-options button[aria-pressed=true]:not(:disabled):focus-visible{background:linear-gradient(110deg,#8b939f,#e5e9f1 32%,#fff 49%,#b4bdcb 76%,#dce3ed)!important;color:#111621!important;border-color:#edf0f8!important;transform:translateY(-2px)!important;outline:0!important;box-shadow:inset 0 1px 0 #fff,0 3px 10px #ffffff25!important}
-body dialog.contact-choice-dialog .contact-choice-options button::after{content:none!important}
-body dialog.contact-choice-dialog .contact-choice-options button:focus-visible{outline:2px solid #fff!important;outline-offset:3px!important}
+body :is(dialog.contact-choice-dialog .contact-choice-options button,#inquiry-form .need-choice),body :is(dialog.contact-choice-dialog .contact-choice-options button,#inquiry-form .need-choice):not(:disabled):hover,body :is(dialog.contact-choice-dialog .contact-choice-options button,#inquiry-form .need-choice):not(:disabled):focus-visible{background:#000!important;background-image:none!important;color:#fff!important;border:1px solid #fff!important;text-shadow:none!important;box-shadow:none!important;animation:none!important;transform:none!important;transition:background .2s,color .2s,transform .2s,box-shadow .2s!important}
+body :is(dialog.contact-choice-dialog .contact-choice-options button,#inquiry-form .need-choice)[aria-pressed=true],body :is(dialog.contact-choice-dialog .contact-choice-options button,#inquiry-form .need-choice)[aria-pressed=true]:not(:disabled):hover,body :is(dialog.contact-choice-dialog .contact-choice-options button,#inquiry-form .need-choice)[aria-pressed=true]:not(:disabled):focus-visible{background:linear-gradient(110deg,#8b939f,#e5e9f1 32%,#fff 49%,#b4bdcb 76%,#dce3ed)!important;color:#111621!important;border-color:#edf0f8!important;transform:translateY(-2px)!important;outline:0!important;box-shadow:inset 0 1px 0 #fff,0 3px 10px #ffffff25!important}
+body :is(dialog.contact-choice-dialog .contact-choice-options button,#inquiry-form .need-choice)::after{content:none!important}
+body :is(dialog.contact-choice-dialog .contact-choice-options button,#inquiry-form .need-choice):focus-visible{outline:2px solid #fff!important;outline-offset:3px!important}
 /* More black breathing room after the form; footer geometry stays fixed for the reading bar. */
 body.home-page #contact{padding-bottom:clamp(56px,8vw,88px)!important}
 body header{animation:shared-header-fade .55s ease-out both}
 body footer.site-footer.footer-reveal .footer-inner{opacity:0;transform:translateY(10px);transition:opacity .65s ease-out,transform .65s ease-out}
 body footer.site-footer.footer-reveal.footer-visible .footer-inner{opacity:1;transform:none}
 @keyframes shared-header-fade{from{opacity:0}to{opacity:1}}
-@media(prefers-reduced-motion:reduce){body header{animation:none!important}body footer.site-footer.footer-reveal .footer-inner{opacity:1!important;transform:none!important;transition:none!important}body dialog.contact-choice-dialog .contact-choice-options button[aria-pressed=true]{transform:none!important}body dialog.contact-choice-dialog .contact-choice-options button{transition:none!important}}
+@media(prefers-reduced-motion:reduce){body header{animation:none!important}body footer.site-footer.footer-reveal .footer-inner{opacity:1!important;transform:none!important;transition:none!important}body :is(dialog.contact-choice-dialog .contact-choice-options button,#inquiry-form .need-choice)[aria-pressed=true]{transform:none!important}body :is(dialog.contact-choice-dialog .contact-choice-options button,#inquiry-form .need-choice){transition:none!important}}
 @media(prefers-reduced-motion:reduce){body dialog.contact-choice-dialog .contact-choice-options :is(button,button[aria-pressed=true]:not(:disabled):hover,button[aria-pressed=true]:not(:disabled):focus-visible){transform:none!important;transition:none!important}}
+
+/* Fade the anchored reading bar in without moving its footer boundary. */
+body #page-tools{animation:shared-header-fade .55s ease-out both}
+@media(prefers-reduced-motion:reduce){body #page-tools{animation:none!important}}

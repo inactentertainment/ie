@@ -28,7 +28,7 @@
   const footer=document.querySelector('footer');let placing=false;
   const place=()=>{placing=false;const top=footer?footer.getBoundingClientRect().top:innerHeight;bar.style.setProperty('--tools-footer-offset',Math.max(0,innerHeight-top)+'px');bar.hidden=top<=0;document.documentElement.style.setProperty('--reader-bottom',Math.max(0,innerHeight-top)+(bar.hidden?0:bar.getBoundingClientRect().height)+8+'px')};
   window.addEventListener('scroll',()=>{if(!placing){placing=true;requestAnimationFrame(place)}},{passive:true});window.addEventListener('resize',place);place();
-  if(footer&&typeof ResizeObserver!=='undefined')new ResizeObserver(place).observe(footer);
+  if(typeof ResizeObserver!=='undefined'){const layoutObserver=new ResizeObserver(place);[footer,main,bar].filter(Boolean).forEach(el=>layoutObserver.observe(el))}
  }
 
  const revealFooter=document.querySelector('.site-footer');
