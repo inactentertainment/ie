@@ -98,8 +98,8 @@ body #music-panel:not([data-browse=root]) #music-back{display:inline-flex!import
 body #music-panel.in-music-box #music-back{display:inline-flex!important}
 @media(prefers-reduced-motion:reduce){body #music-panel .music-theme-choice{animation:none!important;transform:none!important}}
 
-body #music-panel .genre-dialog[data-collection="Popular Music"] .genre-option{background:linear-gradient(#1b1b1b,#030303)!important;color:#eee!important;border:1px solid #aaa!important;text-shadow:none!important;box-shadow:inset 0 1px 0 #ffffff18!important}
-body #music-panel .genre-dialog[data-collection="Popular Music"] .genre-option:active,body #music-panel .genre-dialog[data-collection="Popular Music"] .genre-option:focus-visible{box-shadow:0 0 10px #ffffff60!important}
+
+
 body #music-panel.music-minimized{position:fixed!important;inset:auto 10px var(--reader-bottom,48px) auto!important;width:min(240px,calc(100vw - 20px))!important;padding:5px!important;max-height:none!important;overflow:hidden!important;z-index:54!important}
 body #music-panel.music-minimized #music-video-slot{margin:0!important}
 body #music-panel.music-minimized .inline-music-video{margin:0!important}
@@ -129,3 +129,14 @@ body .site-footer .footer-word-links button.share-button:not(:disabled):hover,bo
 body footer.site-footer{border:0!important;border-top:1px solid #ffffff65!important;box-shadow:0 -6px 16px -6px #ffffff55!important}
 body footer.site-footer :is(.footer-word-links,.footer-bottom,.footer-identity,.footer-inner,.footer-top-row,.footer-social){border:0!important;box-shadow:none!important}
 body footer.site-footer::after{content:none!important}
+
+/* Direct Music → genres: silver choices and one silver destination button. */
+body #music-panel .music-themes button.music-theme-choice,body #music-panel .genre-dialog button.genre-option,body #music-panel a.platinum.music-world-link{background:linear-gradient(110deg,#8b939f,#e5e9f1 32%,#fff 49%,#b4bdcb 76%,#dce3ed)!important;color:#111621!important;border:1px solid #edf0f8!important;text-shadow:0 1px 0 #fff8!important;box-shadow:inset 0 1px 0 #fff,0 4px 15px #0005!important}
+body #music-panel a.platinum.music-world-link:hover,body #music-panel a.platinum.music-world-link:focus-visible{animation:brand-button-shimmy .65s ease-out forwards!important;box-shadow:inset 0 1px 0 #fff,0 6px 24px #ffffff23!important}
+body #music-panel a.platinum.music-world-link::after{content:''!important}
+body #music-panel[data-browse=genres]>:is(label,select,#genre-picker,#now-playing,#music-track-theme,.music-console,#playlist,#track-info){display:none!important}
+@media(prefers-reduced-motion:reduce){body #music-panel a.platinum.music-world-link:hover,body #music-panel a.platinum.music-world-link:focus-visible{animation:none!important;transform:none!important}}
+
+body #music-panel .music-themes button.music-theme-choice:hover,body #music-panel .music-themes button.music-theme-choice:focus-visible{animation:brand-button-shimmy .65s ease-out forwards!important;box-shadow:0 0 14px #ffffff35!important}
+body #music-panel .music-themes button.music-theme-choice.choice-click{animation:brand-button-bounce .35s ease-out!important}
+@media(prefers-reduced-motion:reduce){body #music-panel .music-themes button.music-theme-choice{animation:none!important;transform:none!important}}
