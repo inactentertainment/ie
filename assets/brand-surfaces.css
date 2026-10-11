@@ -14,3 +14,6 @@ body button:not(.node):not(.core):not(.music-toggle):not(:disabled):hover::after
 @keyframes brand-button-shimmy{0%{transform:translateY(0)}30%{transform:translateY(-5px) rotate(-1deg)}50%{transform:translateY(-5px) rotate(1deg)}70%{transform:translateY(-4px) rotate(-.5deg)}100%{transform:translateY(-4px)}}
 @keyframes brand-button-sweep{to{left:155%}}
 @media(prefers-reduced-motion:reduce){body button,body a:is(.platinum,.outline,.article-card-cta),body button::after,body a:is(.platinum,.outline,.article-card-cta)::after{animation:none!important;transform:none!important;transition:none!important}}
+
+/* Title accents use light gray across every page. */
+main :is(h1,h2,h3,h4) :is(em,span){color:#c7c7c7!important;text-shadow:none!important}
