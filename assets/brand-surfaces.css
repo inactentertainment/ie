@@ -17,3 +17,7 @@ body button:not(.node):not(.core):not(.music-toggle):not(:disabled):hover::after
 
 /* Title accents use light gray across every page. */
 main :is(h1,h2,h3,h4) :is(em,span){color:#c7c7c7!important;text-shadow:none!important}
+
+/* Animated SVG panels stay black in both lighting modes. Keep silver artwork intact. */
+body :is(svg.article-visual,svg.banner,svg.dictionary-orbit,.network>svg,.menu-toggle svg){background:#000!important}
+body :is(svg.article-visual,svg.banner)>rect:first-of-type{fill:#000!important}
