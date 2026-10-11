@@ -11,3 +11,12 @@ body:has(#page-tools) main{padding-bottom:42px}
 @media(max-width:600px){#page-tools{padding-left:12px;padding-right:12px}}
 
 #page-tools button{font-family:Georgia,serif;background:linear-gradient(110deg,#8b939f,#e5e9f1 32%,#fff 49%,#b4bdcb 76%,#dce3ed);color:#111621;border:1px solid #edf0f8;border-radius:16px}
+
+#page-tools{gap:6px}
+#page-tools .reader-utilities{display:flex;gap:4px;margin-left:auto;margin-right:auto}
+#page-tools .reader-utilities button{width:26px;height:26px;padding:2px;font:12px Georgia,serif}
+#page-tools .reader-utility-popup{position:absolute;bottom:calc(100% + 8px);left:50%;transform:translateX(-50%);width:min(270px,calc(100vw - 24px));padding:12px;background:#000;border:1px solid #aaa;border-radius:12px;box-shadow:0 0 20px #fff2;font:13px Georgia,serif}
+#page-tools .reader-utility-popup[hidden]{display:none!important}
+#page-tools .reader-utility-popup p{margin:4px 0 10px;color:#eee}
+#page-tools .reader-utility-popup button{padding:6px 9px;margin:3px;font:12px Georgia,serif}
+@media(max-width:360px){#page-tools{padding-inline:6px;gap:4px}#page-tools .reader-utilities{gap:3px}}

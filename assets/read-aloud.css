@@ -10,3 +10,5 @@ body .read-active{outline:1px solid #a8a8a866;outline-offset:5px;background:tran
 .read-aloud .read-follow input{width:16px;height:16px;accent-color:#ccc}
 #page-tools #read-settings p{color:#ddd!important}
 #page-tools #read-settings select{background:#080808!important;color:#eee!important;border-color:#777!important;font-family:Georgia,serif}
+
+body main .read-active{outline:1px solid #fff!important;outline-offset:5px;box-shadow:0 0 9px #ffffff70,0 0 22px #ffffff25,inset 0 0 8px #ffffff12!important;background:transparent!important;border-radius:5px}

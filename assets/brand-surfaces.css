@@ -85,3 +85,29 @@ body .site-footer .social-links svg{width:16px;height:16px}
 @media(max-width:360px){body .site-footer{padding-inline:12px!important}body .site-footer .footer-social h2{font-size:12px!important}body #music-panel .music-transport :is(#prev,#master-play,#music-stop,#shuffle,#repeat,#next){font-size:9px!important}}
 body #music-panel.music-minimized>.music-transport{display:none!important}
 @media(prefers-reduced-motion:reduce){body #music-panel #playlist .track-choice:active{transform:none!important}}
+
+/* Silver is reserved for the radio's theme, collection, and genre choices. */
+body #music-panel :is(.music-theme-choice,.genre-option){background:linear-gradient(110deg,#909090,#eee 32%,#fff 49%,#b8b8b8 76%,#ddd)!important;color:#111!important;border:1px solid #eee!important;text-shadow:0 1px 0 #fff8!important;box-shadow:inset 0 1px 0 #fff,0 3px 10px #0005!important;font:12px Georgia,serif!important;padding:9px 7px!important;min-height:36px;border-radius:12px}
+body #music-panel .music-theme-choice:hover,body #music-panel .music-theme-choice:focus-visible{animation:brand-button-shimmy .5s!important}
+body #music-panel .music-theme-choice.choice-click{animation:brand-button-bounce .35s ease-out!important}
+.music-themes,.music-sources{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin:12px 0}
+#music-panel[data-browse=root] .music-sources,#music-panel:not([data-browse=root]) .music-themes,#music-panel:not([data-browse=music]) .music-sources{display:none!important}
+#music-panel[data-browse=root]>:is(label,select,#genre-picker,#now-playing,#music-track-theme,.music-console,#playlist,#track-info),#music-panel[data-browse=music]>:is(label,select,#genre-picker,#now-playing,#music-track-theme,.music-console,#playlist,#track-info){display:none!important}
+body #music-panel[data-browse=root] #music-back,body #music-panel.music-minimized :is(.music-themes,.music-sources){display:none!important}
+body #music-panel:not([data-browse=root]) #music-back{display:inline-flex!important}
+body #music-panel.in-music-box #music-back{display:inline-flex!important}
+@media(prefers-reduced-motion:reduce){body #music-panel .music-theme-choice{animation:none!important;transform:none!important}}
+
+body #music-panel .genre-dialog[data-collection="Popular Music"] .genre-option{background:linear-gradient(#1b1b1b,#030303)!important;color:#eee!important;border:1px solid #aaa!important;text-shadow:none!important;box-shadow:inset 0 1px 0 #ffffff18!important}
+body #music-panel .genre-dialog[data-collection="Popular Music"] .genre-option:active,body #music-panel .genre-dialog[data-collection="Popular Music"] .genre-option:focus-visible{box-shadow:0 0 10px #ffffff60!important}
+body #music-panel.music-minimized{position:fixed!important;inset:auto 10px var(--reader-bottom,48px) auto!important;width:min(240px,calc(100vw - 20px))!important;padding:5px!important;max-height:none!important;overflow:hidden!important;z-index:54!important}
+body #music-panel.music-minimized #music-video-slot{margin:0!important}
+body #music-panel.music-minimized .inline-music-video{margin:0!important}
+body #music-panel.music-minimized .inline-music-video iframe{height:200px!important;min-height:200px!important;width:100%!important}
+body #music-panel.music-minimized .official-soul-heading{padding:5px!important;gap:3px!important}
+body #music-panel.music-minimized .official-soul-heading h2{font:10px Georgia,serif!important;margin:0!important}
+body #music-panel.music-minimized .youtube-open-link{font-size:9px!important;margin:3px 6px!important}
+@keyframes brand-button-bounce{0%,100%{transform:translateY(0)}40%{transform:translateY(-4px) rotate(-1deg)}70%{transform:translateY(1px) rotate(1deg)}}
+
+body #music-panel.music-minimized .official-soul-heading span{font:10px/1.3 Georgia,serif!important}
+body #music-panel.music-minimized #music-back{display:none!important}
