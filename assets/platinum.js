@@ -31,6 +31,14 @@
   if(footer&&typeof ResizeObserver!=='undefined')new ResizeObserver(place).observe(footer);
  }
 
+ const revealFooter=document.querySelector('.site-footer');
+ if(revealFooter&&typeof IntersectionObserver==='function'&&!matchMedia('(prefers-reduced-motion: reduce)').matches){
+  const bounds=revealFooter.getBoundingClientRect();
+  if(bounds.top<innerHeight&&bounds.bottom>0)revealFooter.classList.add('footer-visible');
+  revealFooter.classList.add('footer-reveal');
+  const observer=new IntersectionObserver(entries=>{if(entries.some(entry=>entry.isIntersecting)){revealFooter.classList.add('footer-visible');observer.disconnect()}},{threshold:0,rootMargin:'0px 0px -12px 0px'});observer.observe(revealFooter);
+ }
+
  document.querySelectorAll('.word-menu').forEach(menu=>{const trigger=menu.querySelector('summary');const sync=()=>{menu.closest('header').classList.toggle('nav-open',menu.open);trigger.setAttribute('aria-expanded',String(menu.open));trigger.setAttribute('aria-label',menu.open?'Close navigation':'Open navigation');trigger.title=menu.open?'Close navigation':'Open navigation'};menu.addEventListener('toggle',sync);sync();const current=location.pathname.replace(/\/index\.html$/,'/');menu.querySelectorAll('nav a').forEach(link=>{const target=new URL(link.href,location.href);if(target.origin===location.origin&&!target.hash&&target.pathname.replace(/\/index\.html$/,'/')===current)link.setAttribute('aria-current','page')});document.addEventListener('click',e=>{if(!menu.contains(e.target))menu.open=false});menu.addEventListener('keydown',e=>{if(e.key==='Escape'){menu.open=false;menu.querySelector('summary').focus()}})});
  const service=document.querySelector('#inquiry-service');const route=document.querySelector('#department-route');
  if(service&&route){const departments={'Website & interactive app':'Digital Experiences','AI & business workflow':'AI & Business Systems','Instructional design & learning':'Learning & Instructional Design','Digital marketing & branding':'Branding & Marketing','Music & creative media':'Music & Creative Studio','Commercial funding':'Strategic Funding','Partnership or general inquiry':'Partnerships & Visitor Support'};const render=()=>{route.textContent=[...service.selectedOptions].some(o=>o.value)?'Recommended departments: '+[...service.selectedOptions].filter(o=>o.value).map(o=>departments[o.value]).join(', ')+'. Your selections and project brief travel together.':'Your department recommendation will appear here.'};service.addEventListener('change',render);render();const selected=new URLSearchParams(location.search).get('service');if(selected&&[...service.options].some(x=>x.value===selected)){service.value=selected;service.dispatchEvent(new Event('change'))}}
@@ -45,7 +53,7 @@
   const options=document.createElement('div');options.className='contact-choice-options';
   const done=document.createElement('button');done.type='button';done.className='choice-done';done.textContent='Done';done.onclick=()=>dialog.close();dialog.append(heading,note,options,done);document.body.append(dialog);
   const paint=()=>{const values=[...select.selectedOptions].filter(o=>o.value);picker.textContent=(values.map(o=>o.textContent).join(' · ')||'Select one or more services')+' ▾';picker.setAttribute('aria-label',(label?.textContent||'Choose')+': '+picker.textContent);options.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String([...select.selectedOptions].some(o=>o.value===b.dataset.value))))};
-  [...select.options].filter(o=>o.value).forEach(option=>{const button=document.createElement('button');button.type='button';button.dataset.value=option.value;button.textContent=option.textContent;button.onclick=()=>{if(multi)option.selected=!option.selected;else select.value=option.value;button.classList.remove('choice-click');void button.offsetWidth;button.classList.add('choice-click');select.dispatchEvent(new Event('change',{bubbles:true}));paint()};options.append(button)});
+  [...select.options].filter(o=>o.value).forEach(option=>{const button=document.createElement('button');button.type='button';button.dataset.value=option.value;button.textContent=option.textContent;button.onclick=()=>{if(multi)option.selected=!option.selected;else select.value=option.value;select.dispatchEvent(new Event('change',{bubbles:true}));paint()};options.append(button)});
   picker.onclick=()=>{paint();dialog.showModal()};dialog.addEventListener('close',()=>picker.focus({preventScroll:true}));dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close()}});select.addEventListener('change',paint);paint();
  });
 })();
