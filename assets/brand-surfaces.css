@@ -163,3 +163,28 @@ body #page-tools{animation:shared-header-fade .55s ease-out both}
 
 /* Keep the opening music box limited to themes, local playlist, and the music destination. */
 body #music-panel[data-browse=root]:not(.in-music-box)>.music-track-info{display:none!important}
+
+/* A selected song lifts gently and keeps its platinum finish when returning to the list. */
+body #music-panel #playlist li.selected-track{position:relative;z-index:1;transform:translateY(-2px);background:linear-gradient(110deg,#8b939f,#e5e9f1 32%,#fff 49%,#b4bdcb 76%,#dce3ed)!important;border-color:#edf0f8!important;box-shadow:inset 0 1px 0 #fff,0 3px 12px #ffffff30!important;transition:transform .18s ease-out}
+body #music-panel #playlist li.selected-track :is(.track-choice,.track-favorite),body #music-panel #playlist li.selected-track :is(.track-choice,.track-favorite):is(:hover,:focus-visible,:active){background:transparent!important;background-image:none!important;color:#111621!important;text-shadow:none!important;animation:none!important;transform:none!important;box-shadow:none!important}
+body #music-panel #playlist li.selected-track small{color:#30343a!important}
+body #music-panel #upload-genre-picker{display:flex;width:100%;justify-content:space-between;text-align:left;padding:11px 13px!important;border:1px solid #888!important;border-radius:10px;margin:10px 0;font-family:Georgia,serif}
+body #music-panel #upload-genre[hidden],body #music-panel .upload-genre-dialog #music-files[hidden]{display:none!important}
+body #music-panel .upload-genre-dialog .genre-option[aria-pressed=true]{outline:2px solid #fff;outline-offset:2px;box-shadow:0 0 12px #ffffff45!important}
+body #music-panel .genre-upload-footer{border-top:1px solid #ffffff45;margin-top:18px;padding-top:12px}
+body #music-panel .genre-upload-footer #upload-music-button{display:block;width:100%;padding:11px 13px!important;background:linear-gradient(110deg,#8b939f,#e5e9f1 32%,#fff 49%,#b4bdcb 76%,#dce3ed)!important;color:#111621!important;border:1px solid #edf0f8!important;border-radius:20px}
+body #music-panel .genre-upload-footer .upload-genre-status{margin:0 0 10px!important;color:#ddd!important;font:12px/1.6 Georgia,serif!important}
+@media(prefers-reduced-motion:reduce){body #music-panel #playlist li.selected-track{transform:none!important;transition:none!important}}
+
+/* The music Back button shines within its own space, without shifting nearby controls. */
+body #music-panel button#music-back,body #music-panel button#music-back:is(:hover,:focus-visible,:active){background:linear-gradient(110deg,#8b939f,#e5e9f1 32%,#fff 49%,#b4bdcb 76%,#dce3ed)!important;color:#111621!important;border:1px solid #edf0f8!important;border-radius:20px!important;padding:7px 15px!important;text-shadow:none!important;animation:none!important;transform:none!important;overflow:hidden;box-shadow:inset 0 1px 0 #fff,0 3px 12px #ffffff20!important;transition:box-shadow .2s ease}
+body #music-panel button#music-back::after{content:''!important;position:absolute;inset:-50% auto -50% -85%;width:45%;height:200%;background:linear-gradient(90deg,transparent,#fff9,transparent);transform:skewX(-25deg);pointer-events:none}
+body #music-panel button#music-back:is(:hover,:focus-visible)::after{animation:brand-button-sweep .65s ease-out!important}
+body #music-panel button#music-back:active{box-shadow:inset 0 0 12px #6668,0 0 14px #ffffff40!important}
+@media(prefers-reduced-motion:reduce){body #music-panel button#music-back::after{animation:none!important}body #music-panel button#music-back{transition:none!important}}
+
+/* Tight genre grids react within their bounds instead of jumping into adjacent choices. */
+body #music-panel .genre-dialog button.genre-option,body #music-panel .genre-dialog button.genre-option:is(:hover,:focus-visible,:active){animation:none!important;transform:none!important}
+body #music-panel .genre-dialog button.genre-option.choice-click{animation:genre-choice-flex .3s ease-out!important}
+@keyframes genre-choice-flex{0%,100%{filter:brightness(1)}45%{filter:brightness(.8)}}
+@media(prefers-reduced-motion:reduce){body #music-panel .genre-dialog button.genre-option.choice-click{animation:none!important}}

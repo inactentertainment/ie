@@ -20,5 +20,30 @@
  picker.onclick=()=>{render();dialog.showModal();dialog.querySelector('[aria-pressed=true]')?.focus()};dialog.querySelector('button').onclick=()=>dialog.close();dialog.addEventListener('close',()=>{if(stage==='genres'){browse('root');themes.children[1]?.focus({preventScroll:true})}else picker.focus({preventScroll:true})});dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close()}});select.addEventListener('change',paint);paint();
  back.onclick=()=>{const playing=panel.classList.contains('in-music-box');document.getElementById('music-stop').click();panel.classList.remove('in-music-box','music-minimized');panel.hidden=false;if(dialog.open)dialog.close();browse(playing?'list':'root');(stage==='root'?themes:panel.querySelector('#playlist'))?.querySelector('button')?.focus({preventScroll:true})};
 
+ // Local uploads use the same genre dialog styling as the main Music choices.
+ const uploadSelect=document.getElementById('upload-genre'),files=document.getElementById('music-files');
+ if(uploadSelect&&files){
+  const localArea=uploadSelect.closest('details');
+  const uploadPicker=document.createElement('button');uploadPicker.type='button';uploadPicker.id='upload-genre-picker';uploadPicker.textContent='Choose your genre ⌄';uploadPicker.setAttribute('aria-haspopup','dialog');uploadPicker.setAttribute('aria-controls','upload-genre-dialog');
+  uploadSelect.hidden=true;uploadSelect.insertAdjacentElement('afterend',uploadPicker);
+  const oldLabel=panel.querySelector('label[for="upload-genre"]');if(oldLabel)oldLabel.remove();
+  const fileLabel=panel.querySelector('label[for="music-files"]');if(fileLabel)fileLabel.remove();
+  localArea?.querySelectorAll('p.small').forEach(p=>p.remove());
+  const uploadDialog=document.createElement('dialog');uploadDialog.id='upload-genre-dialog';uploadDialog.className='genre-dialog upload-genre-dialog';uploadDialog.setAttribute('aria-labelledby','upload-genre-title');
+  uploadDialog.innerHTML='<div class="genre-heading"><h2 id="upload-genre-title">Choose your genre</h2><button type="button" aria-label="Close upload genres">close</button></div><div class="genre-options"></div><div class="genre-upload-footer"><p class="upload-genre-status" role="status"></p><button class="platinum" id="upload-music-button" type="button" disabled>Upload music ↑</button></div>';
+  const uploadButton=uploadDialog.querySelector('#upload-music-button'),uploadStatus=uploadDialog.querySelector('.upload-genre-status');
+  files.hidden=true;uploadDialog.querySelector('.genre-upload-footer').append(files);panel.append(uploadDialog);
+  function renderUpload(){const options=uploadDialog.querySelector('.genre-options');options.replaceChildren();[...uploadSelect.options].filter(option=>option.value&&!['i.e. Music','My playlist','Motivation','Meditation'].includes(option.value)).forEach(option=>{const b=document.createElement('button');b.type='button';b.className='genre-option';b.textContent=option.textContent;b.setAttribute('aria-pressed',String(uploadSelect.value===option.value));b.onclick=()=>{uploadSelect.value=option.value;uploadSelect.dispatchEvent(new Event('change',{bubbles:true}));options.querySelectorAll('button').forEach(button=>button.setAttribute('aria-pressed',String(button===b)));b.classList.remove('choice-click');void b.offsetWidth;b.classList.add('choice-click');paintUpload()};options.append(b)});paintUpload()}
+  function paintUpload(){const genre=uploadSelect.value;uploadButton.disabled=!genre;uploadButton.textContent=genre?'Upload music to '+genre+' ↑':'Upload music ↑';uploadStatus.textContent=genre?'Your music will be added under '+genre+'.':'Choose a genre, then upload your music.';uploadPicker.setAttribute('aria-label','Choose your genre'+(genre?': '+genre:''))}
+  uploadPicker.onclick=()=>{renderUpload();uploadDialog.showModal();(uploadDialog.querySelector('[aria-pressed="true"]')||uploadDialog.querySelector('.genre-option'))?.focus()};
+  uploadButton.onclick=()=>{if(uploadSelect.value)files.click()};
+  uploadDialog.querySelector('.genre-heading button').onclick=()=>uploadDialog.close();
+  uploadDialog.addEventListener('close',()=>uploadPicker.focus({preventScroll:true}));
+  uploadDialog.addEventListener('keydown',e=>{if(e.key==='Escape')e.stopPropagation()});
+  uploadDialog.addEventListener('click',e=>{if(e.target===uploadDialog){const r=uploadDialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)uploadDialog.close()}});
+  files.addEventListener('change',()=>{if(uploadDialog.open&&files.dataset.uploadAccepted==='true')uploadDialog.close()});
+  paintUpload();
+ }
+
  let context;window.ieMusicTransition=()=>{if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;try{const Audio=window.AudioContext||window.webkitAudioContext;if(!Audio)return;context=context||new Audio();context.resume().catch(()=>{});const now=context.currentTime,osc=context.createOscillator(),gain=context.createGain();osc.type='sine';osc.frequency.setValueAtTime(440,now);osc.frequency.exponentialRampToValueAtTime(880,now+.16);gain.gain.setValueAtTime(.0001,now);gain.gain.exponentialRampToValueAtTime(.045,now+.03);gain.gain.exponentialRampToValueAtTime(.0001,now+.24);osc.connect(gain);gain.connect(context.destination);osc.start(now);osc.stop(now+.25);osc.onended=()=>{osc.disconnect();gain.disconnect()}}catch{}};
 })();
