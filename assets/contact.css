@@ -36,3 +36,6 @@ body #contact .guided-contact .form-control{display:block;width:100%;background:
 #contact .question-arrive{animation:contact-question-fade .25s ease-out both}@keyframes contact-question-fade{from{opacity:0}to{opacity:1}}
 @media(max-width:600px){#contact .contact-choices{grid-template-columns:1fr}#contact .inquiry-steps{gap:6px}#contact .inquiry-steps li{font-size:10px}#contact .contact-date-row{flex-wrap:wrap}#contact .contact-date-row input{flex-basis:100%}#contact .contact-review-row{gap:10px}#contact .contact-review-row dd{font-size:15px}#contact .inquiry-actions{gap:10px}#contact #contact-question-count{flex:1;text-align:center;font-size:11px}}
 @media(prefers-reduced-motion:reduce){#contact .question-arrive{animation:none!important}body #contact .guided-contact button{transition:none!important}}
+
+/* Compact first question, with its optional-selection instruction beside it. */
+#contact .inquiry-heading{margin-bottom:18px}#contact .contact-inline-hint{display:inline;font:12px/1.4 Georgia,serif;color:#c8c8c8;white-space:nowrap}#contact .contact-question-field legend{margin-bottom:8px}#contact .contact-choices{margin-top:0}
