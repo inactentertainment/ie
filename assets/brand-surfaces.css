@@ -44,3 +44,8 @@ body #inquiry-form select[hidden]{display:none!important}
 body button.choice-click{animation:choice-bounce .35s ease-out!important}
 body button.choice-click::after{animation:brand-button-sweep .35s ease-out!important}
 @media(prefers-reduced-motion:reduce){body button.choice-click,body button.choice-click::after{animation:none!important;transform:none!important}}
+
+/* Music exception: silver choices belong only inside the genre popup. */
+body .music-panel button:not(.genre-dialog button){background:#000!important;background-image:none!important;color:#fff!important;border-color:#555!important;text-shadow:none!important;box-shadow:none!important}
+body .music-panel button:not(.genre-dialog button)::after{content:none!important}
+body .music-panel button:not(.genre-dialog button):hover,body .music-panel button:not(.genre-dialog button):focus-visible{animation:none!important;transform:none!important;box-shadow:0 0 8px #ffffff20!important}
