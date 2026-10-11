@@ -1,0 +1,10 @@
+/* One thin reading/theme bar follows the page and stops above the footer. */
+#page-tools{position:fixed;inset:auto 0 0;bottom:var(--tools-footer-offset,0px);z-index:55;display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:36px;padding:4px 16px calc(4px + env(safe-area-inset-bottom));background:#000;color:#ddd;border-top:1px solid #ffffff38;box-shadow:0 -4px 18px #0005}
+#page-tools .light-toggle{position:static!important;inset:auto!important;padding:4px 10px!important;height:26px!important;font-size:10px!important;line-height:1!important;margin:0}
+#page-tools .read-aloud{position:relative!important;inset:auto!important;max-width:none!important;margin:0!important;border:0!important;border-radius:0!important;box-shadow:none!important;background:transparent!important}
+#page-tools .read-bar{padding:0!important;gap:4px!important;border:0;background:transparent}
+#page-tools .read-bar button{height:26px!important;min-width:26px!important;padding:4px 6px!important;font-size:10px!important}
+#page-tools .read-bar #read-play{min-width:54px!important}
+#page-tools #read-settings{position:absolute;bottom:36px!important;top:auto!important;right:0!important;width:min(250px,calc(100vw - 32px))!important;background:#000!important;color:#eee!important;border:1px solid #777;border-radius:12px;padding:16px;box-shadow:0 -8px 30px #0008}
+body:has(#page-tools) main{padding-bottom:42px}
+@media(max-width:600px){#page-tools{padding-left:12px;padding-right:12px}}
