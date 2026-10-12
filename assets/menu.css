@@ -58,3 +58,11 @@ body header .word-menu nav a.menu-social-link svg{display:block;width:22px;heigh
 body header .word-menu nav a.menu-social-link:hover,body header .word-menu nav a.menu-social-link:focus-visible{transform:translateY(-3px);box-shadow:0 0 18px #ffffff25;border-color:#ddd;outline:1px solid #ddd}
 @media(max-width:600px){body header .word-menu nav{grid-template-columns:1.15fr 1fr;gap:16px!important}body header .word-menu nav .menu-group+.menu-group{padding-left:12px}body header .word-menu nav .menu-social-grid{gap:6px}body header .word-menu nav a.menu-social-link{padding:6px 2px!important;min-height:34px}body header .word-menu nav a.menu-social-link svg{width:19px;height:19px}}
 @media(prefers-reduced-motion:reduce){body header .word-menu nav a.menu-social-link{transition:none}body header .word-menu nav a.menu-social-link:hover{transform:none}}
+
+/* Bare footer-style marks, with no label, tile, or frame. */
+body header .word-menu nav .menu-follow{margin-top:10px;padding-top:5px;border:0}
+body header .word-menu nav .menu-social-grid{gap:12px 10px}
+body header .word-menu nav a.menu-social-link,body header .word-menu nav a.menu-social-link:is(:hover,:focus-visible){padding:3px!important;min-height:28px;background:none!important;background-image:none!important;border:0!important;border-radius:0!important;box-shadow:none!important;color:#ccc;overflow:visible}
+body header .word-menu nav a.menu-social-link svg{width:24px;height:24px;filter:drop-shadow(0 0 5px #ffffff35)}
+body header .word-menu nav a.menu-social-link:focus-visible{outline:1px solid #ccc;outline-offset:3px}
+@media(max-width:600px){body header .word-menu nav .menu-social-grid{gap:10px 6px}body header .word-menu nav a.menu-social-link svg{width:21px;height:21px}}

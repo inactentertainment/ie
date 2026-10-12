@@ -60,14 +60,13 @@
 
 /* Shared menu social strip: reuse the same actual icons and profile links as the footer. */
 (()=>{
- const labels=['YouTube','TikTok','Pinterest','Instagram','Etsy','Redbubble','Zazzle','Gumroad'];
+ const labels=['YouTube','TikTok','Pinterest','Instagram','Etsy','Redbubble','Zazzle','Amazon'];
  document.querySelectorAll('.word-menu nav').forEach(nav=>{
   const group=[...nav.querySelectorAll('.menu-group')].find(g=>[...g.querySelectorAll('a')].some(a=>a.textContent.trim()==='Contact'));
   if(!group||group.querySelector('.menu-follow'))return;
-  const section=document.createElement('section');section.className='menu-follow';section.setAttribute('aria-label','Stay Connected');
-  const title=document.createElement('p');title.className='menu-group-title';title.textContent='Stay Connected';
+  const section=document.createElement('section');section.className='menu-follow';section.setAttribute('aria-label','Social media and shops');
   const grid=document.createElement('div');grid.className='menu-social-grid';
   for(const label of labels){const source=[...document.querySelectorAll('.site-footer .social-links a')].find(a=>a.getAttribute('aria-label')==='Visit InAct on '+label||a.textContent.trim()===label);if(!source)continue;const a=source.cloneNode(true);a.className='menu-social-link';a.title=label;a.setAttribute('aria-label','Visit InAct on '+label);a.querySelectorAll('span').forEach(span=>span.remove());grid.append(a)}
-  if(grid.childElementCount){section.append(title,grid);group.append(section)}
+  if(grid.childElementCount){section.append(grid);group.append(section)}
  });
 })();
