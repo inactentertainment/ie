@@ -66,3 +66,19 @@ body header .word-menu nav a.menu-social-link,body header .word-menu nav a.menu-
 body header .word-menu nav a.menu-social-link svg{width:24px;height:24px;filter:drop-shadow(0 0 5px #ffffff35)}
 body header .word-menu nav a.menu-social-link:focus-visible{outline:1px solid #ccc;outline-offset:3px}
 @media(max-width:600px){body header .word-menu nav .menu-social-grid{gap:10px 6px}body header .word-menu nav a.menu-social-link svg{width:21px;height:21px}}
+/* Explore and Connect: six matched rows, with icons beside their words. */
+body header .word-menu nav{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px 24px!important;max-height:calc(100dvh - 100px);overflow-y:auto}
+body header .word-menu nav .menu-group{display:grid;grid-template-rows:20px repeat(6,48px);gap:2px;align-content:start}
+body header .word-menu nav .menu-link{justify-content:flex-start;gap:9px;min-height:42px;box-sizing:border-box}
+body header .word-menu nav .menu-link .menu-glyph{order:0;color:#ccc}
+body header .word-menu nav .menu-link>span:last-child{min-width:0;overflow-wrap:normal}
+body header .word-menu nav .menu-follow{display:none!important}
+body header .word-menu nav .menu-membership{grid-column:1/-1;display:flex;align-items:center;justify-content:center;gap:10px;padding:10px 20px!important;max-width:340px;width:100%;margin:12px auto 0;box-sizing:border-box;border-radius:24px;border:1px solid #f6f6f6;background:linear-gradient(120deg,#969ca5,#f3f4f6 30%,#fff 47%,#b3b9c2 72%,#dce0e5);color:#20252d;font:italic 22px/1.2 'Brush Script MT','Segoe Script',Georgia,cursive;text-shadow:0 1px #fff;box-shadow:inset 0 2px 2px #fff, inset 0 -3px 5px #5c626d70,0 5px 13px #0008;position:relative;overflow:hidden;transition:transform .2s,box-shadow .2s}
+body header .word-menu nav .menu-membership .menu-glyph{color:#303843}
+body header .word-menu nav .menu-membership::after{content:'';position:absolute;inset:-50% auto -50% -40%;width:25%;background:linear-gradient(90deg,transparent,#fff9,transparent);transform:skewX(-20deg);animation:membership-shine 7s ease-in-out infinite}
+body header .word-menu nav .menu-membership:hover,body header .word-menu nav .menu-membership:focus-visible{transform:translateY(-3px);box-shadow:inset 0 2px 2px #fff,0 7px 20px #ffffff35;animation:membership-shimmy .5s ease-in-out}
+@keyframes membership-shine{30%,100%{left:140%}}
+@keyframes membership-shimmy{25%{transform:translateY(-3px) rotate(-1deg)}75%{transform:translateY(-3px) rotate(1deg)}}
+@media(max-width:600px){body header .word-menu nav{padding:16px!important;gap:10px 12px!important}body header .word-menu nav .menu-group+.menu-group{padding-left:10px}body header .word-menu nav .menu-link{gap:6px;font-size:11px;min-height:44px}body header .word-menu nav .menu-glyph{width:16px;flex-basis:16px}body header .word-menu nav .menu-group{grid-template-rows:20px repeat(6,52px)}body header .word-menu nav .menu-membership{font-size:21px;margin-top:6px}}
+@media(prefers-reduced-motion:reduce){body header .word-menu nav .menu-membership,body header .word-menu nav .menu-membership::after{animation:none!important;transition:none!important}body header .word-menu nav .menu-membership:hover{transform:none}}
+.ie-tooltip{position:fixed;z-index:1000;pointer-events:none;background:#ddd;color:#171717;padding:5px 9px;border-radius:7px;font:11px/1.4 Georgia,serif;box-shadow:0 3px 12px #0005;max-width:220px;text-align:center}
