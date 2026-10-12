@@ -48,3 +48,13 @@ header.nav-open{background:#111214!important;border-bottom-color:transparent!imp
 body header,body header.nav-open,body header .word-menu nav{background:#000!important;background-image:none!important}
 body header .word-menu nav{border-color:#ffffff50!important;box-shadow:0 16px 30px #000e,0 7px 18px #ffffff24,inset 0 -1px 0 #ffffff70!important}
 body header .word-menu nav .menu-link{color:#eee;font-family:Georgia,serif}
+
+/* Four and four, directly beneath Contact; original footer platform marks. */
+body header .word-menu nav .menu-follow{margin-top:15px;padding-top:14px;border-top:1px solid #ffffff20;min-width:0}
+body header .word-menu nav .menu-follow .menu-group-title{margin:0 0 12px;font:9px/1.4 Georgia,serif;letter-spacing:1.3px;white-space:nowrap}
+body header .word-menu nav .menu-social-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;min-width:0}
+body header .word-menu nav a.menu-social-link{display:flex!important;align-items:center;justify-content:center;min-width:0;min-height:36px;padding:8px 4px!important;border:1px solid #ffffff35;border-radius:10px;background:linear-gradient(145deg,#20232b,#08090d);color:#ddd;transition:transform .2s,box-shadow .2s}
+body header .word-menu nav a.menu-social-link svg{display:block;width:22px;height:22px;fill:currentColor;filter:drop-shadow(0 0 5px #ffffff35)}
+body header .word-menu nav a.menu-social-link:hover,body header .word-menu nav a.menu-social-link:focus-visible{transform:translateY(-3px);box-shadow:0 0 18px #ffffff25;border-color:#ddd;outline:1px solid #ddd}
+@media(max-width:600px){body header .word-menu nav{grid-template-columns:1.15fr 1fr;gap:16px!important}body header .word-menu nav .menu-group+.menu-group{padding-left:12px}body header .word-menu nav .menu-social-grid{gap:6px}body header .word-menu nav a.menu-social-link{padding:6px 2px!important;min-height:34px}body header .word-menu nav a.menu-social-link svg{width:19px;height:19px}}
+@media(prefers-reduced-motion:reduce){body header .word-menu nav a.menu-social-link{transition:none}body header .word-menu nav a.menu-social-link:hover{transform:none}}
