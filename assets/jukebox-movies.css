@@ -1,0 +1,17 @@
+/* Same black/silver Jukebox, four compact routes at the opening. */
+body #music-panel .music-identity .jukebox-title{font:italic 20px/1.2 Georgia,serif!important;letter-spacing:.3px;text-transform:none;color:#eee!important}
+body #music-panel .music-themes{grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;margin:10px 0}
+body #music-panel .music-themes button.music-theme-choice{padding:8px 4px!important;min-height:32px;font:11px/1.3 Georgia,serif!important;white-space:nowrap;border-radius:18px!important}
+body #music-panel[data-browse^="movie-"]>:is(label,select,#genre-picker,#now-playing,#music-track-theme,.music-console,#playlist,.music-track-info,details,.music-world-link){display:none!important}
+body #music-panel:not([data-browse^="movie-"]) #jukebox-movies{display:none!important}
+body #music-panel[data-browse^="movie-"] .music-themes{display:none!important}
+#jukebox-movies{margin:14px 0;color:#eee}#jukebox-movies h2{font:23px/1.3 Georgia,serif;margin:0 0 12px;color:#eee}#jukebox-movies p{font:13px/1.65 Georgia,serif!important;color:#ddd!important}#jukebox-movies .movie-note{font-size:11px!important;color:#bbb!important}
+.movie-genre-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:16px 0}.movie-list{display:grid;gap:7px}.movie-actions,.movie-reactions{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+body #music-panel #jukebox-movies button{padding:9px 11px!important;border-radius:12px!important;font:12px/1.4 Georgia,serif!important;min-height:36px;animation:none!important;transform:none!important;text-align:left}
+body #music-panel #jukebox-movies button.movie-row{width:100%;display:flex;flex-direction:column;gap:3px}#jukebox-movies .movie-row strong{font:14px/1.35 Georgia,serif;color:#111!important}#jukebox-movies .movie-row span,#jukebox-movies .movie-row small{font:11px/1.4 Georgia,serif;color:#30343a!important}
+#jukebox-movies details{border-block:1px solid #7775;padding:12px 0;margin:16px 0}#jukebox-movies summary{font:13px Georgia,serif;cursor:pointer}.movie-source{display:inline-flex;align-items:center;border:1px solid #777;border-radius:12px;padding:9px 10px;color:#ddd;font:12px/1.4 Georgia,serif}.movie-more{margin-top:12px}
+body #music-panel #jukebox-movies .movie-reactions button[aria-pressed=true],body #music-panel #jukebox-movies .movie-reactions button[aria-pressed=true]:is(:hover,:focus-visible){background:#000!important;background-image:none!important;color:#fff!important;border:1px solid #ddd!important;text-shadow:none!important}
+#jukebox-movies :focus-visible{outline:2px solid #eee;outline-offset:3px}body #music-panel .playlist-local-note{font:11px/1.55 Georgia,serif!important;color:#ccc!important;margin:10px 0}
+@media(max-width:360px){body #music-panel .music-themes{gap:4px}body #music-panel .music-themes button.music-theme-choice{font-size:10px!important;padding-inline:2px!important}}
+
+body #music-panel[data-browse="movie-play"]>.music-console{display:block!important}

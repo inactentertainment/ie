@@ -11,19 +11,22 @@
  function browse(next){stage=next;panel.dataset.browse=stage;back.textContent='‹ Back';back.hidden=stage==='root'&&!panel.classList.contains('in-music-box')}
  function choose(value){select.dataset.collection='';select.value=value;select.dispatchEvent(new Event('change',{bubbles:true}));browse('list')}
  function choice(parent,label,action){const b=document.createElement('button');b.type='button';b.className='music-theme-choice';b.textContent=label;b.onclick=()=>{b.classList.remove('choice-click');void b.offsetWidth;b.classList.add('choice-click');action()};parent.append(b)}
- ['Motivation','Music','Meditation'].forEach(label=>choice(themes,label,()=>{if(label==='Music'){browse('genres');picker.click()}else choose(label)}));
+ ['Motivation','Music','Meditation','Movies'].forEach(label=>choice(themes,label,()=>{if(label==='Music'){browse('genres');picker.click()}else if(label==='Movies'){if(window.ieOpenMovies)window.ieOpenMovies();else{browse('root')}}else choose(label)}));
  select.addEventListener('change',()=>browse('list'));browse('root');
 
  function paint(){picker.replaceChildren();const text=document.createElement('span');text.textContent=select.value==='i.e. Music'?'i.e.':select.value||'Music';const arrow=document.createElement('span');arrow.textContent='⌄';arrow.setAttribute('aria-hidden','true');picker.append(text,arrow);picker.setAttribute('aria-label','Music genres: '+(select.value||'Music'))}
  function render(){dialog.querySelector('h2').textContent='Music';const options=dialog.querySelector('.genre-options');options.replaceChildren();[...select.options].filter(option=>option.value&&!['Meditation','Motivation'].includes(option.value)).sort((a,b)=>(a.value==='My playlist')-(b.value==='My playlist')).forEach(option=>{const button=document.createElement('button');button.type='button';button.className='genre-option';button.textContent=option.value==='i.e. Music'?'i.e.':option.textContent;button.setAttribute('aria-pressed',String(option.value===select.value));button.onclick=()=>{button.classList.remove('choice-click');void button.offsetWidth;button.classList.add('choice-click');choose(option.value);paint();options.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));setTimeout(()=>{if(dialog.open)dialog.close();panel.querySelector('#playlist .track-choice')?.focus({preventScroll:true})},350)};options.append(button)})}
 
  picker.onclick=()=>{render();dialog.showModal();dialog.querySelector('[aria-pressed=true]')?.focus()};dialog.querySelector('button').onclick=()=>dialog.close();dialog.addEventListener('close',()=>{if(stage==='genres'){browse('root');themes.children[1]?.focus({preventScroll:true})}else picker.focus({preventScroll:true})});dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close()}});select.addEventListener('change',paint);paint();
- back.onclick=()=>{const playing=panel.classList.contains('in-music-box');document.getElementById('music-stop').click();panel.classList.remove('in-music-box','music-minimized');panel.hidden=false;if(dialog.open)dialog.close();browse(playing?'list':'root');(stage==='root'?themes:panel.querySelector('#playlist'))?.querySelector('button')?.focus({preventScroll:true})};
+ window.ieJukeboxHome=()=>{browse('root');themes.querySelector('button')?.focus({preventScroll:true})};
+ back.onclick=()=>{if(window.ieMoviesBack?.())return;const playing=panel.classList.contains('in-music-box');document.getElementById('music-stop').click();panel.classList.remove('in-music-box','music-minimized');panel.hidden=false;if(dialog.open)dialog.close();browse(playing?'list':'root');(stage==='root'?themes:panel.querySelector('#playlist'))?.querySelector('button')?.focus({preventScroll:true})};
 
  // Local uploads use the same genre dialog styling as the main Music choices.
  const uploadSelect=document.getElementById('upload-genre'),files=document.getElementById('music-files');
  if(uploadSelect&&files){
   const localArea=uploadSelect.closest('details');
+  const summary=localArea?.querySelector('summary');if(summary)summary.textContent='My Playlist';
+  if(localArea){const saved=document.createElement('button');saved.type='button';saved.className='text-button';saved.textContent='Open My Saved Playlist';saved.onclick=()=>choose('My playlist');summary?.insertAdjacentElement('afterend',saved)}
   const uploadPicker=document.createElement('button');uploadPicker.type='button';uploadPicker.id='upload-genre-picker';uploadPicker.textContent='Choose your genre ⌄';uploadPicker.setAttribute('aria-haspopup','dialog');uploadPicker.setAttribute('aria-controls','upload-genre-dialog');
   uploadSelect.hidden=true;uploadSelect.insertAdjacentElement('afterend',uploadPicker);
   const oldLabel=panel.querySelector('label[for="upload-genre"]');if(oldLabel)oldLabel.remove();
@@ -43,6 +46,7 @@
   uploadDialog.addEventListener('click',e=>{if(e.target===uploadDialog){const r=uploadDialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)uploadDialog.close()}});
   files.addEventListener('change',()=>{if(uploadDialog.open&&files.dataset.uploadAccepted==='true')uploadDialog.close()});
   paintUpload();
+  const note=document.createElement('p');note.className='playlist-local-note';note.textContent='Favorites save in this browser until its data is cleared. Uploaded audio is available for this browsing session. No membership is required.';localArea?.append(note);
  }
 
  let context;window.ieMusicTransition=()=>{if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;try{const Audio=window.AudioContext||window.webkitAudioContext;if(!Audio)return;context=context||new Audio();context.resume().catch(()=>{});const now=context.currentTime,osc=context.createOscillator(),gain=context.createGain();osc.type='sine';osc.frequency.setValueAtTime(440,now);osc.frequency.exponentialRampToValueAtTime(880,now+.16);gain.gain.setValueAtTime(.0001,now);gain.gain.exponentialRampToValueAtTime(.045,now+.03);gain.gain.exponentialRampToValueAtTime(.0001,now+.24);osc.connect(gain);gain.connect(context.destination);osc.start(now);osc.stop(now+.25);osc.onended=()=>{osc.disconnect();gain.disconnect()}}catch{}};
