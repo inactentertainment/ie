@@ -89,3 +89,9 @@ body header .word-menu nav .menu-membership{grid-column:auto;align-self:center;j
 body header .word-menu nav .menu-membership .menu-glyph{width:16px;height:16px;flex:0 0 16px}
 body header .word-menu nav .menu-link{font:12px/1.45 Georgia,serif;align-items:center}
 @media(max-width:600px){body header .word-menu nav{grid-template-columns:minmax(0,1fr)!important;padding:18px!important;gap:16px!important;max-height:calc(100dvh - var(--header-height,85px) - 10px)}body header .word-menu nav .menu-group+.menu-group{border-left:0;padding-left:0;border-top:1px solid #ffffff25;padding-top:14px}body header .word-menu nav .menu-group{grid-template-rows:20px repeat(6,minmax(40px,auto))}body header .word-menu nav .menu-link{font-size:12px;min-height:40px}body header .word-menu nav .menu-membership{font-size:12px;width:fit-content;max-width:190px;min-height:34px;margin:0;padding:7px 15px!important}}
+/* Bare navigation icons: retain the existing lift and above-icon labels. */
+body header :is(.nav-icon,.menu-social-link,.menu-glyph),body header :is(.nav-icon,.menu-social-link,.menu-glyph):is(:hover,:focus-visible,:active){border:0!important;border-radius:0!important;background:transparent!important;background-image:none!important;box-shadow:none!important}
+body header .word-menu nav .menu-link,body header .word-menu nav .menu-link:is(:hover,:focus-visible,:active){border:0!important;background:transparent!important;background-image:none!important;box-shadow:none!important}
+body header .word-menu summary,body header .word-menu summary:is(:hover,:focus-visible){border:0!important;background:transparent!important;box-shadow:none!important}
+body header :is(.nav-icon,.menu-social-link):focus-visible{outline:0!important}
+body header :is(.nav-icon,.menu-social-link):focus-visible svg{filter:drop-shadow(0 0 6px #fff)!important}
