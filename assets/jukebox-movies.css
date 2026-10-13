@@ -15,3 +15,30 @@ body #music-panel #jukebox-movies .movie-reactions button[aria-pressed=true],bod
 @media(max-width:360px){body #music-panel .music-themes{gap:4px}body #music-panel .music-themes button.music-theme-choice{font-size:10px!important;padding-inline:2px!important}}
 
 body #music-panel[data-browse="movie-play"]>.music-console{display:block!important}
+/* One bounded interface: identity, Back, media, controls, and details. */
+body #music-panel .jukebox-heading{position:sticky;top:-18px;z-index:5;background:#000;padding-top:8px}
+body #music-panel .music-identity{gap:5px!important}
+body #music-panel .music-identity .jukebox-title{font:bold italic 26px/1.1 Georgia,serif!important;letter-spacing:.6px;text-shadow:0 1px 0 #888,0 0 16px #ffffff30}
+body #music-panel #music-back{display:inline-flex!important;margin:3px 0 10px!important}
+.jukebox-wave{height:28px;margin:6px 0 3px;color:#e5e5e5;overflow:hidden}.jukebox-wave svg{height:100%;width:100%;overflow:visible}.jukebox-wave path{fill:none;stroke:currentColor;stroke-width:1.6;stroke-linejoin:round;stroke-dasharray:55 8;animation:jukebox-signal 5s linear infinite}@keyframes jukebox-signal{to{stroke-dashoffset:-126}}
+body #music-panel #genre-dialog{position:static!important;inset:auto!important;width:100%!important;max-width:none!important;max-height:none!important;margin:0!important;padding:4px 0!important;border:0!important;box-shadow:none!important;box-sizing:border-box}
+body #music-panel[data-browse="genres"]>:is(label,select,#genre-picker,#now-playing,#music-track-theme,.music-themes,.music-console,.music-transport,#playlist,details,.music-world-link){display:none!important}
+body #music-panel.in-music-box>:is(label,select,#genre-picker,#now-playing,#music-track-theme,.music-themes,#playlist,details:not(.music-track-info),.music-world-link){display:none!important}
+body #music-panel:not(.in-music-box)>.music-transport{display:none!important}
+body #music-panel.in-music-box>.music-transport{display:flex!important;position:static!important;margin:6px 0!important;flex-wrap:wrap;gap:5px}
+body #music-panel.in-music-box>.music-track-info{display:block!important}
+body #music-panel[data-browse="movie-play"]>.music-track-info{display:none!important}
+body #music-panel #jukebox-movies button,body #music-panel #genre-dialog .genre-option,body #music-panel #playlist .track-choice{position:relative!important;float:none!important;margin:0!important;box-sizing:border-box!important;background:linear-gradient(115deg,#a9adb3,#fafafa 42%,#c1c5cc 74%,#e6e8eb)!important;color:#141414!important;border:1px solid #e2e2e2!important;text-shadow:none!important;overflow:hidden!important;animation:none!important;transform:none!important;transition:transform .2s,box-shadow .2s!important}
+body #music-panel #jukebox-movies button:hover,body #music-panel #genre-dialog .genre-option:hover,body #music-panel #playlist .track-choice:hover{transform:translateY(-2px)!important;box-shadow:0 4px 14px #ffffff30!important}
+body #music-panel #jukebox-movies button::after,body #music-panel #genre-dialog .genre-option::after,body #music-panel #playlist .track-choice::after{content:'';pointer-events:none;position:absolute;inset:0;background:linear-gradient(110deg,transparent 35%,#ffffff90 50%,transparent 65%);transform:translateX(-130%)}
+body #music-panel #jukebox-movies button:hover::after,body #music-panel #genre-dialog .genre-option:hover::after,body #music-panel #playlist .track-choice:hover::after{animation:jukebox-shine .65s ease-out}@keyframes jukebox-shine{to{transform:translateX(130%)}}
+body #music-panel #jukebox-movies .movie-list{display:grid!important;gap:10px!important}
+body #music-panel #jukebox-movies .movie-row{height:auto!important;min-height:58px!important;white-space:normal!important;line-height:1.4!important}
+body #music-panel #jukebox-movies .movie-row :is(strong,span,small),body #music-panel #playlist .track-choice small{color:#202020!important;text-shadow:none!important}
+body #music-panel #playlist{display:grid;gap:9px;padding:0;list-style:none}body #music-panel #playlist li{display:flex;gap:6px;align-items:stretch;margin:0!important;position:static!important}body #music-panel #playlist .track-choice{flex:1;min-width:0;white-space:normal;padding:11px!important;border-radius:12px!important;text-align:left}body #music-panel #playlist .track-choice small{display:block;margin-top:3px}
+@media(prefers-reduced-motion:reduce){.jukebox-wave path{animation:none!important}body #music-panel #jukebox-movies button:hover,body #music-panel #genre-dialog .genre-option:hover,body #music-panel #playlist .track-choice:hover{transform:none!important}body #music-panel button::after{animation:none!important}}
+body #music-panel.in-music-box>.music-transport{display:grid!important;grid-template-columns:repeat(6,minmax(0,1fr))!important}
+body #music-panel .jukebox-heading #music-back{display:inline-flex!important}
+body #music-panel #jukebox-movies button:active,body #music-panel #genre-dialog .genre-option:active,body #music-panel #playlist .track-choice:active{transform:scale(.98)!important}
+body #music-panel #jukebox-movies .movie-reactions button[aria-pressed=true]::after{display:none}
+@media(prefers-reduced-motion:reduce){body #music-panel #jukebox-movies button:active,body #music-panel #genre-dialog .genre-option:active,body #music-panel #playlist .track-choice:active{transform:none!important}}
