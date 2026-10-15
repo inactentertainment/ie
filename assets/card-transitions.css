@@ -75,3 +75,6 @@
 @keyframes ep-earth-rush{0%{opacity:0;transform:rotate(0) scale(.4)}15%{opacity:1}55%{transform:rotate(550deg) scale(1)}80%{opacity:1;transform:rotate(1800deg) scale(1.1)}100%{opacity:0;transform:rotate(2800deg) scale(.04)}}
 [data-effect=time] .ep-tunnel{animation:ep-tunnel-fast var(--journey-duration) cubic-bezier(.4,.2,.8,1) both}
 @keyframes ep-tunnel-fast{0%{opacity:0;transform:scale(.3) rotate(0)}12%{opacity:1}45%{transform:scale(1) rotate(480deg)}75%{transform:scale(1.9) rotate(1650deg)}93%{opacity:1;transform:scale(4) rotate(2900deg)}100%{opacity:0;transform:scale(5) rotate(3300deg)}}
+
+[data-effect=dunk] .bb-real-ball{display:block;position:relative;width:clamp(110px,32vmin,310px);height:clamp(110px,32vmin,310px);object-fit:contain;filter:drop-shadow(0 0 16px #e35c20);animation:bb-ball-beats var(--journey-duration) ease-in-out both}
+@keyframes bb-ball-beats{0%{opacity:0;transform:translateY(11vmin) scale(.35)}15%{opacity:1;transform:translateY(3vmin) scale(.72)}25%{transform:translateY(1vmin) scale(.9)}34%{transform:translateY(0) scale(.8)}44%{transform:scale(1.06)}54%{transform:scale(.94)}64%{transform:scale(1.22)}73%{transform:scale(1.12)}82%{opacity:1;transform:scale(1.72)}91%{opacity:.9;transform:scale(2.5)}100%{opacity:0;transform:scale(3.8)}}
