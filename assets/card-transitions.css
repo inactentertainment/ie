@@ -69,3 +69,9 @@
 .card-journey-dialog.journey-leaving .journey-art,.card-journey-dialog.journey-leaving .journey-controls{opacity:0!important;visibility:hidden!important}
 .card-journey-dialog.journey-leaving .journey-black{animation:none!important;opacity:1!important;background:#000!important}
 @media(prefers-reduced-motion:reduce){.ep-tunnel{display:none!important}}
+
+.ep-core{display:grid;place-items:center;background:transparent!important;box-shadow:none!important;width:clamp(90px,18vmin,190px)!important;height:clamp(90px,18vmin,190px)!important;z-index:2}
+.ep-core img{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 0 18px #cad943);animation:ep-earth-rush var(--journey-duration) cubic-bezier(.3,.5,.7,1) both}
+@keyframes ep-earth-rush{0%{opacity:0;transform:rotate(0) scale(.4)}15%{opacity:1}55%{transform:rotate(550deg) scale(1)}80%{opacity:1;transform:rotate(1800deg) scale(1.1)}100%{opacity:0;transform:rotate(2800deg) scale(.04)}}
+[data-effect=time] .ep-tunnel{animation:ep-tunnel-fast var(--journey-duration) cubic-bezier(.4,.2,.8,1) both}
+@keyframes ep-tunnel-fast{0%{opacity:0;transform:scale(.3) rotate(0)}12%{opacity:1}45%{transform:scale(1) rotate(480deg)}75%{transform:scale(1.9) rotate(1650deg)}93%{opacity:1;transform:scale(4) rotate(2900deg)}100%{opacity:0;transform:scale(5) rotate(3300deg)}}
