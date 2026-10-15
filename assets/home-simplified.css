@@ -1,0 +1,7 @@
+.home-page .home-connect{max-width:980px;margin:0 auto;padding:22px 24px 55px;text-align:center;font-family:Georgia,serif}
+.home-page .home-connect h2{font:normal clamp(21px,2.6vw,30px)/1.4 Georgia,serif;color:#e1e2e6;margin:0 0 18px}
+.home-page .home-connect .home-explore{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 28px;list-style:disc;padding:0 0 0 18px;margin:0 auto 20px;max-width:800px;color:#c6c7cb;font:15px/1.8 Georgia,serif}
+.home-page .home-connect .home-explore li{padding-inline-start:2px}.home-page .home-connect p{max-width:650px;margin:16px auto 23px;font:16px/1.7 Georgia,serif;color:#bfc1c6}
+.home-page .home-connect .platinum{display:inline-flex;padding:12px 26px!important}.home-page .home-connect+.site-footer{margin-top:0}
+.contact-page main.contact-shell{max-width:1000px;margin:0 auto;padding:45px 24px 65px;min-height:65vh}.contact-page #contact{max-width:900px;margin:auto;scroll-margin-top:110px}.contact-page .contact-section-heading{margin-bottom:24px}.contact-page .contact-section-heading h1{font:normal clamp(28px,4vw,42px)/1.25 Georgia,serif;color:#eee}.contact-page .contact-section-heading p{max-width:650px;color:#bfc1c6}
+@media(max-width:600px){.home-page .home-connect{padding:18px 24px 42px}.home-page .home-connect .home-explore{display:block;text-align:left;width:fit-content;max-width:100%;padding-left:20px}.contact-page main.contact-shell{padding:28px 18px 48px}}
