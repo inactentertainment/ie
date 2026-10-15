@@ -1,6 +1,6 @@
 /* Shared lightweight journeys. Native links remain the fallback. */
 (()=>{
- const durations={time:5900,smoke:5400,dunk:3100,canvas:5800,garden:6000,calm:5800,casino:5800,pulse:5300,architect:5600,music:5500,market:5300,funding:5700,portal:4200,sweep:4200,fade:650};
+ const durations={time:5900,smoke:5400,dunk:2450,canvas:5800,garden:6000,calm:5800,casino:5800,pulse:5300,architect:5600,music:5500,market:5300,funding:5700,portal:4200,sweep:4200,fade:650};
  function safeURL(value,base){try{const u=new URL(value,base);return ['https:','http:'].includes(u.protocol)?u.href:null}catch{return null}}
  function effectFor(brand,index){const effects={ep:'time',cb:'smoke',bb:'dunk',dsb:'canvas',phg:'garden',mhd:'calm',casino:'casino',lf:'pulse',wdw:'architect',music:'music',funding:'funding',ie:'market'};return effects[brand]||(index%2?'sweep':'portal')}
  if(typeof module!=='undefined'&&module.exports)module.exports={safeURL,effectFor,durations};
