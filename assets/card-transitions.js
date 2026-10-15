@@ -36,7 +36,7 @@
  }
  function populate(host,title,logo,type,duration){host.dataset.effect=type;host.style.setProperty('--journey-duration',duration+'ms');host.innerHTML=art(type)+'<div class="journey-black" aria-hidden="true"></div><div class="journey-controls"></div>';}
 
- function reset(){cleanup();stopSound()}
+ function reset(){cleanup();stopSound();document.querySelectorAll('.card-journey-dialog').forEach(d=>{try{if(d.open)d.close()}catch{}d.remove()})}
  window.addEventListener('pagehide',reset);window.addEventListener('pageshow',e=>{if(e.persisted)reset()});
  if(document.body.dataset.cardJourney==='true'){
   const params=new URLSearchParams(location.search),destination=safeURL(params.get('url'),location.href),host=document.getElementById('card-journey');
