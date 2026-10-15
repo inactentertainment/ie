@@ -13,12 +13,15 @@ def edit(file,old,new,required=True):
  elif new not in s and required:raise AssertionError('Expected source not found: '+file+' '+old[:80])
 if slug=='ie':
  p=root/'index.html';s=p.read_text()
- if 'id="home-explore-intro"' not in s:
-  intro='<p id="home-explore-intro">Explore our connected worlds above, or contact us to explore opportunities and bring your next idea to life.</p>'
-  s=s.replace('</h1></section>','</h1>'+intro+'</section>',1)
-  s=re.sub(r'(<section class="home-connect".*?<ul.*?</ul>)\s*<p>.*?</p>\s*<a class="platinum" href="contact.html">Contact Us</a>',lambda m:m[1],s,count=1,flags=re.S)
-  assert 'id="home-explore-intro"' in s
-  p.write_text(s)
+ # Keep the approved minimal homepage stable on subsequent builds.
+ s=re.sub(r'<p id="home-explore-intro">.*?</p>','',s,flags=re.S)
+ s=re.sub(r'<h2 id="home-connect-title">.*?</h2>','',s,flags=re.S)
+ s=s.replace('aria-labelledby="home-connect-title"','aria-label="What we create"')
+ p.write_text(s)
+ for page in root.rglob('*.html'):
+  text=page.read_text()
+  clean=re.sub(r'<h2>Stay Connected and Explore Our Shops\.</h2>','',text)
+  if clean!=text:page.write_text(clean)
  css=root/'assets/home-simplified.css';s=css.read_text()
  marker='/* Compact one-row business-card ending. */'
  if marker not in s:

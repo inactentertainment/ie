@@ -40,7 +40,7 @@
 
 (()=>{
 const tooltip=document.createElement('div');tooltip.className='ie-tooltip';tooltip.id='ie-control-tip';tooltip.setAttribute('role','tooltip');tooltip.hidden=true;document.body.append(tooltip);let owner=null;
-function candidate(target){return target.closest?.('[data-tooltip],header button[aria-label],header summary[aria-label],footer a[aria-label],footer button[aria-label]')}
+function candidate(target){if(target.closest?.('.site-app-footer-text'))return null;return target.closest?.('[data-tooltip],header button[aria-label],header summary[aria-label],footer a[aria-label],footer button[aria-label]')}
 function show(n){if(!n)return;if(n.title){n.dataset.tooltip=n.title;n.removeAttribute('title')}owner=n;tooltip.textContent=n.dataset.tooltip||n.getAttribute('aria-label');tooltip.hidden=false;const r=n.getBoundingClientRect(),t=tooltip.getBoundingClientRect();tooltip.style.left=Math.max(6,Math.min(innerWidth-t.width-6,r.left+r.width/2-t.width/2))+'px';tooltip.style.top=Math.max(2,r.top-t.height-8)+'px';n.setAttribute('aria-describedby',tooltip.id)}
 function hide(){owner?.removeAttribute('aria-describedby');owner=null;tooltip.hidden=true}
 document.querySelectorAll('header [title],footer [title]').forEach(n=>{if(!n.dataset.tooltip)n.dataset.tooltip=n.title;n.removeAttribute('title')});

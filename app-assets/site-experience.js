@@ -120,9 +120,23 @@ async function genericPlayer(){
 }
 function init(){
  const body=document.body;body.dataset.siteSlug=cfg.slug;for(const [key,value] of Object.entries({high:cfg.high,mid:cfg.mid,low:cfg.low,ink:cfg.ink}))body.style.setProperty('--x-'+key,value);
- const link=el('link');link.rel='stylesheet';link.href=asset('site-experience.css?v=20261015-chrome');document.head.append(link);
+ const link=el('link');link.rel='stylesheet';link.href=asset('site-experience.css?v=20261015-quiet');document.head.append(link);
  function syncTheme(){const m=getComputedStyle(document.body).color.match(/[\d.]+/g)||[240,240,240];const light=cfg.slug!=='ie'&&(+m[0]*.2126 + +m[1]*.7152 + +m[2]*.0722)<145;body.style.setProperty('--x-panel',light?'#f1eee7':'#0c100f');body.style.setProperty('--x-text',light?'#262923':'#eee');}
  syncTheme();for(const n of [document.body,document.documentElement])new MutationObserver(syncTheme).observe(n,{attributes:true,attributeFilter:['class','data-theme']});
+ // The quiet sky belongs only to the home main; header/footer and wheel stay intact.
+ if(cfg.slug==='ie' && document.body.classList.contains('home-page')){
+  const main=$('main');
+  if(main&&!main.querySelector('.ie-space-sky')){
+   const sky=el('div','ie-space-sky');sky.setAttribute('aria-hidden','true');
+   for(let i=0;i<64;i++){
+    const star=el('i','ie-space-star');
+    star.style.cssText=`left:${(i*37.71+4)%100}%;top:${(i*23.43+7)%100}%;--star-size:${i%9===0?2:1}px;--star-speed:${7+i%9}s;--star-delay:-${i%17}s;--star-peak:${i%9===0?.32:.18}`;
+    sky.append(star);
+   }
+   for(let i=0;i<2;i++){const meteor=el('i','ie-space-meteor');meteor.style.cssText=`left:${15+i*40}%;top:${18+i*36}%;animation-delay:${9+i*17}s;animation-duration:${31+i*12}s`;sky.append(meteor);}
+   main.prepend(sky);
+  }
+ }
  addMenu();brandNative();genericPlayer();
  function fitRows(){for(const selector of ['.home-explore','#home-explore-intro']){const n=document.querySelector(selector);if(!n)continue;const initial=selector==='.home-explore'?15:15;n.style.fontSize=initial+'px';const available=n.clientWidth;const actual=selector==='.home-explore'?Math.max(n.scrollWidth,[...n.children].reduce((sum,x)=>sum+x.getBoundingClientRect().width,0)):n.scrollWidth;if(actual>available&&available>0)n.style.fontSize=Math.max(3,initial*available/actual-.15)+'px';}}
  fitRows();if(document.fonts?.ready)document.fonts.ready.then(fitRows);window.addEventListener('resize',fitRows,{passive:true});
