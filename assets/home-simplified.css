@@ -5,3 +5,11 @@
 .home-page .home-connect .platinum{display:inline-flex;padding:12px 26px!important}.home-page .home-connect+.site-footer{margin-top:0}
 .contact-page main.contact-shell{max-width:1000px;margin:0 auto;padding:45px 24px 65px;min-height:65vh}.contact-page #contact{max-width:900px;margin:auto;scroll-margin-top:110px}.contact-page .contact-section-heading{margin-bottom:24px}.contact-page .contact-section-heading h1{font:normal clamp(28px,4vw,42px)/1.25 Georgia,serif;color:#eee}.contact-page .contact-section-heading p{max-width:650px;color:#bfc1c6}
 @media(max-width:600px){.home-page .home-connect{padding:18px 24px 42px}.home-page .home-connect .home-explore{display:block;text-align:left;width:fit-content;max-width:100%;padding-left:20px}.contact-page main.contact-shell{padding:28px 18px 48px}}
+
+/* Compact one-row business-card ending. */
+.home-page .intro #home-explore-intro{display:block;white-space:nowrap;width:100%;max-width:100%;margin:16px auto 0;text-align:center;font:15px/1.5 Georgia,serif;color:#bbb}
+.home-page .home-connect{max-width:1100px;padding-bottom:100px!important}
+.home-page .home-connect .home-explore{display:flex!important;flex-wrap:nowrap!important;align-items:center;justify-content:center;gap:0!important;list-style:none!important;padding:0!important;width:100%!important;max-width:100%!important;white-space:nowrap!important;font-size:15px}
+.home-page .home-connect .home-explore li{flex:0 0 auto;padding:0!important;white-space:nowrap}
+.home-page .home-connect .home-explore li+li::before{content:' • ';white-space:pre;margin:0 .6em;color:#aaa}
+@media(max-width:600px){.home-page .home-connect{padding:18px 12px 76px!important}.home-page .intro #home-explore-intro{font-size:7px}.home-page .home-connect .home-explore{font-size:5.6px}}

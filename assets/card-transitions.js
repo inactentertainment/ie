@@ -28,7 +28,7 @@
  }
  const card=document.getElementById('detail');if(!card)return;
  function localJourney(a,e,type,title,logo,duration){const handler=a.onclick,destination=safeURL(a.href,location.href);if(!destination)return;const overlay=document.createElement('dialog');overlay.className='card-journey-dialog';overlay.setAttribute('aria-label','Opening '+title);populate(overlay,title,logo,type,duration);document.body.append(overlay);let settled=false,timer,safety;
-  const clear=()=>{clearTimeout(timer);clearTimeout(safety);overlay.close();overlay.remove();stopSound();cleanup=()=>{}};
+  const clear=()=>{clearTimeout(timer);clearTimeout(safety);if(overlay.open)overlay.close();overlay.remove();stopSound();cleanup=()=>{}};
   const finish=()=>{if(settled)return;settled=true;clear();if(typeof handler==='function')handler.call(a,e);else location.assign(destination)};
   const cancel=()=>{if(settled)return;settled=true;clear();a.focus({preventScroll:true})};
   const controls=overlay.querySelector('.journey-controls'),back=document.createElement('button'),skip=document.createElement('button');back.type=skip.type='button';back.textContent='‹ Back';back.onclick=cancel;skip.textContent='Continue now ↗';skip.onclick=finish;controls.append(back,skip);overlay.addEventListener('cancel',e=>{e.preventDefault();cancel()});cleanup=cancel;
