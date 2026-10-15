@@ -78,3 +78,18 @@
 
 [data-effect=dunk] .bb-real-ball{display:block;position:relative;width:clamp(110px,32vmin,310px);height:clamp(110px,32vmin,310px);object-fit:contain;filter:drop-shadow(0 0 16px #e35c20);animation:bb-ball-beats var(--journey-duration) ease-in-out both}
 @keyframes bb-ball-beats{0%{opacity:0;transform:translateY(11vmin) scale(.35)}15%{opacity:1;transform:translateY(3vmin) scale(.72)}25%{transform:translateY(1vmin) scale(.9)}34%{transform:translateY(0) scale(.8)}44%{transform:scale(1.06)}54%{transform:scale(.94)}64%{transform:scale(1.22)}73%{transform:scale(1.12)}82%{opacity:1;transform:scale(1.72)}91%{opacity:.9;transform:scale(2.5)}100%{opacity:0;transform:scale(3.8)}}
+
+[data-effect=dunk] .journey-art{background:radial-gradient(ellipse at 50% 85%,#6c2b11 0%,#1d100b 42%,#030303 82%)}
+.bb-spotlight-scene{position:absolute;inset:0;overflow:hidden;animation:bb-light-intro var(--journey-duration) ease both}
+.bb-spotlight-scene .beam{position:absolute;top:-30%;left:50%;height:120%;width:27vmin;transform-origin:50% 0;background:linear-gradient(180deg,#ffdcab55 0%,#ffae5033 38%,transparent 95%);filter:blur(12px);clip-path:polygon(48% 0,52% 0,100% 100%,0 100%);mix-blend-mode:screen}
+.bb-spotlight-scene .one{animation:bb-beam-left 4.2s ease-in-out infinite alternate}
+.bb-spotlight-scene .two{animation:bb-beam-right 3.7s ease-in-out infinite alternate}
+.bb-spotlight-scene .three{animation:bb-beam-left 5s ease-in-out infinite alternate-reverse;left:28%}
+.bb-spotlight-scene .four{animation:bb-beam-right 4.6s ease-in-out infinite alternate-reverse;left:70%}
+.bb-spotlight-scene .quick{width:16vmin;background:linear-gradient(#ffe6bd9c,#ff9f4160,transparent);animation:bb-fast-searchlight 1.05s ease-in-out infinite alternate}
+.bb-haze{position:absolute;inset:35% 0 0;background:radial-gradient(ellipse at bottom,#f383362e,transparent 67%);filter:blur(18px)}
+@keyframes bb-beam-left{from{transform:rotate(-34deg)}to{transform:rotate(13deg)}}
+@keyframes bb-beam-right{from{transform:rotate(30deg)}to{transform:rotate(-16deg)}}
+@keyframes bb-fast-searchlight{from{transform:rotate(-59deg)}to{transform:rotate(53deg)}}
+@keyframes bb-light-intro{0%{opacity:0}16%,68%{opacity:1}100%{opacity:0}}
+@media(prefers-reduced-motion:reduce){.bb-spotlight-scene{display:none!important}}
