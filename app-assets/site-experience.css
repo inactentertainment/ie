@@ -33,14 +33,8 @@ body footer button.site-app-footer-text.site-app-footer-text.site-app-footer-tex
 body footer button.site-app-footer-text.site-app-footer-text.site-app-footer-text.site-app-footer-text::before,body footer button.site-app-footer-text.site-app-footer-text.site-app-footer-text.site-app-footer-text::after{content:none!important;display:none!important}
 body[data-site-app-installed] footer button.site-app-footer-text.site-app-footer-text.site-app-footer-text.site-app-footer-text{display:none!important}
 
-/* InAct's faint universe is confined to the homepage main. */
-body.home-page main{position:relative;isolation:isolate}
-body.home-page .network{background:transparent!important}
-.ie-space-sky{position:absolute;inset:0;z-index:-1;overflow:hidden;pointer-events:none;background:radial-gradient(ellipse at 22% 35%,#879dcb09,transparent 43%),radial-gradient(ellipse at 76% 68%,#a39ad207,transparent 40%)}
-.ie-space-star{position:absolute;width:var(--star-size);height:var(--star-size);border-radius:50%;background:#dce6ff;box-shadow:0 0 5px #b3c9f966;opacity:.07;animation:ie-space-twinkle var(--star-speed) ease-in-out var(--star-delay) infinite}
-.ie-space-meteor{position:absolute;width:95px;height:1px;background:linear-gradient(90deg,transparent,#d1def644);opacity:0;transform:rotate(-28deg);animation:ie-space-shoot 31s linear infinite}
-@keyframes ie-space-twinkle{0%,100%{opacity:.05;scale:.85}50%{opacity:var(--star-peak);scale:1.1}}
-@keyframes ie-space-shoot{0%,91%{opacity:0;transform:translate(0,0) rotate(-28deg)}92%{opacity:.16}95%{opacity:0;transform:translate(210px,-110px) rotate(-28deg)}100%{opacity:0;transform:translate(210px,-110px) rotate(-28deg)}}
+/* Uniform black keeps the original wheel surface seamless. */
+body.home-page main,body.home-page .network{background:#000!important}
 /* Preserve the capability row's former distance from the wheel. */
 body.home-page .home-connect::before{content:'';display:block;height:calc(clamp(21px,2.6vw,30px)*1.4 + 18px)}
 body .site-footer .social-links a{flex-basis:30px!important;width:30px!important;max-width:30px!important;height:36px!important;min-height:36px!important}
@@ -50,4 +44,3 @@ body button.site-app-button.site-app-button.site-app-button.site-app-button .sit
 body #music-panel#music-panel .jukebox-wave{margin-bottom:15px}
 body #music-panel#music-panel .music-themes{margin-bottom:24px}
 @media(max-width:800px){body button.site-app-button.site-app-button.site-app-button.site-app-button.site-app-mobile{min-height:38px!important;padding:8px 10px!important;font-size:11px!important}}
-@media(prefers-reduced-motion:reduce){.ie-space-star{animation:none;opacity:.12}.ie-space-meteor{display:none}}
