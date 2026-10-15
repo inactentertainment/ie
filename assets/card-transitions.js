@@ -2,7 +2,7 @@
 (()=>{
  const durations={time:5900,smoke:5400,dunk:2450,canvas:5800,garden:6000,calm:5800,casino:5800,pulse:5300,architect:5600,music:5500,market:5300,funding:5700,portal:4200,sweep:4200,fade:650};
  function safeURL(value,base){try{const u=new URL(value,base);return ['https:','http:'].includes(u.protocol)?u.href:null}catch{return null}}
- function effectFor(brand,index){const effects={ep:'time',cb:'smoke',bb:'dunk',dsb:'canvas',phg:'garden',mhd:'calm',casino:'casino',lf:'pulse',wdw:'architect',music:'music',funding:'funding',ie:'market'};return effects[brand]||(index%2?'sweep':'portal')}
+ function effectFor(brand,index){if(brand==='ep')return 'time';if(brand==='bb')return 'dunk';return index%2?'sweep':'portal'}
  if(typeof module!=='undefined'&&module.exports)module.exports={safeURL,effectFor,durations};
  if(typeof document==='undefined')return;
  const source=document.currentScript?.src||new URL('assets/card-transitions.js',location.href).href;
@@ -30,7 +30,7 @@
  music:svg('<g class="vinyl"><circle cx="200" cy="200" r="146" fill="#17121e" stroke="#bb84e6" stroke-width="9"/><circle cx="200" cy="200" r="118" fill="none" stroke="#8b5aa8" stroke-width="3"/><circle cx="200" cy="200" r="99" fill="none" stroke="#80519b" stroke-width="3"/><circle cx="200" cy="200" r="72" fill="#79335b"/><circle cx="200" cy="200" r="32" fill="#f2b94e"/><circle cx="200" cy="200" r="7" fill="#121212"/></g>'),
  market:svg('<g class="market-box" fill="none" stroke="#dfb569" stroke-width="7"><path d="M85 148L200 76 315 148 200 218Z M85 148v125l115 64 115-64V148M200 218v119"/><path d="M140 112l119 72"/></g>'),
  funding:svg('<g class="funding-tree" stroke="#c9a853" stroke-width="8" fill="none"><path d="M200 337V158M200 219L125 150M200 195L267 127M200 260L276 204"/></g><g fill="#dec873"><circle cx="200" cy="140" r="31"/><circle cx="119" cy="143" r="26"/><circle cx="275" cy="119" r="25"/><circle cx="283" cy="193" r="25"/></g>'),
- portal:svg('<circle cx="200" cy="200" r="145" fill="none" stroke="#ddd" stroke-width="12"/>'),sweep:svg('<path d="M50 200h300" stroke="#ddd" stroke-width="30"/>')
+ portal:svg('<g class="journey-rings"><circle cx="200" cy="200" r="175"/><circle cx="200" cy="200" r="145"/><circle cx="200" cy="200" r="110"/><circle cx="200" cy="200" r="72"/><path d="M200 18v38m0 288v38M18 200h38m288 0h38"/></g><g class="journey-orbit"><ellipse cx="200" cy="200" rx="175" ry="58"/><ellipse cx="200" cy="200" rx="58" ry="175"/></g>'),sweep:svg('<g class="journey-rings"><circle cx="200" cy="200" r="175"/><circle cx="200" cy="200" r="145"/><circle cx="200" cy="200" r="110"/><circle cx="200" cy="200" r="72"/></g><g class="journey-orbit"><ellipse cx="200" cy="200" rx="175" ry="58"/><ellipse cx="200" cy="200" rx="58" ry="175"/></g>')
  };
  return '<div class="journey-art" aria-hidden="true">'+(styles[type]||styles.portal)+'</div>';
  }
