@@ -55,3 +55,17 @@
 @keyframes record-spin{to{transform:rotate(360deg)}}
 @keyframes market-scene{0%{opacity:0;transform:rotate(-40deg) scale(.1)}34%{opacity:1;transform:rotate(0) scale(1)}80%{opacity:1;transform:rotate(12deg) scale(1.2)}100%{opacity:0;transform:rotate(80deg) scale(0)}}
 @media(prefers-reduced-motion:reduce){.journey-art .scene-illustration,.confetti-explosion,.smoke-plume{display:none!important}}
+
+/* Examine the Past: a directional, deep rotating time tunnel; no text or spinning globe. */
+[data-effect=time] .journey-art{background:radial-gradient(ellipse at center,#345014 0%,#111908 29%,#030603 60%,#000 85%);perspective:900px}
+.ep-tunnel{position:absolute;inset:0;display:grid;place-items:center;overflow:hidden;transform-style:preserve-3d;animation:ep-tunnel-flight var(--journey-duration) cubic-bezier(.18,.46,.65,1) both}
+.ep-loop{position:absolute;width:var(--size);height:calc(var(--size)*.72);border:clamp(2px,.42vmin,5px) solid #a7c93b;border-top-color:#f0db4b;border-left-color:#5da63a;border-bottom-color:#d3b93d;border-radius:50%;box-shadow:0 0 13px #bad447aa,inset 0 0 10px #e0d24b70;opacity:0;transform:rotate(var(--tilt)) rotateX(65deg);animation:ep-loop-flight var(--journey-duration) cubic-bezier(.18,.39,.75,1) both;animation-delay:calc(var(--n)*-115ms)}
+.ep-loop:nth-child(3n){border-style:dashed;border-width:2px}
+.ep-core{position:absolute;width:7vmin;height:7vmin;border-radius:50%;background:radial-gradient(circle,#fffed1,#c7d13e 35%,#234411 70%,transparent 80%);box-shadow:0 0 50px #bfd344;animation:ep-core-flight var(--journey-duration) ease-in both}
+@keyframes ep-tunnel-flight{0%{opacity:0;transform:scale(.35) rotate(0)}13%{opacity:1}73%{opacity:1;transform:scale(1.45) rotate(620deg)}95%{opacity:.7;transform:scale(4.3) rotate(1140deg)}100%{opacity:0;transform:scale(5.4) rotate(1300deg)}}
+@keyframes ep-loop-flight{0%{opacity:0;transform:rotate(var(--tilt)) rotateX(68deg) scale(.3)}20%{opacity:.85}72%{opacity:1;transform:rotate(calc(var(--tilt) + 260deg)) rotateX(39deg) scale(1.2)}100%{opacity:0;transform:rotate(calc(var(--tilt) + 450deg)) rotateX(15deg) scale(3)}}
+@keyframes ep-core-flight{0%,15%{opacity:0;transform:scale(.15)}35%{opacity:1}83%{opacity:.9;transform:scale(2)}100%{opacity:0;transform:scale(25)}}
+.card-journey-dialog.journey-leaving{background:#000!important}
+.card-journey-dialog.journey-leaving .journey-art,.card-journey-dialog.journey-leaving .journey-controls{opacity:0!important;visibility:hidden!important}
+.card-journey-dialog.journey-leaving .journey-black{animation:none!important;opacity:1!important;background:#000!important}
+@media(prefers-reduced-motion:reduce){.ep-tunnel{display:none!important}}
