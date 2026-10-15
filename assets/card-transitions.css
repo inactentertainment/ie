@@ -93,3 +93,8 @@
 @keyframes bb-fast-searchlight{from{transform:rotate(-59deg)}to{transform:rotate(53deg)}}
 @keyframes bb-light-intro{0%{opacity:0}16%,68%{opacity:1}100%{opacity:0}}
 @media(prefers-reduced-motion:reduce){.bb-spotlight-scene{display:none!important}}
+
+[data-effect=dunk] .journey-black{animation:bb-quick-black var(--journey-duration) linear both!important}
+@keyframes bb-quick-black{0%{opacity:1}12%,62%{opacity:0}100%{opacity:1}}
+[data-effect=dunk] .bb-spotlight-scene{animation:bb-quick-lights var(--journey-duration) ease both!important}
+@keyframes bb-quick-lights{0%{opacity:0}12%,62%{opacity:1}92%,100%{opacity:0}}
