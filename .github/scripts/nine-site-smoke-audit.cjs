@@ -23,7 +23,10 @@ const api=(r,path)=>'https://api.github.com/repos/'+r+'/'+path;
 const raw=(r,sha,p)=>'https://raw.githubusercontent.com/'+r+'/'+sha+'/'+p;
 function analyze(doc,paths){
  const missing=[];
- for(const [,u] of doc.matchAll(/\b(?:href|src)\s*=\s*["']([^"']+)["']/gi)){
+ for(const [,tag] of doc.matchAll(/(<(?:a|img|script|link|audio|video|source|iframe|form)\\b[^>]*>)/gi)){
+  const attr=tag.match(/\\b(?:href|src|action)\\s*=\\s*["']([^"']+)["']/i);
+  if(!attr)continue;
+  const u=attr[1];
   if(!u || /^(?:#|https?:|mailto:|tel:|sms:|javascript:|data:|\/\/)/i.test(u)||/[<>\{}]/.test(u))continue;
   let p=u.split(/[?#]/)[0];try{p=decodeURIComponent(p)}catch{}
   p=p.replace(/^\/|^\.\//g,'');
@@ -83,7 +86,7 @@ function analyze(doc,paths){
  md+='Read-only source checks. **Passing this audit does not mean live browser, payment, privacy or account tests have passed.**\n\n';
  md+='| Site | Local link + syntax checks | Release blockers / notes |\n|---|---|---|\n';
  for(const r of results){
-  const ok=!r.missing?.length&&!r.inlineErrors?.length&&!r.blockers?.some(b=>b.startsWith('Audit unavailable'));
+  const ok=!r.missing?.length&&!r.inlineErrors?.length&&!r.blockers?.length;
   const messages=[...r.blockers,...r.notes].map(s=>s.replace(/\|/g,'/')).join('; ')||'Further functional browser testing needed';
   md+='| '+r.title+' | '+(ok?'Passed':'Needs review')+' | '+messages+' |\n';
  }
