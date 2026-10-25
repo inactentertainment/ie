@@ -1,0 +1,31 @@
+name: Lifetime Vault Simplification Gate
+on:
+  pull_request:
+    paths: ['index.html', 'membership.html', '.github/workflows/lifetime-vault-gate.yml']
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - name: Preserve one-time vault, no email collection added
+        run: |
+          node - <<'JS'
+          const fs=require('node:fs'), assert=require('node:assert/strict');
+          const home=fs.readFileSync('index.html','utf8');
+          const page=fs.readFileSync('membership.html','utf8');
+          assert(home.includes('href="membership.html"'));
+          assert(home.includes('Lifetime Vault'));
+          assert(page.includes('one payment, lifetime vault access'));
+          assert(page.includes('$149'));
+          assert(!page.includes('new memberships are planned to use monthly billing'));
+          assert(page.includes('Payments are not being collected yet.'));
+          assert(page.includes('data-membership-checkout'));
+          for(const doc of [home,page]) for(const m of doc.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi)){
+            if(!/\bsrc\s*=/.test(m[1])&&!/application\/ld\+json/.test(m[1]))new Function(m[2]);
+          }
+          console.log('Lifetime Vault links, price, honest prelaunch status and inline scripts passed');
+          JS
