@@ -5,7 +5,7 @@
 'use strict';
 const fs=require('node:fs');
 const list=[
- ['PerennialHomeAndGardens/perennial-home-and-gardens','main','Perennial Home & Gardens'],
+ ['PerennialHomeAndGardens/perennial-home-and-gardens','feature/free-first-transition-2026','Perennial Home & Gardens'],
  ['wdwedu/WDW-LLC','feature/free-first-transition-2026','WDW LLC'],
  ['wdwedu/examine-the-past-home','feature/free-first-transition-2026','Examine the Past'],
  ['cannabisbasics/cannabis-basics','feature/free-first-transition-2026','Cannabis Basics'],
@@ -76,7 +76,7 @@ function analyze(doc,paths){
    if(title==='Divine Shades of Brown'){
     notes.push('Existing lifetime purchase routes must be verified without deleting sales');
    }
-   if(title==='Perennial Home & Gardens')notes.push('Read-only main branch; transition branch not created yet');
+   if(title==='Perennial Home & Gardens')notes.push('Preserved development branch created; no changes to live website');
    if(q.missing.length)blockers.push('Unresolved local references: '+q.missing.slice(0,4).join(', '));
    if(q.syntax.length)blockers.push('Inline JavaScript syntax: '+q.syntax.slice(0,2).join(', '));
    results.push({title,repo,branch,sha,missing:q.missing,inlineErrors:q.syntax,blockers,notes});
