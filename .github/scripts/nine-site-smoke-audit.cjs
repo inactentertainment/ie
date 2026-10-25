@@ -23,17 +23,17 @@ const api=(r,path)=>'https://api.github.com/repos/'+r+'/'+path;
 const raw=(r,sha,p)=>'https://raw.githubusercontent.com/'+r+'/'+sha+'/'+p;
 function analyze(doc,paths){
  const missing=[];
- for(const [,u] of doc.matchAll(/\\b(?:href|src)\\s*=\\s*["']([^"']+)["']/gi)){
-  if(!u || /^(?:#|https?:|mailto:|tel:|sms:|javascript:|data:|\\/\\/)/i.test(u)||/[<>\\{}]/.test(u))continue;
+ for(const [,u] of doc.matchAll(/\b(?:href|src)\s*=\s*["']([^"']+)["']/gi)){
+  if(!u || /^(?:#|https?:|mailto:|tel:|sms:|javascript:|data:|\/\/)/i.test(u)||/[<>\{}]/.test(u))continue;
   let p=u.split(/[?#]/)[0];try{p=decodeURIComponent(p)}catch{}
-  p=p.replace(/^\\/|^\\.\\//g,'');
-  if(!p||p.startsWith('../')||/\\$/.test(p))continue;
+  p=p.replace(/^\/|^\.\//g,'');
+  if(!p||p.startsWith('../')||/\$/.test(p))continue;
   if(!paths.has(p)&&!paths.has(p+'/index.html')&&!paths.has(p+'index.html'))missing.push(u);
  }
  const syntax=[];
- const matches=[...doc.matchAll(/<script\\b([^>]*)>([\\s\\S]*?)<\\/script>/gi)];
+ const matches=[...doc.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi)];
  for(const [i,m] of matches.entries()){
-  if(/\\bsrc\\s*=|application\\/ld\\+json|application\\/json/i.test(m[1]))continue;
+  if(/\bsrc\s*=|application\/ld\+json|application\/json/i.test(m[1]))continue;
   try{new Function(m[2])}catch(e){syntax.push('inline script '+i+': '+String(e))}
  }
  return {missing:[...new Set(missing)],syntax,inline:matches.length};
@@ -53,15 +53,15 @@ function analyze(doc,paths){
    if(title==='Basketball Brilliance'){
     const billing=await(await read(raw(repo,sha,'assets/js/bb-billing.js'))).text();
     const auth=await(await read(raw(repo,sha,'assets/js/bb-auth.js'))).text();
-    if(/buy\\.stripe\\.com/.test(billing)||!billing.includes("mode:'free'"))blockers.push('Free-account conversion is incomplete');
+    if(/buy\.stripe\.com/.test(billing)||!billing.includes("mode:'free'"))blockers.push('Free-account conversion is incomplete');
     if(!auth.includes('team_memberships'))blockers.push('Active team authorization source missing');
     notes.push('Coach/Player/Parent real-account and minor-safety tests still required');
    }
    if(title==='LiveFit'){
     const roadmap=await(await read(raw(repo,sha,'roadmap.html'))).text();
     const success=await(await read(raw(repo,sha,'success.html'))).text();
-    if(!/buy\\.stripe\\.com/.test(roadmap))blockers.push('One-time Stripe checkout link missing');
-    if(/params\\.get\\(['"]paid['"]\\)\\s*===\\s*['"]1['"]/.test(success)&&success.includes('grantPaidAccess'))blockers.push('Unverified paid=1 query can grant local paid access');
+    if(!/buy\.stripe\.com/.test(roadmap))blockers.push('One-time Stripe checkout link missing');
+    if(/params\.get\(['"]paid['"]\)\s*===\s*['"]1['"]/.test(success)&&success.includes('grantPaidAccess'))blockers.push('Unverified paid=1 query can grant local paid access');
     notes.push('Preserve $7 one-time purchase and legitimate customer entitlement');
    }
    if(title==='Cannabis Basics'){
@@ -79,15 +79,15 @@ function analyze(doc,paths){
    results.push({title,repo,branch,sha,missing:q.missing,inlineErrors:q.syntax,blockers,notes});
   }catch(e){results.push({title,repo,branch,blockers:['Audit unavailable: '+String(e)],notes:[]})}
  }
- let md='# Nine Website — Session 4 Repository QA\\n\\n';
- md+='Read-only source checks. **Passing this audit does not mean live browser, payment, privacy or account tests have passed.**\\n\\n';
- md+='| Site | Local link + syntax checks | Release blockers / notes |\\n|---|---|---|\\n';
+ let md='# Nine Website — Session 4 Repository QA\n\n';
+ md+='Read-only source checks. **Passing this audit does not mean live browser, payment, privacy or account tests have passed.**\n\n';
+ md+='| Site | Local link + syntax checks | Release blockers / notes |\n|---|---|---|\n';
  for(const r of results){
   const ok=!r.missing?.length&&!r.inlineErrors?.length&&!r.blockers?.some(b=>b.startsWith('Audit unavailable'));
-  const messages=[...r.blockers,...r.notes].map(s=>s.replace(/\\|/g,'/')).join('; ')||'Further functional browser testing needed';
-  md+='| '+r.title+' | '+(ok?'Passed':'Needs review')+' | '+messages+' |\\n';
+  const messages=[...r.blockers,...r.notes].map(s=>s.replace(/\|/g,'/')).join('; ')||'Further functional browser testing needed';
+  md+='| '+r.title+' | '+(ok?'Passed':'Needs review')+' | '+messages+' |\n';
  }
- md+='\\nRepository snapshots / exact results:\\n\\n\\`\\`\\`json\\n'+JSON.stringify(results,null,2)+'\\n\\`\\`\\`\\n';
+ md+='\nRepository snapshots / exact results:\n\n\`\`\`json\n'+JSON.stringify(results,null,2)+'\n\`\`\`\n';
  console.log(md);
  if(process.env.GITHUB_STEP_SUMMARY)fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY,md);
  fs.writeFileSync('session-4-audit-result.md',md);
