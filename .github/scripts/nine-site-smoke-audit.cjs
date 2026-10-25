@@ -23,8 +23,8 @@ const api=(r,path)=>'https://api.github.com/repos/'+r+'/'+path;
 const raw=(r,sha,p)=>'https://raw.githubusercontent.com/'+r+'/'+sha+'/'+p;
 function analyze(doc,paths){
  const missing=[];
- for(const [,tag] of doc.matchAll(/(<(?:a|img|script|link|audio|video|source|iframe|form)\\b[^>]*>)/gi)){
-  const attr=tag.match(/\\b(?:href|src|action)\\s*=\\s*["']([^"']+)["']/i);
+ for(const [,tag] of doc.matchAll(/(<(?:a|img|script|link|audio|video|source|iframe|form)\b[^>]*>)/gi)){
+  const attr=tag.match(/\b(?:href|src|action)\s*=\s*["']([^"']+)["']/i);
   if(!attr)continue;
   const u=attr[1];
   if(!u || /^(?:#|https?:|mailto:|tel:|sms:|javascript:|data:|\/\/)/i.test(u)||/[<>\{}]/.test(u))continue;
