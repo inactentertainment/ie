@@ -1,0 +1,76 @@
+/* Wisdom for Life — no-cost dual palette: comfort and midnight.
+   Fonts use built-in system families; no external tracking/font request. */
+html{scroll-behavior:smooth}
+body{transition:background-color .32s,color .32s;background-color:#050e20}
+body,button,textarea,input{font-family:"Iowan Old Style","Palatino Linotype","Book Antiqua",Palatino,Georgia,serif}
+h1,h2,h3,.brand,.results-title{font-family:"Baskerville","Iowan Old Style","Palatino Linotype",Georgia,serif;letter-spacing:.005em}
+.chip,.primary,.action,.micbutton,nav button{transition:transform .3s ease,background .3s ease,box-shadow .3s ease}
+.experience-control{border:1px solid #d8b6798c;background:#122749;color:#fce6bb;border-radius:100px;padding:7px 13px;font:600 12px/1 system-ui;display:flex;align-items:center;gap:7px;white-space:nowrap}
+.experience-control[aria-pressed="true"]{background:#e7c58b;color:#2e221c;border-color:#a38253}
+.experience-control:hover{box-shadow:0 0 0 2px #d9b06d5c}
+.experience-control:focus-visible{outline:3px solid #b98b55;outline-offset:2px}
+header nav{align-items:center;flex-wrap:nowrap;gap:9px}
+header nav a{white-space:nowrap}
+footer .footbrand{font-family:"Baskerville","Palatino Linotype",Georgia,serif;letter-spacing:.02em}
+.brand-logo img{filter:none}
+.softer-notice{font:13px/1.65 system-ui;color:inherit}
+#roots .history .trad{transition:background-color .32s,border-color .32s,transform .27s}
+#roots .history .trad:hover{transform:translateY(-4px)}
+.theme-comfort{--bg:#f6f0e5;--paper:#fdf8ee;--ink:#443328;--gold:#a67345;--muted:#6d5a4a;--line:#cdbba5;background:#f6f0e5!important;color:#443328!important}
+.theme-comfort:before{display:none}
+.theme-comfort header{background:#f9f2e8f5!important;border-color:#d5c0a9!important;box-shadow:0 4px 19px #4e321918!important}
+.theme-comfort .brand,.theme-comfort .brand em{color:#5b3b2d!important;text-shadow:none}
+.theme-comfort nav a{color:#634735!important}
+.theme-comfort nav a:hover{color:#9f6945!important}
+.theme-comfort .experience-control{background:#604031;color:#fff0db;border-color:#604031}
+.theme-comfort .experience-control[aria-pressed=true]{background:#e6cfad;color:#533629;border-color:#ae825a;box-shadow:0 0 0 2px #f9eddc}
+.theme-comfort .hero .kicker,.theme-comfort .kicker,.theme-comfort .eyebrow{color:#956640!important}
+.theme-comfort .hero h1,.theme-comfort .results-title,.theme-comfort .section h2,.theme-comfort h1{color:#543627!important;text-shadow:none}
+.theme-comfort .hero p,.theme-comfort .section>p,.theme-comfort #era{color:#705847!important}
+.theme-comfort .hero-divider{background:linear-gradient(90deg,transparent,#9c774f,transparent)}
+.theme-comfort .panel,.theme-comfort .reader{background:linear-gradient(142deg,#fffaf1,#f5ecdd)!important;border:1px solid #d7bda0!important;box-shadow:0 18px 50px #60402d20,inset 0 1px #fff!important}
+.theme-comfort .panel:before{background:linear-gradient(90deg,transparent,#b48b61,#e8ccaa,#b48b61,transparent)}
+.theme-comfort .panel h2,.theme-comfort .panel h3,.theme-comfort .reading h2,.theme-comfort .further h2,.theme-comfort .connections h2{color:#694630!important}
+.theme-comfort .help,.theme-comfort .small,.theme-comfort .reading p,.theme-comfort .lede{color:#655447!important}
+.theme-comfort .panel .label{color:#624331!important}
+.theme-comfort .chip{background:#ead9c4;border-color:#c9ad92;color:#624231;box-shadow:0 3px 9px #653d2411}
+.theme-comfort .chip[aria-pressed=true]{background:#6c4934;color:#fff5e8;border-color:#6c4934;box-shadow:0 2px 14px #633e2740}
+.theme-comfort .chip:hover{border-color:#7b4e30}
+.theme-comfort .question{background:#fffdfa;color:#49362d;border-color:#cdb397;box-shadow:inset 0 2px 7px #3d2b160b}
+.theme-comfort .question::placeholder{color:#8e7b6c}
+.theme-comfort .micbutton{background:#76533b;color:#fff4e2;border-color:#76533b}
+.theme-comfort .primary{background:linear-gradient(115deg,#5d392a,#785039 55%,#68432e);color:#fff4df;border-color:#61422d;box-shadow:0 7px 23px #65402735}
+.theme-comfort .primary:hover{background:linear-gradient(110deg,#68412f,#8b6148);box-shadow:0 11px 25px #64402f4b}
+.theme-comfort #status{color:#8c5034}
+.theme-comfort .card,.theme-comfort .trad,.theme-comfort .quiz{background:#fffaf1;border-color:#dcc3a5;box-shadow:0 6px 25px #563b2412}
+.theme-comfort .trad{background:#eadbc8!important;border:1px solid #d4b998!important}
+.theme-comfort .trad:hover{background:#e4cbb0!important;border-color:#ad805a!important}
+.theme-comfort .trad h3,.theme-comfort .trad .explore,.theme-comfort .trad .sym,.theme-comfort .card h3,.theme-comfort .card h4,.theme-comfort .quiz h3{color:#6c4934}
+.theme-comfort .trad p,.theme-comfort .trad .date,.theme-comfort .card p,.theme-comfort .promise p,.theme-comfort .quiz .feedback{color:#655143!important}
+.theme-comfort .ref,.theme-comfort a{color:#875538}
+.theme-comfort .notice,.theme-comfort .connections,.theme-comfort .promise,.theme-comfort .fine{background:#f0e1cc;border-color:#be9976;color:#574331}
+.theme-comfort .meets{background:linear-gradient(145deg,#775846,#463324);border-color:#c0a07a;box-shadow:0 8px 30px #6540272b}
+.theme-comfort .meets h2,.theme-comfort .meets p,.theme-comfort .meets small{color:#fff0d9}
+.theme-comfort .orb{border-color:#f3d5a1}
+.theme-comfort .center{background:#f1d4a1;color:#543526}
+.theme-comfort .action{background:#f8ecdc;color:#65412f;border-color:#c7a482}
+.theme-comfort .date{color:#856247}
+.theme-comfort .footbrand,.theme-comfort footer small{color:#65503f}
+.theme-comfort footer{background:#ecdfce;border-color:#c9ae93}
+.theme-comfort .footlinks button{color:#6f4b36}
+.theme-comfort dialog{background:#f9efe0;color:#513827;border-color:#c29d79}
+.theme-comfort .modalhead h2{color:#704b35}.theme-comfort .modalhead~div{color:#554537}
+.theme-comfort .modalhead button{background:#6b4732;color:#fff3e5}
+.theme-comfort .art svg{filter:drop-shadow(0 0 12px #ae794f55)}
+.theme-comfort .quiz button{background:#efe0cb;color:#533a2c;border-color:#c3a489}
+.theme-comfort .quiz button:hover{background:#ddc5a8}
+.theme-comfort .score,.theme-comfort .pass{color:#775842}
+.theme-comfort .navlinks a{background:#67432f;color:#fff0d7;border-color:#8a593e}
+.theme-comfort .navlinks a:hover{background:#84553c}
+.theme-comfort .transition,.theme-comfort .veil{background:radial-gradient(circle at 50% 40%,#eed4abcc,#b88d7199,#f3e4d0 88%)}
+.theme-comfort .listeninglabel{color:#72503d}
+.theme-comfort .questionbox.listening{box-shadow:0 0 0 3px #bd865c80,0 0 25px #bb8c6680}
+.theme-comfort .footbrand img{filter:drop-shadow(0 0 4px #ba935a77)}
+@media(max-width:740px){header nav{gap:5px}.experience-control{padding:7px 8px;font-size:11px}.brand{font-size:15px}header nav a{font-size:11px}}
+@media(max-width:460px){header{padding-left:8px;padding-right:8px}.brand{font-size:13px;gap:4px}.brand-logo{width:25px;height:25px}header nav{gap:4px}.experience-control{font-size:10px;padding:7px 6px}header nav a{font-size:10px}}
+@media(prefers-reduced-motion:reduce){body,.chip,.primary,.action,.experience-control{transition:none!important}}
