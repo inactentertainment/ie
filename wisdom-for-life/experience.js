@@ -14,7 +14,7 @@
  const voiceSelect=document.getElementById('voiceSelect');
  const audio=window.speechSynthesis;
  function availableVoices(){try{return audio&&audio.getVoices?audio.getVoices():[]}catch(e){return []}}
- const maleNames=/\\b(male|daniel|david|george|guy|ryan|thomas|james|arthur|oliver|brian|michael|eric|christopher|fred|mark|paul|jon|alex|lee|ravi)\\b/i;
+ const maleNames=/\b(male|daniel|david|george|guy|ryan|thomas|james|arthur|oliver|brian|michael|eric|christopher|fred|mark|paul|jon|alex|lee|ravi)\b/i;
  function voiceRank(v){const lang=(v.lang||'').toLowerCase(),name=(v.name||'').toLowerCase();let score=0;
  if(/^en-ng/.test(lang))score+=180;
  if(/nigeria|nigerian|lagos/.test(name))score+=140;
@@ -48,7 +48,7 @@
  if(read){read.addEventListener('click',()=>{if(active){stop();return}const main=document.querySelector('main');if(!main)return;
  const clone=main.cloneNode(true);
  clone.querySelectorAll('script,button,nav,textarea,form,[aria-hidden="true"],.quiz,.actions,#status,details:not([open])').forEach(el=>el.remove());
- const text=(clone.innerText||clone.textContent||'').replace(/\\s+/g,' ').trim().slice(0,25000);
+ const text=(clone.innerText||clone.textContent||'').replace(/\s+/g,' ').trim().slice(0,25000);
  if(!text)return;
  if(!speakWords(text,read))read.textContent='Read unavailable';
  });window.addEventListener('pagehide',stop)}
