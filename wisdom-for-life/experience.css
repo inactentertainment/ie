@@ -225,3 +225,26 @@ body:not(.theme-comfort) .history .trad[href*="tradition="] h3{color:#ffe5bb!imp
 .promise-story{position:relative;border-left:4px solid #d6af79;padding:27px 27px 17px 38px;background:linear-gradient(145deg,#152c49,#1a314f);border-radius:0 18px 18px 0;margin:20px 0}.promise-story p{font:clamp(17px,2.2vw,21px)/1.73 Georgia,serif;color:#f2e4cd;margin:9px 0 18px}.promise-mark{position:absolute;top:3px;left:10px;font-size:52px;color:#f0cb83;line-height:1}.theme-comfort .promise-story{background:#f6ead8}.theme-comfort .promise-story p{color:#2f4f6d}
 .promise-principles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:18px 0}.promise-principles article{background:#122a47;border:1px solid #aa8d64;border-radius:17px;padding:16px}.promise-principles span{font-size:29px;color:#e0bc7e}.promise-principles h3{font-size:18px;color:#f1d9a9;margin:5px 0}.promise-principles p{font:14px/1.65 system-ui;color:#e4d7c7;margin:0}.theme-comfort .promise-principles article{background:#eee1d0}.theme-comfort .promise-principles h3{color:#1d4262!important}.theme-comfort .promise-principles p{color:#435b71}
 @media(max-width:680px){.promise-principles{grid-template-columns:1fr}.journey-nav{gap:8px}.journey-nav a{padding:9px 12px;font-size:11px}.wisdom-stage{padding:18px}.promise-story{padding:23px 18px 10px 29px}}
+
+/* Match each full reading page to its faith card in both palettes. */
+body[data-faith-page]{--faith-page-accent:#c6a067}
+body[data-faith-page="hinduism"]{--faith-page-accent:#bf8b98;--faith-page-dark:#322432;--faith-page-light:#f7e9e7}
+body[data-faith-page="judaism"]{--faith-page-accent:#7295bd;--faith-page-dark:#152b45;--faith-page-light:#e9eff7}
+body[data-faith-page="buddhism"]{--faith-page-accent:#c6a067;--faith-page-dark:#322b22;--faith-page-light:#f5eddc}
+body[data-faith-page="yoruba"]{--faith-page-accent:#bb8376;--faith-page-dark:#3c282a;--faith-page-light:#f5e8df}
+body[data-faith-page="christianity"]{--faith-page-accent:#769879;--faith-page-dark:#182d2a;--faith-page-light:#ebf2e5}
+body[data-faith-page="islam"]{--faith-page-accent:#75a398;--faith-page-dark:#193532;--faith-page-light:#e7f0e9}
+body[data-faith-page] .hero h1{color:#f8e3bc!important}
+body[data-faith-page] .reader{border:2px solid var(--faith-page-accent)!important;background:linear-gradient(145deg,var(--faith-page-dark),#11263d)!important}
+body[data-faith-page] .reading{border-top-color:var(--faith-page-accent)!important}
+body[data-faith-page] .reading h2,body[data-faith-page] .connections h2,body[data-faith-page] .further h2{color:#ffe3bd!important}
+body[data-faith-page] .quiz,body[data-faith-page] .connections{border-color:var(--faith-page-accent)!important;background:#10243ca8!important}
+body[data-faith-page] .quiz button{border-color:var(--faith-page-accent)!important}
+body[data-faith-page] .navlinks a{border-color:var(--faith-page-accent)!important}
+body.theme-comfort[data-faith-page] .reader{background:linear-gradient(130deg,var(--faith-page-light),#fff9ee)!important;border-color:var(--faith-page-accent)!important;box-shadow:0 16px 44px #4d322319!important}
+body.theme-comfort[data-faith-page] .hero h1{color:#1a3c5c!important}
+body.theme-comfort[data-faith-page] .reading h2,body.theme-comfort[data-faith-page] .connections h2,body.theme-comfort[data-faith-page] .further h2{color:#1a3d5b!important}
+body.theme-comfort[data-faith-page] .quiz,body.theme-comfort[data-faith-page] .connections{background:#ffffff99!important;border-color:var(--faith-page-accent)!important}
+body.theme-comfort[data-faith-page] .quiz h3{color:#204161!important}
+body.theme-comfort[data-faith-page] .quiz button{background:#fbf7ed!important;color:#193b58!important}
+body[data-faith-page] .art svg{filter:drop-shadow(0 0 15px var(--faith-page-accent))!important}
