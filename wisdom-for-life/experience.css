@@ -101,3 +101,51 @@ body{scroll-padding-top:115px}
  header nav{gap:4px!important}
  header nav>a,header nav>.experience-control{font-size:10px!important}
 }
+
+/* November pilot: voice menu lives under sticky navigation; navy ink in Morning. */
+header{position:sticky!important;top:0!important;overflow:visible!important;isolation:isolate}
+.read-menu[hidden]{display:none!important}
+.read-menu{position:absolute;z-index:130;top:calc(100% + 7px);right:clamp(10px,3vw,45px);width:min(390px,calc(100vw - 22px));background:#102746;border:1px solid #d5b27b;border-radius:17px;padding:18px;box-shadow:0 20px 55px #0009;color:#f8e9c8;text-align:left}
+.read-menu label{display:block;color:#fbe1b4;font:700 14px/1.3 Georgia,serif;margin-bottom:9px}
+.read-menu select{width:100%;border:1px solid #a28a68;border-radius:9px;padding:12px;background:#071b35;color:#fff0d5;font:13px/1.3 system-ui}
+.read-menu select:focus-visible,.read-menu button:focus-visible{outline:3px solid #f1ca83;outline-offset:2px}
+.read-menu-buttons{display:flex;gap:9px;margin:12px 0 8px}
+.read-menu-buttons button{flex:1;min-height:39px;background:#d3ac6e;color:#1e2b39;border:1px solid #d3ac6e;border-radius:11px;font:700 12px system-ui}
+.read-menu-buttons button:hover:not(:disabled){background:#f2d199}
+.read-menu-buttons button:disabled{opacity:.4;cursor:not-allowed}
+.read-menu #voiceStatus{font:12px/1.5 system-ui;color:#e3d9c5;margin:8px 0 0}
+.theme-comfort{--ink:#152d4c!important;--muted:#486078!important;--green:#173451!important;--gold:#b18a57!important}
+.theme-comfort,.theme-comfort body{color:#172f4d!important}
+.theme-comfort .brand,.theme-comfort .brand em{color:#183453!important}
+.theme-comfort h1,.theme-comfort h2,.theme-comfort h3,.theme-comfort h4,.theme-comfort .hero h1,.theme-comfort .section h2,.theme-comfort .panel h2,.theme-comfort .panel h3,.theme-comfort .reading h2,.theme-comfort .further h2,.theme-comfort .connections h2,.theme-comfort .modalhead h2{color:#173451!important}
+.theme-comfort .hero p,.theme-comfort .section>p,.theme-comfort .reading p,.theme-comfort .lede,.theme-comfort .trad p,.theme-comfort .trad .date,.theme-comfort .card p,.theme-comfort .promise p,.theme-comfort .help,.theme-comfort .small,.theme-comfort .fine,.theme-comfort .notice,.theme-comfort #status,.theme-comfort .card .ref,.theme-comfort .signature,.theme-comfort .meets .passage-type{color:#39516e!important}
+.theme-comfort .chip{color:#173451!important;border-color:#c0a787!important}
+.theme-comfort .chip[aria-pressed=true]{background:linear-gradient(120deg,#143455,#244b70)!important;color:#fff2da!important;border-color:#1e3c5b!important}
+.theme-comfort .question{color:#173451!important;border-color:#c5ad8e!important}
+.theme-comfort .question::placeholder{color:#61758a!important}
+.theme-comfort .primary,.theme-comfort .action,.theme-comfort .micbutton,.theme-comfort .more-info,.theme-comfort .navlinks a{background:linear-gradient(130deg,#153456,#244a70)!important;color:#fff2dc!important;border-color:#244c72!important}
+.theme-comfort .primary:hover,.theme-comfort .action:hover,.theme-comfort .more-info:hover,.theme-comfort .navlinks a:hover{background:#30577b!important}
+.theme-comfort header nav>a,.theme-comfort header nav>.experience-control{background:#173755!important;color:#fff4df!important;border-color:#274e72!important}
+.theme-comfort header nav>a:hover,.theme-comfort header nav>.experience-control:hover{background:#2b5174!important;color:#fff!important}
+.theme-comfort .trad{background:#e6d8bf!important;border-color:#c5ac89!important}
+.theme-comfort .trad:hover{background:#d9c6a6!important;border-color:#a88d6a!important}
+.theme-comfort .trad h3,.theme-comfort .trad .sym,.theme-comfort .trad .explore{color:#183d60!important}
+.theme-comfort .promise,.theme-comfort .connections{background:#f1e6d7!important;border-color:#d6be9f!important}
+.theme-comfort .meets{background:linear-gradient(145deg,#122b4c,#26486b)!important;border-color:#bba07d!important}
+.theme-comfort .meets h2,.theme-comfort .meets p,.theme-comfort .meets small,.theme-comfort .meets .kicker{color:#f8e9c9!important}
+.theme-comfort .on-site-text{color:#173451!important}
+.theme-comfort .scripturequote{color:#203b57!important;border-color:#bd9967!important}
+.theme-comfort .edition-note,.theme-comfort .passage-type,.theme-comfort .noquote{color:#3f5970!important}
+.theme-comfort footer{background:#e9dcc8!important}
+.theme-comfort footer .footbrand,.theme-comfort footer small,.theme-comfort footer .footlinks button{color:#203b5a!important}
+.theme-comfort dialog{background:#f7efe3;color:#203b5a!important}
+.theme-comfort #legalBody{color:#233e58!important}
+.theme-comfort .read-menu{background:#fcf6ea;border-color:#bea380;box-shadow:0 18px 50px #47311930;color:#1d3856}
+.theme-comfort .read-menu label,.theme-comfort .read-menu #voiceStatus{color:#294969}
+.theme-comfort .read-menu select{background:#fffdf8;border-color:#a6a18e;color:#1a3c5b}
+.theme-comfort .read-menu-buttons button{background:#16395a;color:#fff2dc;border-color:#1b496e}
+.theme-comfort .read-menu-buttons button:hover:not(:disabled){background:#2c5577}
+.theme-comfort .quiz button{color:#203b5a}
+.theme-comfort .quiz .feedback{color:#284c6a!important}
+.theme-comfort .footlinks button:hover{color:#12385f!important}
+@media(max-width:720px){.read-menu{top:calc(100% + 3px);right:7px;left:auto;width:min(390px,calc(100vw - 14px))}}
