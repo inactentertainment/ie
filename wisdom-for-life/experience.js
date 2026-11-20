@@ -54,16 +54,16 @@ No streaming voice API or paid narration service is used. */
  read?.addEventListener('click',toggleMenu);
  doc.addEventListener('pointerdown',e=>{if(!menu?.hidden&&!menu.contains(e.target)&&e.target!==read)closeMenu()});
  doc.addEventListener('keydown',e=>{if(e.key==='Escape')closeMenu()});
- let talking=false;
- function stopReading(){try{synth?.cancel()}catch(e){} talking=false;if(stopButton)stopButton.disabled=true;if(play)play.disabled=false;if(status)status.textContent='Reading stopped.'}
+ let talking=false,activeUtterance=null;
+ function stopReading(){try{synth?.cancel()}catch(e){} talking=false;activeUtterance=null;if(stopButton)stopButton.disabled=true;if(play)play.disabled=false;if(status)status.textContent='Reading stopped.'}
  function speak(text,options={}){if(!synth||!window.SpeechSynthesisUtterance){if(status)status.textContent='No reading voice is available in this browser.';return false}
   const preferredVoice=choose(options.preset||selection,!!options.nigerian);
   if(!preferredVoice&&status)status.textContent='Using the browser default voice; preferred voices are not installed.';
   else if(status)status.textContent='Reading with '+(preferredVoice?.name||'the default voice')+'.';
   try{synth.cancel();const u=new SpeechSynthesisUtterance(text);u.rate=.88;u.pitch=.91;u.lang=preferredVoice?.lang||'en-GB';if(preferredVoice)u.voice=preferredVoice;
-    u.onend=()=>{talking=false;if(stopButton)stopButton.disabled=true;if(play)play.disabled=false;if(status)status.textContent='Reading complete.'};
-    u.onerror=e=>{talking=false;if(stopButton)stopButton.disabled=true;if(play)play.disabled=false;if(status)status.textContent='Reading could not continue in this browser.'};
-    talking=true;if(stopButton)stopButton.disabled=false;if(play)play.disabled=true;synth.speak(u);return true
+    u.onend=()=>{talking=false;activeUtterance=null;if(stopButton)stopButton.disabled=true;if(play)play.disabled=false;if(status)status.textContent='Reading complete.'};
+    u.onerror=e=>{talking=false;activeUtterance=null;if(stopButton)stopButton.disabled=true;if(play)play.disabled=false;if(status)status.textContent='Reading could not continue in this browser.'};
+    talking=true;activeUtterance=u;if(stopButton)stopButton.disabled=false;if(play)play.disabled=true;synth.speak(u);return true
   }catch(e){if(status)status.textContent='Reading could not start.';return false}}
  window.WFL_SPEAK=(text,button,options)=>speak(text,options);
  window.WFL_STOP_VOICE=stopReading;
