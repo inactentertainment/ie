@@ -32,7 +32,7 @@ No streaming voice API or paid narration service is used. */
   select.value=[...select.options].some(o=>o.value===existing)?existing:'uk';
   const ng=preferred(others,'nigerian');
   const ngopt=[...select.options].find(o=>o.value==='ng');
-  if(ngopt)ngopt.textContent=ng?'Nigerian English · '+ng.name:'Nigerian English · not installed';
+  if(ngopt)ngopt.textContent=ng?'Nigerian English · '+ng.name:'Nigerian English · device voice unavailable';
   const uk=preferred(others,'uk');
   const ukopt=[...select.options].find(o=>o.value==='uk');
   if(ukopt)ukopt.textContent=uk?'UK English · '+uk.name:'UK English · not installed';
@@ -52,6 +52,7 @@ No streaming voice API or paid narration service is used. */
  function closeMenu(){if(!menu||!read)return;menu.hidden=true;read.setAttribute('aria-expanded','false')}
  function toggleMenu(){if(!menu||!read)return;const open=menu.hidden;menu.hidden=!open;read.setAttribute('aria-expanded',String(open));if(open)select?.focus()}
  read?.addEventListener('click',toggleMenu);
+ doc.getElementById('closeReadMenu')?.addEventListener('click',()=>{closeMenu();read?.focus()});
  doc.addEventListener('pointerdown',e=>{if(!menu?.hidden&&!menu.contains(e.target)&&e.target!==read)closeMenu()});
  doc.addEventListener('keydown',e=>{if(e.key==='Escape')closeMenu()});
  let talking=false,activeUtterance=null;
