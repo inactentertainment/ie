@@ -207,12 +207,12 @@ $('speak').onclick=()=>{
   const R=window.SpeechRecognition||window.webkitSpeechRecognition;
   if(!R){$('status').textContent='Speech input is not available in this browser. You can type your question.';return}
   const r=new R(),version=++recognitionVersion,original=$('question').value.trim();
-  currentRecognition=r;r.lang='en-US';r.continuous=true;r.interimResults=false;
+  currentRecognition=r;r.lang='en-US';r.continuous=true;r.interimResults=true;
   r.onstart=()=>{if(currentRecognition===r&&version===recognitionVersion)setMicListening(true)};
   r.onresult=e=>{
     if(currentRecognition!==r||version!==recognitionVersion)return;
     let words=[];
-    for(let i=0;i<e.results.length;i++)if(e.results[i].isFinal)words.push(e.results[i][0].transcript);
+    for(let i=0;i<e.results.length;i++)words.push(e.results[i][0].transcript);
     $('question').value=[original,words.join(' ').trim()].filter(Boolean).join(' ');
   };
   const end=()=>{if(currentRecognition===r&&version===recognitionVersion){currentRecognition=null;setMicListening(false)}};
