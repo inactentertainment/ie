@@ -149,3 +149,44 @@ header{position:sticky!important;top:0!important;overflow:visible!important;isol
 .theme-comfort .quiz .feedback{color:#284c6a!important}
 .theme-comfort .footlinks button:hover{color:#12385f!important}
 @media(max-width:720px){.read-menu{top:calc(100% + 3px);right:7px;left:auto;width:min(390px,calc(100vw - 14px))}}
+
+/* Distinct, restrained six-tradition colors, keeping light and midnight coherent. */
+#roots.section{margin-top:clamp(92px,11vw,145px)!important}
+#results~#roots.section{margin-top:clamp(100px,12vw,145px)!important}
+.teaching-card[data-tradition]{transition:background-color .3s ease,border-color .3s ease;position:relative;overflow:hidden}
+.teaching-card[data-tradition]::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--faith-accent,#c1a277)}
+.teaching-card[data-tradition="Christianity"],.history .trad[href*="tradition=christianity"]{--faith-bg:#182f2b;--faith-light:#e5eddf;--faith-accent:#769879;--faith-button:#315d46;--faith-line:#9caf90}
+.teaching-card[data-tradition="Judaism"],.history .trad[href*="tradition=judaism"]{--faith-bg:#192e48;--faith-light:#e3ebf3;--faith-accent:#7295bd;--faith-button:#244e73;--faith-line:#a4b8cf}
+.teaching-card[data-tradition="Buddhism"],.history .trad[href*="tradition=buddhism"]{--faith-bg:#342c22;--faith-light:#f2e8d0;--faith-accent:#c6a067;--faith-button:#8c6835;--faith-line:#d7c398}
+.teaching-card[data-tradition="Hinduism"],.history .trad[href*="tradition=hinduism"]{--faith-bg:#342631;--faith-light:#f3e4e0;--faith-accent:#bf8b98;--faith-button:#8f596c;--faith-line:#d8b4b9}
+.teaching-card[data-tradition="Islam"],.history .trad[href*="tradition=islam"]{--faith-bg:#153431;--faith-light:#e0ece5;--faith-accent:#75a398;--faith-button:#2d6b63;--faith-line:#a2c5b8}
+.teaching-card[data-tradition="Yoruba / Ifá"],.history .trad[href*="tradition=yoruba"]{--faith-bg:#3b282a;--faith-light:#f2e3db;--faith-accent:#bb8376;--faith-button:#8c584c;--faith-line:#d5b3a4}
+body:not(.theme-comfort) .teaching-card[data-tradition]{background:var(--faith-bg)!important;border-color:var(--faith-accent)!important}
+body.theme-comfort .teaching-card[data-tradition]{background:var(--faith-light)!important;border-color:var(--faith-line)!important}
+body.theme-comfort .teaching-card[data-tradition] .on-site-text{background:#ffffffa8!important;border-color:var(--faith-line)!important}
+body:not(.theme-comfort) .teaching-card[data-tradition] .on-site-text{background:#0715268a!important;border-color:var(--faith-accent)!important}
+body.theme-comfort .teaching-card[data-tradition] .more-info,body.theme-comfort .teaching-card[data-tradition] .read-yoruba{background:var(--faith-button)!important;color:#fff7e9!important;border-color:var(--faith-button)!important}
+body:not(.theme-comfort) .teaching-card[data-tradition] .more-info,body:not(.theme-comfort) .teaching-card[data-tradition] .read-yoruba{background:var(--faith-bg)!important;border:1px solid var(--faith-accent)!important;color:#fff0d9!important}
+body.theme-comfort .teaching-card[data-tradition] .ref,body.theme-comfort .teaching-card[data-tradition] .on-site-text summary{color:#193d59!important}
+body:not(.theme-comfort) .teaching-card[data-tradition] .ref,body:not(.theme-comfort) .teaching-card[data-tradition] .on-site-text summary{color:#f0cb8f!important}
+body.theme-comfort .teaching-card[data-tradition] h3,body.theme-comfort .teaching-card[data-tradition] h4{color:#173650!important}
+body:not(.theme-comfort) .teaching-card[data-tradition] h3,body:not(.theme-comfort) .teaching-card[data-tradition] h4{color:#ffe5bc!important}
+body:not(.theme-comfort) .teaching-card[data-tradition] p{color:#f4e7d8!important}
+body:not(.theme-comfort) .teaching-card[data-tradition] .edition-note{color:#d5cbbe!important}
+body.theme-comfort .history .trad[href*="tradition="]{background:var(--faith-light)!important;border-color:var(--faith-line)!important}
+body:not(.theme-comfort) .history .trad[href*="tradition="]{background:var(--faith-bg)!important;border-color:var(--faith-accent)!important}
+body.theme-comfort .history .trad[href*="tradition="] .explore{color:var(--faith-button)!important}
+body:not(.theme-comfort) .history .trad[href*="tradition="] .explore{color:#f1d09b!important}
+body.theme-comfort .history .trad[href*="tradition="] h3{color:#173653!important}
+body:not(.theme-comfort) .history .trad[href*="tradition="] h3{color:#ffe5bb!important}
+.read-menu .read-close{position:absolute;top:8px;right:9px;width:32px;height:32px;border:1px solid #bba27d;border-radius:50%;background:#173653;color:#fff0d8;font:700 17px system-ui;display:grid;place-items:center;cursor:pointer}
+.read-menu .read-close:hover{background:#304e6a}
+.read-menu{padding-top:26px!important}
+.read-menu label{padding-right:31px}
+.theme-comfort .read-menu .read-close{background:#1b4064;color:#fff3e2;border-color:#456d8c}
+.footlinks a,.sitemap-footer{font:12px system-ui;text-decoration:underline;color:#c7bfd0;padding:4px;display:inline-block}
+.footlinks a:hover,.sitemap-footer:hover{color:#ffdfac}
+.theme-comfort .footlinks a,.theme-comfort .sitemap-footer{color:#214566}
+.theme-comfort .footlinks a:hover,.theme-comfort .sitemap-footer:hover{color:#123b5b}
+.footlinks a:focus-visible,.sitemap-footer:focus-visible{outline:2px solid #e6be75;outline-offset:3px;border-radius:3px}
+@media(max-width:680px){#roots.section{margin-top:85px!important}}
