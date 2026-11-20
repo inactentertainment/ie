@@ -193,7 +193,38 @@ $('shared').textContent=d.shared;$('distinct').textContent=d.distinct;$('orbs').
 $('copy').onclick=async()=>{try{await navigator.clipboard.writeText(copyText);$('copy').textContent='Copied ✓'}catch(e){$('copy').textContent='Copy unavailable'}};
 $('again').onclick=()=>{$('question').focus();$('ask').scrollIntoView({behavior:'smooth'})};
 $('listen').onclick=()=>{if(!window.WFL_SPEAK)return alert('Speech playback is unavailable in this browser.');if(speechSynthesis.speaking){window.WFL_STOP_VOICE();$('listen').textContent='▶ Listen to reflection';return}if(window.WFL_SPEAK(speechText,null)){$('listen').textContent='■ Stop listening';const keep=()=>{$('listen').textContent='▶ Listen to reflection'};setTimeout(()=>{if(!speechSynthesis.speaking)keep()},500)}else $('listen').textContent='Read unavailable'};
-$('speak').onclick=()=>{const R=window.SpeechRecognition||window.webkitSpeechRecognition;if(!R){$('status').textContent='Voice input is unavailable in this browser. Please type your question.';return}if($('questionbox').classList.contains('listening'))return;const r=new R();r.lang='en-US';r.onstart=()=>{$('questionbox').classList.add('listening');$('speak').setAttribute('aria-label','Listening for your question')};const stop=()=>{$('questionbox').classList.remove('listening');$('speak').setAttribute('aria-label','Speak your question')};r.onend=stop;r.onresult=e=>{$('question').value+=($('question').value?' ':'')+e.results[0][0].transcript};r.onerror=()=>{$('status').textContent='Microphone unavailable. Please type your question.';stop()};try{r.start()}catch(e){stop();$('status').textContent='Microphone unavailable. Please type your question.'}};
+let currentRecognition=null;
+let recognitionVersion=0;
+function setMicListening(on){
+  $('questionbox').classList.toggle('listening',on);
+  $('speak').textContent=on?'■':'🎙';
+  $('speak').setAttribute('aria-pressed',String(on));
+  $('speak').setAttribute('aria-label',on?'Stop listening now':'Speak your question');
+  $('speak').title=on?'Stop listening now':'Speak your question';
+}
+$('speak').onclick=()=>{
+  if(currentRecognition){
+    const r=currentRecognition;currentRecognition=null;recognitionVersion++;
+    setMicListening(false);
+    try{r.abort()}catch(e){}
+    return;
+  }
+  const R=window.SpeechRecognition||window.webkitSpeechRecognition;
+  if(!R){$('status').textContent='Speech input is not available in this browser. You can type your question.';return}
+  const r=new R(),version=++recognitionVersion,original=$('question').value.trim();
+  currentRecognition=r;r.lang='en-US';r.continuous=true;r.interimResults=false;
+  r.onstart=()=>{if(currentRecognition===r&&version===recognitionVersion)setMicListening(true)};
+  r.onresult=e=>{
+    if(currentRecognition!==r||version!==recognitionVersion)return;
+    let words=[];
+    for(let i=0;i<e.results.length;i++)if(e.results[i].isFinal)words.push(e.results[i][0].transcript);
+    $('question').value=[original,words.join(' ').trim()].filter(Boolean).join(' ');
+  };
+  const end=()=>{if(currentRecognition===r&&version===recognitionVersion){currentRecognition=null;setMicListening(false)}};
+  r.onerror=e=>{const active=currentRecognition===r;end();if(active&&e.error!=='aborted'&&e.error!=='no-speech')$('status').textContent='The microphone could not continue. You can try again or type.'};
+  r.onend=end;
+  try{r.start()}catch(e){end();$('status').textContent='Microphone unavailable. You can type your question.'}
+}
 
 
 
