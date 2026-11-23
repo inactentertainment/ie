@@ -107,6 +107,15 @@ html,body,main{background:#000!important;background-image:none!important}
 @media(max-width:900px){.detail:has(.cast-grid) .detail-grid{grid-template-columns:1fr}.cast-grid{grid-template-columns:repeat(5,minmax(0,1fr))}}
 @media(max-width:600px){.cast-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}.cast-copy{padding:9px 6px}.cast-copy h4{font-size:11px}.cast-copy p{font-size:9px}.cast-group{font-size:20px}.cast-intro span{font-size:9px}}
 @media(max-width:360px){.cast-copy h4{font-size:10px}}
+
+.soundtrack-credit{gap:6px;flex-wrap:wrap;font-size:9px;letter-spacing:.01em;color:#a4aab5}
+.soundtrack-credit img{width:24px;height:24px;max-width:24px;object-fit:contain;object-position:center;mix-blend-mode:normal;flex:0 0 24px}
+.soundtrack-credit span:last-child{display:flex;flex-direction:column;gap:1px;font-size:9px;color:#afb5c0}
+.soundtrack-credit small{display:block;font-size:8px;color:#858c97}
+.soundtrack-bottom .silver-player{font-size:12px;border-radius:99px;background:linear-gradient(130deg,#fff,#b2b9c8 40%,#f8f9ff 75%,#a2aabc);box-shadow:0 4px 18px #a8b3c750,0 0 15px #e2e8f928;cursor:pointer;transition:transform .35s cubic-bezier(.2,1.6,.3,1),filter .3s,box-shadow .3s}
+.soundtrack-bottom .silver-player:hover,.soundtrack-bottom .silver-player:focus-visible{transform:translateY(-5px) translateX(4px) scale(1.09);filter:brightness(1.16);box-shadow:0 10px 24px #cbd6ed70,0 0 35px #dce7ff60}
+.soundtrack-bottom .load-audio{background:none!important;color:#d3d7e2!important;border:1px solid #636b7a!important;padding:7px 12px;border-radius:99px;font-size:10px;cursor:pointer}
+.soundtrack-bottom .load-audio:hover{border-color:#e8edf5!important;color:#fff!important}
 </style></head><body>
 <header><a class="brand" href="/productions/screenplays/the-lives-we-inherit/" aria-label="InAct Entertainment — series home"><img src="/assets/ie-banner.svg" alt="InAct Entertainment original logo"><span class="brand-ident"><span class="brand-role">Film &amp; Television</span><span class="brand-project">The Lives We Inherit</span></span></a>
 <div class="actions"><button class="sound playing" id="sound" aria-label="Open soundtrack" aria-controls="soundtrackPanel" aria-expanded="false" title="Soundtrack"><span class="equalizer" aria-hidden="true"><i></i><i></i><i></i></span><span class="tooltip">Soundtrack</span></button><button class="menu-trigger" id="menuBtn" aria-expanded="false" aria-controls="menu"><span class="bars"><i></i><i></i></span></button></div></header>
@@ -114,7 +123,7 @@ html,body,main{background:#000!important;background-image:none!important}
 <div class="soundtrack-top"><div><span class="eyebrow">InAct Entertainment · Original Music</span><h2>THE LIVES WE INHERIT</h2><p>Original Series Soundtrack</p></div><button id="soundClose" class="soundtrack-close" aria-label="Close soundtrack">×</button></div>
 <div class="soundtrack-now"><div class="soundtrack-meta"><span class="soundtrack-kicker">Soundtrack collection</span><strong>Music for six chapters</strong></div></div>
 <div class="soundtrack-list" id="soundtrackList"></div>
-<div class="soundtrack-bottom"><button id="playPause" class="silver-player" disabled aria-label="Play or pause selected track">▶ Play</button><span id="trackNotice" aria-live="polite">Select an available recording to listen.</span><div class="soundtrack-credit"><span>Soundtrack by</span><img src="/assets/ie-banner.svg" alt="InAct Entertainment"></div><audio id="soundtrackAudio" preload="none"></audio></div>
+<div class="soundtrack-bottom"><button id="playPause" class="silver-player" aria-label="Play or pause selected track">▶ Play</button><span id="trackNotice" aria-live="polite">Choose a track or load an audio preview.</span><button id="loadAudio" class="load-audio" type="button">Load audio preview</button><input id="audioFile" type="file" accept="audio/*,.mp3,.m4a,.wav,.ogg" hidden><div class="soundtrack-credit"><span>Soundtrack by</span><img src="/assets/favicon-192.png" alt="IE logo"><span>InAct Entertainment LLC <small>© 2026 · All rights reserved for original materials</small></span></div><audio id="soundtrackAudio" preload="none"></audio></div>
 </section>
 <nav id="menu" class="menu" hidden aria-label="All pages"><div class="menu-label">Explore the project</div><div id="menuItems"></div></nav>
 <main>
@@ -145,11 +154,14 @@ activeSoundtrackGroup=t.group;
 return heading+'<button type="button" class="soundtrack-track" data-track="'+i+'" '+(!t.src?'disabled':'')+'><span class="soundtrack-index">'+String(i+1).padStart(2,'0')+'</span><span class="soundtrack-track-inner"><strong>'+t.title+'</strong><em>'+t.type+'</em></span><span class="track-pending">'+(t.src?'▶':'—')+'</span></button>';
 }).join('');
 const player=document.getElementById('soundtrackAudio'),playPause=document.getElementById('playPause'),notice=document.getElementById('trackNotice');
-let activeTrack=-1;
-function syncPlayback(){const playing=!player.paused&&!!player.currentSrc;playPause.textContent=playing?'Ⅱ Pause':'▶ Play';playPause.disabled=activeTrack<0;soundBtn.setAttribute('aria-label',playing?'Soundtrack playing — open soundtrack':'Open soundtrack');}
+let activeTrack=-1,localURL=null;
+function syncPlayback(){const playing=!player.paused&&!!player.currentSrc;playPause.textContent=playing?'Ⅱ Pause':'▶ Play';soundBtn.setAttribute('aria-label',playing?'Soundtrack playing — open soundtrack':'Open soundtrack');}
 document.getElementById('soundtrackList').addEventListener('click',ev=>{const b=ev.target.closest('[data-track]');if(!b||b.disabled)return;activeTrack=Number(b.dataset.track);const t=soundtrackTracks[activeTrack];player.src=t.src;notice.textContent=t.title;player.play().catch(()=>{notice.textContent='Select Play to start '+t.title;});syncPlayback()});
-playPause.addEventListener('click',()=>{if(player.paused){player.play().catch(()=>{notice.textContent='Playback could not start';})}else player.pause()});
-player.addEventListener('play',syncPlayback);player.addEventListener('pause',syncPlayback);player.addEventListener('ended',syncPlayback);
+const audioFile=document.getElementById('audioFile');
+document.getElementById('loadAudio').addEventListener('click',()=>audioFile.click());
+audioFile.addEventListener('change',()=>{const file=audioFile.files&&audioFile.files[0];if(!file)return;if(localURL)URL.revokeObjectURL(localURL);localURL=URL.createObjectURL(file);activeTrack=-1;player.src=localURL;notice.textContent=file.name;player.play().catch(()=>{notice.textContent=file.name+' · press Play';});syncPlayback()});
+playPause.addEventListener('click',()=>{if(!player.src){notice.textContent='Choose Load audio preview to play a recording';audioFile.click();return;}if(player.paused){player.play().catch(()=>{notice.textContent='Playback could not start';})}else player.pause()});
+player.addEventListener('play',syncPlayback);player.addEventListener('pause',syncPlayback);player.addEventListener('ended',syncPlayback);player.addEventListener('error',()=>{notice.textContent='Unable to play this audio file';syncPlayback()});
 const soundBtn=document.getElementById('sound');
 function setSoundtrackOpen(open){soundtrackPanel.hidden=!open;soundBtn.setAttribute('aria-expanded',String(open));if(open){menu.hidden=true;menuBtn.setAttribute('aria-expanded','false');}}
 soundBtn.addEventListener('click',()=>setSoundtrackOpen(soundtrackPanel.hidden));
