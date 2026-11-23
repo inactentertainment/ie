@@ -48,9 +48,39 @@ html,body,main{background:#000!important;background-image:none!important}
 .brand-ident .brand-project{font-size:13.5px;letter-spacing:0;color:#e7e9ef;line-height:1.2;font-weight:400;background:transparent!important}
 @media(max-width:550px){.brand-ident .brand-role{font-size:9px;letter-spacing:.035em}.brand-ident .brand-project{font-size:10.5px;letter-spacing:-.02em}}
 @media(max-width:390px){.brand-ident .brand-role{font-size:8px;letter-spacing:0}.brand-ident .brand-project{font-size:9px}}
+
+/* Soundtrack presentation — scrollable professional preview */
+.sound{position:relative;display:flex;align-items:center;justify-content:center}
+.sound .tooltip{position:absolute;top:38px;left:50%;transform:translateX(-50%) translateY(-5px);opacity:0;visibility:hidden;pointer-events:none;background:#e8ebf3;color:#101217;padding:5px 11px;border-radius:5px;font:11px Arial,sans-serif;box-shadow:0 8px 24px #000a;transition:.18s;white-space:nowrap}
+.sound:hover .tooltip,.sound:focus-visible .tooltip{opacity:1;visibility:visible;transform:translateX(-50%)}
+.sound .equalizer i{animation:eq .75s ease-in-out infinite alternate}
+.sound .equalizer i:nth-child(2){animation-delay:.25s}.sound .equalizer i:nth-child(3){animation-delay:.45s}
+.soundtrack-panel{position:fixed;z-index:65;right:clamp(18px,5vw,76px);top:68px;width:min(432px,calc(100vw - 36px));max-height:min(80vh,700px);display:flex;flex-direction:column;overflow:hidden;color:#ebedf2;background:#0b0c11;border:1px solid #ffffff36;border-radius:15px;box-shadow:0 25px 80px #000e}
+.soundtrack-panel[hidden]{display:none}.soundtrack-top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;padding:19px 20px 13px;border-bottom:1px solid #ffffff1f;background:linear-gradient(110deg,#1b1e28,#090a10)}
+.soundtrack-top h2{font:20px/1.15 Georgia,serif;letter-spacing:.02em;margin:8px 0 5px}.soundtrack-top p{font-size:11px;color:#aeb4c0}.soundtrack-top .eyebrow{font-size:9px;letter-spacing:.16em}.soundtrack-close{font-size:25px;line-height:1;color:#d2d7e1;background:none}
+.soundtrack-now{padding:15px 20px;display:flex;align-items:center;gap:14px;background:linear-gradient(110deg,#181b22,#101218)}
+.disc{width:61px;height:61px;flex:none;display:grid;place-items:center;border-radius:50%;border:1px solid #ffffff6c;color:#e7ecf5;background:radial-gradient(circle,#3b414f 0 8%,#0b0c12 9% 18%,#b7becc 19% 21%,#171923 22% 50%,#7c8798 51% 53%,#11131a 54%);font-size:16px}
+.soundtrack-meta{display:flex;flex-direction:column;gap:3px;min-width:0}.soundtrack-meta strong{font:18px Georgia,serif}.soundtrack-meta span{font-size:10px;color:#b3bbc9}.soundtrack-meta .soundtrack-kicker{text-transform:uppercase;letter-spacing:.14em;font-size:9px}
+.soundtrack-list{overflow-y:auto;padding:8px 14px;max-height:340px;scrollbar-color:#788090 #111319;scrollbar-width:thin}
+.soundtrack-group{padding:11px 9px 5px;font-size:9px;text-transform:uppercase;letter-spacing:.20em;color:#aab2c0;font-weight:600}
+.soundtrack-track{display:flex;align-items:center;gap:12px;border-radius:8px;padding:10px 9px;border-bottom:1px solid #ffffff0d}
+.soundtrack-index{width:24px;color:#8993a3;font:11px Arial,sans-serif}.soundtrack-track-inner{min-width:0;flex:1;display:flex;flex-direction:column;gap:2px}
+.soundtrack-track strong{font:15px/1.25 Georgia,serif;color:#eef1f7}.soundtrack-track em{font-size:10px;font-style:normal;color:#9ba5b5}.soundtrack-track .track-pending{font-size:9px;color:#9da6b4;border:1px solid #ffffff28;padding:3px 6px;border-radius:99px;white-space:nowrap}
+.soundtrack-track:hover{background:#ffffff0c}
+.soundtrack-bottom{border-top:1px solid #ffffff25;padding:13px 19px 15px;display:flex;flex-direction:column;align-items:start;gap:9px;background:#0a0b0f}
+.soundtrack-bottom button{border-radius:20px;padding:6px 16px;background:#c4cad6;color:#0d0f14;font-weight:600;font-size:11px}
+.soundtrack-bottom button:disabled{opacity:.48;cursor:default}.soundtrack-bottom span{color:#b3bac6;font-size:11px}
+.soundtrack-bottom small{color:#858c99;line-height:1.4;font-size:9px}
+@media(max-width:550px){.soundtrack-panel{top:66px;max-height:calc(100dvh - 84px)}.soundtrack-list{max-height:42dvh}}
 </style></head><body>
 <header><a class="brand" href="/productions/screenplays/the-lives-we-inherit/" aria-label="InAct Entertainment — series home"><img src="/assets/ie-banner.svg" alt="InAct Entertainment original logo"><span class="brand-ident"><span class="brand-role">Film &amp; Television</span><span class="brand-project">The Lives We Inherit</span></span></a>
-<div class="actions"><button class="sound" id="sound" aria-label="Music track pending" title="Music will be added soon" disabled><span class="equalizer"><i></i><i></i><i></i></span></button><button class="menu-trigger" id="menuBtn" aria-expanded="false" aria-controls="menu"><span class="bars"><i></i><i></i></span></button></div></header>
+<div class="actions"><button class="sound playing" id="sound" aria-label="Open soundtrack" aria-controls="soundtrackPanel" aria-expanded="false" title="Soundtrack"><span class="equalizer" aria-hidden="true"><i></i><i></i><i></i></span><span class="tooltip">Soundtrack</span></button><button class="menu-trigger" id="menuBtn" aria-expanded="false" aria-controls="menu"><span class="bars"><i></i><i></i></span></button></div></header>
+<section id="soundtrackPanel" class="soundtrack-panel" hidden aria-label="The Lives We Inherit soundtrack">
+<div class="soundtrack-top"><div><span class="eyebrow">InAct Entertainment · Original Music</span><h2>THE LIVES WE INHERIT</h2><p>Original Series Soundtrack · Development Preview</p></div><button id="soundClose" class="soundtrack-close" aria-label="Close soundtrack">×</button></div>
+<div class="soundtrack-now"><div class="disc" aria-hidden="true">✦</div><div class="soundtrack-meta"><span class="soundtrack-kicker">Soundtrack collection</span><strong>Music for six chapters</strong><span id="soundStatus">12 proposed original tracks · Audio in development</span></div></div>
+<div class="soundtrack-list" id="soundtrackList"></div>
+<div class="soundtrack-bottom"><button id="playPause" disabled aria-label="Play or pause selected track" title="Enabled when an original track is available">▶ Play</button><span id="trackNotice">Original recordings will be added as they are completed.</span><small>Soundtrack developed by InAct Entertainment · Track titles and sequencing subject to change.</small></div>
+</section>
 <nav id="menu" class="menu" hidden aria-label="All pages"><div class="menu-label">Explore the project</div><div id="menuItems"></div></nav>
 <main>
 <section id="home" class="page hero"><div class="hero-inner"><div class="star" aria-hidden="true"><svg viewBox="0 0 100 100"><defs><linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff"/><stop offset=".45" stop-color="#8b93a5"/><stop offset=".72" stop-color="#f4f6fd"/><stop offset="1" stop-color="#7d879a"/></linearGradient></defs><path fill="url(#metal)" d="M50 3 61 35 96 35 68 56 79 91 50 70 21 91 32 56 4 35 39 35Z"/><path fill="none" stroke="#fff" stroke-opacity=".55" d="M50 12 59 38 87 38 64 55 73 82 50 65 27 82 36 55 13 38 41 38Z"/></svg></div><div class="eyebrow">An Original Limited Series</div><h1>The Lives<br>We Inherit</h1><div class="tagline">Some lives end. Their stories don't.</div><p class="intro">Two centuries. Interconnected lives. A family discovers truths that change everything.</p><button class="explore" data-nav="explore">Explore the Series</button><div class="micro">A project by InAct Entertainment</div></div></section>
@@ -69,6 +99,33 @@ const items=[
 {id:'visual',title:'Visual Experience',sub:'The language of the film',lead:'A cinematic world of platinum shadows, intimate expressions, richly textured history, and purposeful silence.',sections:[['Visual Identity','Photographic direction, era palettes, scene references, and treatments will be curated here.'],['Transitions Across Time','Visual and emotional connections will carry the audience between eras without confusing the chronology.'],['Sound & Silence','Original sonic ideas and sound direction will be developed without automatic background music.']]},
 {id:'about',title:'About the Creator',sub:'Origin and inquiries',lead:'A project developed through InAct Entertainment.',sections:[['Creator','Wayne Williams is an educator, curriculum developer, and independent creative entrepreneur with a background in history and storytelling. This original limited-series concept explores family, ancestry, and the enduring consequences of human choices.'],['Development','Currently in early creative development. Materials will be released as they are completed and approved.'],['Professional Inquiries','For inquiries, visit ieplr.com and contact InAct Entertainment through its official channels.']]}
 ];
+
+const soundtrackTracks=[
+{group:"Opening & Present Day",title:"Within the Noise",type:"Atmospheric opening · Subjective perception"},
+{group:"Opening & Present Day",title:"The House We Carry",type:"Main theme · Piano and strings"},
+{group:"Opening & Present Day",title:"Unspoken",type:"Intimate contemporary instrumental"},
+{group:"The Historical Journeys",title:"The Weight of 1824",type:"Period-inspired tension score"},
+{group:"The Historical Journeys",title:"A Mother's Hands",type:"Tender vocal / instrumental theme"},
+{group:"The Historical Journeys",title:"Names Left Behind",type:"Ancestral memory motif"},
+{group:"The Historical Journeys",title:"Land and Legacy",type:"Historical triumph and contradiction"},
+{group:"Love, Fracture & Memory",title:"Eleven Voices",type:"Family and community ensemble"},
+{group:"Love, Fracture & Memory",title:"What the Mirror Knows",type:"Reflective soul ballad"},
+{group:"Love, Fracture & Memory",title:"The Silence Between Us",type:"Minimal suspense cue"},
+{group:"The Convergence",title:"Every Thread Returns",type:"Revelation / orchestral reprise"},
+{group:"The Convergence",title:"A Beginning, Again",type:"Finale / hopeful original song"}
+];
+const soundtrackPanel=document.getElementById('soundtrackPanel');
+let activeSoundtrackGroup='';
+document.getElementById('soundtrackList').innerHTML=soundtrackTracks.map((t,i)=>{
+let g=t.group!==activeSoundtrackGroup?'<div class="soundtrack-group">'+t.group+'</div>':'';
+activeSoundtrackGroup=t.group;
+return g+'<div class="soundtrack-track"><span class="soundtrack-index">'+String(i+1).padStart(2,'0')+'</span><span class="soundtrack-track-inner"><strong>'+t.title+'</strong><em>'+t.type+'</em></span><span class="track-pending">Planned</span></div>';
+}).join('');
+const soundBtn=document.getElementById('sound');
+function setSoundtrackOpen(open){soundtrackPanel.hidden=!open;soundBtn.setAttribute('aria-expanded',String(open));if(open){menu.hidden=true;menuBtn.setAttribute('aria-expanded','false');}}
+soundBtn.addEventListener('click',()=>setSoundtrackOpen(soundtrackPanel.hidden));
+document.getElementById('soundClose').addEventListener('click',()=>setSoundtrackOpen(false));
+
 const pages=['home','explore','detail'];let current='home';
 const menu=document.getElementById('menu'),menuBtn=document.getElementById('menuBtn'),curtain=document.getElementById('curtain');
 document.getElementById('year').textContent=new Date().getFullYear();
@@ -83,8 +140,8 @@ document.getElementById('detailSide').innerHTML='<h3>On this page</h3>'+item.sec
 document.title=(item?item.title+' | ':key==='explore'?'Explore | ':'')+'The Lives We Inherit | InAct Entertainment';current=key;window.scrollTo({top:0,behavior:'instant'});}
 function chime(){return;}function unusedChime(){try{const C=window.AudioContext||window.webkitAudioContext;if(!C)return;const a=new C();const n=a.currentTime;[220,329.63,440,659.25].forEach((f,i)=>{let o=a.createOscillator(),g=a.createGain();o.type='sine';o.frequency.setValueAtTime(f,n+i*.13);g.gain.setValueAtTime(.0001,n+i*.13);g.gain.exponentialRampToValueAtTime(.038,n+i*.13+.04);g.gain.exponentialRampToValueAtTime(.0001,n+i*.13+1.1);o.connect(g);g.connect(a.destination);o.start(n+i*.13);o.stop(n+i*.13+1.12)});setTimeout(()=>a.close(),1900)}catch(e){}}
 let moving=false;function go(id){if(moving||!menuDefs.some(x=>x.id===id))return;menu.hidden=true;menuBtn.setAttribute('aria-expanded','false');if(id===current)return;moving=true;chime();curtain.classList.add('show');setTimeout(()=>{render(id);curtain.classList.remove('show');moving=false},id==='explore'&&current==='home'?1450:780)}
-document.addEventListener('click',e=>{const b=e.target.closest('[data-nav]');if(b)go(b.dataset.nav);const j=e.target.closest('[data-jump]');if(j)document.getElementById('detail-section-'+j.dataset.jump)?.scrollIntoView({behavior:'smooth',block:'start'});if(!e.target.closest('#menu,#menuBtn')&&!menu.hidden){menu.hidden=true;menuBtn.setAttribute('aria-expanded','false')}});
-menuBtn.onclick=()=>{menu.hidden=!menu.hidden;menuBtn.setAttribute('aria-expanded',String(!menu.hidden))};
+document.addEventListener('click',e=>{const b=e.target.closest('[data-nav]');if(b)go(b.dataset.nav);const j=e.target.closest('[data-jump]');if(j)document.getElementById('detail-section-'+j.dataset.jump)?.scrollIntoView({behavior:'smooth',block:'start'});if(!e.target.closest('#soundtrackPanel,#sound')&&!soundtrackPanel.hidden)setSoundtrackOpen(false);if(!e.target.closest('#menu,#menuBtn')&&!menu.hidden){menu.hidden=true;menuBtn.setAttribute('aria-expanded','false')}});
+menuBtn.onclick=()=>{setSoundtrackOpen(false);menu.hidden=!menu.hidden;menuBtn.setAttribute('aria-expanded',String(!menu.hidden))};
 /* Background music control will be enabled when a soundtrack is supplied. */
-document.addEventListener('keydown',e=>{if(e.key==='Escape'){menu.hidden=true;menuBtn.setAttribute('aria-expanded','false')}});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){setSoundtrackOpen(false);menu.hidden=true;menuBtn.setAttribute('aria-expanded','false')}});
 </script></body></html>
