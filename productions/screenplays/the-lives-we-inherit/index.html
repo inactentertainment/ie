@@ -35,6 +35,19 @@ footer{background:#000;border-top:1px solid #ffffff22;padding:24px clamp(18px,5v
 @media(max-width:550px){.brand-ident{padding-left:8px;gap:1px}.brand-ident .brand-role{font-size:8px;letter-spacing:.065em}.brand-project{font-size:11px}.brand img{width:110px;height:44px}.tiles{gap:16px}.tile,.tile:nth-child(2n){min-height:130px;padding:16px 10px}.tile strong{font-size:18px}}
 @media(max-width:390px){.brand img{width:88px}.brand-project{font-size:10px}.brand-ident .brand-role{font-size:7px}.actions{gap:0}.sound,.menu-trigger{padding:7px}}
 @media(prefers-reduced-motion:reduce){.tile,.tile:hover,.tile:focus-visible{animation:none!important;transition:none!important}}
+
+/* Black-canvas refinement: keep all platinum cards and existing transitions */
+html,body,main{background:#000!important;background-image:none!important}
+.hero,.collection,.detail{background:#000!important;background-image:none!important}
+.hero:before{background:radial-gradient(ellipse at 50% 42%,rgba(188,198,217,.065),transparent 51%)!important;mask-image:none!important;opacity:1}
+.collection:before{background:none!important;opacity:0!important}
+.panel{background:linear-gradient(145deg,#13151bbd,#090a0fc9)!important;border-color:#cdd3df38!important;box-shadow:0 16px 48px #000,0 0 24px #e5eaff0a}
+.detail .side{color:#e5e6e9}
+.brand-ident{background:transparent!important;box-shadow:none!important;border-radius:0!important;gap:3px}
+.brand-ident .brand-role{font-size:12px;letter-spacing:.10em;color:#dee1e8;font-weight:500;line-height:1.1;background:transparent!important}
+.brand-ident .brand-project{font-size:13.5px;letter-spacing:0;color:#e7e9ef;line-height:1.2;font-weight:400;background:transparent!important}
+@media(max-width:550px){.brand-ident .brand-role{font-size:9px;letter-spacing:.035em}.brand-ident .brand-project{font-size:10.5px;letter-spacing:-.02em}}
+@media(max-width:390px){.brand-ident .brand-role{font-size:8px;letter-spacing:0}.brand-ident .brand-project{font-size:9px}}
 </style></head><body>
 <header><a class="brand" href="/productions/screenplays/the-lives-we-inherit/" aria-label="InAct Entertainment — series home"><img src="/assets/ie-banner.svg" alt="InAct Entertainment original logo"><span class="brand-ident"><span class="brand-role">Film &amp; Television</span><span class="brand-project">The Lives We Inherit</span></span></a>
 <div class="actions"><button class="sound" id="sound" aria-label="Music track pending" title="Music will be added soon" disabled><span class="equalizer"><i></i><i></i><i></i></span></button><button class="menu-trigger" id="menuBtn" aria-expanded="false" aria-controls="menu"><span class="bars"><i></i><i></i></span></button></div></header>
