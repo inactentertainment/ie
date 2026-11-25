@@ -5,6 +5,8 @@ on:
       - '.github/workflows/install-character-portraits.yml'
       - 'productions/screenplays/the-lives-we-inherit/assets/characters/*.zip'
       - 'The_Lives_We_Inherit_Characters_21-25_Web_Ready.zip'
+      - 'The_Lives_We_Inherit_Characters_11-20_Web_Ready.zip'
+      - 'productions/screenplays/the-lives-we-inherit/assets/characters/The_Lives_We_Inherit_Characters_11-20_Web_Ready.zip'
   workflow_dispatch:
 permissions:
   contents: write
@@ -25,6 +27,8 @@ jobs:
           sources=[
              base/"The_Lives_We_Inherit_Characters_01-10_Web_Ready.zip",
              Path("The_Lives_We_Inherit_Characters_21-25_Web_Ready.zip"),
+             Path("The_Lives_We_Inherit_Characters_11-20_Web_Ready.zip"),
+             base/"The_Lives_We_Inherit_Characters_11-20_Web_Ready.zip",
              base/"The_Lives_We_Inherit_Characters_21-25_Web_Ready.zip"
           ]
           import re
@@ -40,6 +44,7 @@ jobs:
                       number=int(name[10:12])
                       if source.name.endswith("01-10_Web_Ready.zip") and not 1<=number<=10: continue
                       if source.name.endswith("21-25_Web_Ready.zip") and not 21<=number<=25: continue
+                      if source.name.endswith("11-20_Web_Ready.zip") and not 11<=number<=20: continue
                       data=z.read(member)
                       if len(data)<200 or data[:4]!=b"RIFF" or data[8:12]!=b"WEBP":
                           raise ValueError(f"Invalid WebP portrait: {member.filename}")
@@ -47,6 +52,9 @@ jobs:
                       count+=1
               print(f"Checked {source}")
           print(f"Extracted and validated {count} portraits")
+          if any(source.exists() and source.name.endswith("11-20_Web_Ready.zip") for source in sources):
+              if not all((base/f"character-{i:02}.webp").is_file() for i in range(11,21)):
+                  raise SystemExit("Missing a portrait in 11–20 upload")
           if not all((base/f"character-{i:02}.webp").is_file() for i in range(21,26)):
               raise SystemExit("Missing a portrait in 21–25 upload; check ZIP contents")
           PY
