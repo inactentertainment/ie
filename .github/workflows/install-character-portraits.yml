@@ -1,0 +1,36 @@
+name: Install uploaded character portraits
+on:
+  push:
+    paths:
+      - '.github/workflows/install-character-portraits.yml'
+      - 'productions/screenplays/the-lives-we-inherit/assets/characters/*.zip'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Extract only named character portraits
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd productions/screenplays/the-lives-we-inherit/assets/characters
+          zipfile="The_Lives_We_Inherit_Characters_01-10_Web_Ready.zip"
+          test -f "$zipfile"
+          unzip -o "$zipfile" 'character-*.webp' -d .
+          for n in $(seq -w 1 10); do test -s "character-$n.webp"; done
+      - name: Commit individual portrait images
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add productions/screenplays/the-lives-we-inherit/assets/characters/character-*.webp
+          if ! git diff --cached --quiet; then
+            git commit -m "Install first ten individual character portraits"
+            git push
+          fi
