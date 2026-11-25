@@ -50,6 +50,26 @@ jobs:
           if not all((base/f"character-{i:02}.webp").is_file() for i in range(21,26)):
               raise SystemExit("Missing a portrait in 21–25 upload; check ZIP contents")
           PY
+      - name: Remove embedded picture frames from portraits 21 and 25
+        shell: bash
+        run: |
+          python3 -m pip install --quiet --user Pillow
+          python3 - <<'PY'
+          from pathlib import Path
+          from PIL import Image
+          root=Path("productions/screenplays/the-lives-we-inherit/assets/characters")
+          for number in (21,25):
+              src=root/f"character-{number:02}.webp"
+              with Image.open(src) as im:
+                  im=im.convert("RGB")
+                  w,h=im.size
+                  left,right=int(w*.024),int(w*.024)
+                  top,bottom=int(h*.028),int(h*.028)
+                  crop=im.crop((left,top,w-right,h-bottom))
+                  crop=crop.resize((900,1050),Image.Resampling.LANCZOS)
+                  crop.save(src,"WEBP",quality=90,method=6)
+                  print(f"Character {number}: removed source image frame, saved {crop.size}")
+          PY
       - name: Commit individual character images
         shell: bash
         run: |
