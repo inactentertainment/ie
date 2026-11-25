@@ -333,6 +333,14 @@ button.cast-card:hover .cast-image-hint,button.cast-card:focus-visible .cast-ima
 @media(max-width:900px){.cast-copy{min-height:142px}.cast-teaser{font-size:11px}}
 @media(max-width:550px){.cast-copy{min-height:108px;padding:10px 8px 13px;gap:6px}.cast-index{font-size:8px}.cast-name{font-size:12px}.cast-teaser{display:none}.cast-image-hint{font-size:0;right:8px;left:auto;bottom:8px;opacity:1}.cast-image-hint span{font-size:17px}.cast-era{font-size:9px;padding-top:6px}.portrait-view{height:min(42vh,350px)}}
 @media(prefers-reduced-motion:reduce){.cast-photo img,.cast-image-hint{transition:none}}
+
+/* Portrait-specific reframing, without changing any other characters */
+.cast-card[data-character="20"] .cast-photo img{object-position:center 41%;transform:scale(1.15)}
+.cast-card[data-character="24"] .cast-photo img{object-position:center 43%;transform:scale(1.19)}
+.cast-card[data-character="20"]:hover .cast-photo img,.cast-card[data-character="20"]:focus-visible .cast-photo img{transform:scale(1.19)}
+.cast-card[data-character="24"]:hover .cast-photo img,.cast-card[data-character="24"]:focus-visible .cast-photo img{transform:scale(1.23)}
+#characterDetailImage[data-character="21"]{object-fit:contain;object-position:center 43%;transform:scale(1.12)}
+#characterDetailImage[data-character="25"]{object-fit:contain;object-position:center 43%;transform:scale(1.16)}
 </style></head><body>
 <header><a class="brand" href="/productions/screenplays/the-lives-we-inherit/" aria-label="InAct Entertainment — series home"><img src="/assets/ie-banner.svg" alt="InAct Entertainment original logo"></a>
 <div class="actions"><button class="sound playing" id="sound" aria-label="Open soundtrack" aria-controls="soundtrackPanel" aria-expanded="false" title="Soundtrack"><span class="equalizer" aria-hidden="true"><i></i><i></i><i></i></span><span class="tooltip">Soundtrack</span></button><button class="menu-trigger" id="menuBtn" aria-expanded="false" aria-controls="menu"><span class="bars"><i></i><i></i></span></button></div></header>
@@ -437,6 +445,7 @@ document.getElementById('characterDetailDescription').textContent=characterDescr
 image.hidden=false;fallback.hidden=true;
 image.alt='Black-and-white visual character concept for '+slot[1];
 image.onerror=()=>{image.hidden=true;fallback.hidden=false;fallback.innerHTML=silhouetteSVG(slot[2]);};
+image.dataset.character=number;
 image.src=base+'assets/characters/character-'+number+'.webp';
 if(!dialog.open){portraitPreviousFocus=document.activeElement;dialog.showModal();}
 }
