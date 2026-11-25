@@ -334,13 +334,13 @@ button.cast-card:hover .cast-image-hint,button.cast-card:focus-visible .cast-ima
 @media(max-width:550px){.cast-copy{min-height:108px;padding:10px 8px 13px;gap:6px}.cast-index{font-size:8px}.cast-name{font-size:12px}.cast-teaser{display:none}.cast-image-hint{font-size:0;right:8px;left:auto;bottom:8px;opacity:1}.cast-image-hint span{font-size:17px}.cast-era{font-size:9px;padding-top:6px}.portrait-view{height:min(42vh,350px)}}
 @media(prefers-reduced-motion:reduce){.cast-photo img,.cast-image-hint{transition:none}}
 
-/* Portrait-specific reframing, without changing any other characters */
-.cast-card[data-character="20"] .cast-photo img{object-position:center 41%;transform:scale(1.15)}
-.cast-card[data-character="24"] .cast-photo img{object-position:center 43%;transform:scale(1.19)}
-.cast-card[data-character="20"]:hover .cast-photo img,.cast-card[data-character="20"]:focus-visible .cast-photo img{transform:scale(1.19)}
-.cast-card[data-character="24"]:hover .cast-photo img,.cast-card[data-character="24"]:focus-visible .cast-photo img{transform:scale(1.23)}
-#characterDetailImage[data-character="21"]{object-fit:contain;object-position:center 43%;transform:scale(1.12)}
-#characterDetailImage[data-character="25"]{object-fit:contain;object-position:center 43%;transform:scale(1.16)}
+/* Characters 21 & 25 are now cropped at the image-file level, not through excessive zoom. */
+.cast-card[data-character="20"] .cast-photo img,
+.cast-card[data-character="24"] .cast-photo img{object-fit:cover;object-position:center;transform:none}
+.cast-card[data-character="20"]:hover .cast-photo img,.cast-card[data-character="20"]:focus-visible .cast-photo img,
+.cast-card[data-character="24"]:hover .cast-photo img,.cast-card[data-character="24"]:focus-visible .cast-photo img{transform:scale(1.045)}
+#characterDetailImage[data-character="21"],
+#characterDetailImage[data-character="25"]{object-fit:contain;object-position:center;transform:none}
 </style></head><body>
 <header><a class="brand" href="/productions/screenplays/the-lives-we-inherit/" aria-label="InAct Entertainment — series home"><img src="/assets/ie-banner.svg" alt="InAct Entertainment original logo"></a>
 <div class="actions"><button class="sound playing" id="sound" aria-label="Open soundtrack" aria-controls="soundtrackPanel" aria-expanded="false" title="Soundtrack"><span class="equalizer" aria-hidden="true"><i></i><i></i><i></i></span><span class="tooltip">Soundtrack</span></button><button class="menu-trigger" id="menuBtn" aria-expanded="false" aria-controls="menu"><span class="bars"><i></i><i></i></span></button></div></header>
@@ -424,7 +424,8 @@ let previous='';
 const cards=characterSlots.map((t,i)=>{
  const group=t[0]!==previous?'<h3 class="cast-group">'+t[0]+'</h3>':'';previous=t[0];
  const index=String(i+1).padStart(2,'0');
- const photo='<img loading="lazy" decoding="async" alt="Portrait concept for '+t[1]+'" src="'+base+'assets/characters/character-'+index+'.webp" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span class="cast-fallback" hidden>'+silhouetteSVG(t[2])+'</span>';
+ const imgVersion=(i===20||i===24)?'?portrait=framefix2':'';
+ const photo='<img loading="lazy" decoding="async" alt="Portrait concept for '+t[1]+'" src="'+base+'assets/characters/character-'+index+'.webp'+imgVersion+'" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span class="cast-fallback" hidden>'+silhouetteSVG(t[2])+'</span>';
  return group+'<button type="button" class="cast-card" data-character="'+i+'" aria-label="Explore character: '+t[1]+'"><span class="cast-photo">'+photo+'<span class="cast-image-hint" aria-hidden="true">Explore Portrait <span>↗</span></span></span><span class="cast-copy"><span class="cast-index">CHARACTER '+index+'</span><span class="cast-name">'+t[1]+'</span><span class="cast-teaser">'+characterDescriptions[i]+'</span><span class="cast-era">'+t[0]+'</span></span></button>';
 }).join('');
 document.getElementById('detailMain').innerHTML='<div class="cast-grid">'+cards+'</div>';
@@ -446,7 +447,7 @@ image.hidden=false;fallback.hidden=true;
 image.alt='Black-and-white visual character concept for '+slot[1];
 image.onerror=()=>{image.hidden=true;fallback.hidden=false;fallback.innerHTML=silhouetteSVG(slot[2]);};
 image.dataset.character=number;
-image.src=base+'assets/characters/character-'+number+'.webp';
+image.src=base+'assets/characters/character-'+number+'.webp'+((index===20||index===24)?'?portrait=framefix2':'');
 if(!dialog.open){portraitPreviousFocus=document.activeElement;dialog.showModal();}
 }
 function closeCharacter(){const dialog=document.getElementById('characterDialog');if(dialog.open)dialog.close();}
