@@ -3,6 +3,8 @@ on:
   push:
     paths:
       - '.github/workflows/verify-series-presentation.yml'
+      - 'productions/screenplays/the-lives-we-inherit/index.html'
+      - 'productions/screenplays/the-lives-we-inherit/story-brief.html'
   workflow_dispatch:
 permissions:
   contents: read
