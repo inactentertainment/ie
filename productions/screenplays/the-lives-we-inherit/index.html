@@ -341,6 +341,20 @@ button.cast-card:hover .cast-image-hint,button.cast-card:focus-visible .cast-ima
 .cast-card[data-character="24"]:hover .cast-photo img,.cast-card[data-character="24"]:focus-visible .cast-photo img{transform:scale(1.045)}
 #characterDetailImage[data-character="21"],
 #characterDetailImage[data-character="25"]{object-fit:contain;object-position:center;transform:none}
+
+/* Release A: accessible links to actual available materials */
+a.silver-action{text-decoration:none}
+.pitch-nav-list{display:flex;flex-direction:column;gap:5px}
+.pitch-nav-list a,.pitch-nav-list button{display:flex;justify-content:space-between;gap:13px;align-items:center;min-height:43px;background:#222;border:1px solid #ffffff2d;border-radius:7px;text-align:left;padding:10px 12px;color:#f5f5f5;font:13px/1.35 Georgia,serif;text-decoration:none}
+.pitch-nav-list a:hover,.pitch-nav-list button:hover,.pitch-nav-list a:focus-visible,.pitch-nav-list button:focus-visible{background:#343434;border-color:#b3b3b3}
+.pitch-nav-list span{font:10px/1.3 Arial,sans-serif;color:#b8b8b8;text-align:right;flex-shrink:0}
+.package-popover{width:min(420px,92vw);max-height:min(65vh,600px);overflow-y:auto}
+.package-caption{display:block;font:11px/1.55 Arial,sans-serif;color:#b4b4b4;margin-top:13px}
+.episode-outline-link{margin-top:15px;background:transparent;border:1px solid #ffffff60;color:#e9e9e9;border-radius:100px;padding:9px 12px;font:12px Arial,sans-serif;cursor:pointer}
+.episode-outline-link:hover,.episode-outline-link:focus-visible{background:#ffffff1c;border-color:#fff}
+.cast-group{scroll-margin-top:110px}
+.character-dialog .portrait-close{flex:0 0 42px}
+@media(max-width:550px){.package-popover{left:auto;right:0;transform:translateY(-6px);width:min(350px,calc(100vw - 30px))}.package-wrap:hover .package-popover,.package-wrap:focus-within .package-popover,.package-wrap:has(#packageToggle[aria-expanded=true]) .package-popover{transform:translateY(0)}}
 </style></head><body>
 <header><a class="brand" href="/productions/screenplays/the-lives-we-inherit/" aria-label="InAct Entertainment — series home"><img src="/assets/ie-banner.svg" alt="InAct Entertainment original logo"></a>
 <div class="actions"><button class="sound playing" id="sound" aria-label="Open soundtrack" aria-controls="soundtrackPanel" aria-expanded="false" title="Soundtrack"><span class="equalizer" aria-hidden="true"><i></i><i></i><i></i></span><span class="tooltip">Soundtrack</span></button><button class="menu-trigger" id="menuBtn" aria-expanded="false" aria-controls="menu"><span class="bars"><i></i><i></i></span></button></div></header>
@@ -454,13 +468,20 @@ function closeCharacter(){const dialog=document.getElementById('characterDialog'
 
 const inquiryForm='<section class="inquiry" aria-label="Professional inquiries"><h3>Professional Inquiries</h3><p>For representation, production, acquisition, development, or licensing discussions, contact InAct Entertainment. This form opens a prepared email in your email application.</p><form id="inquiryForm"><div class="inquiry-grid"><label>Full name<input name="name" required autocomplete="name" maxlength="120"></label><label>Company or organization<input name="company" autocomplete="organization" maxlength="150"></label><label>Email<input name="email" type="email" required autocomplete="email" maxlength="160"></label><label>Inquiry type<select name="topic" required><option value="">Choose one</option><option>Production or development</option><option>Rights or licensing</option><option>Representation</option><option>Press or partnership</option><option>Other professional inquiry</option></select></label></div><label>Message<textarea name="message" required maxlength="2400" rows="5" placeholder="Briefly introduce yourself and your interest in the project."></textarea></label><button type="submit">Prepare Email Inquiry</button><p class="inquiry-note">Your email application will open. Review and send the message there to complete your inquiry.</p></form></section>';
 
-const screenplayPresentation='<div class="screenplay-actions" aria-label="Screenplay documents and inquiries">'
-+'<button type="button" class="silver-action inactive-action" disabled title="Story download will be connected when the PDF is published">Download the Story</button>'
-+'<div class="package-wrap"><button type="button" id="packageToggle" class="silver-action" aria-expanded="false" aria-controls="pitchContents">View Pitch Package</button><div id="pitchContents" class="package-popover" role="region" aria-label="Pitch package contents"><div class="package-popover-title">Included in the pitch package</div><ul><li>Six Episode Screenplays</li><li>Series Bible</li><li>One-Page Story</li><li>Pitch Deck and Overview</li><li>Creative Vision and Lookbook</li></ul><span class="package-caption">The folder link will be added when ready.</span></div></div>'
+const screenplayPresentation='<div class="screenplay-actions" aria-label="Available story materials and producer inquiries">'
++'<a class="silver-action" href="'+base+'story-brief.html" target="_blank" rel="noopener" aria-label="Open printable story and episode overview in a new tab">Read / Save Story</a>'
++'<div class="package-wrap"><button type="button" id="packageToggle" class="silver-action" aria-expanded="false" aria-controls="pitchContents" aria-label="Explore available pitch materials">Explore Pitch Materials</button><div id="pitchContents" class="package-popover" role="region" aria-label="Available pitch materials"><div class="package-popover-title">Explore the series package</div><div class="pitch-nav-list">'
++'<a href="'+base+'story-brief.html" target="_blank" rel="noopener">Story overview <span>Print / Save PDF ↗</span></a>'
++'<button type="button" data-nav="concept">The Story <span>Read on site</span></button>'
++'<button type="button" data-nav="episodes">Episode Guide <span>Six outlines</span></button>'
++'<button type="button" data-nav="bible">Series Bible <span>Overview</span></button>'
++'<button type="button" data-nav="visual">Creative Vision <span>Overview</span></button>'
++'<button type="button" data-nav="characters">Characters <span>25 visual concepts</span></button>'
++'</div><p class="package-caption">Full episode teleplays, a standalone series bible and a pitch deck are not yet attached. This menu links only to available materials.</p></div></div>'
 +'<button type="button" class="silver-action" data-nav="about">Contact IE</button></div>'
-+'<div class="screenplay-intro"><h3>The Written Series</h3><p>Six interconnected teleplays, written as one complete limited series. Each chapter reveals a different part of the story and moves toward a definitive ending.</p></div>'
-+'<div class="screenplay-grid" aria-label="Six episode screenplays">'
-+['Episode 01','Episode 02','Episode 03','Episode 04','Episode 05','Episode 06'].map((title,i)=>'<article class="screenplay-card"><span class="screenplay-card-eyebrow">THE LIVES WE INHERIT</span><span class="screenplay-card-num">'+String(i+1).padStart(2,'0')+'</span><h3>'+title+'</h3><p>'+(i===0?'Pilot':i===5?'Finale':'Limited Series')+'</p></article>').join('')+'</div>';
++'<div class="screenplay-intro"><h3>Six Chapters. One Limited Series.</h3><p>Explore the six episode outlines below. The full teleplay files are not yet linked; the story overview can be opened, printed, or saved as a PDF.</p></div>'
++'<div class="screenplay-grid" aria-label="Six episode outlines">'
++['Episode 01','Episode 02','Episode 03','Episode 04','Episode 05','Episode 06'].map((title,i)=>'<article class="screenplay-card"><span class="screenplay-card-eyebrow">THE LIVES WE INHERIT · EPISODE OUTLINE</span><span class="screenplay-card-num">'+String(i+1).padStart(2,'0')+'</span><h3>'+title+'</h3><p>'+(i===0?'Pilot outline':i===5?'Finale outline':'Episode outline')+'</p><button type="button" data-nav="episodes" class="episode-outline-link">Read episode guide</button></article>').join('')+'</div>';
 
 function render(key){
 const item=items.find(x=>x.id===key);document.getElementById('home').hidden=key!=='home';document.getElementById('explore').hidden=key!=='explore';document.getElementById('detail').hidden=!item;
