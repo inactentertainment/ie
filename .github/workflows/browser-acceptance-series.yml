@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - '.github/workflows/browser-acceptance-series.yml'
+      - 'productions/screenplays/the-lives-we-inherit/index.html'
   workflow_dispatch:
 permissions:
   contents: read
