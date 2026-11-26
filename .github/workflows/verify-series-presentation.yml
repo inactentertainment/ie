@@ -1,0 +1,75 @@
+name: Verify character gallery and pitch materials
+on:
+  push:
+    paths:
+      - '.github/workflows/verify-series-presentation.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate all character images and pitch documents
+        shell: bash
+        run: |
+          python3 -m pip install --quiet Pillow
+          python3 - <<'PY'
+          from pathlib import Path
+          from PIL import Image,ImageStat
+          import hashlib
+          root=Path('productions/screenplays/the-lives-we-inherit')
+          seen={}
+          assert (root/'index.html').exists()
+          assert (root/'story-brief.html').exists()
+          page=(root/'index.html').read_text()
+          brief=(root/'story-brief.html').read_text()
+          assert 'Read / Save Story' in page and 'Explore Pitch Materials' in page
+          assert 'story-brief.html' in page and 'Print / Save as PDF' in brief
+          assert 'const characterSlots=' in page and 'characterDescriptions=' in page
+          for n in range(1,26):
+              p=root/'assets'/'characters'/f'character-{n:02}.webp'
+              assert p.is_file(),f'missing: {p}'
+              with Image.open(p) as im:
+                  im.verify()
+              with Image.open(p) as im:
+                  width,height=im.size
+                  assert width>=400 and height>=460, f'undersized: {n} {im.size}'
+                  assert height>width, f'not vertical: {n} {im.size}'
+                  pix=im.convert('L').resize((16,16))
+                  digest=hashlib.sha256(p.read_bytes()).hexdigest()
+                  if digest in seen: raise AssertionError(f'duplicate pixels: {seen[digest]} & {n}')
+                  seen[digest]=n
+                  print(f'Character {n:02}: {width}x{height} {p.stat().st_size//1024} KB; grayscale: {im.mode}')
+          print('PASS: 25 unique valid portrait files; story brief and pitch navigation present')
+          PY
+      - name: Check JavaScript syntax without executing the story
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+          s=Path('productions/screenplays/the-lives-we-inherit/index.html').read_text()
+          js=re.findall(r'<script[^>]*>(.*?)</script>',s,flags=re.S)
+          assert len(js)==1
+          Path('/tmp/series-inline.js').write_text(js[0])
+          PY
+          node --check /tmp/series-inline.js
+          echo 'PASS: Inline JavaScript syntax'
+      - name: Probe published public URLs
+        shell: bash
+        run: |
+          set -euo pipefail
+          for url in             'https://ieplr.com/'             'https://ieplr.com/productions/screenplays/the-lives-we-inherit/'             'https://ieplr.com/productions/screenplays/the-lives-we-inherit/story-brief.html'; do
+            code=$(curl -LsS --retry 4 --retry-delay 2 --max-time 20 -o /dev/null -w '%{http_code}' "$url")
+            echo "$code $url"
+            test "$code" = 200
+          done
+          for n in $(seq -w 1 25); do
+            url="https://ieplr.com/productions/screenplays/the-lives-we-inherit/assets/characters/character-$n.webp"
+            code=$(curl -LsS --retry 4 --retry-delay 2 --max-time 15 -o /dev/null -w '%{http_code}' "$url")
+            echo "$code portrait $n"
+            test "$code" = 200
+          done
+          echo 'PASS: Homepage, presentation, story brief, and 25 published portraits'
