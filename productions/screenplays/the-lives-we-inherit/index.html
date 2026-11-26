@@ -355,6 +355,60 @@ a.silver-action{text-decoration:none}
 .cast-group{scroll-margin-top:110px}
 .character-dialog .portrait-close{flex:0 0 42px}
 @media(max-width:550px){.package-popover{left:auto;right:0;transform:translateY(-6px);width:min(350px,calc(100vw - 30px))}.package-wrap:hover .package-popover,.package-wrap:focus-within .package-popover,.package-wrap:has(#packageToggle[aria-expanded=true]) .package-popover{transform:translateY(0)}}
+
+/* Build 3: restrained cinematic polish across the series-only presentation */
+:root{--metal-light:#f1f0ef;--metal-muted:#b6b8be;--metal-shadow:#454951}
+.page:not([hidden]){animation:seriesReveal .42s cubic-bezier(.22,1,.36,1) both}
+@keyframes seriesReveal{from{opacity:.45;transform:translateY(10px)}to{opacity:1;transform:none}}
+.hero{overflow:hidden;min-height:calc(100svh - 143px);background:linear-gradient(90deg,#030405c9,#090b0dc9 51%,#030405c9),radial-gradient(ellipse at 50% 41%,#555d7142,transparent 54%);border-bottom:1px solid #ffffff16}
+.hero:after{content:'';position:absolute;inset:3% 4% 5%;pointer-events:none;border:1px solid #cfd3de1b;border-radius:3px;box-shadow:inset 0 0 80px #090b0e60;z-index:-1}
+.hero-inner{position:relative;z-index:1}
+.hero .eyebrow{letter-spacing:.29em}
+.hero h1{max-width:1050px;margin:18px auto 20px;filter:drop-shadow(0 13px 26px #0009);font-weight:400}
+.hero .tagline{font-size:clamp(19px,2.5vw,29px)}
+.hero .intro{max-width:580px}
+.hero-actions{display:flex;justify-content:center;align-items:center;gap:12px;flex-wrap:wrap;margin:0 0 24px}
+.hero-actions .explore{margin:0;display:flex;align-items:center;gap:17px}
+.hero-actions .explore span{font:19px/1 Arial,sans-serif}
+.hero-secondary{padding:14px 30px;border:1px solid #dee1e398;background:#07090ca6;border-radius:100px;color:#e5e5e5;letter-spacing:.13em;text-transform:uppercase;font:600 11px/1.4 Arial,sans-serif;min-height:49px;transition:background .2s,border-color .2s}
+.hero-secondary:hover,.hero-secondary:focus-visible{background:#34373b;border-color:#fff}
+.hero-chapters{display:flex;justify-content:center;align-items:center;gap:14px;color:#b5b7c0;font:10px/1.5 Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;margin:10px auto 25px;flex-wrap:wrap}
+.hero-chapters i{width:3px;height:3px;border-radius:50%;background:#e7e8ee80}
+.hero .micro{letter-spacing:.17em}
+.producer-path{max-width:1170px;margin:0 auto 34px;border:1px solid #ffffff2b;border-radius:14px;background:linear-gradient(108deg,#15181e,#08090b 80%);padding:18px 20px 20px;box-shadow:0 14px 35px #0008}
+.path-label{display:block;text-align:center;text-transform:uppercase;font:10px/1.5 Arial,sans-serif;color:#b7bbc4;letter-spacing:.2em;margin-bottom:15px}
+.path-steps{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:7px}
+.path-steps button{min-width:0;background:transparent;border:1px solid #ffffff21;border-radius:8px;padding:13px 8px;display:flex;align-items:center;justify-content:center;gap:10px;color:#e5e5e7;font:14px/1.25 Georgia,serif;transition:border-color .22s,background .22s,transform .22s}
+.path-steps button b{font:10px/1 Arial,sans-serif;letter-spacing:.12em;color:#aeb3c2}
+.path-steps button:hover,.path-steps button:focus-visible{background:#f3f3f30d;border-color:#dfe2ea9e;transform:translateY(-2px)}
+.tiles .tile{border-radius:12px;box-shadow:inset 0 1px #ffffff23,0 17px 32px #0009}
+.tiles .tile:after{content:'';position:absolute;inset:9px;border:1px solid #ffffff12;pointer-events:none;border-radius:6px}
+.tiles .tile:hover,.tiles .tile:focus-visible{transform:translateY(-5px);border-color:#d8d9de9c;box-shadow:0 18px 40px #000c,0 0 22px #ffffff11}
+.collection-end{max-width:1170px;margin:32px auto 0;padding-top:22px;border-top:1px solid #ffffff2b;display:flex;justify-content:space-between;align-items:center;gap:20px}
+.collection-end>span{font:10px/1.5 Arial,sans-serif;color:#aeb3bb;text-transform:uppercase;letter-spacing:.16em}
+.collection-end button{background:transparent;border:0;border-bottom:1px solid #bbc0c8;color:#e9eaed;padding:8px 0;font:14px Georgia,serif}
+.collection-end button span{margin-left:9px}
+.detail-navline{display:flex;align-items:center;justify-content:space-between;gap:15px}
+.detail-counter{font:10px/1.5 Arial,sans-serif;letter-spacing:.18em;color:#aeb2bc}
+.detail .detail-lead{max-width:850px}
+.portrait-view{border-color:#c2c4cc4a;box-shadow:inset 0 0 0 6px #ffffff06}
+.character-dialog{border-color:#e4e4e489;box-shadow:0 32px 105px #000f,0 0 38px #b9bfc515}
+.curtain{display:none}
+@media(max-width:700px){
+  .hero:after{inset:2% 11px 3%}
+  .hero-inner{padding:35px 12px}
+  .producer-path{padding:13px 10px}
+  .path-steps{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .path-steps button{font-size:12px;gap:7px;padding:11px 6px}
+  .collection-end{align-items:flex-start;flex-direction:column}
+}
+@media(max-width:420px){
+  .hero-chapters{gap:9px;font-size:9px;letter-spacing:.07em}
+  .hero-actions{flex-direction:column;align-items:stretch;max-width:290px;margin-left:auto;margin-right:auto}
+  .hero-actions button{width:100%;justify-content:center}
+  .path-steps{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(prefers-reduced-motion:reduce){.page:not([hidden]){animation:none!important}.path-steps button{transition:none}.tiles .tile{transition:none}}
 </style></head><body>
 <header><a class="brand" href="/productions/screenplays/the-lives-we-inherit/" aria-label="InAct Entertainment — series home"><img src="/assets/ie-banner.svg" alt="InAct Entertainment original logo"></a>
 <div class="actions"><button class="sound playing" id="sound" aria-label="Open soundtrack" aria-controls="soundtrackPanel" aria-expanded="false" title="Soundtrack"><span class="equalizer" aria-hidden="true"><i></i><i></i><i></i></span><span class="tooltip">Soundtrack</span></button><button class="menu-trigger" id="menuBtn" aria-expanded="false" aria-controls="menu"><span class="bars"><i></i><i></i></span></button></div></header>
@@ -366,9 +420,9 @@ a.silver-action{text-decoration:none}
 </section>
 <nav id="menu" class="menu" hidden aria-label="All pages"><div class="menu-label">Explore the project</div><div id="menuItems"></div></nav>
 <main>
-<section id="home" class="page hero"><div class="hero-inner"><div class="star" aria-hidden="true"><svg viewBox="0 0 100 100"><defs><linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff"/><stop offset=".45" stop-color="#8b93a5"/><stop offset=".72" stop-color="#f4f6fd"/><stop offset="1" stop-color="#7d879a"/></linearGradient></defs><path fill="url(#metal)" d="M50 3 61 35 96 35 68 56 79 91 50 70 21 91 32 56 4 35 39 35Z"/><path fill="none" stroke="#fff" stroke-opacity=".55" d="M50 12 59 38 87 38 64 55 73 82 50 65 27 82 36 55 13 38 41 38Z"/></svg></div><div class="eyebrow">An Original Limited Series</div><h1 id="heroTitle" tabindex="-1">The Lives<br>We Inherit</h1><div class="tagline">Some lives end. Their stories don't.</div><p class="intro">Two centuries. Interconnected lives. A family discovers truths that change everything.</p><button class="explore" data-nav="explore">Explore the Series</button><div class="micro">A project by InAct Entertainment</div></div></section>
-<section id="explore" class="page collection" hidden><div class="section-heading"><div class="eyebrow screenplay-series-title">Screenplay 001 · The Lives We Inherit · Presentation</div><h2 id="exploreTitle" tabindex="-1">Every life leaves a trace.</h2><p>Enter a story told across generations. Explore the creative vision, the people, the timeline, and a six-part journey toward one unfolding truth.</p></div><div class="tiles" id="tiles"></div></section>
-<section id="detail" class="page detail" hidden><button class="back" data-nav="explore">← Explore the series</button><div class="eyebrow" id="detailEyebrow">Series presentation</div><h2 id="detailTitle" tabindex="-1"></h2><p class="detail-lead" id="detailLead"></p><div class="detail-grid"><div id="detailMain"></div><aside class="side" id="detailSide"></aside></div></section>
+<section id="home" class="page hero"><div class="hero-inner"><div class="star" aria-hidden="true"><svg viewBox="0 0 100 100"><defs><linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff"/><stop offset=".45" stop-color="#8b93a5"/><stop offset=".72" stop-color="#f4f6fd"/><stop offset="1" stop-color="#7d879a"/></linearGradient></defs><path fill="url(#metal)" d="M50 3 61 35 96 35 68 56 79 91 50 70 21 91 32 56 4 35 39 35Z"/><path fill="none" stroke="#fff" stroke-opacity=".55" d="M50 12 59 38 87 38 64 55 73 82 50 65 27 82 36 55 13 38 41 38Z"/></svg></div><div class="eyebrow">An Original Limited Series</div><h1 id="heroTitle" tabindex="-1">The Lives<br>We Inherit</h1><div class="tagline">Some lives end. Their stories don't.</div><p class="intro">Two centuries. Interconnected lives. A family discovers truths that change everything.</p><div class="hero-actions"><button class="explore" data-nav="explore">Explore the Series <span aria-hidden="true">↗</span></button><button type="button" class="hero-secondary" data-nav="concept">Read the Story</button></div><div class="hero-chapters" aria-label="Series at a glance"><span>Six chapters</span><i aria-hidden="true"></i><span>Two centuries</span><i aria-hidden="true"></i><span>One family legacy</span></div><div class="micro">A project by InAct Entertainment</div></div></section>
+<section id="explore" class="page collection" hidden><div class="section-heading"><div class="eyebrow screenplay-series-title">Screenplay 001 · The Lives We Inherit · Presentation</div><h2 id="exploreTitle" tabindex="-1">Every life leaves a trace.</h2><p>Enter a story told across generations. Explore the creative vision, the people, the timeline, and a six-part journey toward one unfolding truth.</p></div><nav class="producer-path" aria-label="Suggested presentation reading order"><span class="path-label">The presentation in five movements</span><div class="path-steps"><button type="button" data-nav="concept"><b>01</b> Story</button><button type="button" data-nav="characters"><b>02</b> People</button><button type="button" data-nav="episodes"><b>03</b> Episodes</button><button type="button" data-nav="visual"><b>04</b> Vision</button><button type="button" data-nav="screenplays"><b>05</b> Materials</button></div></nav><div class="tiles" id="tiles"></div><div class="collection-end"><span>InAct Entertainment · Original Limited Series</span><button type="button" data-nav="screenplays">Explore presentation materials <span aria-hidden="true">↗</span></button></div></section>
+<section id="detail" class="page detail" hidden><div class="detail-navline"><button class="back" data-nav="explore">← Explore the series</button><span class="detail-counter" id="detailCounter" aria-live="off"></span></div><div class="eyebrow" id="detailEyebrow">Series presentation</div><h2 id="detailTitle" tabindex="-1"></h2><p class="detail-lead" id="detailLead"></p><div class="detail-grid"><div id="detailMain"></div><aside class="side" id="detailSide"></aside></div></section>
 </main><footer><span>© <span id="year"></span> InAct Entertainment LLC</span><span>Original Limited Series</span></footer><div class="curtain" id="curtain" aria-hidden="true"></div><dialog id="characterDialog" class="character-dialog" aria-labelledby="characterDetailName"><div class="portrait-dialog-body"><div class="portrait-dialog-top"><span class="portrait-kicker">THE LIVES WE INHERIT · CHARACTERS</span><button type="button" id="characterClose" class="portrait-close" aria-label="Close character portrait">×</button></div><div class="portrait-view"><img id="characterDetailImage" alt=""><div id="characterDetailFallback" class="portrait-fallback" hidden></div></div><h3 id="characterDetailName"></h3><p id="characterDetailGroup"></p><p id="characterDetailDescription" class="character-detail-description"></p><div class="portrait-controls"><button type="button" id="characterPrev" aria-label="Previous character">← Previous</button><button type="button" id="characterNext" aria-label="Next character">Next →</button></div></div></dialog>
 <script>
 const base='/productions/screenplays/the-lives-we-inherit/';
@@ -485,13 +539,13 @@ const screenplayPresentation='<div class="screenplay-actions" aria-label="Availa
 
 function render(key){
 const item=items.find(x=>x.id===key);document.getElementById('home').hidden=key!=='home';document.getElementById('explore').hidden=key!=='explore';document.getElementById('detail').hidden=!item;
-if(item){document.getElementById('detailEyebrow').textContent='The Lives We Inherit · Series presentation';document.getElementById('detailTitle').textContent=item.title;document.getElementById('detailLead').textContent=item.lead;
+if(item){document.getElementById('detailCounter').textContent='SECTION '+String(items.findIndex(x=>x.id===key)+1).padStart(2,'0')+' / '+String(items.length).padStart(2,'0');document.getElementById('detailEyebrow').textContent='The Lives We Inherit · Series presentation';document.getElementById('detailTitle').textContent=item.title;document.getElementById('detailLead').textContent=item.lead;
 if(key==='concept')document.getElementById('detailLead').classList.add('story-lead');else document.getElementById('detailLead').classList.remove('story-lead');
 document.getElementById('detailMain').innerHTML=key==='screenplays'?screenplayPresentation:'<div class="panel '+(key==='concept'?'story-panel':key==='episodes'?'episode-panel':'')+'">'+item.sections.map((s,i)=>'<section id="detail-section-'+i+'" class="presentation-section" style="scroll-margin-top:110px"><h3>'+s[0]+'</h3><p>'+s[1]+'</p></section>').join('')+(key==='concept'||key==='episodes'||key==='about'?'':'<div class="placeholder">Presentation materials will appear here as the story is developed.</div><p class="note">Development template · Content subject to revision</p>')+'</div>'+(key==='about'?inquiryForm:'');
 document.getElementById('detailSide').hidden=key==='screenplays';document.getElementById('detailSide').innerHTML=(key==='concept'?'<div class="story-nav-label" aria-hidden="true">On This Page</div>':'<h3>On this page</h3>')+item.sections.map((s,i)=>'<button data-jump="'+i+'" '+(key==='concept'?'class="story-nav-link" aria-label="Jump to '+s[0]+'"':'')+'>'+s[0]+'</button>').join('');if(key==='characters')renderCharacters();}
 document.title=(item?item.title+' | ':key==='explore'?'Explore | ':'')+'The Lives We Inherit | InAct Entertainment';current=key;window.scrollTo({top:0,behavior:'instant'});}
 function chime(){return;}function unusedChime(){try{const C=window.AudioContext||window.webkitAudioContext;if(!C)return;const a=new C();const n=a.currentTime;[220,329.63,440,659.25].forEach((f,i)=>{let o=a.createOscillator(),g=a.createGain();o.type='sine';o.frequency.setValueAtTime(f,n+i*.13);g.gain.setValueAtTime(.0001,n+i*.13);g.gain.exponentialRampToValueAtTime(.038,n+i*.13+.04);g.gain.exponentialRampToValueAtTime(.0001,n+i*.13+1.1);o.connect(g);g.connect(a.destination);o.start(n+i*.13);o.stop(n+i*.13+1.12)});setTimeout(()=>a.close(),1900)}catch(e){}}
-let moving=false;function go(id){if(moving||!menuDefs.some(x=>x.id===id))return;menu.hidden=true;menuBtn.setAttribute('aria-expanded','false');if(id===current)return;moving=true;chime();const reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;if(!reduced)curtain.classList.add('show');setTimeout(()=>{render(id);curtain.classList.remove('show');moving=false;document.getElementById(id==='home'?'heroTitle':id==='explore'?'exploreTitle':'detailTitle')?.focus({preventScroll:true});},reduced?0:280)}
+let moving=false;function go(id){if(!menuDefs.some(x=>x.id===id))return;menu.hidden=true;menuBtn.setAttribute('aria-expanded','false');if(id===current)return;moving=true;chime();render(id);const target=document.getElementById(id==='home'?'heroTitle':id==='explore'?'exploreTitle':'detailTitle');if(target)target.focus({preventScroll:true});moving=false;}
 document.addEventListener('click',e=>{const b=e.target.closest('[data-nav]');if(b)go(b.dataset.nav);const cg=e.target.closest('[data-cast-group]');if(cg)document.querySelectorAll('.cast-group')[Number(cg.dataset.castGroup)]?.scrollIntoView({behavior:'smooth',block:'start'});const j=e.target.closest('[data-jump]');if(j){document.querySelectorAll('.story-nav-link').forEach(x=>x.classList.toggle('active',x===j));document.getElementById('detail-section-'+j.dataset.jump)?.scrollIntoView({behavior:'smooth',block:'start'});}if(!e.target.closest('#soundtrackPanel,#sound')&&!soundtrackPanel.hidden)setSoundtrackOpen(false);if(!e.target.closest('#menu,#menuBtn')&&!menu.hidden){menu.hidden=true;menuBtn.setAttribute('aria-expanded','false')}});
 document.addEventListener('click',e=>{const card=e.target.closest('[data-character]');if(card)showCharacter(Number(card.dataset.character));if(e.target.closest('#characterClose'))closeCharacter();if(e.target.closest('#characterPrev'))showCharacter((activeCharacter-1+characterSlots.length)%characterSlots.length);if(e.target.closest('#characterNext'))showCharacter((activeCharacter+1)%characterSlots.length);});
 document.getElementById('characterDialog').addEventListener('close',()=>{activeCharacter=-1;if(portraitPreviousFocus&&portraitPreviousFocus.isConnected)portraitPreviousFocus.focus();});
