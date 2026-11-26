@@ -51,6 +51,13 @@ jobs:
                 await page.locator('#explore:not([hidden])').waitFor();
                 await page.locator('.path-steps [data-nav="characters"]').click();
                 await page.locator('.cast-card').first().waitFor();
+                if(!page.url().endsWith('#characters'))throw Error('Character section hash missing: '+page.url());
+                await page.reload({waitUntil:'domcontentloaded'});
+                await page.locator('.cast-card').first().waitFor();
+                if((await page.locator('#detailTitle').innerText())!=='Characters')throw Error('Shared character URL did not survive refresh');
+                const mainSite=await page.locator('footer a[href="https://ieplr.com/"]').count();
+                if(mainSite!==1)throw Error('Missing return to main InAct site');
+
                 const cards=await page.locator('.cast-card').count();
                 if(cards!==25)throw Error('Expected 25 cards; found '+cards);
                 await page.locator('.cast-card img').evaluateAll(xs=>xs.forEach(x=>x.loading='eager'));await page.waitForFunction(()=>Array.from(document.querySelectorAll('.cast-card img')).every(x=>x.complete),{timeout:25000});const broken=await page.locator('.cast-card img').evaluateAll(xs=>xs.map((x,i)=>x.naturalWidth===0?i+1:null).filter(Boolean));
@@ -74,6 +81,9 @@ jobs:
                 const doc=await page.request.get(new URL(href,site).href);
                 if(doc.status()!==200)throw Error('Story overview not available');
                 await page.locator('.screenplay-actions [data-nav="about"]').click();
+                await page.locator('#inquiryForm').waitFor();
+                if(!page.url().endsWith('#about'))throw Error('Contact deep link missing');
+                await page.reload({waitUntil:'domcontentloaded'});
                 await page.locator('#inquiryForm').waitFor();
                 if(!(await page.locator('#inquiryForm input[name="email"]').getAttribute('type')==='email'))throw Error('Email validation missing');
                 const size=await page.evaluate(()=>({scroll:document.documentElement.scrollWidth,width:window.innerWidth}));
