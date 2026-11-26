@@ -1,0 +1,74 @@
+name: Browser acceptance - The Lives We Inherit
+on:
+  push:
+    paths:
+      - '.github/workflows/browser-acceptance-series.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Install Chromium automation
+        run: |
+          npm install --prefix /tmp/series-test playwright@1.58.2
+          /tmp/series-test/node_modules/.bin/playwright install --with-deps chromium
+      - name: Test published series navigation, character viewer and inquiry
+        env:
+          NODE_PATH: /tmp/series-test/node_modules
+        run: |
+          cat >/tmp/series-test/check.cjs <<'JS'
+          const { chromium }=require('playwright');
+          const site='https://ieplr.com/productions/screenplays/the-lives-we-inherit/';
+          const log=[];
+          (async()=>{
+            const browser=await chromium.launch({headless:true});
+            try{
+              for(const width of [1440,390]){
+                const page=await browser.newPage({viewport:{width,height:900},reducedMotion:'reduce'});
+                const errors=[];
+                page.on('pageerror',e=>errors.push(e.message));
+                const r=await page.goto(site,{waitUntil:'domcontentloaded',timeout:30000});
+                if(r.status()!==200)throw Error('Page failed: '+r.status());
+                await page.locator('[data-nav="explore"]').first().click();
+                await page.locator('#explore:not([hidden])').waitFor();
+                await page.locator('.path-steps [data-nav="characters"]').click();
+                await page.locator('.cast-card').first().waitFor();
+                const cards=await page.locator('.cast-card').count();
+                if(cards!==25)throw Error('Expected 25 cards; found '+cards);
+                const broken=await page.locator('.cast-card img').evaluateAll(xs=>xs.map((x,i)=>!x.complete||x.naturalWidth===0?i+1:null).filter(Boolean));
+                if(broken.length)throw Error('Portraits not loaded: '+broken.join(','));
+                await page.locator('.cast-card').nth(20).click();
+                await page.locator('#characterDialog[open]').waitFor();
+                if(!(await page.locator('#characterDetailName').innerText()).includes('Enslaved Mother'))throw Error('Character 21 mismatched');
+                await page.locator('#characterNext').click();
+                if(!(await page.locator('#characterDetailName').innerText()).includes('Enslaved Father'))throw Error('Next character failed');
+                await page.locator('#characterClose').click();
+                if(await page.locator('#characterDialog').evaluate(x=>x.open))throw Error('Portrait viewer did not close');
+                await page.locator('#menuBtn').click();
+                if((await page.locator('#menuBtn').getAttribute('aria-expanded'))!=='true')throw Error('Nav did not open');
+                await page.keyboard.press('Escape');
+                if((await page.locator('#menuBtn').getAttribute('aria-expanded'))!=='false')throw Error('Escape did not close nav');
+                await page.locator('[data-nav="explore"]').first().click();
+                await page.locator('.path-steps [data-nav="screenplays"]').click();
+                await page.locator('#packageToggle').click();
+                if((await page.locator('#packageToggle').getAttribute('aria-expanded'))!=='true')throw Error('Pitch package did not open');
+                const href=await page.locator('.screenplay-actions a.silver-action').getAttribute('href');
+                const doc=await page.request.get(new URL(href,site).href);
+                if(doc.status()!==200)throw Error('Story overview not available');
+                await page.locator('.screenplay-actions [data-nav="about"]').click();
+                await page.locator('#inquiryForm').waitFor();
+                if(!(await page.locator('#inquiryForm input[name="email"]').getAttribute('type')==='email'))throw Error('Email validation missing');
+                const size=await page.evaluate(()=>({scroll:document.documentElement.scrollWidth,width:window.innerWidth}));
+                if(size.scroll>size.width+3)throw Error('Horizontal overflow '+JSON.stringify(size));
+                if(errors.length)throw Error('Browser JS errors: '+errors.join('; '));
+                console.log('PASS: '+width+'px: 25 portraits, next/close viewer, menu escape, pitch documents, contact form, zero JS errors, no horizontal overflow');
+                await page.close();
+              }
+              console.log('PASS: complete desktop/mobile browser checks');
+            }finally{await browser.close()}
+          })().catch(e=>{console.error(e);process.exit(1)});
+          JS
+          node /tmp/series-test/check.cjs
