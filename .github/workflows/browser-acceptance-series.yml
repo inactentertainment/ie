@@ -15,7 +15,7 @@ jobs:
       - name: Install Chromium automation
         run: |
           npm install --prefix /tmp/series-test playwright@1.58.2
-          /tmp/series-test/node_modules/.bin/playwright install --with-deps chromium
+          /tmp/series-test/node_modules/.bin/playwright install chromium
       - name: Probe 404 and domain redirect variants
         shell: bash
         run: |
