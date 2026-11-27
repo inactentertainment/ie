@@ -487,6 +487,9 @@ footer a:hover,footer a:focus-visible{color:#fff}
  .collection .section-heading p{line-height:1.65}
  .collection .path-steps{gap:12px}
 }
+
+/* Final release QA: prevent the main wrapper from adding an empty viewport below Explore */
+main:has(#explore:not([hidden])){min-height:0!important}
 </style></head><body>
 <header><a class="brand" href="/productions/screenplays/the-lives-we-inherit/" aria-label="InAct Entertainment — series home"><img src="/assets/ie-banner.svg" alt="InAct Entertainment original logo"></a>
 <div class="actions"><button class="sound" id="sound" aria-label="Open soundtrack" aria-controls="soundtrackPanel" aria-expanded="false" title="Soundtrack"><span class="equalizer" aria-hidden="true"><i></i><i></i><i></i></span><span class="tooltip">Soundtrack</span></button><button class="menu-trigger" id="menuBtn" type="button" aria-label="Open series navigation" aria-expanded="false" aria-controls="menu"><span class="bars"><i></i><i></i></span></button></div></header>
