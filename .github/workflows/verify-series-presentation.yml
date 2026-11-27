@@ -5,6 +5,8 @@ on:
       - '.github/workflows/verify-series-presentation.yml'
       - 'productions/screenplays/the-lives-we-inherit/index.html'
       - 'productions/screenplays/the-lives-we-inherit/story-brief.html'
+      - 'productions/screenplays/the-lives-we-inherit/producer-pitch-deck.html'
+      - 'productions/screenplays/the-lives-we-inherit/series-bible.html'
   workflow_dispatch:
 permissions:
   contents: read
@@ -27,7 +29,10 @@ jobs:
           assert (root/'story-brief.html').exists()
           page=(root/'index.html').read_text()
           brief=(root/'story-brief.html').read_text()
-          assert 'Read / Save Story' in page and 'Explore Pitch Materials' in page
+          assert 'producer-pitch-deck.html' in page and 'series-bible.html' in page
+          assert (root/'producer-pitch-deck.html').exists() and (root/'series-bible.html').exists()
+          assert (root/'producer-pitch-deck.html').read_text().count('class="slide"')==13
+          assert (root/'series-bible.html').read_text().count('class="chapter"')==12
           assert 'story-brief.html' in page and 'Print / Save as PDF' in brief
           assert 'const characterSlots=' in page and 'characterDescriptions=' in page
           for n in range(1,26):
