@@ -86,12 +86,10 @@ jobs:
                 if((await page.locator('#menuBtn').getAttribute('aria-expanded'))!=='false')throw Error('Escape did not close nav');
                 await page.locator('#detail .back[data-nav="explore"]').click();
                 await page.locator('.path-steps [data-nav="screenplays"]').click();
-                await page.locator('#packageToggle').click();
-                if((await page.locator('#packageToggle').getAttribute('aria-expanded'))!=='true')throw Error('Pitch package did not open');
-                const href=await page.locator('.screenplay-actions a.silver-action').getAttribute('href');
-                const doc=await page.request.get(new URL(href,site).href);
-                if(doc.status()!==200)throw Error('Story overview not available');
-                await page.locator('.screenplay-actions [data-nav="about"]').click();
+                const materialLinks=await page.locator('.screenplay-actions a.silver-action').evaluateAll(xs=>xs.map(x=>x.getAttribute('href')));
+                if(materialLinks.length!==3)throw Error('Expected pitch deck, Bible and story');
+                for(const href of materialLinks){const doc=await page.request.get(new URL(href,site).href);if(doc.status()!==200)throw Error('Material not published: '+href+' '+doc.status());}
+                await page.locator('.materials-extra [data-nav="about"]').click();
                 await page.locator('#inquiryForm').waitFor();
                 if((await page.locator('#detailLead .creator-site-link').count())!==1)throw Error('Creator link missing');
                 if(await page.locator('footer a[href="https://ieplr.com/"]').count())throw Error('Main-site link remains in footer');
