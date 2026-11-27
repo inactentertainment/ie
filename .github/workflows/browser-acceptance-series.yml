@@ -49,6 +49,18 @@ jobs:
                 if(r.status()!==200)throw Error('Page failed: '+r.status());
                 await page.locator('#home .hero-actions [data-nav="explore"]').click();
                 await page.locator('#explore:not([hidden])').waitFor();
+                if(await page.locator('#explore .tiles, #explore .collection-end').count())throw Error('Duplicated tiles/footer callout remain');
+                if((await page.locator('#explore .path-steps button').count())!==5)throw Error('Expected five movements');
+                const menuStrings=await page.locator('#menuItems .nav-child').allInnerTexts();
+                if(menuStrings.join('|')!=='Story|People|Episodes|Vision|Materials')throw Error('Menu differs: '+menuStrings);
+                const layout=await page.locator('.path-steps button').evaluateAll(xs=>xs.map(x=>({x:Math.round(x.getBoundingClientRect().x),y:Math.round(x.getBoundingClientRect().y)})));
+                if(width===390&&!layout.every((v,i)=>i===0||v.y>layout[i-1].y))throw Error('Five movements do not stack on mobile');
+                if(width===1440&&!layout.every((v,i)=>i===0||Math.abs(v.y-layout[0].y)<4))throw Error('Five movements not in one desktop row');
+                await page.locator('#explore .explore-back').click();
+                await page.locator('#home:not([hidden])').waitFor();
+                if((await page.locator('#home .hero-actions button').count())!==1)throw Error('Home still has duplicate Read the Story');
+                await page.locator('#home .hero-actions [data-nav="explore"]').click();
+                await page.locator('#explore:not([hidden])').waitFor();
                 await page.locator('.path-steps [data-nav="characters"]').click();
                 await page.locator('.cast-card').first().waitFor();
                 if(!page.url().endsWith('#characters'))throw Error('Character section hash missing: '+page.url());
@@ -82,6 +94,8 @@ jobs:
                 if(doc.status()!==200)throw Error('Story overview not available');
                 await page.locator('.screenplay-actions [data-nav="about"]').click();
                 await page.locator('#inquiryForm').waitFor();
+                if((await page.locator('#detailLead .creator-site-link').count())!==1)throw Error('Creator link missing');
+                if(await page.locator('footer a[href="https://ieplr.com/"]').count())throw Error('Main-site link remains in footer');
                 if(!page.url().endsWith('#about'))throw Error('Contact deep link missing');
                 await page.reload({waitUntil:'domcontentloaded'});
                 await page.locator('#inquiryForm').waitFor();
