@@ -67,8 +67,7 @@ jobs:
                 await page.reload({waitUntil:'domcontentloaded'});
                 await page.locator('.cast-card').first().waitFor();
                 if((await page.locator('#detailTitle').innerText())!=='Characters')throw Error('Shared character URL did not survive refresh');
-                const mainSite=await page.locator('footer a[href="https://ieplr.com/"]').count();
-                if(mainSite!==1)throw Error('Missing return to main InAct site');
+                if(await page.locator('footer a').count())throw Error('Unexpected footer link');
 
                 const cards=await page.locator('.cast-card').count();
                 if(cards!==25)throw Error('Expected 25 cards; found '+cards);
